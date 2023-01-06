@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "579829",
+    "ThreadId": "249536",
+    "Html": "<p>I am having this error message on server level.</p>\n<p>The server will drop the connection, because the client driver has sent multiple requests while the session is in single-user mode. This error occurs when a client sends a request to reset the connection while there are batches still running in the session,  or when the client sends a request while the session is resetting a connection. Please contact the client driver vendor.</p>\n<p>Event Code #17886</p>\n<p>&nbsp;</p>\n<p>Does anyone has the same error message or come a cross. Could you please help me if you know the answer.</p>\n<p>&nbsp;</p>\n<p>Thank you in advance.</p>",
+    "PostedDate": "2011-03-13T20:14:58.51-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

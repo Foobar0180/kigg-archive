@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "732673",
+    "ThreadId": "287901",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>What do you think is the most elegant way to extend role authorization to the &quot;service&quot; layer of Kigg? I would either like to Attribute the service methods or at least check to see if the calling user (logged in user) is in a specific role inside the Service\r\n method.</p>\r\n<p>My first instinct is to implement a custom ASP.net RoleProvider.</p>\r\n<p>What do you guys think?</p>\r\n<p>Matthew Pomar</p>\r\n",
+    "PostedDate": "2012-01-30T07:53:23.29-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "734767",
+    "ThreadId": "287901",
+    "Html": "<p>Has anyone tried to solve this problem?</p>",
+    "PostedDate": "2012-02-01T07:40:00.663-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

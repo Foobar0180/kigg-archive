@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "152761",
+    "ThreadId": "45768",
+    "Html": "I noticed that when publishing new stories, the &quot;Published Dates&quot; of the already published resources get reset.<br>\r\nOnce published, the published date should not be recalculated.\r\n",
+    "PostedDate": "2009-01-30T19:30:00.243-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154064",
+    "ThreadId": "45768",
+    "Html": "This is same as Billboard Top 20 songs where can rank can vary at different time.<br>\r\n",
+    "PostedDate": "2009-02-03T20:10:02.147-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154203",
+    "ThreadId": "45768",
+    "Html": "Sorry,<br>\r\n<br>\r\nMaybe I was not entirely clear.<br>\r\nWhen someone submits a new article, and an admin publishes it, the &quot;Published Date&quot; is applied to the record. The problem is that it also re-enter this same published date to the articles already previously published- which is wrong. See Digg. \r\n",
+    "PostedDate": "2009-02-04T05:11:09.71-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

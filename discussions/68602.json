@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "233379",
+    "ThreadId": "68602",
+    "Html": "<p>A few minor corrections for your readme.txt file:</p>\r\n<ul>\r\n<li>&quot;Once you got those put in&quot; --&gt; &quot;Once you have your API keys&quot;</li>\r\n<li>&quot;know the vistual path&quot; --&gt; &quot;know the virtual path&quot;</li>\r\n<li>&quot;Intgrated Visual Studio Web Server&quot; --&gt; &quot;Integrated Visual Studio Web Server&quot;</li>\r\n</ul>\r\n<p>Looking forward to using your project! Thanks.</p>\r\n<p>Dave Mackey.</p>",
+    "PostedDate": "2009-09-10T18:18:18.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "233799",
+    "ThreadId": "68602",
+    "Html": "<p>Thank you @<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl00_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/davidshq\">davidshq</a> for the correction.</p>\r\n<p>I'll update the readme.txt to reflect that</p>",
+    "PostedDate": "2009-09-11T18:14:28.003-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "233954",
+    "ThreadId": "68602",
+    "Html": "<p>Glad I can be of assistance. Hopefully as time goes on I can be of more substantive assistance! :)</p>\r\n<p>Dave.</p>",
+    "PostedDate": "2009-09-12T16:22:01.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

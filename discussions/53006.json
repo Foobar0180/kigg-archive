@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "178246",
+    "ThreadId": "53006",
+    "Html": "I went through the set up process as per the README file, but ended up with the following error when I went to build in Visual Web Developer Express:<br>\r\n<br>\r\nCould not load type 'Kigg.Web.GlobalApplication'.<br>\r\n<br>\r\nAny insight into what I could have done wrong?<br>\r\n<br>\r\nThanks,<br>\r\n<br>\r\nJeremy<br>\r\n",
+    "PostedDate": "2009-04-11T14:37:49.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179585",
+    "ThreadId": "53006",
+    "Html": "Hi Jeremy, I did setup in VWD. but did not encounter this issue, I will check it and let you know.<br>\r\n",
+    "PostedDate": "2009-04-15T06:57:13.29-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "247679",
+    "ThreadId": "53006",
+    "Html": "<p>well?</p>",
+    "PostedDate": "2009-10-20T06:03:35.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

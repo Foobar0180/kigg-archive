@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "177861",
+    "ThreadId": "52871",
+    "Html": "Sometimes I'm getting an e-mail with this strange exception. I cannot figure out what is triggering this because I can't reproduce it. Any thoughts?<br>\r\n<br>\r\nType : System.Security.Cryptography.\r\n<div id=\":mg\"><wbr>CryptographicException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=<wbr>b77a5c561934e089<br>\r\nMessage : Bad Data.<br>\r\n<br>\r\nSource : mscorlib<br>\r\nHelp link :<br>\r\nData : System.Collections.<wbr>ListDictionaryInternal<br>\r\nTargetSite : Void ThrowCryptogaphicException(<wbr>Int32)<br>\r\nStack Trace : &nbsp; &nbsp;at System.Security.Cryptography.<wbr>CryptographicException.<wbr>ThrowCryptogaphicException(<wbr>Int32 hr)<br>\r\n&nbsp; at System.Security.Cryptography.<wbr>Utils._DecryptData(<wbr>SafeKeyHandle\r\nhKey, Byte[] data, Int32 ib, Int32 cb, Byte[]&amp; outputBuffer, Int32\r\noutputOffset, PaddingMode PaddingMode, Boolean fDone)<br>\r\n&nbsp; at System.Security.Cryptography.<wbr>CryptoAPITransform.<wbr>TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)<br>\r\n&nbsp; at System.Security.Cryptography.<wbr>CryptoStream.FlushFinalBlock()<br>\r\n&nbsp; at System.Web.Configuration.<wbr>MachineKeySection.<wbr>EncryptOrDecryptData(Boolean\r\nfEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length,\r\nIVType ivType, Boolean useValidationSymAlgo)<br>\r\n&nbsp; at System.Web.UI.Page.<wbr>DecryptStringWithIV(String s, IVType ivType)<br>\r\n&nbsp; at System.Web.Handlers.<wbr>AssemblyResourceLoader.System.<wbr>Web.IHttpHandler.<wbr>ProcessRequest(HttpContext context)<br>\r\n&nbsp; at System.Web.HttpApplication.<wbr>CallHandlerExecutionStep.<wbr>System.Web.HttpApplication.<wbr>IExecutionStep.Execute()<br>\r\n&nbsp; at System.Web.HttpApplication.<wbr>ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)<br>\r\n</div>\r\n<br>\r\n",
+    "PostedDate": "2009-04-09T23:07:26.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177892",
+    "ThreadId": "52871",
+    "Html": "Do you have any value in machineKey section of web.config?<br>\r\n",
+    "PostedDate": "2009-04-10T02:34:47.117-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177977",
+    "ThreadId": "52871",
+    "Html": "Hi Kazi,<br>\r\n<br>\r\nYes. I have both validationKey and decryptionKey set. But they are as they were in Kigg. Maybe I should changed them to something else?<br>\r\n<br>\r\nKind regards,<br>\r\nPawel Lukasik<br>\r\n",
+    "PostedDate": "2009-04-10T09:24:16.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179586",
+    "ThreadId": "52871",
+    "Html": "Maybe you can the remove the node completely and try again. <br>\r\n",
+    "PostedDate": "2009-04-15T06:58:36.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179660",
+    "ThreadId": "52871",
+    "Html": "I will give it a try. But what is it used for?<br>\r\n",
+    "PostedDate": "2009-04-15T08:44:30.637-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179856",
+    "ThreadId": "52871",
+    "Html": "Well that is a standard ASP.NET Practice if are planning to host it behind a load balancer though I am not sure the usage on ASP.NET MVC app, may be the AntiForgeryToken use it.<br>\r\n",
+    "PostedDate": "2009-04-15T15:49:47.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "180809",
+    "ThreadId": "52871",
+    "Html": "I commended this line out. Now the exception reads:<br>\r\n<br>\r\n<div>Timestamp: 2009-04-18 13:57:00<br>\r\n</div>\r\n&nbsp;Message: HandlingInstanceID: cc897535-da9b-45ac-b289-\r\n<div id=\":bc\"><wbr>63a98916f673<br>\r\nAn exception of type 'System.Security.Cryptography.<wbr>CryptographicException' occurred and was caught.<br>\r\n------------------------------<wbr>------------------------------<wbr>------------------------------<wbr>---------<br>\r\n04/18/2009 15:57:00<br>\r\nType : System.Security.Cryptography.<wbr>CryptographicException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=<wbr>b77a5c561934e089<br>\r\n<div>Message : Padding is invalid and cannot be removed.<br>\r\n</div>\r\nSource : mscorlib<br>\r\nHelp link :<br>\r\nData : System.Collections.<wbr>ListDictionaryInternal<br>\r\nTargetSite : Int32 DecryptData(Byte[], Int32, Int32, Byte[] ByRef, Int32, System.Security.Cryptography.<wbr>PaddingMode, Boolean)<br>\r\nStack Trace : &nbsp; &nbsp;at System.Security.Cryptography.<wbr>RijndaelManagedTransform.<wbr>DecryptData(Byte[]\r\ninputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]&amp;\r\noutputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean\r\nfLast)<br>\r\n&nbsp; at System.Security.Cryptography.<wbr>RijndaelManagedTransform.<wbr>TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)<br>\r\n&nbsp; at System.Security.Cryptography.<wbr>CryptoStream.FlushFinalBlock()<br>\r\n&nbsp; at System.Web.Configuration.<wbr>MachineKeySection.<wbr>EncryptOrDecryptData(Boolean\r\nfEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length,\r\nIVType ivType, Boolean useValidationSymAlgo)<br>\r\n&nbsp; at System.Web.UI.Page.<wbr>DecryptStringWithIV(String s, IVType ivType)<br>\r\n&nbsp; at System.Web.Handlers.<wbr>AssemblyResourceLoader.System.<wbr>Web.IHttpHandler.<wbr>ProcessRequest(HttpContext context)<br>\r\n&nbsp; at System.Web.HttpApplication.<wbr>CallHandlerExecutionStep.<wbr>System.Web.HttpApplication.<wbr>IExecutionStep.Execute()<br>\r\n&nbsp; at System.Web.HttpApplication.<wbr>ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</div>\r\n<br>\r\nStill no idea when this happens. Any ideas?<br>\r\n",
+    "PostedDate": "2009-04-18T07:03:27.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "182745",
+    "ThreadId": "52871",
+    "Html": "I uncommented the line agian. The 'Padding invalid' exception was occuring much more frequently. But stil I have no idea how to solve that. You don't see those exceptions in dotnetshoutout?\r\n",
+    "PostedDate": "2009-04-23T05:08:03.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

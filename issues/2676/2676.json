@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not applicable anymore.",
+    "ClosedDate": "2009-01-13T08:33:10.83-08:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Implementation of CompressFilter Attribute fails to take into account an Accept-Encoding header like \"gzip;q=0\" - gzip content would still be served.\n\nSee the following URL for full details:\nhttp://www.singular.co.nz/blog/archive/2008/07/06/finding-preferred-accept-encoding-header-in-csharp.aspx",
+    "LastUpdatedDate": "2009-01-13T08:33:10.83-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-07-06T17:29:33.98-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "CompressFilter Attribute incorrectly handles Accept Encodings for determining encoding",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2676
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

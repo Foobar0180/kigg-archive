@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "180744",
+    "ThreadId": "53685",
+    "Html": "Subscribe and unsubscribe to story comments require submitting a comment! Am I the only one who has this issue or it is missing implementation?<br>\r\nI faced that when I submitting a comment and wished to subscribe and then unsubscribe to a specific story. I noticed that subscribing or unsubscribing through checkbox is doing any action, the actually update and action is done when you hit submit.<br>\r\nI think there should be an action upon checking/unchecking the checkbox as I might need to subscribe or unsubscribe without posting a comment<br>\r\n",
+    "PostedDate": "2009-04-17T19:47:38.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "180769",
+    "ThreadId": "53685",
+    "Html": "I was thinking about that also, but for now nobody complained about that. Maybe it would be nice to have such ability. The best is to ask your users if they need something like that :).<br>\r\nThe only thing that I got complains about is that if you've already posted a comment and your are doing it again you will get an e-mail notification about your own comment. I changed that so the author of the comment is not getting a notification. You might consider doing that is one of the upcoming releases.<br>\r\n<br>\r\nKind regards,<br>\r\nPawel<br>\r\n",
+    "PostedDate": "2009-04-17T23:46:19.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "180808",
+    "ThreadId": "53685",
+    "Html": "You know, here in codeplex it also send you e-mail notification about your own replies to :o) . As you said this should be also an option for the user to recieve his own posted stuff or not<br>\r\n",
+    "PostedDate": "2009-04-18T06:58:02.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "180810",
+    "ThreadId": "53685",
+    "Html": "Yes I know. It's a bit annoying, isn't it. :) <br>\r\nI think it's a good idea to give the user flexibility to choose what they prefer.<br>\r\n",
+    "PostedDate": "2009-04-18T07:04:37.64-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

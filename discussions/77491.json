@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "264976",
+    "ThreadId": "77491",
+    "Html": "<p>The Kigg is pretty Cool, i realy like this project!</p>\r\n<p>Because Its support LINQ TO ENTITY, so i want to base on Access.</p>\r\n<p>I have modify ConnectionStrings section in web.config</p>\r\n<p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">add</span> <span style=\"color:Red\">name</span><span style=\"color:Blue\">=</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">KiGGSqlServer</span><span style=\"color:Black\">&quot;</span> <span style=\"color:Red\">connectionString</span><span style=\"color:Blue\">=</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\\Labs\\KiGG\\Web\\Kigg.mdb;</span><span style=\"color:Black\">&quot;</span> <span style=\"color:Red\">providerName</span><span style=\"color:Blue\">=</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">System.Data.OleDb</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">/&gt;</span>\r\n</pre>\r\n</div>\r\nbut don't work. Who Can tell me how to configruation?</p>",
+    "PostedDate": "2009-12-08T08:25:49.237-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

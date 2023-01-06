@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I noticed that when publishing new stories, the \"Published Dates\" of the already published resources get reset as well.\nOnce published, the published date should not be recalculated.",
+    "LastUpdatedDate": "2011-09-18T16:11:18.747-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-01-30T19:31:22.697-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Published Dates Recalculate on ALL Entries, instead of just NEW entries.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 3731
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi Guys, \r\n\r\nI think I need to clarify a bit. Think of it as Billboard Top 20 kind of style where a story can have multiple rank at different time and as long as it is popular it will stay in the chart.",
+      "PostedDate": "2009-02-03T19:05:09.91-08:00",
+      "Id": 15890
+    },
+    {
+      "Message": "Does that mean it is not an issue Rashid and it is as designed?\r\nIf it is by design I guess a developer can build another class where he/she can provide another implementation of this and configure to use his/her own implementation. Correct me if I am wrong",
+      "PostedDate": "2009-07-27T05:11:52.25-07:00",
+      "Id": 15891
+    }
+  ]
+}

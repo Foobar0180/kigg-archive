@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "508643",
+    "ThreadId": "231274",
+    "Html": "<p><span>\r\n<h1>Server Error in '/' Application. \r\n<hr size=1>\r\n</h1>\r\n<h2><em>Unable to load the specified metadata resource.</em></h2>\r\n</span> <span> <strong> Description: </strong>An unhandled exception occurred during  the execution of the current web request. Please review the stack trace  for more information about the error and where it originated in the  code.              <br><br> <strong> Exception Details: </strong>System.Data.MetadataException: Unable to load the specified metadata resource.</span></p>",
+    "PostedDate": "2010-10-17T23:56:30.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "508719",
+    "ThreadId": "231274",
+    "Html": "<p>Is there a stack trace as&nbsp;stated in the description? Which version of KiGG are you running. This exception indicates that there might be something wrong with the EntityFramework model. Are you using it?</p>\r\n<p>Regards,<br>Paweł</p>",
+    "PostedDate": "2010-10-18T03:15:44.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "509098",
+    "ThreadId": "231274",
+    "Html": "<p>It's OK now.Because I delete the EDM file at the folder <em>App_Data,</em>and I <span id=\"result_box\" lang=en><span style=\"color:#000000\">Copy the file back into this Folder.But I still have a question,how these EDM files generate?The KIGG version is 3.0.</span></span></p>",
+    "PostedDate": "2010-10-18T18:51:58.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Try to create a new story which refers to a page with charset windows-1251\nand then retrieve content.\nYou can see that title and description keep unknown symbols.",
+    "LastUpdatedDate": "2010-12-13T05:51:34.457-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-11-16T07:55:46.967-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "charset windows-1251",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 5472
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I've faced the same issue last weeked.\nI chaged the ReadResponse function in Source\\Core\\Infrastructure\\Http\\HttpForm.cs which is resposible for retrieving content to detect characters set in the HTTP header and read the body using right code page.\n\nHere's my code:\ninternal static HttpFormResponse ReadResponse(WebRequest request)\n        {\n            const int maxTry = 3;\n\n            int tryCount = 0;\n            var httpFormResponse = new HttpFormResponse();\n\n            // Sometimes the external site can throw exception so we might\n            // have to retry few more times\n            while (string.IsNullOrEmpty(httpFormResponse.Response) && (tryCount < maxTry))\n            {\n                try\n                {\n                    using (WebResponse response = request.GetResponse())\n                    {\n                        PopulateHeadersAndCookies(response, httpFormResponse);\n\n                        Encoding original = Encoding.UTF8;\n                        string codePage = ((HttpWebResponse)response).CharacterSet;\n                        if (!string.IsNullOrEmpty(codePage))\n                        {\n                            original = Encoding.GetEncoding(codePage);\n                        }\n\n                        using (var sr = new StreamReader(response.GetResponseStream(), original))\n                        {\n                            string responseBody = sr.ReadToEnd();\n\n                            if (!string.IsNullOrEmpty(codePage) && (original != Encoding.UTF8))\n                            {\n                                httpFormResponse.Response = \n                                    Encoding.UTF8.GetString(\n                                        Encoding.Convert(original, Encoding.UTF8, original.GetBytes(responseBody)));\n                            }\n                            else\n                            {\n                                httpFormResponse.Response = responseBody;\n                            }\n                        }\n                    }\n                }\n                catch (WebException)\n                {\n                    tryCount += 1;\n                    Thread.Sleep(200);\n                }\n            }\n\n            return httpFormResponse;\n        }\n\nI guess that the function ResponseCallback should be chnaged the same way, but I'm not  sure when it's used and how to verify it.",
+      "PostedDate": "2010-12-13T05:51:34.457-08:00",
+      "Id": 19961
+    }
+  ]
+}

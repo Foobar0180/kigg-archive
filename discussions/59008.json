@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "199785",
+    "ThreadId": "59008",
+    "Html": "<p>Hi Guys,</p>\r\n<p>Do you plan on releasing an update in the near future?</p>\r\n<p>Thanks for the update.</p>\r\n<p>Cheers!</p>",
+    "PostedDate": "2009-06-09T19:31:20.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199873",
+    "ThreadId": "59008",
+    "Html": "<p>I'll leave this to Kazi. However an update to Source Control is frequently. I recenlty I submitted a major <a href=\"http://kigg.codeplex.com/SourceControl/changeset/view/19862\">changeset</a> that is preview of KiGG - 2.5. <a href=\"http://kigg.codeplex.com/SourceControl/changeset/view/19862\">Check it out</a>.</p>",
+    "PostedDate": "2009-06-10T01:39:11.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "200419",
+    "ThreadId": "59008",
+    "Html": "<p>I am waiting for the localization phase that Kazi promised for V3<br>Can we have an idea when this planned for?</p>\r\n<p>By the way, congratulations for your efforts.<br>You've done a really great job.</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-06-11T07:24:53.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

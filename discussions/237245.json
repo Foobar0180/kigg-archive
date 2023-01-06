@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "531572",
+    "ThreadId": "237245",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>I've tried to run the dbc30357a189 change set of KiGG. on .net 4.0.</p>\r\n<p>I compiled it in VS2010 and it works when I run it here. However, if I publish on a normal web server (Windows 2008 / IIS 7, .NET 4.0) it displays the error message: &quot;500 - Internal server error.&quot;</p>\r\n<p>Is there a way get it worked on .NET 4?</p>\r\n<p>&nbsp;</p>\r\n<p>thanks</p>\r\n<p>&nbsp;</p>\r\n<div id=\"x__mcePaste\" style=\"left:-10000px; top:0px; width:1px; height:1px; overflow-x:hidden; overflow-y:hidden\">\r\n&#65279;</div>\r\n",
+    "PostedDate": "2010-12-05T23:27:38.8-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

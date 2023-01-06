@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "431198",
+    "ThreadId": "209386",
+    "Html": "<p>I tried to create a second MasterPage for signup where there is no sidebar or what nut, but it kept giving an error. Anybody has done something like this before?</p>\r\n<p>Any help would be great.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks in advance!</p>",
+    "PostedDate": "2010-04-14T16:59:16.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "465942",
+    "ThreadId": "209386",
+    "Html": "<p>While creating master page, do not create with codebehind page (i.e yourmasterpage.cs shouldn't be there)</p>\r\n<p>Hope this helps.</p>",
+    "PostedDate": "2010-07-11T02:56:26.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "466173",
+    "ThreadId": "209386",
+    "Html": "I am already not doing that. So...",
+    "PostedDate": "2010-07-12T01:31:53.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "466563",
+    "ThreadId": "209386",
+    "Html": "<p>Hi zeroinfinity,</p>\r\n<p>What is the error you are getting? Post it here.</p>\r\n<p>Cheers</p>",
+    "PostedDate": "2010-07-12T16:52:50.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "506391",
+    "ThreadId": "209386",
+    "Html": "<p>&lt;!--[if gte mso 9]&gt;&lt;xml&gt; &lt;w:WordDocument&gt; &lt;w:View&gt;Normal&lt;/w:View&gt; &lt;w:Zoom&gt;0&lt;/w:Zoom&gt; &lt;w:PunctuationKerning /&gt; &lt;w:DrawingGridVerticalSpacing&gt;7.8 磅&lt;/w:DrawingGridVerticalSpacing&gt; &lt;w:DisplayHorizontalDrawingGridEvery&gt;0&lt;/w:DisplayHorizontalDrawingGridEvery&gt; &lt;w:DisplayVerticalDrawingGridEvery&gt;2&lt;/w:DisplayVerticalDrawingGridEvery&gt; &lt;w:ValidateAgainstSchemas /&gt; &lt;w:SaveIfXMLInvalid&gt;false&lt;/w:SaveIfXMLInvalid&gt; &lt;w:IgnoreMixedContent&gt;false&lt;/w:IgnoreMixedContent&gt; &lt;w:AlwaysShowPlaceholderText&gt;false&lt;/w:AlwaysShowPlaceholderText&gt; &lt;w:Compatibility&gt; &lt;w:SpaceForUL /&gt; &lt;w:BalanceSingleByteDoubleByteWidth /&gt; &lt;w:DoNotLeaveBackslashAlone /&gt; &lt;w:ULTrailSpace /&gt; &lt;w:DoNotExpandShiftReturn /&gt; &lt;w:AdjustLineHeightInTable /&gt; &lt;w:BreakWrappedTables /&gt; &lt;w:SnapToGridInCell /&gt; &lt;w:WrapTextWithPunct /&gt; &lt;w:UseAsianBreakRules /&gt; &lt;w:DontGrowAutofit /&gt; &lt;w:UseFELayout /&gt; &lt;/w:Compatibility&gt; &lt;w:BrowserLevel&gt;MicrosoftInternetExplorer4&lt;/w:BrowserLevel&gt; &lt;/w:WordDocument&gt; &lt;/xml&gt;&lt;![endif]--&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt; &lt;w:LatentStyles DefLockedState=&quot;false&quot; LatentStyleCount=&quot;156&quot;&gt; &lt;/w:LatentStyles&gt; &lt;/xml&gt;&lt;![endif]--&gt;&lt;!--[if gte mso 10]&gt;\r\n\r\n&lt;![endif]--&gt;</p>\r\n<p><span style=\"font-family:宋体\"> </span><span lang=EN-US>Le courant serpente entre les prairies parfum</span><span style=\"font-family:宋体\">&eacute;</span><span lang=EN-US>es, Les arbres fleuris deviennent </span><strong><a href=\"http://www.uggbootsale-uk.org/ugg-classic-short-boots.html\">ugg boots</a></strong><span lang=EN-US>neigeux sous les rayons argent</span><span style=\"font-family:宋体\">&eacute;</span><span lang=EN-US>s; Dans l'air qui semble condens</span><span style=\"font-family:宋体\">&eacute;</span><span lang=EN-US>, se meut le givre Qui voile les rives sablonneuses, </span><span style=\"font-family:宋体\">&agrave;</span><span lang=EN-US> peine distinctes.</span></p>",
+    "PostedDate": "2010-10-12T21:05:31.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

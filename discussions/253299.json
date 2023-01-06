@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "594907",
+    "ThreadId": "253299",
+    "Html": "\r\n<p>Is there any plan to upgrade the Kigg data access layer (DAL)?&nbsp; If not, I would appreciate at least some guidance on how to migrate the cuurent DAL to the EF 4.1.&nbsp; Thanks.</p>\r\n",
+    "PostedDate": "2011-04-10T09:22:11.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669794",
+    "ThreadId": "253299",
+    "Html": "<p>Since nobidy responed, here is my contribution for people who want to upgrade the Kigg data layer to the latest EF 4.1.</p>\r\n<p>Simplest approach&nbsp;will be&nbsp;to get the ObjectContect from the EF 4,1 Code First DbContext.&nbsp; Here is How:</p>\r\n<p>public class MyDataContext: DbContext<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public DbSet&lt;Product&gt; Products { get; set; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //other dbsets, ctor etc.</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public ObjectContext ObjectContext()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (this as IObjectContextAdapter).ObjectContext;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</p>\r\n<p>// You can use the follwing in the Database class</p>\r\n<p>MyDataContext dc = new MyDataContext();</p>\r\n<p>public IQueryable&lt;Product&gt; ProductDataSource<br />{ <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var context = dc.ObjectContext();</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return context.CreateObjectSet&lt;Product&gt;().Where(p=&gt;p.Discontinued == false).AsQueryable&lt;Product&gt;(); <br />}</p>\r\n<p>(For more generic query, you can use DbContext.Database.SqlQuery</p>\r\n<p>and DbContext.Database.ExecuteSqlCommand.)</p>\r\n<p>Once you have the ObjectContect, you may also create a generic entity query:</p>\r\n<p>ObjectQuery&lt;TEntity&gt; ObjectContext.CreateQuery&lt;TEntity&gt;(string entitySet);</p>\r\n<p>if we had EDM, a typed context would be generated and have property getters of the form:</p>\r\n<p>ObjectQuery&lt;TEntity&gt; MyEntity which query the default entity set for the entity.</p>\r\n<p>You can then apply LinqToEntities operators to the returned ObjectQuery.</p>\r\n<p>&nbsp;</p>\r\n<p>I hope that this is helpful for someone.</p>",
+    "PostedDate": "2011-09-09T10:37:17.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669838",
+    "ThreadId": "253299",
+    "Html": "<p>Here is another suggestion on simplifying the kigg data layer using the EF 4.1 Code First.</p>\r\n<p>The EF 4.1 Code First provides three APIs that allow ad hoc sql queries: They are:</p>\r\n<p>1. public int ExecuteSqlCommand(string sql, params object[] parameters); We can use this method to send SQL command (either a stored procedure call or ad-hoc SQL) directly to the database. It delivers a little more than ADO.NET in that it&rsquo;s able to convert the data-readers directly in entities.</p>\r\n<p>2. public IEnumerable&lt;TElement&gt; SqlQuery&lt;TElement&gt;(string sql, params object[] parameters); <em>TElement</em> could be any class. An important characteristic is that EF doesn&rsquo;t track returned object, <strong>even if they are entity types</strong>. This contrasts with the third API, part of <em>DbSet</em>, which tracks returned objects.</p>\r\n<p>3. DbSet.SqlQuery</p>\r\n<p><span lang=\"EN\">\r\n<p>However, they miss a lot of benefits of using EF and restrictive. (e.g., you still cannot override the column mapping).</p>\r\n<p>Instead of direct SQL queries, I recommend using a more efficient query to clean up the Kigg Data layer:</p>\r\n<p>First, you could create an entity set without exposing it:</p>\r\n<p>protected override void OnModelCreating(DbModelBuilder modelBuilder) <br />{ <br />base.OnModelCreating(modelBuilder);</p>\r\n</span></p>\r\n<p>modelBuilder.Entity&lt;SimplifiedEntry&gt;().<strong><span style=\"color: #ff0000;\">HasEntitySetName</span></strong>(\"SomeEntry\"); <br />modelBuilder.Entity&lt;SimplifiedEntry&gt;().ToTable(\"SomeEntry\", \"man\"); <br />modelBuilder.Entity&lt;SimplifiedEntry&gt;() <br />.Property(s =&gt; s.ID) <br />.HasColumnName(\"SimplifiedEntryID\"); <br />modelBuilder.Entity&lt;SimplifiedEntry&gt;() <br />.Property(s =&gt; s.Name) <br />.HasColumnName(\"SimplifiedEntryName\");</p>\r\n<p>\r\n<p>}</p>\r\n<p>Then you expose a query:</p>\r\n</p>\r\n<p>public IEnumerable&lt;SimplifiedEntry&gt; GetSimpleEntries() <br />{ <br />IObjectContextAdapter adapter = this; <br />var entries = adapter.<strong><span style=\"color: #ff0000;\">ObjectContext</span></strong>.CreateQuery&lt;SimplifiedEntry&gt;(\"SELECT VALUE SomeEntry FROM SomeEntry\");</p>\r\n<p>\r\n<p>return entries; <br />}</p>\r\n<p>In this apprach, you can query the resulting query further and the query will be combined before being sent to SQL . Therefore you have a query returning <em>everything (all features of ObjectContext)</em> and you can further refine the query with LINQ afterwards without materializing the entire table on the client side.</p>\r\n<p>I hope it is useful for someone.</p>\r\n</p>",
+    "PostedDate": "2011-09-09T12:14:26.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "670925",
+    "ThreadId": "253299",
+    "Html": "<p>Yes Currently we are working on revamping the whole data access and domain model architecture.</p>\r\n<p>EF4.1 Code First is currently being the core data access for Entity Framework. Later will add NH3.</p>\r\n<p>Currently using recent CTP to gain be able to have LINQ queries auto-compiled.</p>",
+    "PostedDate": "2011-09-12T21:15:54.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "671438",
+    "ThreadId": "253299",
+    "Html": "<p>Great.&nbsp; My only reservation is the CPT.&nbsp; The current CPT seems to have some unresolved issues with VS2010.&nbsp;</p>\r\n<p>I may want to wait the next release before I can try the CPT.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-09-13T17:25:15.74-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "671771",
+    "ThreadId": "253299",
+    "Html": "<blockquote style=\"padding-bottom: 0px; font-style: italic; margin: 0.25em 1em 0px; padding-left: 0.25em; padding-right: 0.25em; padding-top: 0px; border: #ccc 0.1em solid;\"><strong>JayKnowsit wrote:</strong><br />\r\n<p>Great.&nbsp; My only reservation is the CPT.&nbsp; The current CPT seems to have some unresolved issues with VS2010.&nbsp;</p>\r\n<p>I may want to wait the next release before I can try the CPT.</p>\r\n<p>&nbsp;</p>\r\n</blockquote>\r\n<p><br />Well I'm doing some integration tests as I go. So far no issues. You can download the source code. Setup a database, change app.config of the integration test and check it out. Didn't dig too deep though.</p>",
+    "PostedDate": "2011-09-14T08:34:59.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

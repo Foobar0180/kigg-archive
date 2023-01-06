@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "It would be great to provide end users with a way to filter stories, by date, AND popularity. I think digg has it right by allowing users to filter each top level category by time (last 24 hours, 7days, 30 days, 365 days)... and by popularity (sort by highest number of \"kicks\").",
+    "LastUpdatedDate": "2011-08-12T10:33:32.79-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-10-12T11:39:44.883-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add Additional Filtering/Sorting Capabilities",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 5207
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "When you search by keyword , it should be indexed for later use and the searchbox should show autocomplete list for similar searched keywords (which is indexed or searched previously). There is  a cool tool for seach and indexing dont know if it is impleted or not (http://incubator.apache.org/lucene.net/) , please feel free to close this if already implemented !",
+    "LastUpdatedDate": "2009-07-27T05:23:26.047-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-01-25T22:54:09.02-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Search items should be indexed.",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 3674
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

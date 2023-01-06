@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "232337",
+    "ThreadId": "68310",
+    "Html": "<p>Hello</p>\r\n<p>I've install KiGG. It's cool :)</p>\r\n<p>I've several question:</p>\r\n<p>1) Is it possible to post images to story?</p>\r\n<p>2) How users can add its own articles? Not links to other sites?</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-08T11:46:48.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "232830",
+    "ThreadId": "68310",
+    "Html": "<p>Hi,</p>\r\n<p>Regarding your first question, KiGG doesn't support to post images (upload) to stories.</p>\r\n<p>Regarding your 2nd one, KiGG is digg,dotnetkick,dzone like bookmark site. You just post link to posts/stories on other sites. So it is all about link back to real posts with just brief about them.</p>",
+    "PostedDate": "2009-09-09T13:48:22.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

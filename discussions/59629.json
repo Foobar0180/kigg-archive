@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "201890",
+    "ThreadId": "59629",
+    "Html": "<p>Hello,</p>\r\n<p>&nbsp;Great job with ASP.Net MVC....</p>\r\n<p>Using the demonstrated repository pattern how can we handle transactions ( with out using TransactionScope) if a business action needs updates to be done using 2 different repositories?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-06-15T23:34:59.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

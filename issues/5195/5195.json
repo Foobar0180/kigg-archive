@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "EF Repository",
+      "DisplayName": "EF Repository"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "When trying to delete a story just published, iget the above and story is not deleted?\n\nMarco",
+    "LastUpdatedDate": "2009-10-17T21:56:03.807-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-10-11T14:46:22.253-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "An unexpected error has occurred while deleting story.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 5195
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Could you please identify if you are using Entity Framework or LINQ to SQL?",
+      "PostedDate": "2009-10-17T18:40:03.887-07:00",
+      "Id": 15938
+    },
+    {
+      "Message": "I guess it is a bug in Entity Framework repositories. You can switch to LINQ to SQL till the bug is fixed in EF implementation. I tested it on EF and I was able to get the error.\r\nIn LINQ to SQL it is working fine.",
+      "PostedDate": "2009-10-17T18:57:54.7-07:00",
+      "Id": 15939
+    },
+    {
+      "Message": "Fixed in changeset 29462 but release isn't updated yet",
+      "PostedDate": "2009-10-17T21:55:36.983-07:00",
+      "Id": 15940
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "249397",
+    "ThreadId": "73000",
+    "Html": "<p>I met a weried issue in dev environment.</p>\r\n<p>When I run kigg 2.5 through visual studio web server, I always got HTTP 500 error.</p>\r\n<p>But I can run previous version of kigg through visual studio web server without any problem.</p>\r\n<p>My machine is XP.</p>\r\n<p>Any one can help? Thanks.</p>",
+    "PostedDate": "2009-10-24T20:07:04.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "280559",
+    "ThreadId": "73000",
+    "Html": "<p>I am too facing the same issue... http://localhost/kigg is giving HTTP 403 error. mine is also windows xp.</p>\r\n<p>Running on VS 2008, have installed VS 2010 Beta also. Please anybody suggest what we need to do to fix this issue.<span style=\"white-space:pre\"> </span></p>\r\n<p><span style=\"white-space:pre\">It is asking : </span></p>\r\n<p><span style=\"white-space:pre\"><strong>Most likely causes:</strong></span></p>\r\n<ul>\r\n<li id=causeNeedAuth>This website requires you to log in.</li>\r\n</ul>",
+    "PostedDate": "2010-01-22T06:04:32.153-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

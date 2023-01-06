@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "290702",
+    "ThreadId": "85345",
+    "Html": "<p>Hello everyone.</p>\r\n<p>I'm very new for ASP.NET MVC. I found that this is very cool thing and KIGG is good to start creating real MVC web application.</p>\r\n<p>I've followed <a href=\"http://kigg.codeplex.com/wikipage?title=Deployment Guide Part 1&referringTitle=Home\">KIGG development guide part 1</a> and run application.</p>\r\n<p>However, only listing directory shows on web browser as below</p>\r\n<p>&nbsp;</p>\r\n<h2><em>Directory Listing -- /</em></h2>\r\n<hr size=1>\r\n<pre>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/ActionResult/\">ActionResult</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/App_Data/\">App_Data</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Assets/\">Assets</a><br>    Friday, February 05, 2010 01:08 PM        &lt;dir&gt; <a href=\"http://localhost:1041/bin/\">bin</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/BootstrapperTasks/\">BootstrapperTasks</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Controllers/\">Controllers</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Controls/\">Controls</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/DataServices/\">DataServices</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/ErrorPages/\">ErrorPages</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Extension/\">Extension</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Filters/\">Filters</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Handlers/\">Handlers</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Helpers/\">Helpers</a><br>    Monday, February 15, 2010 08:33 AM        &lt;dir&gt; <a href=\"http://localhost:1041/Logs/\">Logs</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/MailTemplates/\">MailTemplates</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Modules/\">Modules</a><br>    Friday, February 05, 2010 12:45 PM        &lt;dir&gt; <a href=\"http://localhost:1041/obj/\">obj</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Properties/\">Properties</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/ViewData/\">ViewData</a><br>    Friday, February 05, 2010 12:44 PM        &lt;dir&gt; <a href=\"http://localhost:1041/Views/\">Views</a><br>      Sunday, August 16, 2009 12:53 PM          103 <a href=\"http://localhost:1041/Global.asax\">Global.asax</a><br>      Sunday, August 16, 2009 12:53 PM          601 <a href=\"http://localhost:1041/Global.asax.cs\">Global.asax.cs</a><br>      Sunday, August 16, 2009 12:53 PM       27,779 <a href=\"http://localhost:1041/Kigg.Web.csproj\">Kigg.Web.csproj</a><br>    Friday, February 05, 2010 01:35 PM        1,532 <a href=\"http://localhost:1041/Kigg.Web.csproj.user\">Kigg.Web.csproj.user</a><br>      Sunday, August 16, 2009 12:53 PM          170 <a href=\"http://localhost:1041/robots.txt\">robots.txt</a><br>    Monday, February 15, 2010 08:54 AM      100,524 <a href=\"http://localhost:1041/Web.config\">Web.config</a><br></pre>\r\n<hr size=1>\r\n<p><strong>Version Information:</strong>&nbsp;ASP.NET Development Server 9.0.0.0</p>\r\n<p>Please could you help me to solver my problem.</p>\r\n<p>Thanks,</p>",
+    "PostedDate": "2010-02-14T18:40:06.413-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "424305",
+    "ThreadId": "85345",
+    "Html": "<p>Sorry for the very late response.</p>\r\n<p>I noticed something here, &quot;<strong>Version Information:</strong>&nbsp;ASP.NET Development Server 9.0.0.0&quot;</p>\r\n<p>It seems like you are trying to use VS.Net 2008 local development server for ASP.Net!!</p>\r\n<p>Well actually our deployment documentation focuses on IIS 7.0 or higher!</p>\r\n<p>Try to follow same steps on IIS</p>",
+    "PostedDate": "2010-03-26T17:24:52.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "429360",
+    "ThreadId": "85345",
+    "Html": "<p>I am having the same problem too.. I am using this as an academic project. So I am using VS2008 as IDE... Is there any possible way of running it on VS development server rather than using IIS method?</p>",
+    "PostedDate": "2010-04-09T11:28:17.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

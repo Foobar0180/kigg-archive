@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "223066",
+    "ThreadId": "65499",
+    "Html": "<p>I am a newbie in Asp.Net MVC and was trying to study your code.. it seems perfectly structured and well written but I could not understand how its working... I was looking for route rules in the Global.asax and saw its calling some other classes and interfaces in other project,.. I checked ther and still couldn't understand anything...</p>\r\n<p>Are you keeping any blogs explaing the source code or is ther any documentatioon available.. I like your project very myuch and I am relly hoping to study how it works..</p>\r\n<p>Thanks and Best Regards</p>\r\n<p>Anz</p>",
+    "PostedDate": "2009-08-13T11:50:53.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "224173",
+    "ThreadId": "65499",
+    "Html": "<p>Checkout Rahid's posts about dotnetshoutout</p>\r\n<p>http://weblogs.asp.net/rashid/rss.aspx?Tags=DotNetShoutout&amp;AndTags=1</p>",
+    "PostedDate": "2009-08-17T01:10:13.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

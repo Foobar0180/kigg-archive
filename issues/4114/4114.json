@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "EF Repository",
+      "DisplayName": "EF Repository"
+    },
+    "ClosedComment": "Changeset 19862",
+    "ClosedDate": "2009-06-08T16:59:45.82-07:00",
+    "CommentCount": 0,
+    "Custom": "MySQL",
+    "Description": "Recommended to use MySQL Connector/net provider for .Net\nDevart provide another advance provider dotConnect for MySQL. Should be also supported. It is commercial though",
+    "LastUpdatedDate": "2009-06-08T16:59:45.82-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-06-02T16:52:52.527-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Support MySQL database through Entity Framework",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 4114
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

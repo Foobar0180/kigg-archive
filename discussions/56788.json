@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "191932",
+    "ThreadId": "56788",
+    "Html": "<p>Anyone else have a problem trying to publish KiGG in VS2008? I keep getting &quot;Publish failed&quot; with no other errors.</p>\r\n<p>Thanks.</p>",
+    "PostedDate": "2009-05-19T08:06:00.277-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "191950",
+    "ThreadId": "56788",
+    "Html": "<p>Nevermind... I found this <a href=\"http://stackoverflow.com/questions/442374/publish-failed-in-web-application-project-mvc\">http://stackoverflow.com/questions/442374/publish-failed-in-web-application-project-mvc</a>&nbsp;and was able to publish successfully by just toggling &quot;between the &quot;Replace matching files with local copies&quot; and &quot;Delete all existing files prior to publish&quot; options.&quot;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-05-19T08:33:06.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

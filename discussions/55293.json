@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "186710",
+    "ThreadId": "55293",
+    "Html": "where do i change the connection string ? in web.config file?? since it is read only file how can i do that??<br>\r\n<br>\r\nSurend &lt;input type=&quot;hidden&quot; id=&quot;gwProxy&quot;&gt;&lt;!--Session data--&gt;&lt;/input&gt;&lt;input type=&quot;hidden&quot; id=&quot;jsProxy&quot; onclick=&quot;jsCall();&quot; /&gt;\r\n<div id=refHTML></div>\r\n",
+    "PostedDate": "2009-05-04T15:16:52.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "186720",
+    "ThreadId": "55293",
+    "Html": "Remove the write protection (read only attribute) and update the file.<br>\r\nYou'll find connectionStrings element where you can add your connection:<br>\r\n<strong>&lt;connectionStrings&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;clear/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;add<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name=&quot;<em>KiGGDatabase</em>&quot;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connectionString=&quot;<em>Data Source=.\\SQLEXPRESS;Database=kigg;Integrated Security=True;MultipleActiveResultSets=true</em>&quot;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; providerName=&quot;System.Data.SqlClient&quot;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /&gt;<br>\r\n&lt;/connectionStrings&gt;</strong><br>\r\n",
+    "PostedDate": "2009-05-04T15:43:21.397-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "187041",
+    "ThreadId": "55293",
+    "Html": "I am trying to signup on Recaptcha.net and get API keys to run on my local host of my computer. But, Recaptha.net asks for the domain name to register. Any clue please?<br>\r\n<br>\r\nBob<br>\r\n<div id=refHTML></div>\r\n&lt;input type=&quot;hidden&quot; id=&quot;gwProxy&quot; /&gt;&lt;radeditorformatted_1&gt;&lt;input type=&quot;hidden&quot; id=&quot;jsProxy&quot; onclick=&quot;jsCall();&quot; /&gt;\r\n<div id=refHTML></div>\r\n&lt;/radeditorformatted_1&gt;\r\n&lt;input type=&quot;hidden&quot; id=&quot;gwProxy&quot;&gt;&lt;!--Session data--&gt;&lt;/input&gt;&lt;input type=&quot;hidden&quot; id=&quot;jsProxy&quot; onclick=&quot;jsCall();&quot; /&gt;\r\n<div id=refHTML></div>\r\n",
+    "PostedDate": "2009-05-05T11:43:36.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

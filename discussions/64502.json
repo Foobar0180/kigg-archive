@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "219566",
+    "ThreadId": "64502",
+    "Html": "<p>Has anybody been successful running Kigg on GoDaddy? If not what would be a good hosting service?</p>",
+    "PostedDate": "2009-08-04T23:35:50.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "219739",
+    "ThreadId": "64502",
+    "Html": "<p>GoDaddy require partial trust support because their hosting is configured to use medium trust.</p>\r\n<p>Refer to this discussion: http://kigg.codeplex.com/Thread/View.aspx?ThreadId=53367</p>\r\n<p>KiGG v2.5 will support partial trust environment with OpenID support.</p>\r\n<p>You can download this changeset <a href=\"http://kigg.codeplex.com/SourceControl/changeset/view/25406 \">25406</a></p>\r\n<p>This changeset support partial trust that is supposed to work with shared hosting such as GoDaddy.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-08-05T06:48:13.543-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "219792",
+    "ThreadId": "64502",
+    "Html": "<p>I wasnt able to get that far.&nbsp; When setting up the database, I was unable to enable full text as godaddy doesnt allow that.&nbsp; I also tried on MySQL and couldnt get anything to run.&nbsp; Any help there?</p>",
+    "PostedDate": "2009-08-05T08:40:01.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "220381",
+    "ThreadId": "64502",
+    "Html": "<p>I don't understand, all you need is to work with SQL Server. And remove assemblies of MySQL.Data.</p>\r\n<p>Just recompile the changeset and replace the dlls and update your configuration base on those provided in the changeset.</p>\r\n<p>I tested it under medium trust on my local machine -after enabling the http outbound permission- and it was working fine!</p>\r\n<p>So what is your problem now exactly?</p>",
+    "PostedDate": "2009-08-06T07:59:24.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "220411",
+    "ThreadId": "64502",
+    "Html": "<p>I take it that GoDaddy doesn't allow fulltext indexes, which KiGG requires for searching. I suppose you should remove the full text indexes from the create script, but you will also need to remove the search box from the UI.</p>",
+    "PostedDate": "2009-08-06T08:42:50.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "221065",
+    "ThreadId": "64502",
+    "Html": "<p>I don't know much about GoDaddy actually. Any way, in addition to kodefu I would recommend that you update the 2 SQL function that do the search and just make them return 0</p>\r\n<p>Search box also perform search on tags and categories. You can modify the codebase locally or implement the IStoryRepository to provide your own search mechanism. But you'll have to map to your StoryRepository Implementation in unity configuration.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-08-08T04:26:55.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

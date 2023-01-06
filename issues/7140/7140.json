@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello,\r\n\r\nwhen i use the standard login (option 2) and i check the 'remember me' box. it does not remember me. I never logout, but have to login every visit.\r\n\r\nbest regards,\r\nJP Hellemons",
+    "LastUpdatedDate": "2011-09-01T08:13:08.65-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2011-03-14T01:11:26.4-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Login does not remember me",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 7140
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

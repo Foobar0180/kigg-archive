@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "227027",
+    "ThreadId": "66793",
+    "Html": "<p>I am back from summer holliday and obviously many were working here...<br>I am wondering how to find the difference, in the code, between two changesets<br>I have somehow customized my own version and I do not want to start from scratch</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-08-24T06:06:42.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227244",
+    "ThreadId": "66793",
+    "Html": "<p>From team explorer if you are using it, you can view history of certain file and compare between changeset. I don't remember the steps but it starts with view history of file.</p>\r\n<p>I guess same thing with SVN and visual SVN.</p>\r\n<p>Tell me where is your changes resides exactly and I might be able to tell if these files we touched or not.</p>\r\n<p>Generally none of ASP.NET MVC view and controller are touched. Just style sheet to fix an inssue with rich editor with Chrome and Safari.</p>\r\n<p>Most changes where made into EF and LinqToSQL (namespace changes were made but that was in very earlier stages back at the end of April).</p>\r\n<p>We also upgraded to Moq 3.x which means all tests where updated also this is back to April.</p>\r\n<p>So let me know where are your changes resides and let me see if I can help</p>\r\n<p>Cheers</p>",
+    "PostedDate": "2009-08-24T15:34:23.107-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227358",
+    "ThreadId": "66793",
+    "Html": "<p>Thanks Moses<br>When I went on holiday, I was at this changeset : 19862&nbsp; Jun 9<br>So I wanted to update all changes made since then</p>\r\n<p>Tkanks again</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-08-25T00:50:32.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227377",
+    "ThreadId": "66793",
+    "Html": "<p>OMG :o) Jun 9!</p>\r\n<p>Well, It might take sometime to figure out changes. Have you tried the way I mentioned above?</p>\r\n<p>Also can you specify where are your changes might resides, at least let me know the assemblies, and better classes. But Assemblies will be good too.</p>",
+    "PostedDate": "2009-08-25T02:05:55.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "229305",
+    "ThreadId": "66793",
+    "Html": "<p>Hi Moses<br>Thank you for your help<br>I will try to update my code project by project</p>\r\n<p>The main changes are in the core project</p>\r\n<p>Did you touch something in the core project?</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-08-31T05:45:25.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "229497",
+    "ThreadId": "66793",
+    "Html": "<p>No you are on save side, Changeset 19862 is KiGG - 2.5 Preview. Have a look at the comment of subsequent changesets after that date.</p>\r\n<p>After this changeset most changes was made for bug fixing and migration to DotNetOpenAuth.</p>\r\n<p>I guess you are totally in safe side, if you just used your core.</p>",
+    "PostedDate": "2009-08-31T15:40:20.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230377",
+    "ThreadId": "66793",
+    "Html": "<p>Hi Moses<br>I don't know where to look<br>I am desperately getting HTTP 500 error whith this release</p>\r\n<p>I don't know what I am missing<br>Any suggestion?<br>Thanks</p>",
+    "PostedDate": "2009-09-02T12:43:25.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230616",
+    "ThreadId": "66793",
+    "Html": "<p>Do you mean with the release files without applying any updates from your side?!</p>\r\n<p>Can you recompile in debug mode and try to debug to know exactly where it is being crashed!</p>\r\n<p>I might need more inputs like if you are using EF, your trust level, database (SQL Server, MySQL).</p>\r\n<p>Also open the log directory and check for any logged exceptions.</p>",
+    "PostedDate": "2009-09-03T03:52:15.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230625",
+    "ThreadId": "66793",
+    "Html": "<p>My mistake<br>I just realized that I renamed a directory in the Web project<br>It was the source of all my problems<br><strong>In ASP MVC, names are very important</strong></p>\r\n<p>Thanks for your help</p>",
+    "PostedDate": "2009-09-03T04:21:40.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230694",
+    "ThreadId": "66793",
+    "Html": "<p>No problem :o) what is important is that it is resolved.</p>\r\n<p>Cheers</p>",
+    "PostedDate": "2009-09-03T07:38:47.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

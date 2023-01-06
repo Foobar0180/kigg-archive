@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "185744",
+    "ThreadId": "55018",
+    "Html": "Can someone please describe how articles get published or point me in the direction of this description?<br>\r\n<br>\r\nmany thanks<br>\r\n-doug<br>\r\n",
+    "PostedDate": "2009-04-30T17:16:42.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "185755",
+    "ThreadId": "55018",
+    "Html": "Login as an Admin, you will find a Control Panel box in the Top Right Corner, Hit the publish button, a confirmation will appear click okay and the article will be published.        \r\n",
+    "PostedDate": "2009-04-30T17:59:09.037-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "185773",
+    "ThreadId": "55018",
+    "Html": "ahh, yes, I saw that but none of the articles where getting published.&nbsp; After looking through the config file, I realized that there was a 4 hour wait between the time an article gets submitted and when you can actually publish the article.&nbsp; <br>\r\n<br>\r\nI also noted that there was another value (10 days) which I'm unclear about.&nbsp; Is there a way to only publish one article or a subset of articles?&nbsp; Is there a way to have articles auto publish after it has received so many 'shouts'?&nbsp; What does the 'Unapproved' and 'Publishable' states mean exactly?&nbsp; After setting the 4 hour time wait to 0 and publishing all the articles, I also see that the 'Publishable' state has a count of two even though there are not any articles any the Upcoming view.&nbsp; Also, I didn't realize what the Admin login was until I studied the config file for awhile.<br>\r\n<br>\r\nPerhaps you could describe the rules in a more comprehensive way someplace?<br>\r\n<br>\r\nthanks<br>\r\n-doug<br>\r\n",
+    "PostedDate": "2009-04-30T20:59:50.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "185789",
+    "ThreadId": "55018",
+    "Html": "Ok, I found some information in the FAQ on http://dotnetshoutout.com/Faq<br>\r\n<br>\r\n",
+    "PostedDate": "2009-04-30T22:56:10.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "186072",
+    "ThreadId": "55018",
+    "Html": "Just checkout the following post:<br>\r\nhttp://weblogs.asp.net/rashid/archive/2009/05/02/for-us-by-us.aspx<br>\r\n",
+    "PostedDate": "2009-05-01T21:17:23.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211840",
+    "ThreadId": "55018",
+    "Html": "<p>I just read the <a href=\"http://weblogs.asp.net/rashid/archive/2009/05/02/for-us-by-us.aspx\">blog post </a>. Very helpful, thank you.</p>\r\n<p>One question though, why is publishing a manual process reather than being automated?</p>",
+    "PostedDate": "2009-07-14T13:19:15.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211894",
+    "ThreadId": "55018",
+    "Html": "<p>Here's my blog post on how to automate the process.</p>\r\n<p><a href=\"http://www.kodefuguru.com/post/2009/07/14/Automating-KiGG-Publishing.aspx\">http://www.kodefuguru.com/post/2009/07/14/Automating-KiGG-Publishing.aspx</a></p>",
+    "PostedDate": "2009-07-14T16:29:08.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "212077",
+    "ThreadId": "55018",
+    "Html": "<p>What if we take this question as an opportunity to document the workflow of a story<br>Before a story get published, it has first to be submitted<br>Here is what I found</p>\r\n<p>Submit button ===&gt; StoryController.Submit</p>\r\n<p>StoryService.Create</p>\r\n<p>&nbsp;_storyRepository.Add(story);</p>\r\n<p>&nbsp;// The Initial vote; <br>&nbsp;story.Promote(story.CreationDate, byUser, userIPAddress);<br>&nbsp;<br>&nbsp;// Capture the thumbnail<br>&nbsp;_thumbnail.Capture(story.Url);</p>\r\n<p>&nbsp;&nbsp;// Subscribe comments by default<br>&nbsp;story.SubscribeComment(byUser);</p>\r\n<p>&nbsp;// Approve the story<br>&nbsp;story.Approve(SystemTime.Now());</p>\r\n<p>&nbsp;// Publish the StorySubmitEvent<br>&nbsp;_eventAggregator.GetEvent&lt;StorySubmitEvent&gt;().Publish(new StorySubmitEventArgs(story, detailUrl));</p>\r\n<p>This event is received by those subscribers</p>\r\n<ul>\r\n<li>UserScoreService&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; to increase the score of the submitter</li>\r\n<li>PingServer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ==&gt; I guess to check the existence ot the URL&nbsp;using the service of <a href=\"http://www.weblogs.com\">http://www.weblogs.com</a></li>\r\n<li>SendTwitterMessage ==&gt; to submit ontoTwitter</li>\r\n<li>PingStory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;&nbsp;<strong>I do not know the purpose of this action</strong></li>\r\n</ul>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-15T04:31:58.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "214903",
+    "ThreadId": "55018",
+    "Html": "<p>The purpose of PingStory is to leave a trackback link on a blog from which the article, we are submitting, comes from.</p>",
+    "PostedDate": "2009-07-22T11:48:36.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

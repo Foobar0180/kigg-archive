@@ -1,0 +1,154 @@
+[
+  {
+    "Id": "149523",
+    "ThreadId": "44874",
+    "Html": "<div>Hi,</div><div>Firstly, thank you for what looks like is going to be a great starting resource.</div><div><br></div><div>I have managed to get everything installed and performed the configurations as set out in the install notes.  However, when I try to run this inside of VS2008, i get the following error:</div><div><br></div><div><br></div><div><div>System.InvalidCastException was unhandled by user code</div><div>  Message=&quot;Unable to cast object of type 'Microsoft.Practices.EnterpriseLibrary.Logging.LogEntry' to type 'Kigg.Infrastructure.EnterpriseLibrary.WeblogEntry'.&quot;</div><div>  Source=&quot;Kigg.Infrastructure.EnterpriseLibrary&quot;</div><div>  StackTrace:</div><div>       at Kigg.Infrastructure.EnterpriseLibrary.WeblogTraceTextFormatter.&lt;GetExtraTokenHandlers&gt;b__0(LogEntry le) in C:\\Documents and Settings\\Chris Ledden\\My Documents\\Visual Studio 2008\\Projects\\Kigg\\EnterpriseLibrary\\Logging\\WeblogTraceTextFormatter.cs:line 29</div><div>       at Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.GenericTextFormatter`1.Format(T instance, StringBuilder output)</div><div>       at Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter.Format(LogEntry log)</div><div>       at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)</div><div>       at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)</div><div>       at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)</div><div>       at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)</div><div>  InnerException: </div><div><br></div><div><br></div><div>I have set up the virtual directory in IIS, and also set Kigg.web as the startup project, and set a default document in iis of default.aspx.</div><div><br></div><div>Is there anything else I need to do to get this running?</div><div><br></div><div>Thanks</div><div><br></div><div>Chris</div></div>",
+    "PostedDate": "2009-01-21T18:26:46.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "149548",
+    "ThreadId": "44874",
+    "Html": "Are your sure you are using the same Enterprise library that is attached with the source code? References\\EntLib?<br>\r\n",
+    "PostedDate": "2009-01-21T20:14:35.587-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "149555",
+    "ThreadId": "44874",
+    "Html": "Hi, thank you for the quick response.<div><br></div><div>Actually I haven't downloaded or installed any  of the Enterprise Library.  Is that a pre-requisite?</div><div><br></div><div>Thanks again.</div><div><br></div><div>Chris</div>",
+    "PostedDate": "2009-01-21T20:32:45.417-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "149685",
+    "ThreadId": "44874",
+    "Html": "Hi, could pls send me the web.config to kazimanzurrashid at gmail dot com. So that I can take a look.<br>\r\n",
+    "PostedDate": "2009-01-22T03:56:36.317-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "149720",
+    "ThreadId": "44874",
+    "Html": "I got exactly the same thing.&nbsp; It was triggered by an incorrect db connection string for my system (I'm not using SQL Express).<br>\r\n<br>\r\nI've got past it and now I'm seeing 'Story does not exists.'<br>\r\n",
+    "PostedDate": "2009-01-22T05:39:57.567-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "149729",
+    "ThreadId": "44874",
+    "Html": "Hi,<br>\r\n<br>\r\nIf you seeing the Story does not exists message that means you have configured it properly. Yes the database comes with empty story. \r\n",
+    "PostedDate": "2009-01-22T05:57:07.023-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "149839",
+    "ThreadId": "44874",
+    "Html": "I have emailed the web.config to you.  let me know what you find..<div><br></div><div>On the Story Does Not Exist part, do you mean that we need to add a default story to the db initially?</div><div><br></div><div>Chris</div>",
+    "PostedDate": "2009-01-22T10:41:30.523-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "149918",
+    "ThreadId": "44874",
+    "Html": "<div>Does this app include member administration?<br><br>Sent from my iPhone</div><div><br>On Jan 22, 2009, at 8:57 AM, kazimanzurrashid &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br><br></div><div></div><blockquote><div> <p>From: kazimanzurrashid</p> <div id=ThreadNotificationPostBody>Hi,<br>\r\n<br>\r\nIf you seeing the Story does not exists message that means you have configured it properly. Yes the database comes with empty story. \r\n</div> </blockquote>",
+    "PostedDate": "2009-01-22T13:17:01.803-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150027",
+    "ThreadId": "44874",
+    "Html": "@Leddo:<br>\r\nYes I just checked the file and it is perfectly okay, can you pls make sure that Web bin directory has the dlls of EntLib from References/EntLib. Once you are able to run it you can use the Submit page to add story. \r\n",
+    "PostedDate": "2009-01-22T19:00:48.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150028",
+    "ThreadId": "44874",
+    "Html": "@joomp:<br>\r\n<br>\r\nIt has 3 kinds of role:<br>\r\n<ul>\r\n    <li>Public User</li>\r\n    <li>Moderator</li>\r\n    <li>Administrator</li>\r\n</ul>\r\nDepending upon the role, there certain functionality that are available like e.g Edit Story, Delete Story, Confirm Story As Spam, Approve Story, Mark Comment As Offended, Lock/Unlock User, Block User IP Address, Publish Story etc<br>\r\n<br>\r\nHope this help. \r\n",
+    "PostedDate": "2009-01-22T19:05:48.5-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150060",
+    "ThreadId": "44874",
+    "Html": "Hi Kazimanzurrashid,<div>I copied the dll's as suggested, and still get the same issue. Could it be something to do with the way I have the the local host set up or permissions or soemthing like that?</div><div><br></div><div>Thanks for your help.</div><div><br></div><div>Chris</div>",
+    "PostedDate": "2009-01-22T21:18:34.58-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150062",
+    "ThreadId": "44874",
+    "Html": "Actually something interested just happened.  When I stopped the debugger, I noticed the IE page did something then showed the following error:<div><br></div><div><span style=\"font-family:verdana;font-size:11px\"><h1 style=\"font-family:verdana;font-weight:normal;font-size:18pt;color:red\">Server Error in '/Kigg' Application.<hr width=\"100%\" size=1 color=silver></h1><h2 style=\"font-family:verdana;font-weight:normal;font-size:14pt;color:maroon\"><em>Login failed for user 'CHRIS_LAPTOP\\ASPNET'.</em></h2><span style=\"font-family:arial, helvetica, geneva, sunsans-regular, sans-serif\"><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Description: </strong>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br><br><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Exception Details: </strong>System.Data.SqlClient.SqlException: Login failed for user 'CHRIS_LAPTOP\\ASPNET'.<br><br><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Source Error:</strong> <br><br><table width=\"100%\" bgcolor=\"#ffffcc\">    <tbody>        <tr>            <td><code>            <pre style=\"font-family:'lucida console';font-size:0.9em\">Line 11:         public static void OnStart()Line 12:         {<span style=\"color:red\">Line 13:             Bootstrapper.Run();</span>Line 14:             Log.Info(&quot;Application Started&quot;);Line 15:         }</pre>            </code></td>        </tr>    </tbody></table><br><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Source File: </strong>C:\\Documents and Settings\\Chris Ledden\\My Documents\\Visual Studio 2008\\Projects\\Kigg\\Web\\Global.asax.cs<strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">    Line: </strong>13 <br><br><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Stack Trace:</strong> <br><br><table width=\"100%\" bgcolor=\"#ffffcc\">    <tbody>        <tr>            <td><code>            <pre style=\"font-family:'lucida console';font-size:0.9em\">[SqlException (0x80131904): Login failed for user 'CHRIS_LAPTOP\\ASPNET'.]   </pre>            <pre style=\"font-family:'lucida console';font-size:0.9em\">System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection) +4844759   </pre>            <pre style=\"font-family:'lucida console';font-size:0.9em\">System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj) +194   </pre>            <pre style=\"font-family:'lucida console';font-size:0.9em\">...</pre>            <pre style=\"font-family:'lucida console';font-size:0.9em\">...</pre>            <pre style=\"font-family:'lucida console';font-size:0.9em\">   Kigg.Web.GlobalApplication.Application_Start() in C:\\Documents and Settings\\Chris Ledden\\My Documents\\Visual Studio 2008\\Projects\\Kigg\\Web\\Global.asax.cs:39</pre>            <div><span style=\"white-space:pre;font-family:'lucida console';font-size:10px\"><br>            </span></div>            </code></td>        </tr>    </tbody></table></span></span></div><div><br></div><div>Maybe there something wrong with the virtual URL...</div><div><br></div><div><br></div>",
+    "PostedDate": "2009-01-22T21:23:54.367-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150064",
+    "ThreadId": "44874",
+    "Html": "Okay this is the issue with your machine configuration, ensure that CHRIS_LAPTOP\\ASPNET has the permission to access SQL Server or try to login with sa.<br>\r\n",
+    "PostedDate": "2009-01-22T21:28:19.497-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150357",
+    "ThreadId": "44874",
+    "Html": "Hi,<div>I'm am progressing, but still not there yet...</div><div><br></div><div>Now I get:</div><div><span style=\"font-family:arial;font-size:11px\"><table width=\"100%\" bgcolor=\"#ffffcc\">    <tbody>        <tr>            <td><code>            <pre style=\"font-family:'lucida console';font-size:0.9em\">Line 4:      HttpContext.Current.RewritePath(Request.ApplicationPath);Line 5:      IHttpHandler httpHandler = new MvcHttpHandler();<span style=\"color:red\">Line 6:      httpHandler.ProcessRequest(HttpContext.Current);</span>Line 7:  %&gt;</pre>            </code></td>        </tr>    </tbody></table><br><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Source File: </strong>c:\\Documents and Settings\\Chris Ledden\\my documents\\visual studio 2008\\projects\\kigg\\web\\Default.aspx<strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">    Line: </strong>6 <br></span></div><div><div>System.Web.HttpException was unhandled by user code</div><div>  Message=&quot;The incoming request does not match any route.&quot;</div><div>  Source=&quot;System.Web.Routing&quot;</div><div>  ErrorCode=-2147467259</div><div>  StackTrace:</div><div>       at System.Web.Routing.UrlRoutingHandler.ProcessRequest(HttpContextBase httpContext)</div><div>       at System.Web.Routing.UrlRoutingHandler.ProcessRequest(HttpContext httpContext)</div><div>       at System.Web.Routing.UrlRoutingHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)</div><div>       at ASP.default_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\\Documents and Settings\\Chris Ledden\\my documents\\visual studio 2008\\projects\\kigg\\web\\Default.aspx:line 6</div><div>       at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)</div><div>       at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)</div><div>       at System.Web.UI.Page.Render(HtmlTextWriter writer)</div><div>       at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)</div><div>       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)</div><div>       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)</div><div>       at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</div><div>  InnerException: </div><div><br></div></div>",
+    "PostedDate": "2009-01-23T11:45:02.853-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "153428",
+    "ThreadId": "44874",
+    "Html": "Leddo, did you figure out your last issue?  I am having the same issue as well.\r\n",
+    "PostedDate": "2009-02-02T11:25:04.713-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "153512",
+    "ThreadId": "44874",
+    "Html": "I ended up just using the standard database in the App_Data directory and it worked.\r\n",
+    "PostedDate": "2009-02-02T14:39:26.24-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174784",
+    "ThreadId": "44874",
+    "Html": "I just upgraded <a href=\"http://www.pimpthisblog.com\">www.pimpthisblog.com</a> to 2.1 and I have now having the same issue.<br>\r\nI tried to debug the app and found that the issue appears only when the spamcheck kicks in. For example, if submit a story with a user that has submit more than 3 stories the error does not occur while it does with a new user.<br>\r\n<br>\r\nI still have not figured out a solution, but wander if any of you might have found a fix for this.<br>\r\n<br>\r\nBTW, in my case I do not think it has anything to do with the Db Connection, since everything else works.<br>\r\n<br>\r\nThanks. <br>\r\n<br>\r\nHere is the stack trace:<br>\r\n<br>\r\nType : System.NullReferenceException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089<br>\r\nMessage : Object reference not set to an instance of an object.<br>\r\nSource : Kigg.Core<br>\r\nHelp link : <br>\r\nData : System.Collections.ListDictionaryInternal<br>\r\nTargetSite :<strong><em> Void Process</em></strong>(System.String, Boolean, System.String, Kigg.DomainObjects.IStory)<br>\r\nStack Trace :    at Kigg.Infrastructure.SpamPostprocessor.Process(String source, Boolean isSpam, String storyUrl, IStory story)<br>\r\n   at Kigg.Service.StoryService.&lt;&gt;c__DisplayClass6.&lt;Create&gt;b__4(String source, Boolean isSpam)<br>\r\n   at Kigg.Infrastructure.DefaultSpamProtection.&lt;&gt;c__DisplayClass6.&lt;IsSpam&gt;b__0(String response)<br>\r\n   at Kigg.Infrastructure.CachingHttpForm.GetAsync(String url, Action`1 onComplete, Action`1 onError)<br>\r\n   at Kigg.Infrastructure.DefaultSpamProtection.IsSpam(SpamCheckContent spamCheckContent, Action`2 callback)<br>\r\n   at Kigg.Service.StoryService.Create(IUser byUser, String url, String title, String category, String description, String tags, String userIPAddress, String userAgent, String urlReferer, NameValueCollection serverVariables, Func`2 buildDetailUrl)<br>\r\n   at Kigg.Web.StoryController.Submit(String url, String title, String category, String description, String tags)<br>\r\n",
+    "PostedDate": "2009-04-02T05:44:55.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "174807",
+    "ThreadId": "44874",
+    "Html": "Based on this thread: <a href=\"http://kigg.codeplex.com/Thread/View.aspx?ThreadId=45152\">http://kigg.codeplex.com/Thread/View.aspx?ThreadId=45152</a><br>\r\nI added the following check on line <strong># 37</strong> of <strong>\\KiGG-v2.1\\Core\\Infrastructure\\Spam\\SpamPostprocessor.cs<br>\r\n</strong><br>\r\n<pre>if (approvingStory != null) {<br>    approvingStory.Approve(SystemTime.Now());\r\n}</pre>\r\nThis seems to have resolved the issue, although I am not entirely sure yet of the repercusssions. I will post more if I find that this causes different issues.<br>\r\n<br>\r\nCheers,\r\n",
+    "PostedDate": "2009-04-02T06:55:09.93-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176671",
+    "ThreadId": "44874",
+    "Html": "antoniochagoury, I have fixed the issues, it was throwing exception due to the multi-threading, check the latest version. <br>\r\n",
+    "PostedDate": "2009-04-07T09:34:17.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

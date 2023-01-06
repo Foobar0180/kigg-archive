@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "dublicated",
+    "ClosedDate": "2010-11-18T06:31:53.317-08:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "The items I submitted is not showing up under \"storied posted by me\" page.\n\nAnd I don't think they are showing up on the upcoming stories list either. When I perform relevant keyword searches, I can't find them either. It's like they just disappeared into thin air. Yet when I try to resubmit them, I get a dup error message. Here are 2 examples.\n\nhttp://dotnetshoutout.com/NU-RubyGems-package-manager-for-NET\nhttp://dotnetshoutout.com/Coding-Under-Influence-Complex-code-isnt-always-better",
+    "LastUpdatedDate": "2010-11-18T06:31:53.317-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2010-08-19T19:57:17.153-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Submitted items are not showing under my profile",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7137
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "208715",
+    "ThreadId": "61525",
+    "Html": "<p>I wanted to change the orange background in the header so I changed the hex codes in site.css but they seem to have no effect on the site.</p>\r\n<p>Am I missing something?</p>\r\n<p>Everything else is runnung fine.</p>",
+    "PostedDate": "2009-07-05T13:34:09.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "208717",
+    "ThreadId": "61525",
+    "Html": "<p>That's because minified versions of the files are used. Try changing site.min.css (or minify site.css and replace currently used version).</p>",
+    "PostedDate": "2009-07-05T13:39:02.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209169",
+    "ThreadId": "61525",
+    "Html": "<p>Thanks pawlos, this did the trick.</p>\r\n<p>Do you know of a utility that will generate the min.css files from the uncompressed css files? I would like to automate this as part of the Visual Studio build process.</p>",
+    "PostedDate": "2009-07-06T15:11:09.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209295",
+    "ThreadId": "61525",
+    "Html": "<p>There're a lot of those. Just google (or bing :)) for 'minify css' and pick your favourite one.</p>",
+    "PostedDate": "2009-07-06T22:43:18.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209500",
+    "ThreadId": "61525",
+    "Html": "<p>This sort of problem seems ripe for a Visual Studio Package. If I can find open source .Net code that minifies, I'll see about wrapping it up so that css and js files are automatically minified in VS.</p>",
+    "PostedDate": "2009-07-07T07:48:51.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209559",
+    "ThreadId": "61525",
+    "Html": "<p>Anyway, in the current project all css and javascript files are processed by the <span style=\"color:#2b91af\">AssetHandler </span>HttpHandler<br>On of the tasks of this module is to compress into a unique file ccs and javascript files referenced in each page<br>so, I am not sure that mimifying those files is still really helpfull<br>May be one remaining reason, mimyfied files are read faster by the <span style=\"color:#2b91af\">AssetHandler </span>HttpHandler</p>\r\n<p>I hope Kazi can jump in and explain this further.<br>he really did a geat job with this prject and I learned a lof from it<br>It is pitty that we have not seen him here for a while now</p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"color:#2b91af;font-size:x-small\">&nbsp;</span></p>",
+    "PostedDate": "2009-07-07T09:48:14.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209568",
+    "ThreadId": "61525",
+    "Html": "<p>I think it does make sense to minify those files. Just site.css alone is 5 KB less when minified. Let alone all those js files that are used. But of course you are free to turn this feature off. In web.config Just replace minified css/js files with their unmodified counterpart.</p>",
+    "PostedDate": "2009-07-07T10:05:14.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209595",
+    "ThreadId": "61525",
+    "Html": "<p>in the absolute, you're right it is better to minify this kind of files<br>However, in this project, those files are never sent drectly to the client<br>They all go first through the <span style=\"color:#2b91af\">AssetHandler </span>HttpHandler as I mentionned in my previous post<br>My understanding is, in this HttpHandler, they&nbsp;are&nbsp;compressed and then sent back to the client</p>",
+    "PostedDate": "2009-07-07T11:13:51.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209610",
+    "ThreadId": "61525",
+    "Html": "<p>I just did a fast test with replacing all the files in js2 group (except for jquery and ui) to their non-minified version and the difference in used bandwidth is &quot;just&quot; 4 kB. So you can still gain from minifinig those files even though they are compressed.&nbsp; I think that during the development of KiGG, Kazi and the team had all Yahoo's <a href=\"http://developer.yahoo.com/performance/rules.html\">Best practices for Speeding Up Your Web Site</a> in mind all the time.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-07T11:52:32.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209701",
+    "ThreadId": "61525",
+    "Html": "<p>Thanks for this test and&nbsp;information</p>\r\n<p>it is good to know</p>",
+    "PostedDate": "2009-07-07T15:50:17.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

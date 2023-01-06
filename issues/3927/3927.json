@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "There is a possibility to add a story with two (or more) same tags. \nThe code in AddTagsToContainers only checks for existing tags in the DB and not in the list of tags associated with currently processed article. This cause exceptions later because TagRepository uses SingleOrDefault to retrieve tag (and we get more than one result).\n\nSolution might be: (StoryService.cs: 491, AddTagsToContainers method)\n\n// nothing changed before\ntagNames = Array.ConvertAll(tagNames, t => t.NullSafe().StripHtml()); // convert all the elements to unique names\nforeach (string tagName in tagNames.Union(tagNames)) // get union - will return only unique names\n{                        \n         //nothing changed here\n } \n\nKind regards,\nPawel",
+    "LastUpdatedDate": "2009-10-31T18:25:31.513-07:00",
+    "PlannedForRelease": "KiGG - 3.0",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-03-17T12:05:47.057-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Story with two (or more) same tags",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 3927
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for pointing it out",
+      "PostedDate": "2009-04-07T02:27:50.84-07:00",
+      "Id": 15935
+    }
+  ]
+}

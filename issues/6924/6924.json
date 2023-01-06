@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Please help to resolve this:\n\nThe build is successful, but the web page got error:\n\nServer Error in '/' Application.\nThe specified metadata path is not valid. A valid path must be either an existing directory, an existing file with extension '.csdl', '.ssdl', or '.msl', or a URI that identifies an embedded resource.\nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.\n\nException Details: System.Data.MetadataException: The specified metadata path is not valid. A valid path must be either an existing directory, an existing file with extension '.csdl', '.ssdl', or '.msl', or a URI that identifies an embedded resource.\n\nSource Error:\n\nLine 43:         }\nLine 44: \nLine 45:         public Database(string connectionString) :\nLine 46:             base(connectionString, _defaultContainerName)\nLine 47:         {   \n\n\nSource File: C:\\XCDocument\\04ASPNETMVC\\00Code\\KiGG\\Kigg mvc 2.0\\v2.x\\EntityFramework\\Repository\\Database\\Database.cs    Line: 45",
+    "LastUpdatedDate": "2010-07-10T10:58:16.397-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2010-06-30T13:45:27.657-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Kigg Changeset 38916 build error under Visual Studio 2008",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6924
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "You need to manually copy linked EF files DomainObjects.* into Web/App_Data Directory. Hoping it will help.",
+      "PostedDate": "2010-07-05T07:20:41.833-07:00",
+      "Id": 15930
+    },
+    {
+      "Message": "Works like a charm, thanks a lot!",
+      "PostedDate": "2010-07-10T10:58:16.397-07:00",
+      "Id": 15931
+    }
+  ]
+}

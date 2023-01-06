@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "234987",
+    "ThreadId": "69062",
+    "Html": "<p>I unzipped the web and database script zip into its own folder. I used the scripts to create a database. I opened the web folder in Visual Web Developer Express 2008 SP1 and ran it. First I get a directory listing of the files in the /web directory. Then I add /Kigg to the URL so it looks like this: http://localhost:51707/Web/Kigg. In Firefox I get a blank page, in IE I get a 404 not found. Help?</p>\r\n<p>Dave.</p>",
+    "PostedDate": "2009-09-15T20:42:57.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "235043",
+    "ThreadId": "69062",
+    "Html": "<p>What if you use just</p>\r\n<p><span style=\"color:#888888\"><strong>http://localhost:51707/</strong></span></p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-16T01:31:05.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "235786",
+    "ThreadId": "69062",
+    "Html": "<p>I get a directory listing of the files in the main Kigg web directory. :(</p>",
+    "PostedDate": "2009-09-17T14:57:16.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

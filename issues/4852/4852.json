@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "When I want to publish a chinese story by posting a chinese website url. i got the content characters changed to be irrecognizable. After I changed HttpForm.cs line 269 to using (var sr = new StreamReader(response.GetResponseStream(), Encoding.Default)) problem is resolved. The key point is Encoding.Default. Please add it to latest code.",
+    "LastUpdatedDate": "2009-09-01T21:02:17.78-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-09-01T21:02:17.78-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can not display Chinese characters when get a source from some chinese website",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4852
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

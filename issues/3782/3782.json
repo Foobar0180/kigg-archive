@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Bring some goodness from FubuMVC",
+    "LastUpdatedDate": "2009-02-14T13:10:51.457-08:00",
+    "PlannedForRelease": "KiGG - 3.0",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-08T15:31:49.05-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bring some goodness from FubuMVC",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 3782
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "changeset 25215",
+    "ClosedDate": "2009-07-26T15:49:34.02-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "H1 tags commonly repeat the story title. By and Date lines don't represent the summary. There should be a way to remove common, undesirable title elements. The attached zip file contains the changes to accommodate these items with the tests to prove it works.",
+    "LastUpdatedDate": "2009-07-26T15:49:34.02-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-07-21T14:56:18.323-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "HtmlToStoryContentConverter Improvements",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4617
+  },
+  "FileAttachments": [
+    {
+      "FileId": 149446,
+      "FileName": "HtmlToStoryContentConverterChanges.zip",
+      "DownloadUrl": ".\\149446"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I downloaded the code and will check it out. I didn't totally understand the issue yet. But will check it out",
+      "PostedDate": "2009-07-25T11:34:16.503-07:00",
+      "Id": 15917
+    },
+    {
+      "Message": "I got it, this is an enhancement to the existing html to story content converter feature.\r\nI updated my local version and will be committed to source control soon and will be part of v2.5 and upcoming release package",
+      "PostedDate": "2009-07-25T12:10:24.727-07:00",
+      "Id": 15918
+    },
+    {
+      "Message": "I've been thinking more about it and now consider that the title filter should be implemented with regex rather than direct string matching. Comments?",
+      "PostedDate": "2009-07-25T12:14:13.29-07:00",
+      "Id": 15919
+    },
+    {
+      "Message": "OMG, I was going to write the same comment and just found that you wrote it :o). Yes I totally agree.\r\nFor now I modified the code to retain old constructors your overwrite. This will maintain backward compatability with old configurations. Beside title filter is not mandatory parameter. We should implement it as RegEx though. But not sure if I can make it in this v2.5 release or not. So might open another issue for it after we are done with this release",
+      "PostedDate": "2009-07-25T13:40:04.07-07:00",
+      "Id": 15920
+    }
+  ]
+}

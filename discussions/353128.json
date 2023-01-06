@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "827019",
+    "ThreadId": "353128",
+    "Html": "\r\n<p>I followed the deployment guide, and now I'm running into this error:</p>\r\n<p><a href=\"http://i.imgur.com/JaDI1.png\">http://i.imgur.com/JaDI1.png</a></p>\r\n<p>&nbsp;</p>\r\n<p>I am a noob and I don't know what to do. Has anyone else had this same problem? Does anybody know how I can fix this?</p>\r\n",
+    "PostedDate": "2012-04-22T05:52:21.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "830165",
+    "ThreadId": "353128",
+    "Html": "<p>You need to install ASP.net MVC2.0 to run KiGG</p>\r\n<p>You can do it through Microsoft web platform installer or follow the link http://weblogs.asp.net/scottgu/archive/2010/03/11/asp-net-mvc-2-released.aspx</p>",
+    "PostedDate": "2012-04-30T06:24:23.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

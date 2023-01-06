@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "A way to virally increase the usage of KiGG based websites would be to add a way to \"Invite Friends\" to join as well.\n\n1. This could/should be baked into the registration process but also available as a separate link (in case this step was missed, or skipped) -- a good spot for this would be in the users' detail page.\n2. The contacts to invite will be pulled from user's existing email accounts on Yahoo, Gmail, MSN etc (a-la Plaxo invite)\n3. Invitation email content should be made configurable in MailTemplates\n\nI can provide more information about this should it be required.",
+    "LastUpdatedDate": "2009-10-12T11:30:09.943-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-10-12T11:30:09.943-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Invite Friends To: <KiGG Site>",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 5206
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

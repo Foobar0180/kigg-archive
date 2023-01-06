@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "188638",
+    "ThreadId": "55859",
+    "Html": "<p>Hi</p>\r\n<p>I followed the steps given in the ReadMe file and ran the program. i am getting the error that showsup like this.</p>\r\n<p>A project with an Output Type of Class Library cannot be started directly.</p>\r\n<p>In order to debug this project, add an executable project to this solution which references the library project. Set the executable project as the startup project.</p>\r\n<p>&nbsp;</p>\r\n<p>Any help please!!</p>\r\n<p>Bob.</p>",
+    "PostedDate": "2009-05-10T11:24:34.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

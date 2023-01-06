@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Missing files uploaded.",
+    "ClosedDate": "2008-03-28T05:03:27.49-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "The trunk builds, but emails cannot be sent (like signup or password) because the templates are missing from version control.",
+    "LastUpdatedDate": "2008-03-28T05:03:27.49-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-03-28T00:35:48.397-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add MailTemplates to version control",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 1581
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Uploaded.",
+      "PostedDate": "2008-03-28T05:03:00.037-07:00",
+      "Id": 15880
+    }
+  ]
+}

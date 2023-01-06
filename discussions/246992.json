@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "569899",
+    "ThreadId": "246992",
+    "Html": "\r\n<p>Has anyone been able to get generics working with KIGG?</p>\r\n<p>That is, specify a generic type in a unity container section and actually get it working (ideally with&nbsp;UnityPerWebRequestLifetimeManager).</p>\r\n<p>I can get it as far as constructing the objects (so i know the format i am using is correct) but it always fails with a &quot;Unable to create an HttpContextBase instance&quot; ... which i think is happening at the point the generic instance is to be stored (at least\r\n i traced it to around that point).</p>\r\n<p>Appreciate if anyone has a sample and can confirm it actually works at all.</p>\r\n<p>thanks,<br>\r\nSteven&nbsp;</p>\r\n",
+    "PostedDate": "2011-02-21T15:24:24.91-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

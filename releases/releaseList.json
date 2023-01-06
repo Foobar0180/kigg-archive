@@ -1,0 +1,212 @@
+[
+  {
+    "Id": "0",
+    "Name": "KiGG - 2.5",
+    "DevelopmentStatus": "Stable",
+    "Description": "! System Requirements\n!! Deployment Server System Requirements\n* .Net Framework 3.5 SP1\n* ASP.NET MVC 1.0 RTM\n* Database (Only one option is required)\n** SQL Server 2005 or later any Edition with Full-Text Search Services (Full-Text search is required for search)\n** MySQL 5.x\n* IIS 6.0 or IIS 7.0 (didn't test it on Windows XP IIS 5.5)\n* Partial Trust is supported if outbound http requests are allowed. Kindly refer to \"[discussion:Medium trust level Problem|53367]\"\n*Note:* More into Partial trust will be provided in the documentation\n\n!! Development Workstation System Requirements\n* Visual Studio.Net 2008 any edition with SP1 (Express Editions should work)\n* .Net Framework 3.5 SP1\n* ASP.NET MVC 1.0 RTM\n* Included reference libraries (xUnit, Moq, DotNetOpenAuth, Enterprise Library etc...) -available with source code download-\n* Database (Only one option is required)\n** SQL Server 2005 or later any Edition with Full-Text Search Services (Full-Text search is required for search)\n** MySQL 5.x\n* IIS 6.0 or IIS 7.0 (didn't test it on Windows XP IIS 5.5)\n\n! Features\n* Upgrade to Moq 3\n* Migrate to DotNetOpenAuth 3.2\n* Partial Trust support\n* Entity Framework based Repositories implemented\n* Multi Database support through Entity Framework (SQL Server & MySQL)\n* Implementation of ADO.NET Data Services to access (read) Stories (upcoming, published, by category, by tag, by submitter and by voters)",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-09-13T13:44:02.403-07:00",
+    "Files": [
+      {
+        "Id": "3fa92493-84d0-4df2-8e3b-54bdf318400e",
+        "FileName": "KiGG-2.5.sourcecode.zip",
+        "Url": "./0/3fa92493-84d0-4df2-8e3b-54bdf318400e",
+        "Type": "Source Code",
+        "UploadDate": "2009-08-16T13:43:44.17-07:00"
+      },
+      {
+        "Id": "09ed64fd-28cc-4574-9ad3-d1a1d8633957",
+        "FileName": "KiGG-2.5.release.zip",
+        "Url": "./0/09ed64fd-28cc-4574-9ad3-d1a1d8633957",
+        "Type": "Application",
+        "UploadDate": "2009-08-16T13:21:43.813-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "KiGG - 2.2",
+    "DevelopmentStatus": "Stable",
+    "Description": "Upgraded to ASP.NET MVC RTM 1.0.\n\nFew Architecture refactoring:\n1. Introducing EventAggregator.\n2. Broadcast in Twitter\n3. Ping Feed Servers.\n4. Restrict based upon url prefx,\n5. Full Text Search for Search",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-04-07T02:43:23.883-07:00",
+    "Files": [
+      {
+        "Id": "f2e5bce2-3fa0-41b1-ac90-90fae1010ac9",
+        "FileName": "KiGG-v2.2.zip",
+        "Url": "./1/f2e5bce2-3fa0-41b1-ac90-90fae1010ac9",
+        "Type": "Source Code",
+        "UploadDate": "2009-04-07T02:39:53.977-07:00"
+      },
+      {
+        "Id": "09d6df9a-8c5d-45aa-a548-7b69a1cf82f2",
+        "FileName": "KiGG.Extra-v2.2.zip",
+        "Url": "./1/09d6df9a-8c5d-45aa-a548-7b69a1cf82f2",
+        "Type": "Source Code",
+        "UploadDate": "2009-04-07T02:42:35.883-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "KiGG - 2.1",
+    "DevelopmentStatus": "Beta",
+    "Description": "*Upgraded to ASP.NET MVC RC1*\n* Database schema changed. the version column is no longer required.\n* Changed the Decorated Repository Order to reduce Logging.\n* Few internal bug fixed.\n\n*New*\n* New HttpModule introduced to better Error handling.\n* User List Page added.\n\n_No Changes for Community Server, Graffiti, BlogEngine and Live Writer Plugins._",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-02-03T23:42:18.08-08:00",
+    "Files": [
+      {
+        "Id": "3d28ca06-7ea8-4388-a5af-58fb8ba88b97",
+        "FileName": "KiGG-v2.1.zip",
+        "Url": "./2/3d28ca06-7ea8-4388-a5af-58fb8ba88b97",
+        "Type": "Source Code",
+        "UploadDate": "2009-02-03T23:42:17.72-08:00"
+      },
+      {
+        "Id": "cbaaed35-388a-4878-b51a-8f8ace0a6527",
+        "FileName": "KiGG.Extra-v2.1.zip",
+        "Url": "./2/cbaaed35-388a-4878-b51a-8f8ace0a6527",
+        "Type": "Source Code",
+        "UploadDate": "2009-02-03T19:26:13.477-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "Kigg - 2.0",
+    "DevelopmentStatus": "Beta",
+    "Description": "A brand new version. Complete re-work. [url:Release notes|http://weblogs.asp.net/rashid/archive/2009/01/20/introducing-dotnetshoutout-com.aspx]",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-01-19T23:25:47.483-08:00",
+    "Files": [
+      {
+        "Id": "c9e887ba-9aa4-4c22-b95f-b9c04faef1e9",
+        "FileName": "KiGG-v2.x.zip",
+        "Url": "./3/c9e887ba-9aa4-4c22-b95f-b9c04faef1e9",
+        "Type": "Source Code",
+        "UploadDate": "2009-01-19T09:06:02.193-08:00"
+      },
+      {
+        "Id": "55414788-ea63-416c-90ae-bfe346859567",
+        "FileName": "Kigg-Extra-LiveWriter-Source.zip",
+        "Url": "./3/55414788-ea63-416c-90ae-bfe346859567",
+        "Type": "Source Code",
+        "UploadDate": "2009-01-13T09:01:10.74-08:00"
+      },
+      {
+        "Id": "f69b0bd9-8d9b-45e1-9c76-644a4b9b4d72",
+        "FileName": "Kigg-Extra-LiveWriter-Binary.zip",
+        "Url": "./3/f69b0bd9-8d9b-45e1-9c76-644a4b9b4d72",
+        "Type": "Application",
+        "UploadDate": "2009-01-13T09:04:24.18-08:00"
+      },
+      {
+        "Id": "0bc875bc-bc58-4f14-9219-3643b02d10c8",
+        "FileName": "Kigg-Extra-BlogEngine.zip",
+        "Url": "./3/0bc875bc-bc58-4f14-9219-3643b02d10c8",
+        "Type": "Source Code",
+        "UploadDate": "2009-01-13T09:04:24.477-08:00"
+      },
+      {
+        "Id": "94267ec0-e23e-40b1-91c7-cc9099f498ba",
+        "FileName": "Kigg-Extra-Graffiti-Source.zip",
+        "Url": "./3/94267ec0-e23e-40b1-91c7-cc9099f498ba",
+        "Type": "Source Code",
+        "UploadDate": "2009-01-13T09:07:52.853-08:00"
+      },
+      {
+        "Id": "f7c2de54-344d-405a-87c5-50e8953148e4",
+        "FileName": "Kigg-Extra-Graffiti-Binary.zip",
+        "Url": "./3/f7c2de54-344d-405a-87c5-50e8953148e4",
+        "Type": "Application",
+        "UploadDate": "2009-01-13T09:07:53.163-08:00"
+      },
+      {
+        "Id": "28e99674-3d92-42ab-8827-cf105df2a940",
+        "FileName": "Kigg-Extra-CommunityServer-Source.zip",
+        "Url": "./3/28e99674-3d92-42ab-8827-cf105df2a940",
+        "Type": "Source Code",
+        "UploadDate": "2009-01-13T09:10:14.633-08:00"
+      },
+      {
+        "Id": "90888ef5-63fd-495d-85e4-190dffcca2d3",
+        "FileName": "Kigg-Extra-CommunityServer-Binary.zip",
+        "Url": "./3/90888ef5-63fd-495d-85e4-190dffcca2d3",
+        "Type": "Application",
+        "UploadDate": "2009-01-13T09:12:39.197-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "v1.1",
+    "DevelopmentStatus": "None",
+    "Description": "Making it compatible with MIX08 ASP.NET MVC Framework Preview Release.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-03-10T23:37:15.983-07:00",
+    "Files": [
+      {
+        "Id": "6b054cb6-67d2-4bfb-a701-9446b44e066c",
+        "FileName": "Source.zip",
+        "Url": "./4/6b054cb6-67d2-4bfb-a701-9446b44e066c",
+        "Type": "Source Code",
+        "UploadDate": "2008-03-10T23:37:16-07:00"
+      },
+      {
+        "Id": "da68b010-c8c2-4ee7-a60a-221589696352",
+        "FileName": "KiggStarterKit.vsi",
+        "Url": "./4/da68b010-c8c2-4ee7-a60a-221589696352",
+        "Type": "Source Code",
+        "UploadDate": "2008-03-10T23:37:16.063-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "5",
+    "Name": "v1.0",
+    "DevelopmentStatus": "None",
+    "Description": "The first public release.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-02-21T05:24:22.633-08:00",
+    "Files": [
+      {
+        "Id": "d2c28872-8b74-4767-bdba-0a06ca082064",
+        "FileName": "Source.zip",
+        "Url": "./5/d2c28872-8b74-4767-bdba-0a06ca082064",
+        "Type": "Source Code",
+        "UploadDate": "2008-02-21T05:24:22.647-08:00"
+      },
+      {
+        "Id": "965a0409-def3-4238-9492-1fcbb4996e4c",
+        "FileName": "KiggStarterKit.zip",
+        "Url": "./5/965a0409-def3-4238-9492-1fcbb4996e4c",
+        "Type": "Source Code",
+        "UploadDate": "2008-02-21T05:24:22.773-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "6",
+    "Name": "KiGG v3.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "! System Requirements\n!! Deployment Server System Requirements\n* .Net Framework 3.5 SP1\n* ASP.NET MVC 2.0 RTM\n* Database (Only one option is required) - No Database updates since version 2.5\n** SQL Server 2008 or later any Edition with Full-Text Search Services (Full-Text search is required for search)\n** MySQL 5.x\n* IIS 6.0 or IIS 7.0 (didn't test it on Windows XP IIS 5.5)\n* Partial Trust is supported if outbound http requests are allowed. Kindly refer to \"[discussion:Medium trust level Problem|53367]\"\n*Note:* More into Partial trust will be provided in the documentation\n\n!! Development Workstation System Requirements\n* Visual Studio.Net 2008 any edition with SP1 (Express Editions should work)\n* .Net Framework 3.5 SP1\n* ASP.NET MVC 2.0 RTM\n* Included reference libraries (xUnit, Moq, DotNetOpenAuth, Enterprise Library etc...) -available with source code download-\n* Database (Only one option is required)\n** SQL Server 2005 or later any Edition with Full-Text Search Services (Full-Text search is required for search)\n** MySQL 5.x\n* IIS 6.0 or IIS 7.0 (didn't test it on Windows XP IIS 5.5)\n\n! Features\n* Upgrade to Moq 3\n* Migrate to DotNetOpenAuth 3.4.5\n* Partial Trust support\n* Entity Framework based Repositories implemented\n* Multi Database support through Entity Framework (SQL Server & MySQL)\n* Implementation of ADO.NET Data Services to access (read) Stories (upcoming, published, by category, by tag, by submitter and by voters)",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-10-12T12:26:58.043-07:00",
+    "Files": [
+      {
+        "Id": "c7c8813e-0839-4ab1-9ce1-9cee5130aebc",
+        "FileName": "KiGG-v3.0.Release.zip",
+        "Url": "./6/c7c8813e-0839-4ab1-9ce1-9cee5130aebc",
+        "Type": "Application",
+        "UploadDate": "2010-10-12T12:25:46.153-07:00"
+      },
+      {
+        "Id": "b5acf337-e6a6-405d-abb7-776b8faba6b4",
+        "FileName": "Kigg-3a9b436eace5.zip",
+        "Url": "./6/b5acf337-e6a6-405d-abb7-776b8faba6b4",
+        "Type": "Source Code",
+        "UploadDate": "2010-10-12T12:25:46.28-07:00"
+      }
+    ]
+  }
+]

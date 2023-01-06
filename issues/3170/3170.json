@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not applicable anymore.",
+    "ClosedDate": "2009-01-13T08:30:04.25-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "missing the kigg.dll in Web/bin/kigg.dll\n\nwhat's the dll? I downloaded the releases (Released:  \tMar 11 2008), I added the three assembly of MVC, enter F6 key in the Visual Studio 2008, but I get an error code in compiling. Is it missing the dll or I used the error way to compile?",
+    "LastUpdatedDate": "2009-01-13T08:30:04.25-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-10-07T16:24:40.277-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "missing the kigg.dll in Web/bin/kigg.dll",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3170
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have the same problem. Can anyone give solution to this?",
+      "PostedDate": "2008-12-26T13:34:15.95-08:00",
+      "Id": 15884
+    }
+  ]
+}

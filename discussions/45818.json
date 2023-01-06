@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "152951",
+    "ThreadId": "45818",
+    "Html": "Well the question says it all?&nbsp; Was wondering why you don't use the aspnet_user and other tables.&nbsp; Also, when registering, if the email fails to be delivered, the user will never be able to log in<br>\r\nand also can't retrieve their password.<br>\r\n",
+    "PostedDate": "2009-01-31T16:24:32.38-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154060",
+    "ThreadId": "45818",
+    "Html": "ASP.NET Membership has a long tail which I like to avoid. Yes we need to add a functionality to resend the activation link. <br>\r\n",
+    "PostedDate": "2009-02-03T19:59:20.393-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155054",
+    "ThreadId": "45818",
+    "Html": "Maybe it has a long tail, but it works out of the box and shouldn't be something we have to re-think in each new application.&nbsp; Also it used in so many applications, I hate to have two code-bases doing the same thing.&nbsp; Furthermore, if I integrate kigg into another application that already uses the membership api, it makes it very awkward.&nbsp; Perhaps you could expose an API so that shared sign-on is possible.&nbsp; For me this is really critical.<br>\r\n",
+    "PostedDate": "2009-02-06T05:47:38.63-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155099",
+    "ThreadId": "45818",
+    "Html": "Pls consider that It has OpenID which requires so many hack in ASP.NET Membership to make it functional. I do need to rethink whether it is at all possible. <br>\r\n",
+    "PostedDate": "2009-02-06T08:07:47.58-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "207705",
+    "ThreadId": "45818",
+    "Html": "<p>Any update on this?</p>",
+    "PostedDate": "2009-07-01T13:12:12.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

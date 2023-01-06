@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "fixed in changeset 25406",
+    "ClosedDate": "2009-07-31T16:18:20.143-07:00",
+    "CommentCount": 5,
+    "Custom": "",
+    "Description": "SendTwitterMessage.cs\n\nstring tagName = (i == 0) ? \",\" : \" \" + \"#\" + story.Tags.ElementAt(i).Name;\n\nshould be\n\nstring tagName = (i == 0 ? \",\" : \" \") + \"#\" + story.Tags.ElementAt(i).Name;",
+    "LastUpdatedDate": "2009-07-31T16:18:20.143-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-07-27T20:25:11.73-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Skipping First Tag On Twitter Post",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4662
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Nice catch, I will fix it.",
+      "PostedDate": "2009-07-28T01:41:54.327-07:00",
+      "Id": 15921
+    },
+    {
+      "Message": "Nice catch, I will fix it.",
+      "PostedDate": "2009-07-28T01:42:01.2-07:00",
+      "Id": 15922
+    },
+    {
+      "Message": "It might also be a good idea to make .Name be .Name.Replace(\" \", string.Empty). Hash tags don't work with spaces (or dashed if you were thinking about using UniqueName).",
+      "PostedDate": "2009-07-28T10:05:07.6-07:00",
+      "Id": 15923
+    },
+    {
+      "Message": "@KodefuGuru I think we both think the same way, yes this idea was in mind but I wasn't sure if it is right or not. I guess I will include it in the fix today. We have a major changset after partial trust support is enabled",
+      "PostedDate": "2009-07-29T04:02:48.97-07:00",
+      "Id": 15924
+    },
+    {
+      "Message": "It is correct, my tweets look cleaner now. The one thing I did that I didn't mention here was the addition of \"default\" tags. I haven't submitted it because I feel the twitter section needs overhauling to make it more configurable (I configured mine by changing code, not good).",
+      "PostedDate": "2009-07-30T10:33:50.83-07:00",
+      "Id": 15925
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not applicable anymore.",
+    "ClosedDate": "2009-01-13T12:20:02.383-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "The new MVC build makes testing super easy. Upgrading would make testing the controllers a whole lot easier",
+    "LastUpdatedDate": "2009-01-13T12:20:02.383-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-04-22T01:28:57.037-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Upgrade to latest MVC version",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 7,
+    "Id": 1937
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have just visited the site, It has been down for a few days, t appears it has been updated, its still not working, so lets hope this is work in progress to latest mvc release.\r\n\r\nfingers crossed.\r\n\r\nYou know what will happen the minute they release it, mvc will be updated lol.\r\n\r\nArghhhh dont u just love previews.",
+      "PostedDate": "2008-09-16T08:06:01.67-07:00",
+      "Id": 15881
+    }
+  ]
+}

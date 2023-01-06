@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "682423",
+    "ThreadId": "275394",
+    "Html": "\r\n<p><span style=\"font-family:Consolas; color:#006400; font-size:x-small\"><span style=\"font-family:Consolas; color:#006400; font-size:x-small\"><span style=\"font-family:Consolas; color:#006400; font-size:x-small\"></p>\r\n<p><span style=\"font-size:12pt\">The <a href=\"http://blogs.msdn.com/b/adonet/archive/2011/06/30/announcing-the-microsoft-entity-framework-june-2011-ctp.aspx\">\r\nEF June 2011 CTP</a> is holding me back from getting my hands dirty in kigg4. According to Microsoft, EF 4.2 is just a small update to the DbContext &amp; Code First runtime. The features that were included in\r\n<a href=\"http://blogs.msdn.com/b/adonet/archive/2011/06/30/announcing-the-microsoft-entity-framework-june-2011-ctp.aspx\">\r\nEF June 2011 CTP</a> require changes to the Core Entity Framework Libraries that are part of the .NET Framework and will ship at a later date.</span></p>\r\n<p><span style=\"font-family:Consolas; color:#006400; font-size:x-small\"><span style=\"font-family:Consolas; color:#006400; font-size:x-small\"><span style=\"font-family:Consolas; color:#006400; font-size:x-small\"></span></span></span><span style=\"font-size:small\">Is\r\n it possble to try out the Kigg 4 without using the <a href=\"http://blogs.msdn.com/b/adonet/archive/2011/06/30/announcing-the-microsoft-entity-framework-june-2011-ctp.aspx\">\r\nEF June 2011 CTP</a>? Or can you make&nbsp;it to work with the EF 4.2?&nbsp; Thanks.&nbsp;\r\n</span></p>\r\n</span></span></span>\r\n<p></p>\r\n",
+    "PostedDate": "2011-10-10T23:14:30.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "683222",
+    "ThreadId": "275394",
+    "Html": "<p>Can't switch. EntityFramework.Preview 4.2.0.1 on nuget is based on EF 4.0 core (System.Data.Entity.dll 4.0) which doesn't support Enum.</p>\r\n<p>Enum support is going to be part of the EF Core and&nbsp;not part of the outbound update.</p>\r\n<p>I just posted a question about this in the forums yesterday :( <a href=\"http://social.msdn.microsoft.com/Forums/eu/adonetefx/thread/d5b3a727-981d-4a02-a9ce-3e33dc1604f4\">http://social.msdn.microsoft.com/Forums/eu/adonetefx/thread/d5b3a727-981d-4a02-a9ce-3e33dc1604f4</a></p>\r\n<p>Sorry for that, but got to stick with Enum support. It's really awesome.</p>",
+    "PostedDate": "2011-10-12T09:26:15.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "684784",
+    "ThreadId": "275394",
+    "Html": "<p>Thanks for the update.&nbsp; It sounds like we have to wait for the .NET 4.5 release, which&nbsp;will be&nbsp;some time next year.</p>\r\n<p>In the mean time, Is there any temporary walk around I can use to make Kigg4 work with EF4,2?</p>",
+    "PostedDate": "2011-10-15T23:10:32.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "686643",
+    "ThreadId": "275394",
+    "Html": "<p>I'm sorry but nothing in my mind at the moment! I need to stick with EF4.2 CTP and keep the solution up to date with subsequent release of it till .Net 4.5 release</p>\r\n<p>Really sorry for that.</p>",
+    "PostedDate": "2011-10-19T20:27:41.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

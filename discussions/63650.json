@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "216416",
+    "ThreadId": "63650",
+    "Html": "<p>Hello</p>\r\n<p>I've just install KIGG, but it doesn't work correctly.&nbsp;</p>\r\n<p>This exception is occured, when&nbsp;KIGG try to send mail.</p>\r\n<p>&nbsp;</p>\r\n<pre>System.InvalidCastException was unhandled by user code\r\n  Message=&quot;Unable to cast object of type 'Microsoft.Practices.EnterpriseLibrary.Logging.LogEntry' to type 'Kigg.Infrastructure.EnterpriseLibrary.WeblogEntry'.&quot;\r\n  Source=&quot;Kigg.Infrastructure.EnterpriseLibrary&quot;\r\n  StackTrace:\r\n       at Kigg.Infrastructure.EnterpriseLibrary.WeblogTraceTextFormatter.b__0(LogEntry le) in C:\\_Projects\\KiGG\\EnterpriseLibrary\\Logging\\WeblogTraceTextFormatter.cs:line 29\r\n       at Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.GenericTextFormatter`1.Format(T instance, StringBuilder output)\r\n       at Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter.Format(LogEntry log)\r\n       at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)\r\n       at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)\r\n       at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)\r\n       at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)\r\n  InnerException: \r\n</pre>\r\n<p>Did anybody get this exception? Any solutions?</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-27T08:54:49.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "216418",
+    "ThreadId": "63650",
+    "Html": "<p>I got this exception too since the release of v2.2. No fix yet posted. I think I will look at it during this week.</p>",
+    "PostedDate": "2009-07-27T09:00:12.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "216577",
+    "ThreadId": "63650",
+    "Html": "<p>I figured out the reason, it is a configuration issue.</p>\r\n<p>I will commit a fix for this issue soon and will be included as part of KiGG-v2.5</p>\r\n<p>To quickly help you resolve this issue do the following:</p>\r\n<ol>\r\n<li>Open web.config for editing</li>\r\n<li>Under <em>loggingConfiguration</em> element find <em>categorySources</em> element.</li>\r\n<li>Under <em>categorySources</em> element find the added listeners and remove this line from listeners <em>&lt;add name=&quot;CsvFileListener&quot;/&gt;</em></li>\r\n</ol>\r\n<p>Run the application again. if you didn't configure your mail server properly you'll find an error logged of course but no more the exception metioned above will be logged.</p>\r\n<p>Let me know if this worked for you.</p>",
+    "PostedDate": "2009-07-27T15:58:08.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "216580",
+    "ThreadId": "63650",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://kigg.codeplex.com/WorkItem/View.aspx?WorkItemId=4661\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2009-07-27T16:02:50.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

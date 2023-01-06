@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "254054",
+    "ThreadId": "74270",
+    "Html": "<p>Receing following message when query completed with errors. I installed SQL Server 2005 Express with advanced pack for full-text service and still getting this. Anybody know what I can do to fix some of these....Would greatly appreciate any help, working on term project for school</p>\r\n<p>&nbsp;</p>\r\n<p>Msg 911, Level 16, State 1, Line 1<br>Could not locate entry in sysdatabases for database 'KiGG'. No entry found with that name. Make sure that the name is entered correctly.<br>Msg 9966, Level 16, State 1, Procedure sp_fulltext_database, Line 33<br>Cannot use full-text search in master, tempdb, or model database.<br>Msg 7609, Level 17, State 100, Line 2<br>Full-Text Search is not installed, or a full-text component cannot be loaded.<br>Msg 7609, Level 17, State 103, Line 4<br>Full-Text Search is not installed, or a full-text component cannot be loaded.<br>Msg 7609, Level 17, State 103, Line 3<br>Full-Text Search is not installed, or a full-text component cannot be loaded.<br>Msg 7601, Level 16, State 2, Procedure StorySearch, Line 0<br>Cannot use a CONTAINS or FREETEXT predicate on table or indexed view 'Story' because it is not full-text indexed.<br>Msg 7601, Level 16, State 2, Procedure CommentSearch, Line 0<br>Cannot use a CONTAINS or FREETEXT predicate on table or indexed view 'StoryComment' because it is not full-text indexed.<br>Msg 7601, Level 16, State 2, Procedure EFSearchComment, Line 0<br>Cannot use a CONTAINS or FREETEXT predicate on table or indexed view 'StoryComment' because it is not full-text indexed.<br>Msg 7601, Level 16, State 2, Procedure EFSearchStory, Line 0<br>Cannot use a CONTAINS or FREETEXT predicate on table or indexed view 'Story' because it is not full-text indexed.</p>",
+    "PostedDate": "2009-11-05T18:46:50.007-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279924",
+    "ThreadId": "74270",
+    "Html": "<p>Did you fix this problem. I have the same problem?</p>",
+    "PostedDate": "2010-01-21T00:40:40.88-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

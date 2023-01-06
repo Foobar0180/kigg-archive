@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "222285",
+    "ThreadId": "65266",
+    "Html": "<p>I'm trying to install on my host but I get &quot;Directory Listing Denied&quot; I've read that I may need to have a wildcard extension setup for IIS6 to handle extension-less files but my host says that this is a security risk and won't do it. Is this indeed the reason that I'm getting this message and if so, is there another way to get the app to work? Thanks!</p>",
+    "PostedDate": "2009-08-11T18:32:18.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "222678",
+    "ThreadId": "65266",
+    "Html": "<p>I contacted my host provider and they say they have the most recent asp.net 3.5 SP1 extensions and that their environment is a full trust hosting environment, so does anyone know why I'm getting &quot;Directory Listing Denied&quot;?</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-08-12T12:27:11.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "222763",
+    "ThreadId": "65266",
+    "Html": "<p>Ask them if they are hosting any Microsoft MVC applications for anyone else. There are specific requirements for MVC (which KiGG uses) and IIS needs to be properly setup.</p>",
+    "PostedDate": "2009-08-12T16:52:59.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

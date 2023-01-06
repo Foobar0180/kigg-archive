@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "202678",
+    "ThreadId": "59868",
+    "Html": "<p>Hello Mosessaur,</p>\r\n<p>your web applicationi is very great, I like it very much :o)</p>\r\n<p>Can you give us an Example of how to setup KIGG for MYSQL ?</p>\r\n<p>Thanks :o)</p>",
+    "PostedDate": "2009-06-17T15:30:34.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "203536",
+    "ThreadId": "59868",
+    "Html": "<p>Hello I am so sorry for the delayed response. It is just I am on business trip and I have no internet connection.</p>\r\n<p>I finished a wiki article on how to set it up for Entity Framework in general Check it out <a href=\"http://kigg.codeplex.com/Wiki/View.aspx?title=KiGG Entity Framework Configuration\">here</a>.</p>\r\n<p>For MySQL settings, you'll need to do 2 things after finalizing what are mentioned in the above wiki link.</p>\r\n<p>First change the Connection String, then change the SSDL file name in the settings to be DomainObjects.MySql</p>\r\n<p>Let me know how does it go with you.</p>",
+    "PostedDate": "2009-06-19T14:39:13.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "203554",
+    "ThreadId": "59868",
+    "Html": "<p>Hi Moses<br>Thank you so much for your very detailled document<br>reading it,&nbsp; I was wondering if it is not better having a separate configuration file for Unity section<br>This way, we can just reference the corresponding one in web.config<br>Going further, I would also create a separate configuration file for each of these sections<br>This will make web.config more readable</p>\r\n<p>&nbsp;</p>\r\n<ul>\r\n<li><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">loggingConfiguration</span></span></li>\r\n<li><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">exceptionHandling</span></span></li>\r\n<li><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">cachingConfiguration</span></span></li>\r\n<li><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">unity</span></span></li>\r\n<li><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">assetSettings</span></span></li>\r\n</ul>\r\n<p>By the way, thanks a lot for the great job.</p>\r\n<p>regards <br>Nachid</p>",
+    "PostedDate": "2009-06-19T16:11:51.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "203727",
+    "ThreadId": "59868",
+    "Html": "<p>Thanks Moses,</p>\r\n<p>very impressive but KiGG has a problem with the <strong><span style=\"color:#ff0000\">EFConnectionString </span></strong><span style=\"color:#ff0000\"><span style=\"color:#000000\">in my</span></span><strong><span style=\"color:#ff0000\"> </span></strong>Web.config&nbsp; :o)</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp; <span style=\"color:#ff0000\">&lt;type type=&quot;IConnectionString&quot; mapTo=&quot;EFConnectionString&quot;&gt;</span></strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;lifetime type=&quot;Singleton&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;typeConfig extensionType=&quot;Microsoft.Practices.Unity.Configuration.TypeInjectionElement, Microsoft.Practices.Unity.Configuration&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;constructor&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;configuration&quot; parameterType=&quot;IConfigurationManager&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;dependency/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;name&quot; parameterType=&quot;System.String&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.String&quot; value=&quot;KiGGDatabase&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;edmFilesPath&quot; parameterType=&quot;System.String&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.String&quot; value=&quot;|DataDirectory|&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;ssdlFileName&quot; parameterType=&quot;System.String&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.String&quot; value=&quot;DomainObjects.MySql&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/constructor&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/typeConfig&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/type&gt;</p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><strong>Source File: </strong> C:\\Dokumente und Einstellungen\\rembitzki\\Eigene Dateien\\Visual Studio 2008\\Test\\KIGG\\EnterpriseLibrary\\Unity\\UnityDependencyResolver.cs<strong> &nbsp;&nbsp; Line: </strong> 20             <br></span></p>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><strong>Exception Details: </strong>System.ArgumentException: The type Kigg.EF.Repository.ConnectionString cannot be assigned to variables of type Kigg.LinqToSql.Repository.IConnectionString.<br>Parameter name: from<br><br> <strong>Source Error:</strong> <br><br> </span></p>\r\n<table border=0 width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<pre>Line 18:         {<br>Line 19:             UnityConfigurationSection configuration = (UnityConfigurationSection) ConfigurationManager.GetSection(&quot;unity&quot;);<br><span style=\"color:red\">Line 20:             configuration.Containers.Default.Configure(_container);<br></span>Line 21:         }<br>Line 22: </pre>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+    "PostedDate": "2009-06-20T14:46:57.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "203732",
+    "ThreadId": "59868",
+    "Html": "<h3>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#000000\">I guess you should also look for this entry in web.config file</span></span></span></p>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#000000\"><em>&lt;typeAlias alias=&quot;IConnectionString&quot; type=&quot;Kigg.LinqToSql.Repository.IConnectionString, Kigg.Infrastructure.LinqToSql&quot;/&gt;</em></span></span></span></p>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#000000\">And change it to</span></span></span></p>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#000000\"><em>&lt;typeAlias alias=&quot;IConnectionString&quot; type=&quot;Kigg.EF.Repository.IConnectionString, Kigg.Infrastructure.EF&quot;/&gt;</em></span></span></span></p>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#000000\">May be Moses forgot to mention this in his document</span></span></span></p>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#000000\">regards<br>Nachid</span></span></span></p>\r\n<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"font-size:x-small\"><span style=\"color:#000000\"><br></span></span></span></p>\r\n</h3>",
+    "PostedDate": "2009-06-20T15:50:41.61-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "203795",
+    "ThreadId": "59868",
+    "Html": "<p>@<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl04_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/nachid\">nachid</a> I agree with you! and I was thinking of applying that but I was busy with Entity Framework documentation &amp; MySQL documentation which so far not complete and<br>that is why I didn't publish it on front page.</p>\r\n<p>This separation should be done easly because it is supported out of the box by Enterprise library. I just need sometime to apply it. I already did that in other project<br>I have.</p>\r\n<p>@<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl06_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/rembitzki\">rembitzki</a> as <a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl04_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/nachid\">nachid</a> said I might forgot to mention this! sorry for that but without you guys I might not be able to find bus in documentation :o)<br>I am on a trip now and not able to have continues internet connection. But I will trace this issue and highlight it and might update the documentation.</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you guys for the cheering comments</p>",
+    "PostedDate": "2009-06-21T01:57:08.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "203796",
+    "ThreadId": "59868",
+    "Html": "<p><a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl06_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/rembitzki\">@rembitzki</a> I noticed that <a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl08_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/nachid\">nachid</a> is right, I didn't add settings for IConnectionString in Type aliase.</p>\r\n<p>I will update that soon.</p>",
+    "PostedDate": "2009-06-21T02:13:35.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "205102",
+    "ThreadId": "59868",
+    "Html": "<p>I updated the documentation to fix the issue mentioned in this thread.</p>\r\n<p>Sections updated are:</p>\r\n<p>Registring Entity Framework repository types and adding mapping for IConnectionString interface.</p>\r\n<p>I hope this will resolve the issue. and sorry for the delay. Soon will update the wiki to add link to this article as well as adding another article to configure MySQL database and KiGG to use MySQL</p>",
+    "PostedDate": "2009-06-24T11:29:16.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

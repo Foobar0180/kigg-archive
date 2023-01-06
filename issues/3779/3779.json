@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Implement Localization.",
+    "LastUpdatedDate": "2010-12-13T06:39:51.617-08:00",
+    "PlannedForRelease": "KiGG - 3.0",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-08T14:46:29.897-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Implement Localization",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 4,
+    "Id": 3779
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

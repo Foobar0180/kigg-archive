@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "270660",
+    "ThreadId": "79047",
+    "Html": "<p>Hi,<br>First I would like to thank you for sharing this great code! I have learnt a lot from you guys and I really like read kigg's code :)</p>\r\n<p>But I have also a question about tables: User and Story, where you use GUID as a ID for table. Why you do that? I've read that integer/numeric is much better for ID purposes and the only reason to use GUID is to connect databases (replication) which doesn't happen in kigg's code.<br><br>Regards,<br>Jacek Ciereszko</p>",
+    "PostedDate": "2009-12-24T16:08:12.413-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

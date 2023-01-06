@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "154565",
+    "ThreadId": "46287",
+    "Html": "Anybody tried to localize?<div><br></div><div>Is it / do you think it will be difficult?</div><div><br></div><div>What aboout 3d party components (like editor(s)).</div><div><br></div><div>This is about runnign different languages to different clients from one installation.</div><div><br></div><div>Merci</div><div>Olav</div>",
+    "PostedDate": "2009-02-05T00:37:08.747-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154630",
+    "ThreadId": "46287",
+    "Html": "It is definitely in our plan and it will be included in v3.0.<br>\r\n",
+    "PostedDate": "2009-02-05T05:03:59.017-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154761",
+    "ThreadId": "46287",
+    "Html": "Thanks - but we need it immediately, so the question still stands :-)<div><span style=\"font-weight:bold\">How easy is it?</span></div><div>I see there is a site in Russian, so somebody should have an idea.</div><div><br></div><div>Wee plan to use Kigg as a base (not everything, and our own frontend),</div><div>the admin can be in English.</div><div><br></div><div>Thanks</div><div><div><br></div></div>",
+    "PostedDate": "2009-02-05T10:19:09.57-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154790",
+    "ThreadId": "46287",
+    "Html": "If you want I can hook with you with the owner of progg.ru, send me an email at admin at dotnetshoutout.com.<br>\r\n",
+    "PostedDate": "2009-02-05T11:33:45.62-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155477",
+    "ThreadId": "46287",
+    "Html": "Hello, I'm creator of progg.ru.<br>\r\nLocalization of kigg is a hard work. There is only way to do it - replace all English strings and fix cookie via encode/decode. To localize you must edit a lot of js/aspx/ascx files.<br>\r\n",
+    "PostedDate": "2009-02-08T01:19:45.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155576",
+    "ThreadId": "46287",
+    "Html": "With our current work load I think it might not be possible to add localization support prior v3.0 and I hope XaocCPS will be a great help for us, as he has already converted it in russian. If XaocCPS is interested I can add him in this project to take the responsibility of localization?<br>\r\n<br>\r\n@XaocCPS, WDYT?<br>\r\n",
+    "PostedDate": "2009-02-08T12:03:31.83-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156299",
+    "ThreadId": "46287",
+    "Html": "I will be happy to help. What should I do?<br>\r\n",
+    "PostedDate": "2009-02-10T09:19:29.583-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156378",
+    "ThreadId": "46287",
+    "Html": "Okay I am adding you as project member. Can you pls send me an email at kazimanzurrashid@dotnetshoutout.com for further instructions.<br>\r\n",
+    "PostedDate": "2009-02-10T12:14:19.42-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "231585",
+    "ThreadId": "68090",
+    "Html": "<p>I think it would be really useful to provide better installation documentation.</p>\r\n<p>Initially I had decided to the get just the deployment package, since I did not think that changing any code was necessary to begin with. I had some issues trying to set it up, so I decided to download the full source code version.</p>\r\n<p>Once I opened up the solution, I realized that things were completely different. For instance in the source version, all configurations are bundled in the web.config, while in deployment version they are not. Furthermore, the connectionstring name in the source is also different that the one in the deployment package (KIGGDatavase in source, VS KiGGSqlServer in the deployment version).&nbsp;</p>\r\n<p>I still have not finished setting this up as I am still try to figure out all the lose ends, but some help would be really helpful. Maybe it is just a matter of doing some clean-up in the packages?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>",
+    "PostedDate": "2009-09-06T08:03:55.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "231589",
+    "ThreadId": "68090",
+    "Html": "<p>In case this helps anyone...</p>\r\n<p>If you are downloading the deployment package (not the source).... you will need to do this:</p>\r\n<p>1. If you are using the SQL database connection string, make sure that the connection name is &quot;KIGGDatabase&quot;, not KiGGSQLServer)<br>2. The unity.ef.config file is broken. You will get EF error trying to run the default one in the package. Here is what I did:</p>\r\n<p style=\"padding-left:30px\">a.&nbsp; I downloaded the source version of the package.<br>b. Opened Web.Config, and copied the entire UNITY section.<br>c. Pasted it in the Unity.ef.config file.</p>\r\n<p>Once I did that, I was able to pull up the site.</p>\r\n<p>Hope this helps.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-06T08:21:40.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "231592",
+    "ThreadId": "68090",
+    "Html": "<p>Ok - so, as I dig into this further, I find more information.</p>\r\n<p>Basically the problem with the default Unity.ef.config (using SQL Server connection) is the fact that there as some EF related configuration settings that need to be removed.</p>\r\n<p>Around line # 518, you will see the IConnectionString node. You will also notice that you will find the following:</p>\r\n<p>&lt;param name=&quot;edmFilesPath&quot; parameterType=&quot;System.String&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.String&quot; value=&quot;|DataDirectory|&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;ssdlFileName&quot; parameterType=&quot;System.String&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.String&quot; value=&quot;DomainObjects.SqlServer&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;</p>\r\n<p>Essentially, you need to remove those entries.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-06T08:43:46.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "231664",
+    "ThreadId": "68090",
+    "Html": "<p>I will test the deployment package again! I made it from a published site after testing. But note something there is Unity.l2s.config where what you mentioned in the last thread is correct as you don't need the edm stuff.</p>\r\n<p>You are right we should provide some documentation for better installation and deployment. Hopefully to be done during this month.</p>",
+    "PostedDate": "2009-09-06T17:29:07.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "231680",
+    "ThreadId": "68090",
+    "Html": "<p>Thanks Mosessaur,</p>\r\n<p>We just upgraded and went live on 2.5 at www.pimpthisblog.com. So far so good. You should probably highlight that an ASP.net MVC upgrade should also be done prior to *upgrading*. Some of us were still running with the CTP bits :-)</p>\r\n<p>So far so good though. I'll keep an eye open.</p>\r\n<p>Oh, and BTW, the documentation should probably include some information to turn off the verbose logging that goes one.</p>\r\n<p>Cheers.</p>",
+    "PostedDate": "2009-09-06T19:44:03.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "232152",
+    "ThreadId": "68090",
+    "Html": "<p>I will do my best to include detailed documentation.</p>\r\n<p>Btw, KiGG 2.2 version was updated to MVC RTM. v2.5 was built on top of it. Didn't know that this caused an issue, because so far I didn't touch ASP.NET MVC and the updates on v2.5 for it almost none except for DotNetOpenAuth.</p>\r\n<p>Will start with documentation next month I guess, and if lucky next week :o).</p>",
+    "PostedDate": "2009-09-08T04:20:26.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "233297",
+    "ThreadId": "68090",
+    "Html": "<p>I'll try to contribute some to that since I have to upgrade my own sites and I may have more to launch.</p>",
+    "PostedDate": "2009-09-10T13:30:48.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "233955",
+    "ThreadId": "68090",
+    "Html": "<p>Just figured I'd jump in here, as I've been having some similar issues as well:</p>\r\n<p>1. Can I request that you include separate documentation (readme.txt) for the deployment version versus the source code version.</p>\r\n<p>2. Can I request a list of requirements be included in the readme.txt. For example, I did not have ASP.NET MVC installed and while I did have SQL Server 2008 installed I had not installed with Advanced Services (e.g. for full-text).</p>\r\n<p>3. I'm still having some problems with the deployment package. I have the database configured but when I open the deployment package and choose to Debug (in VWD) it just brings up a listing of the folders. I also get a long series of messages about: &quot;Could not find schema information for the element:&quot; (loggingConfiguration, configSource, and so on).</p>\r\n<p>Any assistance is appreciated! Thanks.</p>\r\n<p>Dave Mackey.</p>",
+    "PostedDate": "2009-09-12T16:26:45.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234059",
+    "ThreadId": "68090",
+    "Html": "<p>Hi David</p>\r\n<p>Regarding point 1, I didn't understand the part of deployment version vs source code version! Could you please clarify more</p>\r\n<p>For point 2, you are right! this should be included as part of system requirements. I will do it on online documentation and will be added to offline readme.txt file as well.</p>\r\n<p>And for point 3 it is my first time to face this issue, I couldn't reproduce it! because if you followed the steps in the [<a href=\"http://kigg.codeplex.com/Wiki/View.aspx?title=Deployment Guide Part 1\">Deployment Guide Part 1</a>] such issue won't appear, unless there is something missing!|<br>Note that the deployment package is in release mode and debug is turned off on web.config. This might be one of the reasons but not sure.</p>",
+    "PostedDate": "2009-09-13T10:56:38.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234579",
+    "ThreadId": "68090",
+    "Html": "<p>In point one, I simply meant to create a separate readme.txt file for the deployment and source code versions - that way you don't have instructions in the readme that apply only to the other form (e.g. instructions for the source code version in the deployment readme.txt).</p>\r\n<p>In point three - I am now only getting warnings, so that is fine. My real problem now is that when I run the application (in VWD Express) it takes me to a directory listing. I don't see any static pages even in the project? Is a default template not included? Thanks.</p>\r\n<p>Dave.</p>",
+    "PostedDate": "2009-09-14T22:04:53.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253841",
+    "ThreadId": "68090",
+    "Html": "<p>NP</p>",
+    "PostedDate": "2009-11-05T09:02:07.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

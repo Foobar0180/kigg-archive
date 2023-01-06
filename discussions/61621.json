@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "209057",
+    "ThreadId": "61621",
+    "Html": "<p>Thanks for the great app..</p>\r\n<p>I am new to MVC and I was trying to set up KiGG in my Vista Home premium machine.. I have latest MVC framework and IIS 7 installed in my machine and I followed all the instructions in the Readme file of KiGG.</p>\r\n<p>When I try to browse the site as IIS 7 web application ( http://localhost/KiGG )am getting following error</p>\r\n<p>Server Error in '/KiGG' Application.<br>Compilation Error<br>Description: An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately.<br><br>Compiler Error Message: CS0016: Could not write to output file 'c:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\kigg\\0b3dddd8\\cabba8b0\\App_global.asax.ki7g7wcn.dll' -- 'Access is denied. '<br><br>Source Error:</p>\r\n<p>[No relevant source lines]<br>Source File:&nbsp;&nbsp;&nbsp; Line: 0</p>\r\n<p>can anyone please help me?</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-06T11:16:36.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209077",
+    "ThreadId": "61621",
+    "Html": "<p>I have given full access for NETWORK SERVICE user account to the folder c:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\</p>\r\n<p>and now its working fine...</p>",
+    "PostedDate": "2009-07-06T11:45:58.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

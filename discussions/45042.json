@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "150132",
+    "ThreadId": "45042",
+    "Html": "Hello,<br>\r\nis it possible to configure Kigg, so it can be used as an independent social bookmarking system?<br>\r\n<br>\r\nRequirements:<br>\r\n<ul>\r\n    <li>Local logins (or Windows domain authetication)</li>\r\n    <li>Every submitted post is immediately shown on a public page </li>\r\n    <li>No admin. approvement of new post needed</li>\r\n    <li>No publishing to Delicious etc. needed</li>\r\n</ul>\r\nThe goal is to keep common bookmarks for a (private) group of people in one place.<br>\r\n<br>\r\nThanks in advance!<br>\r\n<br>\r\nPS: If Kigg is not the right choice, I'd appreciate links to other (free) software... \r\n",
+    "PostedDate": "2009-01-23T01:44:16.867-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150230",
+    "ThreadId": "45042",
+    "Html": "Sorry, no it is for social news not for social bookmarking, but since they both has some common similarities you can tweak it according to your need.<br>\r\n",
+    "PostedDate": "2009-01-23T06:15:58.647-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

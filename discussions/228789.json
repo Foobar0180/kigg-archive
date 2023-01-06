@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "499245",
+    "ThreadId": "228789",
+    "Html": "<p>I'm planning to start a project, a sort of aggregation news website about Football in Arabic language.&nbsp;<br>I'm average in coding in general, but by no means do I consider myself a programmer with a good command of any of the popular languages, much less a developer.&nbsp;</p>\r\n<p>If I hired a developer to build the website for me based on Kigg, would you think he'd be able to deliver the project? with full arabic language support and encoding with a RTL template? Does Kigg provide language packs for example?</p>\r\n<p>Also, will I be able to administer the website? say add remove categories, control spam and unsolicited mailing, etc? Does Kigg sustain a back end admin panel for the purpose?&nbsp;<br>I've tried that before with Reddit opensource, but the outcome was a FAILURE, since the source code itself was intentionally written in Python, to confuse the retail programmer even more IMO. Anyway, that's another story.</p>\r\n<p>Any insights are quite appreciated folks.. Also, if any of the developers around thinks he can take the job, I'm open to offers.&nbsp;</p>\r\n<p>Best!&nbsp;</p>\r\n<p>Ozai, New York</p>",
+    "PostedDate": "2010-09-27T19:01:45.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "499569",
+    "ThreadId": "228789",
+    "Html": "<p>No answers yet? :p</p>",
+    "PostedDate": "2010-09-28T11:05:38.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501749",
+    "ThreadId": "228789",
+    "Html": "<p>Hi Ozai,</p>\r\n<p>The best option is to talk to the guys who implemented this in non-English languages. In my opinion, there are two good kigg implementations that are non-English based.</p>\r\n<p>Dotnetomaniak and progg.ru</p>\r\n<p>Once I had a chat with Pawel Lukasik from Dotnetomaniak and he was very helpful. I am not sure whether he still there with that site. If I were you, I will draft a good email and ask their help.</p>\r\n<p>Once you gather some information then just compile the whole thing and post a project in Elance or Odesk or getafreelancer sites. I am sure somebody will be out there definitely showing some interest on your project. Please be careful while choosing your outsource partner. You can save lot of time and money if you go in that route.</p>\r\n<p>I hope this helps you. If not just mail me back then I can see how much I can help you. But do the leg work first and gather as much information as you needed.</p>\r\n<p>All the best for your project. Don't give up just Crush It.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-10-03T14:29:47.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501751",
+    "ThreadId": "228789",
+    "Html": "<p>Hi all,</p>\r\n<p><a href=\"http://dotnetomaniak.pl\">dotnetomaniak.pl</a> is still online :)! I would be glad to help to help but <a href=\"http://dotnetomaniak.pl\">dotnetomaniak.pl</a> also uses left-to-right right and I'm not sure if it's possible to change KiGG to display the other way around. I suppose it is, as probably you can create right-to-left ASP.NET app. As for the translation support it's still not yet ready (or is it?). You have to translate strings in LOTS of places. I think better support for translations was scheduled to be in 2.6 release.</p>\r\n<p>It's not good that nobody from KiGG's team is answering. It looks like the project is dead :(.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2010-10-03T14:53:58.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501757",
+    "ThreadId": "228789",
+    "Html": "<p>Hi Pawel,</p>\r\n<p>It is very glad to see you here mate. I am sorry I didn't say dotnetomaniak is not there, I said you might have moved out of it. People move from one venture to another in quick time. I am glad that you replied. Please help the forum because so many people are coming here for help and no one is caring them. This community is needed a bit of love because this application is really brilliant and you guys know this stuff better than anyone else.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-10-03T15:20:51.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501775",
+    "ThreadId": "228789",
+    "Html": "<p>Thanks Narenda and Pawel for your kinds support and motivation. I truly appreciate it folks. Unfortunately neither of the aforementioned websites uses RTL templates. I'm not even sure if there is such thing as in &quot;template&quot; for Kigg, because I've been googling it for a while but to no avail.. no satisfactory answers up to the time of writing this note I'm afraid.&nbsp;</p>\r\n<p>My thinking is something could be done with the CSS to flip the whole interface, with some tweaking and utf-8 encoding support, next comes&nbsp;strings edits and tweaks as Pawel suggested. Words like &quot;sign up&quot; and &quot;comments&quot;, &quot;login&quot; etc.. definitely need to be translated to Arabic with the ability to add and rename categories in Arabic font. As for the back end admin panel, no modification is required.</p>\r\n<p>ANY FURTHER HELP IS WELCOME guys. I'll be around.</p>\r\n<p>Ozai, New York&nbsp;</p>",
+    "PostedDate": "2010-10-03T17:20:22.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501884",
+    "ThreadId": "228789",
+    "Html": "<p>Hi Ozai,</p>\r\n<p>Try setting attribute&nbsp;<span style=\"font-family:Consolas;color:#ff0000;font-size:x-small\"><span style=\"font-family:Consolas;color:#ff0000;font-size:x-small\"><span style=\"font-family:Consolas;color:#ff0000;font-size:x-small\"><span style=\"font-family:Consolas;color:#ff0000;font-size:x-small\">dir</span></span></span></span><span style=\"font-family:Consolas;color:#0000ff;font-size:x-small\"><span style=\"font-family:Consolas;color:#0000ff;font-size:x-small\"><span style=\"font-family:Consolas;color:#0000ff;font-size:x-small\">=&quot;rtl&quot; </span></span></span>on the body tag inside Views\\Shared\\SiteTemplate.Master file (or in CSS file if youe prefer). I'm not saying that it's all you have to do, but that's the starting point. It should give you right-to-left layout. Of course all the strings will have to be translated manually.</p>\r\n<p>Regards,<br>Paweł</p>",
+    "PostedDate": "2010-10-04T01:01:46.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "502291",
+    "ThreadId": "228789",
+    "Html": "<p>Thanks for the tip Pawlos! I won't dare do it myself to be quite honest, lest I mess the code in the master page, but I'll definitely be discussing it with whoever takes the project.&nbsp;</p>\r\n<p>Best!&nbsp;</p>\r\n<p>Ozai</p>",
+    "PostedDate": "2010-10-04T20:40:45.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

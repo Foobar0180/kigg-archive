@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "247486",
+    "ThreadId": "72474",
+    "Html": "<p>I guess I figured out the solution. Using the command line for aspnet_compiler -v /virtualdirpath targetDirectory will precompile the solution for deployment.</p>",
+    "PostedDate": "2009-10-19T15:49:21.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

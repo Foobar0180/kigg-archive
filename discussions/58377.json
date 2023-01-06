@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "197437",
+    "ThreadId": "58377",
+    "Html": "<p>Hi,</p>\r\n<p>I'm just curious why Kigg uses  Enterprise Library Caching Application Block and not System.Web.Caching.Cache. I did a google on <br>Caching Application Block vs not System.Web.Caching.Cache and a few forum threads said that there is no difference and it's recommended to<br>use System.Web.Caching.Cache for ASP.NET apps. What is your opinion on this? Why did you choose to use EntLib Caching Block?</p>\r\n<p>Thanks,<br>John</p>\r\n<p><img id=smallDivTip style=\"border:1px solid blue;z-index:90;left:60px;top:287px\" alt=\"\"></p>",
+    "PostedDate": "2009-06-03T13:48:44.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "197491",
+    "ThreadId": "58377",
+    "Html": "<p>KiGG only use the abstraction ICache no direct dependency on any library, yes the default implementation is the entlib ,but you can use any caching lib incuding asp.net, entlib, velocity, memcached, ncache etc. Just implment this interface.</p>",
+    "PostedDate": "2009-06-03T16:35:23.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "197539",
+    "ThreadId": "58377",
+    "Html": "<p>Thanks for your reply.</p>",
+    "PostedDate": "2009-06-03T21:09:57.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

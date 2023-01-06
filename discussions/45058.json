@@ -1,0 +1,210 @@
+[
+  {
+    "Id": "150205",
+    "ThreadId": "45058",
+    "Html": "Hi everyone, <br>\r\n<br>\r\nI have tried to install Kigg 2.0 on Windows 2008 and SQL 2008. <br>\r\n<br>\r\nThere are in fact no installation instructions (except some 10 lines in a text file) and I tried a lot, but up till now have not been able to get anything other than some error messages. <br>\r\n<br>\r\nCould anyone please post a more detailled installation instruction doing it from scratch? <br>\r\n<br>\r\n1. I created the database in SQL2008 via Database\\Create.Sql<br>\r\n2. I Populated some data in it via the Database\\Data.sql script<br>\r\n3. I created a virtual directory in IIS named Kigg (I put it right into wwwroot, so I can reach it via <a href=\"http://localhost/kigg\">http://localhost/kigg</a>)<br>\r\n4. I created accounts at websnapr.com and recaptcha.net<br>\r\n5. I opened the minimal.config in an editor<br>\r\n6. I Renamed minimal.config to web.config<br>\r\n7. I replaced the YOUR- with meaningful values<br>\r\n8. I opened the kigg.sln and ran<br>\r\n<br>\r\nSo much for the description in the textfile :-(<br>\r\n<br>\r\nNow the problems: <br>\r\n<br>\r\n1. The textfile does not mention anything about the database connection string. You have to modify it to use anything other than sqlexpress.<br>\r\n2. The textfile does not mention anything where you have to point the virtual folder to. I figured it had to be the Web subfolder of the v2.x folder? <br>\r\n3. After doing this the webpage shows an error complaining that the webpage is not an application, so I converted the virtual folder to an application and put the Classic .NET AppPool in. <br>\r\n4. The textfile does not mention anything about security, authentication, authorization etc. I am a bit lost here what the application does need to work without having to open everything for all people out there. <br>\r\n5. Now the webpage tells me &quot;Server Error in /kigg Application&quot; The ressource cannot be found. Requested url: /kigg/default.aspx. At that point I do not know what else to do. <br>\r\n<br>\r\nThanks for your help!<br>\r\n<br>\r\nCU<br>\r\n   Andreas Kroll<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-01-23T04:59:51.053-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150225",
+    "ThreadId": "45058",
+    "Html": "Sorry Andreas, I should write in more detail steps. Let me clarify the steps you mentioned.<br>\r\n1. Yes you need to correct the connection string.<br>\r\n2. Yes the web under the 2.x directory.<br>\r\n3. No for IIS 7 it will run in DefaultAppPool.<br>\r\n4. N/A<br>\r\n5. For II7 you do not need the Default.aspx file. Click the Properties-&gt;Web of the Web Project, then set Start Action to blank string (specific page)<br>\r\n<br>\r\nI hope this will solve your issues.<br>\r\n<br>\r\n",
+    "PostedDate": "2009-01-23T06:08:31.933-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154269",
+    "ThreadId": "45058",
+    "Html": "Hi Andreas,<br>\r\n<br>\r\nDid you get past the 'Resource cannot be found' error? Kazimann - are you saying that this is just a connection string problem?<br>\r\n<br>\r\nCheers,<br>\r\nSteve Walsh\r\n",
+    "PostedDate": "2009-02-04T07:49:33.637-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154334",
+    "ThreadId": "45058",
+    "Html": "Steve,<br>\r\n<br>\r\nPls follow the read me file. If you still unable to configure, do let me know. \r\n",
+    "PostedDate": "2009-02-04T10:03:13.443-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154390",
+    "ThreadId": "45058",
+    "Html": "Hi Kaziman,<br>\r\n<br>\r\nI have followed the set up in the read me file, and I have run it through the debugger. It is failing in StoryController.Detail and throwing the exception 'Story does not exist' when looking for a story with the name 'Default.aspx'. Does this give you any clues as to how I can solve the problem?<br>\r\n<br>\r\nCheers,<br>\r\nSteve\r\n",
+    "PostedDate": "2009-02-04T12:10:52.787-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154399",
+    "ThreadId": "45058",
+    "Html": "Hi Steve,<br>\r\n<br>\r\nThe Default.aspx is not at all need, it was just added for backward compatibility. Click Project-&gt;&nbsp; Web of the Web Project and check the radio button &quot;Specific Page&quot; and set blank string save and hit run.<br>\r\n",
+    "PostedDate": "2009-02-04T12:33:08.34-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154568",
+    "ThreadId": "45058",
+    "Html": "Hi Kaziman,<br>\r\n<br>\r\nI have followed your suggestion, but it just results in a HTTP 403 Forbidden error.\r\n",
+    "PostedDate": "2009-02-05T01:02:24.46-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154620",
+    "ThreadId": "45058",
+    "Html": "That is interesting, Usually the 403 error code is thrown when the ip address is blocked, which is never should be the case if you are running a clean install, I would suggest you check the Web/App_Data/blockedIPList.txt file. BTW are you running it in IIS7 or Visual Studio Integrated web server?<br>\r\n",
+    "PostedDate": "2009-02-05T04:40:58.637-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154649",
+    "ThreadId": "45058",
+    "Html": "The bocked IP address file is empty. I am running this on my local machine so the IP address will be 127.0.0.1. I have tried both the IIS and the VS Integrated Web server.\r\n",
+    "PostedDate": "2009-02-05T06:40:36.947-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154671",
+    "ThreadId": "45058",
+    "Html": "Hi Steve,<br>\r\n<br>\r\nYou mentioned in the previous post that you it hitting he Default.aspx, is it currently showing 403 without showing the home page, I am more curious to learn at what point it is throwing 403?<br>\r\n",
+    "PostedDate": "2009-02-05T07:23:58.647-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154682",
+    "ThreadId": "45058",
+    "Html": "Hi Kaziman,<br>\r\nI expect that the 403 error is due to directory permissions as there is no default page set for the web site. If I set Default.aspx as the default page, then we are back where we started, but I can't see an alternative page?\r\n",
+    "PostedDate": "2009-02-05T07:47:46.17-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154705",
+    "ThreadId": "45058",
+    "Html": "Hi Steve,<br>\r\n<br>\r\nThis is as same as configuring any ASP.NET MVC application except in IIS it only runs in version 7.0 \r\n",
+    "PostedDate": "2009-02-05T08:16:50.047-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154718",
+    "ThreadId": "45058",
+    "Html": "Aha - looks like I need an IIS upgrade! Thanks so far...\r\n",
+    "PostedDate": "2009-02-05T08:31:56.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154796",
+    "ThreadId": "45058",
+    "Html": "If you need help do let me know.<br>\r\n",
+    "PostedDate": "2009-02-05T11:44:21.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154798",
+    "ThreadId": "45058",
+    "Html": "Many thanks, Kaziman. It will probably have to wait until the weekend when I can go through the process on a spare machine.\r\n",
+    "PostedDate": "2009-02-05T11:51:27.3-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154806",
+    "ThreadId": "45058",
+    "Html": "<p>Hi all.<br>\r\n<br>\r\nI'm having a similar problem. I have a clean install of win server 2008. i've installed VS 2008 sp1 and asp.net MVC RC.<br>\r\ndowloaded kigg, followed the txt file instructions, changed the sql connectio, but i get this error:<br>\r\n404 The resource cannot be found.<br>\r\n<br>\r\nthe error appears in StoryController.Detail. The Detail method input parameter &quot;name&quot; has a value of &quot;default.aspx&quot;.<br>\r\nafter this line in StoryController.cs (method Detail) runs <br>\r\nIStory story = _storyRepository.FindByUniqueName(name);<br>\r\nthe story is null so it throws an exception on the next line.<br>\r\n<br>\r\nNow in the Properties-&gt;Web  of the Kigg.Web project i have these settings:<br>\r\nSpecific Page is checked and set to empty.<br>\r\nApply server settings to all users is checked<br>\r\nUse Visual Studio Development Server is also checked with auto assign port checked.<br>\r\nVirtual Path is set to /Kigg<br>\r\n<br>\r\nI've also tried with IIS also on the Properties-&gt;Web of the Kigg.Web <br>\r\nChecked Use local IIS web Server.<br>\r\nset Project URL to &quot;<a href=\"http://localhost/Kigg\">http://localhost/Kigg</a>&quot; and clicked the button Create Virtual Directory<br>\r\nalso tried running with Override application root URL checked and unchecked.<br>\r\nThe app is running in DefaultAppPool. I have checked in IIS manager<br>\r\nthis is the error i get:<br>\r\n<br>\r\nValue cannot be null.<br>\r\nParameter name: httpContext </p>\r\n<p>KiGG\\Web\\Extension\\ControllerContextExtension.cs Line: 10 </p>\r\n<p>public static UrlHelper Url(this ControllerContext controllerContext)<br>\r\n{<br>\r\n return new UrlHelper(new RequestContext(controllerContext.HttpContext, controllerContext.RouteData)); // this is line 10<br>\r\n}</p>\r\n<p>Losing my mind here :)<br>\r\nMladen</p>\r\n",
+    "PostedDate": "2009-02-05T12:22:46.703-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155572",
+    "ThreadId": "45058",
+    "Html": "If you are still having problem configuring it, checkout my following blog post:<br>\r\n<br>\r\nhttp://weblogs.asp.net/rashid/archive/2009/02/09/installing-kigg.aspx<br>\r\n",
+    "PostedDate": "2009-02-08T11:53:57.837-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155712",
+    "ThreadId": "45058",
+    "Html": "thanx!<br>\r\ni'll try it out and reply back here if it doesn't work.\r\n",
+    "PostedDate": "2009-02-09T01:57:53.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155724",
+    "ThreadId": "45058",
+    "Html": "Sure, no problem.<br>\r\n",
+    "PostedDate": "2009-02-09T02:47:49.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155802",
+    "ThreadId": "45058",
+    "Html": "Hi,<br>\r\n<br>\r\nI am have similar problems:<br>\r\nI am trying to run your code on a Vista machine with the VS web server and I keep getting 'page not found' errors.<br>\r\nI followed your instructions to the letter (except the IIS part) as shown in the screencast.<br>\r\n<br>\r\nWhile trying to debug this issue, I noticed that in the StoryController.cs file, in the &quot;Detail(string name)&quot; method, the 'name' parameter is always &quot;default.aspx&quot; - is that normal?<br>\r\n(I made sure that the startup page is an empty string as you suggested)<br>\r\n<br>\r\nYour application looks very promising but in the last couple of days, I am starting to get a few extra gray hairs trying to make it work :-(<br>\r\n<br>\r\n<br>\r\nThank you for everything...<br>\r\n",
+    "PostedDate": "2009-02-09T07:40:35.973-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155828",
+    "ThreadId": "45058",
+    "Html": "Can you pls delete the Default.aspx and try again.<br>\r\n",
+    "PostedDate": "2009-02-09T08:34:47.093-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155832",
+    "ThreadId": "45058",
+    "Html": "hey, this simple solution solved my problem<br>\r\n<br>\r\nthanks!\r\n",
+    "PostedDate": "2009-02-09T08:49:05.387-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155835",
+    "ThreadId": "45058",
+    "Html": "Great\r\n",
+    "PostedDate": "2009-02-09T08:57:30.683-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155978",
+    "ThreadId": "45058",
+    "Html": "hey!<br>\r\nI used the VS integrated web server and deleting Default.aspx has solved the problem.<br>\r\nbut why did it solve it?\r\n",
+    "PostedDate": "2009-02-09T13:33:45.65-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "166226",
+    "ThreadId": "45058",
+    "Html": "Hi, I tried watching the video, but it's really blurry. Is there anyway of getting a clearer version? Thanks, John<br>\r\n",
+    "PostedDate": "2009-03-09T12:44:22.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "486381",
+    "ThreadId": "45058",
+    "Html": "<p>Hi All,</p>\r\n<p>&nbsp;</p>\r\n<p>I installed kigg at domain http://ikick.in/</p>\r\n<p>&nbsp;</p>\r\n<p>but getting error 403. Can anyone help me out ?</p>\r\n<p>&nbsp;</p>\r\n<p>Its windows 2008 server with IIS 7 &amp; MVC installed.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-30T05:56:31.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

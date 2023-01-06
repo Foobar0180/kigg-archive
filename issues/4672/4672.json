@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in changeset 25348 http://kigg.codeplex.com/SourceControl/changeset/view/25348",
+    "ClosedDate": "2009-07-31T06:34:13.43-07:00",
+    "CommentCount": 1,
+    "Custom": "Thread Id: 53367",
+    "Description": "Most of shared hosting plans work with medium trust level, which don't let KIGG work at all, can you give us a solution for that, may be a smaller version from KIGG.\nhttp://help.godaddy.com/article/1039\nRelated thread: http://kigg.codeplex.com/Thread/View.aspx?ThreadId=53367",
+    "LastUpdatedDate": "2009-07-31T06:34:13.43-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-07-29T04:45:52.927-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Medium trust level Problem",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4672
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Fixed in changeset 25348 http://kigg.codeplex.com/SourceControl/changeset/view/25348",
+      "PostedDate": "2009-07-29T15:08:23.653-07:00",
+      "Id": 15926
+    }
+  ]
+}

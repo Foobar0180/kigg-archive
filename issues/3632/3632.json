@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-02-03T19:42:47.187-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Not sure if this is intentional or not, in the LinqtoSql.CommentRepository you have the following code:\n\n        public virtual IComment FindById(Guid storyId, Guid commentId)\n        {\n            Check.Argument.IsNotEmpty(storyId, \"storyId\");\n            Check.Argument.IsNotEmpty(commentId, \"commentId\");\n\n            return Database.CommentDataSource.SingleOrDefault(c => c.Id == c.Id && c.StoryId == storyId);\n        }\nas you can see it is matching a comment if its id matches its id, instead of matching against the commentId parameter\n\nPossible solution:\nreturn Database.CommentDataSource.SingleOrDefault(c => c.Id == commentId && c.StoryId == storyId);?",
+    "LastUpdatedDate": "2009-02-03T19:42:47.187-08:00",
+    "PlannedForRelease": "KiGG - 2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-01-21T01:03:52.103-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Comment Repository FindById doesn't use commentID Parameter but Matches Against Itself",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3632
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 18271.",
+      "PostedDate": "2009-02-03T19:42:47.187-08:00",
+      "Id": 15886
+    }
+  ]
+}

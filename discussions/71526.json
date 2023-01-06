@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "243961",
+    "ThreadId": "71526",
+    "Html": "<p>Looking for help to install Kigg, I have tried myself to no avail and also had a programmer do it but failed as well, maybe the server is not correctly configured or missing something so I need somebdoy very familiar with kigg</p>\r\n<p>&nbsp;</p>\r\n<p>thanks</p>\r\n<p>&nbsp;</p>\r\n<p>Marco</p>",
+    "PostedDate": "2009-10-09T10:19:48.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244109",
+    "ThreadId": "71526",
+    "Html": "<p>What kind of error do you have?<br>What's the environment are you trying to install on?</p>",
+    "PostedDate": "2009-10-09T22:51:09.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244341",
+    "ThreadId": "71526",
+    "Html": "<p>Validate your server or machine capabilities against system requirements mentioned on the release page.</p>\r\n<p>Have you tried deployment guide?! It might assist you</p>",
+    "PostedDate": "2009-10-11T04:40:45.543-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244421",
+    "ThreadId": "71526",
+    "Html": "<p>I got it installed, thanks, now my question is how does one administer it? Is there any place to create categories, manage users etc?</p>\r\n<p>http://www.xratedbookmarks.com</p>\r\n<p>&nbsp;</p>\r\n<p>Thx</p>\r\n<p>&nbsp;</p>\r\n<p>marco</p>",
+    "PostedDate": "2009-10-11T14:17:07.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244431",
+    "ThreadId": "71526",
+    "Html": "<p>Kigg does not have(yet) an admin console</p>\r\n<p>regarding Categories, you can add them directly to the database<br>Users are added automatically when they register themsellves<br>You still have the option to add them manually to the database too<br>There are three default users configured in Web.Config,</p>",
+    "PostedDate": "2009-10-11T14:53:29.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244437",
+    "ThreadId": "71526",
+    "Html": "<p>Thank you, I have added the categories to the dbase, but the menu is not automatically updated? (forgive me, I am NOT a tech and been using Unix till now...)</p>\r\n<p>Also, as posted on the Issue tracker section, it seems I cannot delete stories either?</p>\r\n<p>&nbsp;</p>\r\n<p>Finally, how does one go about adding for example 'blocks' to add adsense or other various text like you have in shoutout.net?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks again</p>\r\n<p>&nbsp;</p>\r\n<p>Marco</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-11T15:10:52.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

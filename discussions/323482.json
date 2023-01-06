@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "775543",
+    "ThreadId": "323482",
+    "Html": "\r\n<p>Ok I know this is a simple question.</p>\r\n<p>When I run Kigg in VS2008 (or vs2010 for that matter) I don't get the default page I get a listing of the file contents.&nbsp; How do I get the page to show?</p>\r\n<p>useing 3.0 release and vs2008 sp1 w/mssql</p>\r\n<p>I set the start page to blank, but doesn't help.</p>\r\n<p>Please someone just let me know what I'm missing to get the Front page to load?</p>\r\n",
+    "PostedDate": "2012-02-17T08:56:25.947-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not an issue.",
+    "ClosedDate": "2009-06-02T16:30:58.457-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "when i tried to submit my feedburner.google url... it reported an error that this url is in blocked list....",
+    "LastUpdatedDate": "2009-06-02T16:30:58.457-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-25T22:18:52.64-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "not allowed to submit your feedburner url",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3887
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yes this is by design, you have to submit the actual url not the feed.",
+      "PostedDate": "2009-03-03T05:54:37.353-08:00",
+      "Id": 15893
+    }
+  ]
+}

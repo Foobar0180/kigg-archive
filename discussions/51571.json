@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "172970",
+    "ThreadId": "51571",
+    "Html": "I have installed my version of Kigg but I only get a blank page when running it. Can anyone help? \r\n",
+    "PostedDate": "2009-03-27T16:55:41.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179454",
+    "ThreadId": "51571",
+    "Html": "It's hard to say having so litte information provided. Are you using IIS 7 or IIS 6? Is there any info in logs files?<br>\r\n",
+    "PostedDate": "2009-04-15T01:25:50.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179490",
+    "ThreadId": "51571",
+    "Html": "Could you please provide more information!<br>\r\nDid you configured your kigg web application as per read me file?!<br>\r\n",
+    "PostedDate": "2009-04-15T02:56:20.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179649",
+    "ThreadId": "51571",
+    "Html": "I get a blank page on trying to use the Openid Login.<br>\r\n<br>\r\nThe error that it emails<br>\r\n<br>\r\n<div>&nbsp;Message: This operation requires IIS integrated pipeline mode.<br>\r\n&nbsp;Category: FullException<br>\r\n&nbsp;Priority: 1<br>\r\n&nbsp;EventId: 0<br>\r\n&nbsp;Severity: Critical<br>\r\n&nbsp;Title:<br>\r\n<br>\r\nI am running IIS6, is there a work around for the pipline mode?&nbsp; 2.1 is the Kigg version.<br>\r\n</div>\r\n<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-04-15T08:32:17.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179653",
+    "ThreadId": "51571",
+    "Html": "As mentioned that we would not be able to give support on IIS6, pls upgrade to IIS7<br>\r\n",
+    "PostedDate": "2009-04-15T08:37:28.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179678",
+    "ThreadId": "51571",
+    "Html": "Thank You, you guys are great on support.&nbsp; There was no question that you will support it.<br>\r\nSo, the actual question is:&nbsp; Will the OpenID work with II6?&nbsp; What do I have to do to II6 some that it does not throw the exception?&nbsp; or where can I figure it out to share with the community?<br>\r\n<br>\r\nI looked at some of the things that Phil Haack wrote, but could not find the answer.<br>\r\n<br>\r\nThanks again you guy wrote some great stuff.<br>\r\n",
+    "PostedDate": "2009-04-15T09:08:39.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179858",
+    "ThreadId": "51571",
+    "Html": "Sorry it should be &quot;not &quot;. I think you better post this issue in the ASP.NET MVC Forum or if you think it is related with DotNetOpenID then I would suggest its google project page.<br>\r\n",
+    "PostedDate": "2009-04-15T15:52:53.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "281523",
+    "ThreadId": "51571",
+    "Html": "<p>Two things. Firstly, see my post that solves the OpenID issue on IIS6: <a href=\"http://kigg.codeplex.com/Thread/View.aspx?ThreadId=50125\">http://kigg.codeplex.com/Thread/View.aspx?ThreadId=50125</a></p>\r\n<p>Then I found that all I needed to do to support IIS6 was to do the following:</p>\r\n<ul>\r\n<li><strong>Virtual Directory</strong> Properties -&gt; <strong>Home Directory</strong> Tab</li>\r\n<li><strong>Configuration</strong> -&gt; <strong>Mappings</strong> Tab</li>\r\n<li>Add <strong>new mapping</strong></li>\r\n<li>Extension: <strong>.*</strong>&nbsp;</li>\r\n<li>Executable path: <strong>C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\aspnet_isapi.dll</strong> (or copy .aspx extension). Note, by default the file selector looks for .EXE files, so change to *.*. I looked at this blankly for a minute when I couldn't see the DLL I wanted! Doh...</li>\r\n<li>Verbs: <strong>GET,HEAD,POST,DEBUG</strong></li>\r\n<li>Check file exists - <strong>No</strong></li>\r\n<li>Click <strong>Ok</strong></li>\r\n</ul>\r\n<p>Not for production, but good enough for your development machine! This post gave me the hint I needed: <a href=\"http://blogs.microsoft.co.il/blogs/dorony/archive/2007/12/15/using-asp-net-mvc-on-iis-5.aspx\">http://blogs.microsoft.co.il/blogs/dorony/archive/2007/12/15/using-asp-net-mvc-on-iis-5.aspx</a></p>\r\n<p>N.B. If you find that the <strong>Ok</strong> button is greyed out (it was for me), then click back in the Exectuable field and see if the <strong>Ok</strong> button is now available. If not, try any other extension rather than &quot;.*&quot; until the <strong>Ok</strong> button is enabled and then switch back to &quot;.*&quot;. Worked for me.</p>",
+    "PostedDate": "2010-01-25T11:12:17.17-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

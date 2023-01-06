@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "150465",
+    "ThreadId": "45119",
+    "Html": "By the way this is great than ever before... (im kigg fanatic!)<br>\r\nIm login as admin. Then Im try to submit story . I got this error <br>\r\nUnable to cast object of type 'Microsoft.Practices.EnterpriseLibrary.Logging.LogEntry' to type 'Kigg.Infrastructure.EnterpriseLibrary.WeblogEntry'.<br>\r\nwhat does it mean?<br>\r\n<br>\r\nThanks and more power to Kigg 2 .<br>\r\njames yan<br>\r\n<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-01-23T20:51:22.11-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154048",
+    "ThreadId": "45119",
+    "Html": "Sorry for the late reply.<br>\r\nIt seems a database connection issue though the message says something else. I suggest you check this thread http://www.codeplex.com/Kigg/Thread/View.aspx?ThreadId=44874<br>\r\n<br>\r\nThanks for the complements.<br>\r\n",
+    "PostedDate": "2009-02-03T19:36:39.617-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

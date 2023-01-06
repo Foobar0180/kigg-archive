@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-02-03T19:42:50.78-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "This happens when a new user creates a post with a tag that doesn't have any approved stories attached to it.  Once the story is approved it works fine.\n\nThe error happens on line 10 in Coud.ascx.\n\nint index = Convert.ToInt32(Math.Floor((tag.StoryCount / max) * cssClasses.Length));\n\nBefore the story is approved the value is 0 for max.  After the story is approved the value for max is one.",
+    "LastUpdatedDate": "2009-02-03T19:42:50.78-08:00",
+    "PlannedForRelease": "KiGG - 2.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-01-25T07:05:15.027-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Cloud.ascx Error - Value was either too larger or too small for an Int32",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3672
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 18271.",
+      "PostedDate": "2009-02-03T19:42:50.78-08:00",
+      "Id": 15887
+    }
+  ]
+}

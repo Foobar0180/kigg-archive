@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "156496",
+    "ThreadId": "46794",
+    "Html": "Is there any way to get it running on XP with IIS 5.1?<br>\r\n<br>\r\nFYI - it gies the &quot;story cannot be found&quot; error even when I run through VS 2008 Server.<br>\r\n<br>\r\nThanks!<br>\r\n",
+    "PostedDate": "2009-02-10T18:32:13.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156513",
+    "ThreadId": "46794",
+    "Html": "Also, I wonder if upgrading to MVC RC made a difference.  My old version of kigg I had running under Preview 2 only shows blank pages now.  I dont need to have it running, as I'd like to upgrade, just wondering what effect it's having.\r\n",
+    "PostedDate": "2009-02-10T19:23:33.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156522",
+    "ThreadId": "46794",
+    "Html": "I am not sure whether ASP.NET MVC in supported in IIS5, but I will only handle issues that are related with IIS7, though ASP.NET MVC is supported in IIS6.0 but requires modification in Routing.<br>\r\n<br>\r\nYou find the what is new in KIGG over here <br>\r\nhttp://weblogs.asp.net/rashid/archive/2009/01/20/introducing-dotnetshoutout-com.aspx<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-10T20:19:21.607-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "160596",
+    "ThreadId": "46794",
+    "Html": "<p>Hi localman, <br>\r\n<br>\r\nI've been struggling to get this up and running myself in the absence of Widows Server 2008 and therefore IIS7.0. Just been reading through this article this morning, but may not get chance to try things out for another couple of weeks, it tells you how to modify the routing mentioned above <span style=\"font-size:10pt;font-family:tahoma\"><br>\r\n<br>\r\n<a href=\"http://www.asp.net/learn/mvc/tutorial-08-cs.aspx\">http://www.asp.net/learn/mvc/tutorial-08-cs.aspx</a><br>\r\n<br>\r\n<br>\r\nHope it helps</span></p>\r\n<p> </p>\r\n",
+    "PostedDate": "2009-02-22T02:58:08.33-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "165728",
+    "ThreadId": "46794",
+    "Html": "@<a href=\"http://www.codeplex.com/site/users/view/kazimanzurrashid\" id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl04_UserNameLink\">kazimanzurrashid</a><br>\r\n<br>\r\nYou said: &quot;though ASP.NET MVC is supported in IIS6.0 but requires modification in Routing.&quot;<br>\r\n<br>\r\nCan you tell me whats these modifications? as i need to set it up on my server and i have IIS 6<br>\r\n<br>\r\n<br>\r\nThanks, \r\n",
+    "PostedDate": "2009-03-07T13:55:36.373-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "165736",
+    "ThreadId": "46794",
+    "Html": "The IIS6 should have either the aspx or the recommended mvc extension, create a new RegisterRoutes to replace the provided under the BootstrapperTasks in the web folder. There are also a lot of reference available how to achive the extentionless url in IIS6.\r\n",
+    "PostedDate": "2009-03-07T15:05:37.8-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "165737",
+    "ThreadId": "46794",
+    "Html": "BTW stevewalsh already provided an excellent reference how to achive that.\r\n",
+    "PostedDate": "2009-03-07T15:07:07.79-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "166001",
+    "ThreadId": "46794",
+    "Html": "thanks very much Steve.\r\n",
+    "PostedDate": "2009-03-09T02:50:57.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

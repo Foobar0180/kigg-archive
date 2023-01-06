@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "206241",
+    "ThreadId": "60854",
+    "Html": "<p>Is anyone else getting this?</p>\r\n<p>I created a recaptcha account and put my public and private key in the config file but the recapthca control does not show up on the Submit New Story&nbsp;page.&nbsp; When I try to submit a story I get the &quot;Captcha challenge cannot be blank&quot; validation error.</p>\r\n<p>I'm running the app locally using Visual Studio just to check out the code so I don't have it published to a server anywhere.&nbsp; Any one that has any ideas let me know.</p>",
+    "PostedDate": "2009-06-27T13:16:15.847-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

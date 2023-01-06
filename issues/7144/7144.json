@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "So whats the deal withthe way the publishable story counts works- it nevers drops below 20. Also when i publish the upcoming stories it alsO re-publishes stories that were already published. Example - a story published one day then says published a few moments ago. Where in the source is this behavior such that i can fix it so the publishable count goes to 0. ",
+    "LastUpdatedDate": "2011-09-22T05:06:54.117-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2011-09-22T05:06:54.117-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Publishable story count nevers goes below 20",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7144
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "195866",
+    "ThreadId": "57937",
+    "Html": "<p>Hi,</p>\r\n<p>I am unable to get the OpenId affiliate @ MyOpenId to work. After having setup my affiliate account at MyOpenId when I try to Create a New OpenId from KIGG or try to Login with an existing OpenId I keep getting the below error.</p>\r\n<p>&quot;return_to http://mydomain.com/OpenId not under realm http://www.mydomain.com/OpenId&quot;</p>\r\n<p>Here are the settings I used to create an OpenId affiliate account at www.myopenid.com</p>\r\n<p>Site URL : http://mydomain.com/</p>\r\n<p>Site Realm: http://mydomain.com</p>\r\n<p>Login Form Action URL: http://mydomain.com/OpenId</p>\r\n<p>&nbsp;</p>\r\n<p>Can someone please help me and let me know where I am going wrong.</p>\r\n<p>Many Thanks</p>\r\n<p>&nbsp;</p>\r\n<table style=\"height:29px\" border=0 width=71>\r\n<tbody>\r\n<tr>\r\n<td></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-05-29T15:06:29.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "206212",
+    "ThreadId": "57937",
+    "Html": "<p>Did you edit the web.config file to set your &quot;RootUrl&quot;?</p>\r\n<p>Look in the &lt;containers&gt; section for &quot;IConfigurationSettings&quot;. There are several properties which you will probably want to set.</p>",
+    "PostedDate": "2009-06-27T09:15:11.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227252",
+    "ThreadId": "57937",
+    "Html": "<p>Hi vinodkumarv:</p>\r\n<p>Did you fix the problem? If yes how? I have the simillar problem.</p>",
+    "PostedDate": "2009-08-24T16:15:29.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227260",
+    "ThreadId": "57937",
+    "Html": "<p>Nope.. I was not able to get it fixed. I tried all sorts of things (including editing all sorts of entries in the web.config)&nbsp;but could not get it to work. So I took out the OpenId feature :)</p>",
+    "PostedDate": "2009-08-24T16:59:33.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227300",
+    "ThreadId": "57937",
+    "Html": "<p>I guess the reason is you are using IIS6, I realized II7 is the best server for DotNetOpenID so i've switched my shared host to IIS7.</p>",
+    "PostedDate": "2009-08-24T19:53:06.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

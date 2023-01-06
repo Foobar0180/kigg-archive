@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "222544",
+    "ThreadId": "65349",
+    "Html": "<p>Does anyone know of a shared hosting company that can host this application and work? Anyone out there have this app hosted somewhere in a shared environment? I've tried at my current provider and they say that they will not setup a wildcard extension in IIS to handle the extension-less files. Can anyone out there refer someone?</p>",
+    "PostedDate": "2009-08-12T07:41:38.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "222761",
+    "ThreadId": "65349",
+    "Html": "<p>NewsPeeps is hosted with Lemonade.Net.</p>",
+    "PostedDate": "2009-08-12T16:49:10.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "222765",
+    "ThreadId": "65349",
+    "Html": "<p>Try OrcsWeb or DiscountASP (both of them are our sponsor), infact the http://dotnetshoutout.com is currently running in ORCSWeb.</p>",
+    "PostedDate": "2009-08-12T16:58:17.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "224589",
+    "ThreadId": "65349",
+    "Html": "<p>I use ReliableSite&nbsp;hosting provider (http://reliablesite.net) to host my KIGG-project (http://parentslink.com.ua). I chose a simple shared hosting option and it works excellent</p>",
+    "PostedDate": "2009-08-17T12:13:09.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236528",
+    "ThreadId": "65349",
+    "Html": "<p>Hi, you have to check the page</p>\r\n<p>&quot;<a title=\"ASP.NET MVC Hositng\" href=\"http://www.webhost4lifereview.com/kigg-mvc-web-hosting/\">http://www.webhost4lifereview.com/kigg-mvc-web-hosting/</a>&ldquo;</p>\r\n<p>Good Luck!</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-19T22:33:01.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

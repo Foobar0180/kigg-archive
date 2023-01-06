@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "196048",
+    "ThreadId": "57988",
+    "Html": "<p>Good day...</p>\r\n<p>First of all thank you for the great project....</p>\r\n<p>I would like to ask... do you have plans to migrate KiGG project to .NET 4.0 and VS 2010?</p>",
+    "PostedDate": "2009-05-30T16:03:17.943-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "196295",
+    "ThreadId": "57988",
+    "Html": "<p>In fact the plan is there! but time is the only missing resource.</p>\r\n<p>I plan to do that, but I have priorities such as support for MySQL and SQLite databases using Entity Framework. I already started on that and I expect it to be done by end of June. MySQL support might be done by mid of June.</p>\r\n<p>Note sure if the next would be building alpha version of KiGG based on .Net 4.0. It wouldn't be hard, but in my own plan I would wish to build another EF implementation based on EF4 using POCO, and keeping the current implementation as it is of course.</p>\r\n<p>So yes, .Net 4 and VS2010 are in mind. But when! only God knows</p>",
+    "PostedDate": "2009-06-01T00:32:51.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

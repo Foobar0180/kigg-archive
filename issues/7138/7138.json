@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "The items I submitted is not showing up under \"storied posted by me\" page.\n\nAnd I don't think they are showing up on the upcoming stories list either. When I perform relevant keyword searches, I can't find them either. It's like they just disappeared into thin air. Yet when I try to resubmit them, I get a dup error message. Here are 2 examples.\n\nhttp://dotnetshoutout.com/NU-RubyGems-package-manager-for-NET\nhttp://dotnetshoutout.com/Coding-Under-Influence-Complex-code-isnt-always-better",
+    "LastUpdatedDate": "2011-09-22T15:49:40.937-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2010-08-19T19:57:23.037-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Submitted items are not showing under my profile",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 7138
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same here. I submitted following story:\nhttp://dotnetshoutout.com/How-to-find-out-if-assembly-is-compiled-as-x86-x64-or-AnyCPU\n\nHowever I cannot see it under my profile:\nhttp://dotnetshoutout.com/Users/EdVmJREax0eLlCGId4ZQTg/Posted\n\nI remember seeing it under upcoming stories but now I cannot find it using the search.\n",
+      "PostedDate": "2011-08-03T06:22:36.237-07:00",
+      "Id": 41134
+    }
+  ]
+}

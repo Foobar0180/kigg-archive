@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "270784",
+    "ThreadId": "79087",
+    "Html": "<p>Hello,</p>\r\n<p>I'm having some troubles setting up my email to work correctly.</p>\r\n<p>So far, I am able to receive emails from the Contact Form but when a new users signs up, they do not receive their new account verification email.</p>\r\n<p>In the web.config file, there is no place to put the email password but isn't this required?</p>\r\n<p>This is the settings that my web host advised on their site: (<span style=\"color:Blue\">support@lulwat.com is the email I want to use to send)<br></span></p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">mailSettings</span><span style=\"color:Blue\">&gt;</span>\r\n      <span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">smtp</span> <span style=\"color:Red\">from</span><span style=\"color:Blue\">=</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">support@lulwat.com</span><span style=\"color:Black\">&quot;</span> <span style=\"color:Blue\">&gt;</span>\r\n<span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">network</span> <span style=\"color:Red\">host</span><span style=\"color:Blue\">=</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">mail.softsyshosting.com</span><span style=\"color:Black\">&quot;</span> <span style=\"color:Red\">password</span><span style=\"color:Blue\">=</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">MyPasswordHere</span><span style=\"color:Black\">&quot;</span>\r\n<span style=\"color:Red\">userName</span><span style=\"color:Blue\">=</span><span style=\"color:Black\">&quot;</span><span style=\"color:Blue\">support@lulwat.com</span><span style=\"color:Black\">&quot;</span> <span style=\"color:Blue\">/&gt;</span>\r\n      <span style=\"color:Blue\">&lt;/</span><span style=\"color:#A31515\">smtp</span><span style=\"color:Blue\">&gt;</span>\r\n<span style=\"color:Blue\">&lt;/</span><span style=\"color:#A31515\">mailSettings</span><span style=\"color:Blue\">&gt;</span>\r\n<br><br><br>Can anyone help?<br>My site is at www.lulwat.com if anyone wants to give some feedback on the design but I just got it running today so many things are not functioning yet.</pre>\r\n</div>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-12-26T01:31:41.113-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "270788",
+    "ThreadId": "79087",
+    "Html": "<p>blah, nevermind. The email system decidely to start working and I didn't even change anything.</p>\r\n<p>It seems it is sending it from my admin email account which I never place in a password for?</p>\r\n<p>I was under the impression that it would need a password in order to send email from your account? Is this not required?</p>\r\n<p>Anyway, I would still love feedback on the site if anyone has any.</p>",
+    "PostedDate": "2009-12-26T01:46:19.58-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

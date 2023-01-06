@@ -1,0 +1,138 @@
+[
+  {
+    "Id": "171703",
+    "ThreadId": "51225",
+    "Html": "I have a problem setting a correct root url. I typed &quot;http://deathsquad.pl/KiGG&quot; as a RootUrl in web.config and everything works fine except submitting new stories. When I click submit it redirects me to &quot;http://deathsquad.pl/KiGG/KiGG/story_name&quot;. Im a MVC rookie and I just can't figure out the correct setting. When I set rootUrl simply to &quot;http://deathsquad.pl&quot; it crashes with NullException during the submit of a new story.<br>\r\n<br>\r\nServer config:<br>\r\nWin 2k8<br>\r\nIIS7<br>\r\nASP.NET 3.5<br>\r\nMVC RC1<br>\r\n<br>\r\n",
+    "PostedDate": "2009-03-25T00:25:35.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171748",
+    "ThreadId": "51225",
+    "Html": "Try  &quot;http://deathsquad.pl/&quot; \r\n",
+    "PostedDate": "2009-03-25T02:33:24.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171755",
+    "ThreadId": "51225",
+    "Html": "I said I did. It throws unexpected error during submit<br>\r\n",
+    "PostedDate": "2009-03-25T02:47:25.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171762",
+    "ThreadId": "51225",
+    "Html": "Did you tried with &quot;/&quot; at end of url ?<br>\r\n<span style=\"font-size:13px;color:#0000ff\"> &lt;</span><span style=\"font-size:13px;color:#a31515\">value</span><span style=\"font-size:13px;color:#0000ff\"> </span><span style=\"font-size:13px;color:#ff0000\">type</span><span style=\"font-size:13px;color:#0000ff\">=</span><span style=\"font-size:13px\">&quot;</span><span style=\"font-size:13px;color:#0000ff\">System.String</span><span style=\"font-size:13px\">&quot;</span><span style=\"font-size:13px;color:#0000ff\"> </span><span style=\"font-size:13px;color:#ff0000\">value</span><span style=\"font-size:13px;color:#0000ff\">=</span><span style=\"font-size:13px\">&quot;</span><span style=\"font-size:13px;color:#0000ff\">http://deathsquad.pl/</span><span style=\"font-size:13px\">&quot;</span><span style=\"font-size:13px;color:#0000ff\">/&gt;\r\n<p> </p>\r\n<p> </p>\r\n</span>\r\n<p> </p>\r\n<p> </p>\r\n",
+    "PostedDate": "2009-03-25T02:59:35.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171764",
+    "ThreadId": "51225",
+    "Html": "yes :(<br>\r\n",
+    "PostedDate": "2009-03-25T03:05:57.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171766",
+    "ThreadId": "51225",
+    "Html": "such error with http://deathsquad.pl/<br>\r\n<br>\r\nTimestamp: 3/24/2009 7:08:51 PM <br>\r\nMessage: HandlingInstanceID: 6c95d426-59f6-4405-a21f-27789fa12040<br>\r\nAn exception of type 'System.NullReferenceException' occurred and was caught.<br>\r\n-----------------------------------------------------------------------------<br>\r\n03/24/2009 20:08:51<br>\r\nType : System.NullReferenceException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089<br>\r\nMessage : Object reference not set to an instance of an object.<br>\r\nSource : Kigg.Core<br>\r\nHelp link : <br>\r\nData : System.Collections.ListDictionaryInternal<br>\r\nTargetSite : Void Process(System.String, Boolean, System.String, Kigg.DomainObjects.IStory)<br>\r\nStack\r\nTrace : at Kigg.Infrastructure.SpamPostprocessor.Process(String source,\r\nBoolean isSpam, String storyUrl, IStory story) in\r\nJ:\\Projekty\\KiGG-v2.1\\Core\\Infrastructure\\Spam\\SpamPostprocessor.cs:line\r\n37<br>\r\nat\r\nKigg.Service.StoryService.&lt;&gt;c__DisplayClass6.&lt;Create&gt;b__4(String\r\nsource, Boolean isSpam) in\r\nJ:\\Projekty\\KiGG-v2.1\\Core\\Service\\StoryService.cs:line 124<br>\r\nat\r\nKigg.Infrastructure.DefaultSpamProtection.&lt;&gt;c__DisplayClass6.&lt;IsSpam&gt;b__0(String\r\nresponse) in\r\nJ:\\Projekty\\KiGG-v2.1\\Core\\Infrastructure\\Spam\\Default\\DefaultSpamProtection.cs:line\r\n99<br>\r\nat Kigg.Infrastructure.CachingHttpForm.GetAsync(String url,\r\nAction`1 onComplete, Action`1 onError) in\r\nJ:\\Projekty\\KiGG-v2.1\\Core\\Infrastructure\\Http\\Decorated\\CachingHttpForm.cs:line\r\n65<br>\r\nat\r\nKigg.Infrastructure.DefaultSpamProtection.IsSpam(SpamCheckContent\r\nspamCheckContent, Action`2 callback) in\r\nJ:\\Projekty\\KiGG-v2.1\\Core\\Infrastructure\\Spam\\Default\\DefaultSpamProtection.cs:line\r\n81<br>\r\nat Kigg.Service.StoryService.Create(IUser byUser, String url,\r\nString title, String category, String description, String tags, String\r\nuserIPAddress, String userAgent, String urlReferer, NameValueCollection\r\nserverVariables, Func`2 buildDetailUrl) in\r\nJ:\\Projekty\\KiGG-v2.1\\Core\\Service\\StoryService.cs:line 124<br>\r\nat\r\nKigg.Web.StoryController.Submit(String url, String title, String\r\ncategory, String description, String tags) in\r\nJ:\\Projekty\\KiGG-v2.1\\Web\\Controllers\\StoryController.cs:line 456<br>\r\n<br>\r\nAdditional Info:<br>\r\n<br>\r\nMachineName : AUKIDF-8G-2008<br>\r\nTimeStamp : 3/24/2009 7:08:51 PM<br>\r\nFullName\r\n: Microsoft.Practices.EnterpriseLibrary.ExceptionHandling,\r\nVersion=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35<br>\r\nAppDomainName : /LM/W3SVC/1/ROOT/af-1-128823952694390809<br>\r\nThreadIdentity : turek<br>\r\nWindowsIdentity : ZARZĄDZANIE NT\\USŁUGA SIECIOWA<br>\r\n<br>\r\nCategory: FullException <br>\r\nPriority: 1 <br>\r\nEventId: 0 <br>\r\nSeverity: Critical <br>\r\nTitle:KiGG Exception <br>\r\nMachine: AUKIDF-8G-2008 <br>\r\nApplication Domain: /LM/W3SVC/1/ROOT/af-1-128823952694390809 <br>\r\nProcess Id: 4924 <br>\r\nProcess Name: c:\\windows\\system32\\inetsrv\\w3wp.exe <br>\r\nWin32 Thread Id: 3568 <br>\r\nThread Name:  <br>\r\nExtended Properties:<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-03-25T03:07:41.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171768",
+    "ThreadId": "51225",
+    "Html": "I also have the same problem on my site, but only for users accounts. Admin can post new story without problems. \r\n",
+    "PostedDate": "2009-03-25T03:12:18.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171772",
+    "ThreadId": "51225",
+    "Html": "what was the default admin pass ?<br>\r\n<br>\r\ni will try to disable spam protection when i get home<br>\r\n",
+    "PostedDate": "2009-03-25T03:29:59.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171773",
+    "ThreadId": "51225",
+    "Html": "the same as login. <br>\r\nRead also <a href=\"http://kigg.codeplex.com/Thread/View.aspx?ThreadId=45152\">http://kigg.codeplex.com/Thread/View.aspx?ThreadId=45152</a>\r\n",
+    "PostedDate": "2009-03-25T03:32:12.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171919",
+    "ThreadId": "51225",
+    "Html": "I checked your kigg-site and i get 500 internal server error  when i click to <br>\r\n<a href=\"http://deathsquad.pl/KiGG/Krajowy-Rejestr-D%C5%82ug%C3%B3w-Biuro-Informacji-Gospodarczej-SA-Strony-Informacyjne-KRD-BIG-SA\">http://deathsquad.pl/KiGG/Krajowy-Rejestr-D%C5%82ug%C3%B3w-Biuro-Informacji-Gospodarczej-SA-Strony-Informacyjne-KRD-BIG-SA</a><br>\r\n<br>\r\nI also have similar problem with links that has symbol &quot;�&quot; from non-utf-8 sites. Just see my kigg-site - <a href=\"http://geptard-2.hosting.parking.ru/Upcoming\">http://geptard-2.hosting.parking.ru/Upcoming</a> \r\n",
+    "PostedDate": "2009-03-25T09:37:23.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "171999",
+    "ThreadId": "51225",
+    "Html": "this is caused by national characters (im from poland). I have to make a mask that will change them to qwerty standards. just like they did in www.dotnetomaniak.pl<br>\r\n",
+    "PostedDate": "2009-03-25T12:16:38.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172022",
+    "ThreadId": "51225",
+    "Html": "<p>www.dotnetomaniak.pl - nice site.<br>\r\nOn this site fixed another my problem  - the right ends of word &quot;netomaniak&quot; for different numbers. This is important for Polish and also Ukrainian languages:<br>\r\n1 .netomaniak <br>\r\n3 .netomaniaki<br>\r\n6 .netomaniaków<br>\r\n<br>\r\nIn kigg for all numbers showed only one word &quot;shouts&quot;<br>\r\n<br>\r\nSorry for my not perfect english.</p>\r\n<p> </p>\r\n",
+    "PostedDate": "2009-03-25T13:40:10.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "172036",
+    "ThreadId": "51225",
+    "Html": "yeah, guys did a pretty good job. im making a military digg.com for polish military/asg/paintball/milsim community<br>\r\n",
+    "PostedDate": "2009-03-25T14:33:44.847-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176506",
+    "ThreadId": "51225",
+    "Html": "Hi guys,<br>\r\n<br>\r\nIn regards to the exception that user turowicz is getting, I fixed this in dotnetomaniak.pl. I don't have access to my source code now, so I will post my solution later today. I'm not sure if my solution is 100% as it should be, but it works. During the translation, we had lot's of trouble with our very beautiful polish language :), but I think we did a good job. I might be of help if somebody needs polish translation of Kigg. I was thinking of creating seperate files package containing only polish translation, but because the changes are scattered all over the code I dropped the idea :(<br>\r\n<br>\r\nKind regards,<br>\r\nPawel Lukasik \r\n",
+    "PostedDate": "2009-04-07T02:08:41.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176663",
+    "ThreadId": "51225",
+    "Html": "Ok. Now I have access to my source code so I can post my change. It was as simply as commenting out line 36 from SpamPostprocessor.cs. <br>\r\n<br>\r\nIStory approvingStory = _storyRepository.FindById(story.Id); // comment this out<br>\r\n<br>\r\nI don't know why it tries to look for the story in repository because the Process method already have this story as one of the parameters (maybe somebody can explain this to me). So now it just calls .Approve on story parameter that is supplied to the method. Everything looks ok.<br>\r\n<br>\r\nI hope this helped.<br>\r\n<br>\r\nKind regards,<br>\r\nPawel Lukasik<br>\r\n",
+    "PostedDate": "2009-04-07T09:08:26.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176670",
+    "ThreadId": "51225",
+    "Html": "Pawel, The SpamPostProcessor runs on another thread so the actual L2S context that gets the story is not the same L2S context which is required to update the story.<br>\r\n",
+    "PostedDate": "2009-04-07T09:31:04.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176701",
+    "ThreadId": "51225",
+    "Html": "Kazi. Thanks for the explanations. I see (in another thread) that you have solved this issue. I will grab the latest version and check how did you solved that.<br>\r\n",
+    "PostedDate": "2009-04-07T10:29:09.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

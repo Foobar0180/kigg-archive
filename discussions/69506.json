@@ -1,0 +1,154 @@
+[
+  {
+    "Id": "236521",
+    "ThreadId": "69506",
+    "Html": "<p><a href=\"http://servefault.com/contact\">http://servefault.com/contact</a></p>\r\n<p>I cannot receive emails.&nbsp;</p>\r\n<p>Does it need any special configure? (The hosting server requires SMTP authentication, the registration is working)</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-09-19T22:10:17.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236558",
+    "ThreadId": "69506",
+    "Html": "<p>Hi, anyone has encountered the same issue please?</p>",
+    "PostedDate": "2009-09-20T02:24:53.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236569",
+    "ThreadId": "69506",
+    "Html": "<p>Did you set&nbsp;SupportEmail in web.config file? I think this one is used in Contact screen.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-20T03:15:25.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236595",
+    "ThreadId": "69506",
+    "Html": "<p>Thanks very much!</p>\r\n<p>And what should I do if I want to change the default category name &quot;all&quot;</p>\r\n<p>&nbsp;</p>\r\n<p>Regards,</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-20T07:54:37.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236600",
+    "ThreadId": "69506",
+    "Html": "<p>Just open Menu.ascx file (Views\\Category) and edit it there.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-20T08:24:24.113-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236601",
+    "ThreadId": "69506",
+    "Html": "<p>Thank you!</p>\r\n<p>And I'd like to change the word &quot;more&quot; in the &quot;Top Leaders&quot;,</p>\r\n<p>And the word &quot;enter your keyword&quot; in the searchbox,</p>\r\n<p>May I know &nbsp;where I can change it?</p>\r\n<p>&nbsp;</p>\r\n<p>Best Regards,</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-20T08:30:23.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236603",
+    "ThreadId": "69506",
+    "Html": "<p>Helen,</p>\r\n<p>Try searching for those words. If you want to run this site it's best for you to learn a bit how it's structured.</p>\r\n<p>&quot;More&quot; is in Top.ascx (Views\\Membership).<br>In order to change searchbox's text - edit Search.min.js (Assets\\JavaScript).</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-20T08:56:54.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236701",
+    "ThreadId": "69506",
+    "Html": "<p>Thank you so much!</p>\r\n<p>I'd like to configure the registration with Gmail account, the web hosting service provider said the Gmail cannot be set SMTP in the web.config,</p>\r\n<p>they said it requires to enable in the send mail code.</p>\r\n<p>Could you please tell me where's the send mail code located?</p>\r\n<p>Best Regards,</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-20T17:47:29.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236794",
+    "ThreadId": "69506",
+    "Html": "<p>It's EmailSender.cs file (Instrastructure\\Mail).</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-21T02:07:27.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236814",
+    "ThreadId": "69506",
+    "Html": "<p>Hi Pawlos,</p>\r\n<p>Thanks a lot, you do assist me so many time. I'm so new to this and this is real difficult to me. I see this is the source code file, how I can transform it to application files?</p>\r\n<p>&nbsp;</p>\r\n<p>Best Regards,</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-21T03:05:21.863-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236816",
+    "ThreadId": "69506",
+    "Html": "<p>Hi Helen,</p>\r\n<p>I'm not sure I understand you correctly. What application files you are refering to?</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-21T03:10:08.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236817",
+    "ThreadId": "69506",
+    "Html": "<p>Sorry, I mean if I download the source code from &quot;http://kigg.codeplex.com/SourceControl/ListDownloadableCommits.aspx&quot;</p>\r\n<p>and edit, then how I can upload it to the website?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-21T03:12:16.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236818",
+    "ThreadId": "69506",
+    "Html": "<p>You have to build it first. As far as I remember&nbsp;you need to upload all Kigg.*.dll files to bin folder.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-21T03:15:11.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236820",
+    "ThreadId": "69506",
+    "Html": "<p>Indeed, I found my visual studio 2008 cannot open .dll file</p>",
+    "PostedDate": "2009-09-21T03:22:16.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236822",
+    "ThreadId": "69506",
+    "Html": "<p>Hi Pawlos,</p>\r\n<p>Can you please give me your MSN account, if possible, I can provide my hosting account username and pwd to you to edit for me</p>\r\n<p>Best Regards,</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-21T03:28:22.023-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236830",
+    "ThreadId": "69506",
+    "Html": "<p>Hi Helen,</p>\r\n<p>You have to do it locally. Change the code to support gmail (I can't help you with that - I have no idea what's needed), build using your copy of Visual Studio&nbsp;and then upload to your hosting.<br>Why you need to do this like this? You said in your first post that registration is working. Why you want to switch to gmail? I think it would be better for your futher users if they get e-mail notification from you own domain (although maybe it'a also possible using google apps).</p>\r\n<p>Sorry but I don't have a Messenger account :)</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-21T03:48:42.577-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236831",
+    "ThreadId": "69506",
+    "Html": "<p>Yes, the registration is working when I'm using my domain name, &nbsp;could you please email to &quot;servefault@gmail.com&quot;,&nbsp;</p>\r\n<p>I do wish you could assist me on changing the website title, I'm not sure how to start.</p>\r\n<p>Thanks&nbsp;</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-21T03:58:36.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236934",
+    "ThreadId": "69506",
+    "Html": "<p>Thanks, I would use the domain as email instead</p>",
+    "PostedDate": "2009-09-21T09:09:32.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237083",
+    "ThreadId": "69506",
+    "Html": "<p>Hi, this is a real great project, but I still encounter many unpredictable difficulties:)</p>\r\n<p>1st, I'd like to restrict the users' &quot;Submit New Story&quot; time, &nbsp;such as I'd like to set the interval time to 30 minutes, I'd like to know where I can modify the time.</p>\r\n<p>2nd, I'd like to change the 2 words &quot;shouts&quot; &amp; &quot;Shout it&quot;, where I can modify the words?</p>\r\n<p>3rd, and how I can setup Custom Error pages?</p>\r\n<p>4th, when I browse &quot;www.Servefault.com&quot;, it always redirect to &quot;servefault.com&quot;, is there any special settings I need to configure?</p>\r\n<p>5th, I'd like to submit URL to Google, but I cannot find the place to add &quot;Meta tag&quot; to verify the pages:(</p>\r\n<p>Best Regards,</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-21T17:03:41.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "273234",
+    "ThreadId": "79775",
+    "Html": "<p>In two entities (User and KnownSource) I found fields with something like... global::Kigg.DomainObjects.KnownSourceGrade</p>\r\n<p>Why? Changes to this file may cause incorrect behavior and will be lost if the code is regenerated, remember?</p>\r\n<p>&nbsp;</p>\r\n<p>Regards</p>\r\n<p>Riccardo</p>",
+    "PostedDate": "2010-01-05T02:50:33.863-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

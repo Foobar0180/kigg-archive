@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "I have logged in to the website with my Google Open ID URL.\nNow DotNEtShoutOut insists that my name is \"https://www.google.com/accounts/o8/id?id=AItOawkpelFSXLQRC4BucRyQAbT-31hIRsJNexE\".\nI cannot change it. Can only change email!!",
+    "LastUpdatedDate": "2010-08-30T15:45:43.783-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2010-07-05T20:51:53.717-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "DotNetShoutOut: Login With Google Open ID, Name becomes Login URL & Cannot change",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6949
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "202690",
+    "ThreadId": "59870",
+    "Html": "<p><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">In the View User Control <strong>&quot;Menu.ascx&quot;</strong> there is this code</span></span></p>\r\n<p>\r\n<p><em><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">&lt;</span></span><span style=\"color:#a31515;font-size:x-small\"><span style=\"color:#a31515;font-size:x-small\">a</span></span><span style=\"font-size:x-small\"> </span><span style=\"color:#ff0000;font-size:x-small\"><span style=\"color:#ff0000;font-size:x-small\">id</span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">=&quot;lnkLogin&quot;</span></span><span style=\"font-size:x-small\"> </span><span style=\"color:#ff0000;font-size:x-small\"><span style=\"color:#ff0000;font-size:x-small\">href</span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">=&quot;javascript:void(0)&quot;&gt;</span></span><span style=\"font-size:x-small\">Login</span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">&lt;/</span></span><span style=\"color:#a31515;font-size:x-small\"><span style=\"color:#a31515;font-size:x-small\">a</span></span></em><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\"><em>&gt;<br></em></span></span><em><span style=\"font-size:x-small\">Or<br></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">&lt;</span></span><span style=\"color:#a31515;font-size:x-small\"><span style=\"color:#a31515;font-size:x-small\">a</span></span><span style=\"font-size:x-small\"> </span><span style=\"color:#ff0000;font-size:x-small\"><span style=\"color:#ff0000;font-size:x-small\">id</span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">=&quot;lnkSignup&quot;</span></span><span style=\"font-size:x-small\"> </span><span style=\"color:#ff0000;font-size:x-small\"><span style=\"color:#ff0000;font-size:x-small\">href</span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">=&quot;javascript:void(0)&quot;&gt;</span></span><span style=\"font-size:x-small\">Signup</span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">&lt;/</span></span><span style=\"color:#a31515;font-size:x-small\"><span style=\"color:#a31515;font-size:x-small\">a</span></span></em><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\"><em>&gt;</em><br><br>it is working for sure but I cannot understand its meaning<br>There is no event associated with these links !?</span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\"><br>Can you please explain what's behind it<br><br>Google, usually very friendly, did not help&nbsp;on this mysterious matter</span></span></p>\r\n<p><span style=\"color:#0000ff\">Thanks</span>&nbsp;</p>\r\n</p>",
+    "PostedDate": "2009-06-17T16:34:42.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "202695",
+    "ThreadId": "59870",
+    "Html": "<p>I answer myself</p>\r\n<p>The answer is in this jquery file:&nbsp;<strong>membership.js</strong></p>",
+    "PostedDate": "2009-06-17T16:54:11.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Cannot be reproduced",
+    "ClosedDate": "2009-06-02T16:18:54.96-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "I submitted a story an hour ago and when I look at the stories that I have submitted it does not appear.  Also the story does not appear in the upcoming stories list.  I also submitted a comment and when I look at my comments none show up.",
+    "LastUpdatedDate": "2009-06-02T16:18:54.96-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-05-14T10:57:39.713-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Submitted Story never shows up??",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4057
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Not sure if this is an issue or not, but maybe the story is marked as spam for some reason or maybe it is not approved!!",
+      "PostedDate": "2009-05-18T00:55:13.26-07:00",
+      "Id": 15903
+    },
+    {
+      "Message": "@ingenutrix I just noticed that your story is submitted! and I posted a comment on it!! and I am able to view the comment on story and view story listed on my commented stories!\r\n@ runxc1 I am not able to reproduce the issue",
+      "PostedDate": "2009-05-18T01:08:53.33-07:00",
+      "Id": 15904
+    }
+  ]
+}

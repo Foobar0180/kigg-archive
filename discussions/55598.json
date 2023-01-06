@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "187753",
+    "ThreadId": "55598",
+    "Html": "Steps to reproduce:<br>\r\n<ol>\r\n    <li>Open for example: http://dotnetshoutout.com/More-ASPNET-MVC-Best-Practices with IE8</li>\r\n    <li>Click on Show counter code link</li>\r\n</ol>\r\nDid you notice the behavior. The post moved to the end of the page. when you scroll down and click on Show counter code again. The story move up again. <br>\r\n",
+    "PostedDate": "2009-05-07T08:35:34.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

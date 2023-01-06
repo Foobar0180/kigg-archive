@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "189452",
+    "ThreadId": "56100",
+    "Html": "<p>Hi</p>\r\n<p>I got an error looks as below</p>\r\n<p>Error&nbsp;&nbsp;&nbsp; 102&nbsp;&nbsp;&nbsp; It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.&nbsp; This error can be caused by a virtual directory not being configured as an application in IIS.</p>\r\n<p>Any thoughts please</p>\r\n<p>&nbsp;</p>\r\n<p>&lt;input id=&quot;gwProxy&quot; type=&quot;hidden&quot;&gt;&lt;!--Session data--&gt;&lt;/input&gt;&lt;input id=&quot;jsProxy&quot; onclick=&quot;jsCall();&quot; type=&quot;hidden&quot; /&gt;</p>",
+    "PostedDate": "2009-05-12T12:27:08.723-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

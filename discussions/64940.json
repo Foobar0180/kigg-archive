@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "221173",
+    "ThreadId": "64940",
+    "Html": "<p>Will this app run on IIS6 or is 7 required?</p>",
+    "PostedDate": "2009-08-08T15:36:20.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "221245",
+    "ThreadId": "64940",
+    "Html": "<p>Yes it can run under IIS 6.0</p>",
+    "PostedDate": "2009-08-09T05:54:13.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

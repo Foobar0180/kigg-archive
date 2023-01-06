@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "830124",
+    "ThreadId": "354004",
+    "Html": "\r\n<p>Hi,<br>\r\n<br>\r\nI am running KiGG under VS2008. My problem is that I can't publish stories. I am able to submit a new story. I can see it under New and Upcoming Stories, but I don't know how to make it publishable or publish it.</p>\r\n<p>I have also changed duration of &quot;MinimumAgeOfStoryInHoursToPublish&quot; and &quot;MaximumAgeOfStoryInHoursToPublish&quot; to 4 and 5.</p>\r\n<p>Can any one explain how status changes works.<br>\r\n<br>\r\n<br>\r\nThanks</p>\r\n",
+    "PostedDate": "2012-04-30T03:59:01.383-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "883672",
+    "ThreadId": "354004",
+    "Html": "\r\n<p>Hi There,</p>\r\n<p>&nbsp;</p>\r\n<p>On your admin panel, you will get a chance to publish the stories like &quot;Publishable&quot; and you click that link and boom you go. Sorry it might be too late for you. But someone might get benefited.</p>\r\n<p>&nbsp;</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>\r\n<p><a title=\"Sharepoint news\" href=\"http://www.sharepointsidekick.com\" target=\"_self\">Sharepoint News</a>&nbsp;- A kigg based site for Microsoft sharepoint community</p>\r\n",
+    "PostedDate": "2012-07-21T11:54:28.277-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

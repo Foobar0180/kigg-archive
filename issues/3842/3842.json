@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Use CommonServiceLocator instead of IoC",
+    "LastUpdatedDate": "2009-07-27T04:49:41.343-07:00",
+    "PlannedForRelease": "KiGG - 3.0",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-18T10:40:57.417-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Use CommonServiceLocator",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3842
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Why use CommonServiceLocator instead of IoC? Actually I see that KiGG IoC is much more flexible and testable than CommonServiceLocator!\r\nCan you clarify?",
+      "PostedDate": "2009-07-27T04:49:41.343-07:00",
+      "Id": 15934
+    }
+  ]
+}

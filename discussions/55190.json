@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "186312",
+    "ThreadId": "55190",
+    "Html": "I've tried to register my application as a twitter application and have set the twitter &quot;source&quot; parameter to be the name of my application and I have<br>\r\nregistered my application on http://twitter.com/oauth_clients, but it still doesn't show that my application is posting the twitter post.&nbsp; It is posting to Twitter, but it shows &quot;2 hours ago from Web&quot;<br>\r\nfor example.<br>\r\n<br>\r\nAny ideas?<br>\r\n",
+    "PostedDate": "2009-05-03T11:18:23.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

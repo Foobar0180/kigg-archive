@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "288108",
+    "ThreadId": "83893",
+    "Html": "<p>Hi all,</p>\r\n<p>I am using the mechanism to publish KiGG posts to a Twitter account. I noticed two diffferent entries appearing in Twitter. These entries have the prefix ''PUBLISHED'' or ''NEW&quot;&quot;. So far so good.</p>\r\n<p>I have two questions. What is the difference between PUBLISHED and NEW? There are many PUBLISHED entries and only a few NEW entries. My second question, I noticed that sometimes the same entries are published twice to Twitter with several minutes interval. Anyone any idea why this happens?</p>\r\n<p>The site can be viewed at: http://www.PartijPolitiekNieuws.nl (about political news in the Netherlands).</p>\r\n<p>Thanks for any help!</p>\r\n<p>Regards,</p>\r\n<p>Jos</p>",
+    "PostedDate": "2010-02-10T01:40:12.837-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "288114",
+    "ThreadId": "83893",
+    "Html": "<p>An update. I see that everytime I publish a post on the site, 15 new entries are published to Twitter.</p>",
+    "PostedDate": "2010-02-10T01:44:00.637-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

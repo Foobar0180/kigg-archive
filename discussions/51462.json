@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "172550",
+    "ThreadId": "51462",
+    "Html": "<div style=\"\">\r\nFor\r\nmy next web site I would prefer not to write everything from scratch.&nbsp;\r\nAt the same time I don't want to be looked to much into a framework, as I think I would be with DotNetNuke for example.&nbsp;&nbsp; It is not exactly a DIGG clone, but there are user created articles with comments, rankings etc.&nbsp; <br>\r\n<br>\r\nThe idea is to take KIGG as a starting point, and modify all user-facing views (We need dynamic language anyway).&nbsp; <br>\r\n<br>\r\nI am thinking of KIGG, because it seems to be quite nice,&nbsp; a lot of stuff is available in the package while the framework itself is not that many manmonths .&nbsp; Also I hope the MVC thing can make things easier.<br>\r\n<br>\r\nA <strong>-</strong>point is that it seems to be developer-oriented - the editor for example and this Open ID thing instead of the .NET framework membership provider.<br>\r\n<br>\r\n<span style=\"text-decoration:underline\">Some general requirements</span><br>\r\nSo I would like something that I can use at all levels.\r\n<ol>\r\n    <li>Access the DB (SQL Server) directly (The DB layout should not be much more complex than a self written app)</li>\r\n    <li>Business logic</li>\r\n    <li>Interface components (Web parts/Controls) -For example login, most read articles.</li>\r\n</ol>\r\n<p>For the fronted there should be sample pages that I can easily change.&nbsp; (Not to database driven)</p>\r\n<p>Thanks - <em style=\"color:blue\">Olav</em></p>\r\n</div>\r\n",
+    "PostedDate": "2009-03-26T15:55:17.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179608",
+    "ThreadId": "51462",
+    "Html": "Sure go a head and do let us know if you find any issue.<br>\r\n",
+    "PostedDate": "2009-04-15T07:38:24.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

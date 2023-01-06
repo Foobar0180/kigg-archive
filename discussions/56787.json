@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "191931",
+    "ThreadId": "56787",
+    "Html": "<p>Does KiGG run in IIS7 Classic mode or Integraded mode?</p>\r\n<p>Thanks.</p>",
+    "PostedDate": "2009-05-19T08:04:53.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "192097",
+    "ThreadId": "56787",
+    "Html": "<p>I have it on my local development machine on IIS 7 Integrated mode</p>",
+    "PostedDate": "2009-05-19T14:21:14.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

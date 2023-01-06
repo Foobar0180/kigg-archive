@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "198561",
+    "ThreadId": "58650",
+    "Html": "Anybody is interested in KiGG support for SQLite database?!\r\nCurrently we are almost done with MySQL support but not yet released even as beta. MySQL is one of the most used Database engines over web and it is very powerful so supporting it was good idea to give alternatives.\r\nNot sure about SQLite!\r\nSo I am collecting votes to implement this and test it. Implementation shouldn't take much time depending on the stabality of the any EF provider for SQLite. Test is the most important part on this.\r\nCurrently I have Devart dotConnect provider for SQLite as best candidate. But it is commercial product. Those who are interested and will vote by yes could you please help me find stabel free EF provider.\r\n\r\nNote:\r\nI really faced too much troubles with MySQL connector\\net provider for Entity Framework. But I fixed most of the bugs and it is stabel now on KiGG.",
+    "PostedDate": "2009-06-06T08:56:47.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

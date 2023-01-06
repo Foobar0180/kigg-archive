@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "236353",
+    "ThreadId": "69452",
+    "Html": "<p>Hi, thanks for sharing the nice project!</p>\r\n<p>I'm not so good at asp.net, I just installed Kigg on new website and I got several issues, wish anyone can give me assistance</p>\r\n<p>1. How I can add the Keyword, Title, Description?</p>\r\n<p>2. How I can edit the footers?</p>\r\n<p>New Kigg Website: <a title=ServeFault.com href=\"http://www.servefault.com\"><em>http://www.Servefault.com</em></a></p>\r\n<p>Thanks</p>\r\n<p>&nbsp;</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-18T23:26:04.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236355",
+    "ThreadId": "69452",
+    "Html": "<p>Hi Helen,</p>\r\n<p>In order to change Keywords, Title and Description you have to edit a web.config file. Find SiteTitle, MetaKeywords and MetaDescription and change them as you like.<br>Footer is defined in SiteTemplate.Master file (in &nbsp;Web\\View\\Shared). It starts with &lt;div id=&quot;footer&quot;&gt;.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-18T23:43:02.193-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236359",
+    "ThreadId": "69452",
+    "Html": "<p>Thank you in Advance! You're great!</p>",
+    "PostedDate": "2009-09-18T23:47:13.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236360",
+    "ThreadId": "69452",
+    "Html": "<p>And another issue, How I can change the category name?</p>",
+    "PostedDate": "2009-09-18T23:51:34.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236363",
+    "ThreadId": "69452",
+    "Html": "<p>Categories are in Data.sql file (Database folder).<br>You will have to change them in file and insert those rows again to the database (alternatively you can try changing them in the DB directly).</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-18T23:57:40.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236365",
+    "ThreadId": "69452",
+    "Html": "<p>I didn't try to insert the SQL database before, is it possible to use Visual Studio 2008 to insert?</p>",
+    "PostedDate": "2009-09-19T00:04:03.56-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236366",
+    "ThreadId": "69452",
+    "Html": "<p>And my website is hosted with webhost4life, their support team is already help me insert the data.sql into the Mssql 2005 server, is it possible to change the Category directly in the SQL database? They can support webbase sql admin</p>",
+    "PostedDate": "2009-09-19T00:07:06.1-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236368",
+    "ThreadId": "69452",
+    "Html": "<p>Yes, it is possible to change the data directly in SQL database. They need to change it in Category table. The categories are cached so your app will need to be restarted to see the effect.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-19T00:30:16.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236372",
+    "ThreadId": "69452",
+    "Html": "<p>Hi Thanks for the fast reply!</p>\r\n<p>I'd like to add &quot;Advertisement&quot; on the right &quot;sidebar&quot;, about &quot;300 x 250&quot; images, is it possible to provide me the code to add?&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you very much</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-19T00:57:55.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236403",
+    "ThreadId": "69452",
+    "Html": "<p>btw, we started deployment documentation check it out at</p>\r\n<p>http://kigg.codeplex.com/Wiki/View.aspx?title=Documentation</p>\r\n<p>Also</p>\r\n<p>http://kigg.codeplex.com/Wiki/View.aspx?title=Deployment%20Guide%20Part%201</p>\r\n<p>http://kigg.codeplex.com/Wiki/View.aspx?title=Deployment%20Guide%20Part%202</p>",
+    "PostedDate": "2009-09-19T05:52:19.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236422",
+    "ThreadId": "69452",
+    "Html": "<p>Another issue, I see the URL</p>\r\n<p>&quot;<a title=Servefault.com href=\"http://servefault.com/Feed/Atom/Published\">http://servefault.com/Feed/Atom/Published</a>&quot;</p>\r\n<p>is blank.&nbsp;</p>\r\n<p>and the category rss url are not working, either</p>\r\n<p>http://servefault.com/Feed/Rss/Category/Video</p>\r\n<p>http://servefault.com/Feed/Atom/Category/Video</p>\r\n<p>Can you please help me check?</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-09-19T08:55:25.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236499",
+    "ThreadId": "69452",
+    "Html": "<p>Okay, I see the Rss issue is because I've space in the sitetitle in the &quot;web.config&quot;, Now I've another issue</p>\r\n<p>&quot;Latest publish story&quot;, I'd like to change the text, How I can change it please? Using Kigg 2.5</p>",
+    "PostedDate": "2009-09-19T18:59:32.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236542",
+    "ThreadId": "69452",
+    "Html": "<p>You have to change StoryContoller.cs. After that you need to rebuild Kigg application.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-20T00:23:26.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236546",
+    "ThreadId": "69452",
+    "Html": "<p>Hi,</p>\r\n<p>The file you referred &quot;StoryContoller.cs&quot;， seems I cannot find where's located. Sorry!</p>\r\n<p>And when you browse &quot;dotnetshoutout.com&quot;, there're 2 Sponsor Images&nbsp;</p>\r\n<p>I'd like to add 2 sponsored images (300 x 250) on my website too. Can you please guide me how to proceed?&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks very much</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-20T01:03:09.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236651",
+    "ThreadId": "69452",
+    "Html": "<p>It is located inside web project, you should open the source code to do the modifications</p>",
+    "PostedDate": "2009-09-20T13:04:30.737-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

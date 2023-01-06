@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "280564",
+    "ThreadId": "81705",
+    "Html": "<p>I am facing the same issue... http://localhost/kigg is giving HTTP 403 error. mine is also windows xp.  Running on VS 2008, have installed VS 2010 Beta also. Please anybody suggest what we need to do to fix this issue.   It is asking :   Most likely causes:  This website requires you to log in.</p>\r\n<p>I have given all the permission to the web folder for all the users.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-01-22T06:11:17.343-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

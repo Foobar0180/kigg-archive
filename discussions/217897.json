@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "461808",
+    "ThreadId": "217897",
+    "Html": "<p>&nbsp;</p>\r\n<p>Please help to resolve this:</p>\r\n<p>The build is successful, but the web page got error:</p>\r\n<p><span>\r\n<h1>Server Error in '/' Application. \r\n<hr size=1>\r\n</h1>\r\n<h2><em>The specified metadata path is not valid. A valid  path must be either an existing directory, an existing file with  extension '.csdl', '.ssdl', or '.msl', or a URI that identifies an  embedded resource.</em></h2>\r\n</span> <span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"> <strong> Description: </strong>An unhandled exception occurred during  the execution of the current web request. Please review the stack trace  for more information about the error and where it originated in the  code.              <br><br> <strong> Exception Details: </strong>System.Data.MetadataException:  The specified metadata path is not valid. A valid path must be either an  existing directory, an existing file with extension '.csdl', '.ssdl',  or '.msl', or a URI that identifies an embedded resource.<br><br> <strong>Source Error:</strong> <br><br> </span></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<pre>Line 43:         }<br>Line 44: <br><span style=\"color:red\">Line 45:         public Database(string connectionString) :<br></span>Line 46:             base(connectionString, _defaultContainerName)<br>Line 47:         {   </pre>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"> <br> <strong> Source File: </strong> C:\\XCDocument\\04ASPNETMVC\\00Code\\KiGG\\Kigg mvc  2.0\\v2.x\\EntityFramework\\Repository\\Database\\Database.cs<strong> &nbsp;&nbsp; Line: </strong> 45 </span></p>",
+    "PostedDate": "2010-06-30T13:40:52.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "465943",
+    "ThreadId": "217897",
+    "Html": "<p>Copy all the files (csdl, ssdl, msl) from &quot;Kigg-38916\\v2.x\\SharedFiles&quot; to your app_data folder under web project&nbsp; (When I said&nbsp;copy means literally copy and paste not just pasting the links)</p>\r\n<p>Cheers</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-11T03:01:59.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "907958",
+    "ThreadId": "217897",
+    "Html": "<p>Thanks it works...</p>",
+    "PostedDate": "2012-09-03T14:20:41.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

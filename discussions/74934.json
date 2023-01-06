@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "256455",
+    "ThreadId": "74934",
+    "Html": "<p>Hi there,</p>\r\n<p>I am running KIGG under VS2008. My problem is that I can't publish stories. I am able to submit a new story. I can see it under New and Upcoming Stories, but I don't know how to make it publishable or publish it.</p>\r\n<p>Any help would be appreciated.</p>\r\n<p>Thanks</p>\r\n<p>fromano2802</p>",
+    "PostedDate": "2009-11-12T12:30:17.147-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "256598",
+    "ThreadId": "74934",
+    "Html": "<p>A story needs to be for 4 hours (I think you can change the time in web.config) in Upcoming before you can publish it.<br>After this time you can publish stories by using Publish link in the Admin panel.</p>",
+    "PostedDate": "2009-11-12T22:54:34.92-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "256768",
+    "ThreadId": "74934",
+    "Html": "<p>Thank you for the answer Pawlos,</p>\r\n<p>I just didn't know why I could not publish the stories. I'll check the web.config to see if I can change the time.</p>\r\n<p>Cheers</p>",
+    "PostedDate": "2009-11-13T07:03:00.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

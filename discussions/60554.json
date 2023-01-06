@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "205118",
+    "ThreadId": "60554",
+    "Html": "<p>hi i installed KiGG 2.2 on my comp.</p>\r\n<p>&nbsp;</p>\r\n<p>i followed all the instructions from the text file. am using VS2008 and integrated web server.</p>\r\n<p>but when i run the soultion, webpage is loading with directory browsing.</p>\r\n<p>i have no idea which is the start page, and make the app run.</p>\r\n<p>can anyone please help :)</p>\r\n<p>&nbsp;</p>\r\n<p>thanks in advance.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-06-24T12:09:36.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "205129",
+    "ThreadId": "60554",
+    "Html": "<p>hey i solved this, i was always looking for http://localhost:49731 .</p>\r\n<p>solved it by using http://localhost:49731/kigg</p>\r\n<p>:)</p>",
+    "PostedDate": "2009-06-24T12:47:58.337-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

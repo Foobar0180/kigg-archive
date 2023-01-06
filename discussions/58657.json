@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "198575",
+    "ThreadId": "58657",
+    "Html": "<p>There is o problem when calling twice or more one action of the same controller.</p>\r\n<p>For exemple:</p>\r\n<p><code>Html.RenderAction&lt;StoryController&gt;(c =&gt; c.PromotedBy(userId, 2));<br>Html.RenderAction&lt;StoryController&gt;(c =&gt; c.PromotedBy(userId, page));</code></p>\r\n<p>Both RenderActions will be executed with first call params (page=2).</p>\r\n<p>I think it's a problem with ControllerFactory or...</p>",
+    "PostedDate": "2009-06-06T11:30:07.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "198582",
+    "ThreadId": "58657",
+    "Html": "<p>I found the problem! :)</p>\r\n<p>The problem is in Web.config:&nbsp;&lt;lifetime type=&quot;PerWebRequest&quot;/&gt; - controller must NOT be PerWebRequest lifetime</p>\r\n<p>It generated me a lot of problems!</p>",
+    "PostedDate": "2009-06-06T12:10:54.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

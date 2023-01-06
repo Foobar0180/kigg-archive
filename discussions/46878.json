@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "156824",
+    "ThreadId": "46878",
+    "Html": "I've just downloaded the KiGG solution and when I try to run it I get &quot;Story does not exists&quot; exception in StoryController Detail action. It's trying to find a story with the name &quot;default.aspx&quot;.<br>\r\n<br>\r\nI'm running Win 2003, SQL Server 2008 Dev, VS 2008, ASP.NET MVC RC. Using Visual Studio Web Server for KiGG.<br>\r\n",
+    "PostedDate": "2009-02-11T14:18:01.793-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "157017",
+    "ThreadId": "46878",
+    "Html": "Reading some other posts I fixed the issue by deleting the Default.aspx.<br>\r\n",
+    "PostedDate": "2009-02-12T06:14:34.89-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "157048",
+    "ThreadId": "46878",
+    "Html": "Ok great.<br>\r\n",
+    "PostedDate": "2009-02-12T07:05:09.187-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

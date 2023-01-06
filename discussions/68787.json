@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "234079",
+    "ThreadId": "68787",
+    "Html": "<p>Hi, as newbie, I have a few questions.</p>\r\n<p>I am using KiGG for <a href=\"http://www.jojoot.nl\">www.jojoot.nl</a>, a site where everyone can publish links to video's from YouTube, Vimeo or any other site. I have made most modifications that I wanted&nbsp;including translating it to Dutch but I need some help with several issues.</p>\r\n<p>- How/where do I change the title of the startpage?&nbsp;It now sais ''Latest published stories''<br>- Sometimes the graphic for a video (1st frame?) is not displayed, see the homepage of jojoot.nl<br>- How/where can I change the words &quot;days, hours, and minutes&quot;? I want these also in Dutch<br>- Where can I change the texts of the emails that are generated? They are now in English</p>\r\n<p>I have some other changes where I can use some help so if anybody is willing to help me, I would really appreciate it!</p>\r\n<p>Thanks for your great tool!</p>\r\n<p>Regards,<br>Jos</p>",
+    "PostedDate": "2009-09-13T12:34:04.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234089",
+    "ThreadId": "68787",
+    "Html": "<p>Hi Jos,</p>\r\n<p>I can't help you with nr 2, but as far as for the other questions.</p>\r\n<p>1) This text you can find in StoryController.cs, as well as in FeedControler.cs if you want to change this text also in rss feeds.<br>3) Check out DateTimeExtension.cs file in Extension folder.&nbsp; <br>4) Mail templates are in MailTempletes folders.</p>\r\n<p>I hope this will help you. I've been through translation process so if you need some help feel free to ask.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-13T14:02:56.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234091",
+    "ThreadId": "68787",
+    "Html": "<p>Hi,</p>\r\n<p>For your first issue, I just discovered that some strings are hardcoded inside controllers! The ''Latest published stories'' is currently hardcoded inside StoryController.cs and if you are using the deployment package of v2.5 then you'll not be able to change it. The only way currently is to Open the source code, modify your literals in this classes -it is used in several places- and then recompile the code.</p>\r\n<p>For 2nd issue about view 1st frame, I don't know what is the reason! and actually I couldn't be able to see the issue. As I just opened the jojoot.nl and the video on the right display fine. and there is a snapshot of some video frame!</p>\r\n<p>For the 3rd issue this is also a hard coded string in side Kigg.Web.DateTimeExtension class! It will require you to modify it and recompile.</p>\r\n<p>for 4th issue, e-mail templates can be found under folder MailTemplates of your web. You can modify the text on those templates. but be aware of not to mess up with the placeholder that is used to be replaced with data fetched from kigg.</p>\r\n<p>For the literal strings issues you mentioned you need just to upload the Kigg.Web.dll assembly as all changes will be inside this assembly.</p>\r\n<p>I hope I was able to cover some of your needs. We want to support localization, but it might take sometime.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-13T14:17:42.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234092",
+    "ThreadId": "68787",
+    "Html": "<p>Thanks <a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl02_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/pawlos\">pawlos</a> for your response, I was writing mine while you posted yours :o) thank you for mentioning the FeedController</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-13T14:19:33.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234143",
+    "ThreadId": "68787",
+    "Html": "<p>I am also interested by localization<br>I started working on it for my own project<br>The hard part are strings hardcoded in JS&nbsp;scripts<br>I still did not find a good strategy for doint it</p>",
+    "PostedDate": "2009-09-13T19:00:46.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234188",
+    "ThreadId": "68787",
+    "Html": "<p>I'm impressed with your quick&nbsp;responses! I will have a look and see how far I can get with your advise.</p>\r\n<p>Regards,<br>Jos</p>",
+    "PostedDate": "2009-09-13T23:41:34.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234224",
+    "ThreadId": "68787",
+    "Html": "<p><a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl08_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/nachid\">@nachid</a> I didn't yet started to look at localization but I agree with you. The JS localization would be the hard part. but I am thinking of collecting all strings in JS into single JS file that will be used as localized resource. And based on culture the correct localized version will be used.</p>\r\n<p>I might need to return to you later when I start working on localization. I might need some inputs to see how far you reached.</p>",
+    "PostedDate": "2009-09-14T02:32:57.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234248",
+    "ThreadId": "68787",
+    "Html": "<p>Moses<br>I started a new thread for this important subject</p>",
+    "PostedDate": "2009-09-14T04:00:03.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "200155",
+    "ThreadId": "59119",
+    "Html": "<p>I'm evaluating KiGG&nbsp;&nbsp;for sample web site and did some tests using wcat , but results aren't very impressive - about&nbsp; 8 req/sec <br>on not so young dual core test server .<br>What kind of performance should I expect from KiGG ?<br>Are there&nbsp; any config settings to improve performance ?</p>",
+    "PostedDate": "2009-06-10T13:28:58.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "200321",
+    "ThreadId": "59119",
+    "Html": "<p>Which page you are currently testing, With the Default setting Home page to first 5 page is cached and so is the upcoming and it should be served from the memory. I will do a Load test and publish the result.</p>",
+    "PostedDate": "2009-06-11T01:07:30.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "200387",
+    "ThreadId": "59119",
+    "Html": "<p>I've tested one of the category pages without content . <br>It would be great if you could do some test so I could confront my results .</p>",
+    "PostedDate": "2009-06-11T05:52:24.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

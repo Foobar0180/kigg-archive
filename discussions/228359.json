@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "497672",
+    "ThreadId": "228359",
+    "Html": "<p><span style=\"color:#365f91\">Hello,</span></p>\r\n<p><span style=\"color:#365f91\">I&rsquo;m using KiGG for a dutch site where people can share political articles: PartijPolitiekNieuws.nl and I'm very happy with it. However,&nbsp;I have two questions, maybe someone is able to help me.</span></p>\r\n<p><span style=\"color:#365f91\" lang=EN-US>&nbsp;</span><span style=\"color:#365f91\">1. Currently the homepage items are sorted, based on several criteria (votes, userscore, etc). What can I do to sort the homepage in such a way that the latest articles are displayed on top?</span></p>\r\n<p><span style=\"color:#365f91\">2. Although people do comment on articles, most visitors are not aware of these comments. Is there an easy way to display comments to articles in the right sidebar? I was thinking of using a RSS feed and display this feed in a widget. Is there such a feed or is there an easy way to create it?</span></p>\r\n<p><span style=\"color:#365f91\" lang=EN-US>Please note that I&rsquo;m not a developer :(</span></p>\r\n<p><span style=\"color:#365f91\">Regards and thanks for your time,<br></span><span style=\"color:#365f91\">Jos</span></p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-09-23T10:11:16.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501754",
+    "ThreadId": "228359",
+    "Html": "<p>Hi Jos,</p>\r\n<p>Your site is looking very good. Congratulations. The sorting mechanism is a huge puzzle. I have seen the code and I did understand a bit but I am not entirely sure about the algorithm. I don't want to give you the false information.</p>\r\n<p>Regarding the comments RSS feed, I am planning to implement facebook comment section in to kiGG application. If I can successfully implement this into kiGG then it will become easier to show the RSS feed just like you are showing other feeds using widgetbox.</p>\r\n<p>In the mean time you stay tuned. If you want to reach me you can email me then we will discuss further. I would like to meet like minded people so keep in touch.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>",
+    "PostedDate": "2010-10-03T15:07:12.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "511775",
+    "ThreadId": "228359",
+    "Html": "\r\n<p><span style=\"font-size:15px; color:#365f91\">Thanks Narendra, goodluck with your changes to KiGG. Unfortunately I&rsquo;m not a developer so I can&rsquo;t help you.</span></p>\r\n<p><span style=\"font-size:15px; color:#365f91\">Regards,</span></p>\r\n<p><span lang=\"EN-US\" style=\"font-size:11pt; color:#365f91\">Jos&nbsp;</span></p>\r\n",
+    "PostedDate": "2010-10-24T11:13:31.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

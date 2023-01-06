@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "252932",
+    "ThreadId": "73952",
+    "Html": "<p>Hi everyone,</p>\r\n<p>First I want to say that Kigg is a great program and I'm hoping to get it running on my web host server to appreciate it to it's fullest extend. Please bare with me as I'm not a professional programmer and still have a lot to learn. I followed the instruction to install KiGG and here's what I did:</p>\r\n<p>1- Completed Clean Install successfully</p>\r\n<p>2 - I get the following error:</p>\r\n<p><span style=\"text-transform:none;text-indent:0px;border-collapse:separate;font:medium 'Times New Roman';white-space:normal;letter-spacing:normal;color:#000000;word-spacing:0px\"><span style=\"font-family:Verdana;font-size:11px\"><span>\r\n<h2 style=\"font-family:Verdana;color:maroon;font-size:14pt;font-weight:normal\"><em>Compilation Error</em></h2>\r\n<p>&nbsp;</p>\r\n<p><span id=\"_marker\">&nbsp;3 - I changed NETWORK SERVICE to Full Trust and still get the same error</span></p>\r\n<p><span>4 . I assumed the problem is my server, so I published the built website to My Web Server hosting and I get an access denied error as well.</span></p>\r\n<p><span>I contacted the host and they say it has to have an index page or a starting page to work!!</span></p>\r\n<p><span>Can you please provide a clear Installation instruction of how to install this great program directly on a web server? and specifiy which download should be used for deployment.</span></p>\r\n<p><span>Thanks again and hope to hear from you soon.</span></p>\r\n<p><span>Regards</span></p>\r\n</span><span style=\"font-family:Arial, Helvetica, Geneva, SunSans-Regular, sans-serif\"><strong style=\"margin-top:-5px;font-family:Verdana;color:black;font-weight:bold\">Description:&nbsp;</strong>An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately.&nbsp;</span></span></span><br><br><strong style=\"margin-top:-5px;font-family:Verdana;color:black;font-weight:bold\">Compiler Error Message:&nbsp;</strong>CS0016: Could not write to output file 'c:\\WINDOWS\\Microsoft.NET\\Framework64\\v2.0.50727\\Temporary ASP.NET Files\\kigg\\b9b5626e\\a988d17f\\App_global.asax.agqbwfqo.dll' -- 'Access is denied.</p>\r\n<p><span>&nbsp;</span></p>",
+    "PostedDate": "2009-11-03T11:00:40.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253508",
+    "ThreadId": "73952",
+    "Html": "<p>Any suggestions?</p>\r\n<p>Why am I getting this error?</p>\r\n<p>I've set the Specific page to blank screen and applied server setting to all users. but I still get this error.</p>\r\n<p>Any suggestion is appreciated.</p>\r\n<p>Thank you</p>",
+    "PostedDate": "2009-11-04T15:27:52.033-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253929",
+    "ThreadId": "73952",
+    "Html": "<p>OK, This is what I did:</p>\r\n<p>1. I downloaded KiGG 2.5 Web and Database Script (Release Build) <span id=\"ctl00_ctl00_MasterContent_Content_ReleasePanelOrderingContainer_ReleaseFilesCtrl_FileList_ctl00_currentRecommendedContainer\" style=\"display:none\">(Recommended default)&nbsp; and Extract the Zip in a Directory (e.g. C:\\Projects\\KiGG)<br>- Done</span></p>\r\n<p>2. Created Web Folder named KiGG (e.g. C:\\Projects\\KiGG\\Web) as Application in IIS7 manager. Ensure that application pool is set to Default. (Skip this step, in case you are using Integrated Web Server of Visual Studio)</p>\r\n<p>- Done</p>\r\n<p>&nbsp;3. Now Open and execute the Create.sql script from Database Folder (e.g. C:\\Projects\\KiGG\\Database\\Create.sql) and run in SQL Management Studio.<br>- Done</p>\r\n<p>4. Next Open and execute the Data.sql from the Database folder (e.g. C:\\Projects\\KiGG\\Database\\data.sql) to populate some tag/category.<br>- Done</p>\r\n<p>5. Change the Database Connection String.</p>\r\n<p>6. Created an Account in <a href=\"http://www.pageglimpse.com/\">http://www.pageglimpse.com/</a> and put&nbsp;the developer's key&nbsp;in unity.ef.config line 412.</p>\r\n<p>7. Created an Account in <a href=\"http://recaptcha.net\">http://recaptcha.net</a> and put API Keys in unity.ef.config lines 984 &amp; 987</p>\r\n<p>8. in Visual studio set Start Options to &quot;Specific Page&quot; and left the value Blank</p>\r\n<p>9. Built and run</p>\r\n<p>10. I only get the Directory Index and not able to pull up the site!</p>\r\n<p>Where did I go wrong??</p>\r\n<p>Thanx</p>",
+    "PostedDate": "2009-11-05T12:29:36.507-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "255742",
+    "ThreadId": "73952",
+    "Html": "<p>Resolved.</p>",
+    "PostedDate": "2009-11-10T15:10:43.44-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "280585",
+    "ThreadId": "73952",
+    "Html": "<p>Hello Geneboss,</p>\r\n<p>&nbsp;&nbsp; &nbsp;I too followed the same step as mentioned by you on Nov 6 2009, but no luck for me . Will you please suggest me what i need to do for it.</p>\r\n<p>I am getting</p>\r\n<tr>\r\n<td id=infoIconAlign rowspan=2 width=60 align=left valign=top>&nbsp;</td>\r\n<td id=mainTitleAlign width=\"*\" align=left valign=center>\r\n<h1 id=mainTitle>The website declined to show this webpage</h1>\r\n</td>\r\n</tr>\r\n<tr>\r\n&lt;!-- This row is for HTTP status code, as well as the divider--&gt;\r\n<td id=http403Align align=right>&nbsp;HTTP  403</td>\r\n</tr>\r\n&lt;!-- Error Body --&gt; \r\n<tr>\r\n<td>&nbsp;</td>\r\n<td id=likelyCausesAlign align=left valign=top>\r\n<h3 id=likelyCauses>Most likely causes:</h3>\r\n<ul>\r\n<li id=causeNeedAuth>This website requires you to log in.</li>\r\n</ul>\r\n</td>\r\n</tr>",
+    "PostedDate": "2010-01-22T07:20:56.373-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "281448",
+    "ThreadId": "73952",
+    "Html": "<blockquote style=\"border:solid .1em #ccc;font-style:italic;margin:.25em 1em 0 1em;padding:0 .25em 0 .25em\"><strong>geneboss wrote:</strong><br>\r\n<p>Resolved.</p>\r\n</blockquote>\r\n<p>Maybe you could share the solution for others?</p>",
+    "PostedDate": "2010-01-25T08:18:03.697-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "283150",
+    "ThreadId": "73952",
+    "Html": "<p>Hello,</p>\r\n<p>You need to contact your host server and ask them to set up Wildcard Application Mapping for your domain. This should take care of this issue.</p>\r\n<p>Good Luck</p>",
+    "PostedDate": "2010-01-28T22:09:59.163-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "283152",
+    "ThreadId": "73952",
+    "Html": "<p>Thanks Geneboss for answering, but I am using localhost for time being. but have no clue how to solve this problem.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-01-28T22:18:19.117-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "283167",
+    "ThreadId": "73952",
+    "Html": "<p>OK...</p>\r\n<p>--Check the %systemroot% folder to see if a Temp folder exists, if not, then create it.<br>--Create Full permissions on the Temp folder to my network service account.<br>--in Control panel go to System and Maintenace --&gt; System --&gt; ;On the &quot;Advanced&quot; tab, click &quot;Environment Variables&quot;<br>--Select the temp variable under &quot;System Variables&quot;, and then click edit.<br>--Type %systemroot%\\Temp in the variable value box, and then click OK.<br>Repeat the steps in 4 and 5 to edit the &quot;TMP&quot; variable, and then click OK twice.<br>Restart IIS service, click &quot;Start&quot; - &quot;Run&quot; - &quot;IISRESET&quot;<br>This will reset the IIS service.</p>\r\n<p>This should solve the problem.</p>",
+    "PostedDate": "2010-01-28T23:11:13.313-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "283177",
+    "ThreadId": "73952",
+    "Html": "<p>Thanks again Geneboss, for taking all the trouble to explain this in detail.</p>\r\n<p>I followed just as you suggested. but still no luck Geneboss.</p>\r\n<p>If you have some free time you, we can either do chat or u can access machine by Teamviewer. Please let me know. Thanks once again.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-01-28T23:37:13.74-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "688271",
+    "ThreadId": "276951",
+    "Html": "\r\n<p><span id=\"result_box\" lang=\"en\"><span>&nbsp;If</span></span> Submit New Story\r\n<span id=\"result_box\" lang=\"en\"><span>the URL</span> <span>page encoding</span>\r\n<span>format is not</span></span><span> &rdquo;charset=utf-8&ldquo; （Example：&ldquo;</span><span>charset=gb2312&rdquo;）,</span><span id=\"result_box\" lang=\"en\"><span>Access to</span>\r\n<span>the contents of</span> <span>garbage；</span></span></p>\r\n<pre id=\"line1\"><span> Like This: </span><br>URL:http://news.163.com/11/1024/09/7H4E62T600014JB5.html<br><span><br></span>title：����涨���&frac34;������е���_������������ <br><br>Description：���ɱ��ܾ��黹25���й�����Сͧ����6469���⽻����Ա�������Ʋ����й�����������5970���Ϻ�һ��&yen;�̽�������ҵ��&Chi;��(ͼ)����5349�������ػ�3���й��洬 ����31����Ա����4722�����ϼ�ί�ɲ����Ͻа���ί�������4344��<br><br><br><span id=\"result_box\" lang=\"en\"><span></span></span></pre>\r\n",
+    "PostedDate": "2011-10-24T01:06:58.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "688297",
+    "ThreadId": "276951",
+    "Html": "<p>I think this was done on purpose for DotNetShoutout to only accept english content!</p>\r\n<p>Anyway I'm going to fix this in next version. I'm not able to work on any bugs at the moment, so if you would like to submit a solution for it that would be fine.</p>",
+    "PostedDate": "2011-10-24T02:18:21.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

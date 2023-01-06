@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not applicable anymore.",
+    "ClosedDate": "2009-01-13T08:31:42.08-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "var stories = Stories.Where(s => s.StoryTags.Count(st => st.TagID == tagId) > 0);",
+    "LastUpdatedDate": "2009-01-13T08:31:42.08-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-07-06T17:11:32.203-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Redundant LINQ to SQL clauses",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2675
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Sorry, pressing enter for a line break here (Firefox 3), submits the form, so I didn't write my enter post.\r\n\r\nAs I was preparing the details, I discovered that the issue I was posted wasn't redundant at all. So please disregard (I haven't submitted the details I was going to...)\r\n\r\nAt least I found a bug for the codeplex team.",
+      "PostedDate": "2008-07-06T17:22:54.467-07:00",
+      "Id": 15883
+    }
+  ]
+}

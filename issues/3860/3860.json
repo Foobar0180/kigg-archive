@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-06-02T16:21:48.723-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Add PostRank Strategy when Publishing Story",
+    "LastUpdatedDate": "2009-06-02T16:21:48.723-07:00",
+    "PlannedForRelease": "KiGG - 2.2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-20T22:44:52.493-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add PostRank Strategy when Publishing Story",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3860
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

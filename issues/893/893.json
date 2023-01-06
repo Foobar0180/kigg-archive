@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed",
+    "ClosedDate": "2008-03-10T17:53:28.777-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Fix the Regular expression to accept query string in the Url",
+    "LastUpdatedDate": "2008-03-10T17:53:28.777-07:00",
+    "PlannedForRelease": "v1.1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-02-20T11:55:06.16-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Url Validation in the client side",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 893
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

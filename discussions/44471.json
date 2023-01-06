@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "148021",
+    "ThreadId": "44471",
+    "Html": "Seems I have to register the following account + a domain to make Kigg2 working.<div><br></div><div><div>3. Create an account with the following external services:</div><div><span style=\"white-space:pre\">\t</span>-http://www.pageglimpse.com/</div><div><span style=\"white-space:pre\">\t</span>-http://www.websnapr.com/</div><div><span style=\"white-space:pre\">\t</span>-http://antispam.typepad.com/</div><div><span style=\"white-space:pre\">\t</span>-http://akismet.com/</div><div><span style=\"white-space:pre\">\t</span>-http://defensio.com/</div><div><span style=\"white-space:pre\">\t</span>-http://recaptcha.net/</div><div><br></div><div>Is there is a way to switch off this component?</div><div><br></div><div>Otherwise, It is really hard for me to run/debug in VS2008..</div><div><br></div><div>Correct me if I'm wrong</div></div>",
+    "PostedDate": "2009-01-17T18:06:35.827-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "148460",
+    "ThreadId": "44471",
+    "Html": "Hi,<br>\r\n<br>\r\nI just updated it. also the instructions, at minimum you have to configure reCaptcha and WebSnapr account, everything else is optional. \r\n",
+    "PostedDate": "2009-01-19T11:39:48.937-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150006",
+    "ThreadId": "44471",
+    "Html": "I am curious. How do i create an account with the following external services? Is that something that I need to do in IIS7? I am using Windows Vista SP 1 for my development machine.<br>\r\n<br>\r\nAny help? <br>\r\n",
+    "PostedDate": "2009-01-22T17:47:37.163-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150020",
+    "ThreadId": "44471",
+    "Html": "@chuawenching:<br>\r\n<br>\r\nAt minimum, you have to register with either WebSnapr or PageGlimpse to show the web page thumbnail and for reCaptcha.net for Captcha. All these service are free for non-commercial usage I guess. Just visit their site for registration and API key.<br>\r\nThere is also an instruction file in download for the minimum configuration.<br>\r\n<br>\r\nLet me know if you need anything more.<br>\r\n",
+    "PostedDate": "2009-01-22T18:52:11.533-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

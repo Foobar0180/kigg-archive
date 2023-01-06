@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "198795",
+    "ThreadId": "58715",
+    "Html": "<p>I've downloaded the source and I'd like to figure out how to add all of the tests to a VMDI file.</p>\r\n<p>Apparently Kigg uses Xunit and Xunit isn't compatible with MSTest. Correct?</p>\r\n<p>Is there an easy way to convert from Xunit to MSTest?</p>\r\n<p>I know I can run the Xunit tests as part of a Team build using:<a title=\"http://jonnekats.wordpress.com/2009/05/07/integrate-xunit-tests-into-your-daily-team-build/\" href=\"http://jonnekats.wordpress.com/2009/05/07/integrate-xunit-tests-into-your-daily-team-build/\">http://jonnekats.wordpress.com/2009/05/07/integrate-xunit-tests-into-your-daily-team-build/</a></p>\r\n<p>But this is a hack and I'd like to demonstrate KIGG working with Test edition of VSTS.</p>\r\n<p>How do I take the existing tests and put the into a test list?</p>\r\n<p>Thanks for the help.</p>",
+    "PostedDate": "2009-06-07T13:13:05.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199872",
+    "ThreadId": "58715",
+    "Html": "<p>I don't know if any straight forward way to do that. But you might copy the classes and start modify them. Maybe do Replace all such as [Fact] to [TestMethod] etc...</p>\r\n<p>Just because of time I couldn't port test to VSTS tests.</p>",
+    "PostedDate": "2009-06-10T01:36:41.803-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199880",
+    "ThreadId": "58715",
+    "Html": "<p>I think we need to support have the support for VWD as MsTest is only available from VS Pro. @Ianceicys Would you pls post this issue in xunit.codeplex.com.</p>",
+    "PostedDate": "2009-06-10T01:51:30.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

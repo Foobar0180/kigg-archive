@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "205774",
+    "ThreadId": "60736",
+    "Html": "<p>How can I install kigg in a shared hosting environment? Which files I should upload?</p>",
+    "PostedDate": "2009-06-25T23:28:28.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "207074",
+    "ThreadId": "60736",
+    "Html": "<p>Compile the solution then upload the Web folder. Be sure to modify your configuration, Assets, and certain views to represent your custom site.</p>\r\n<p>I'm not aware of any problems from a shared hosting environment, but do make sure it's on IIS7 in Integrated mode.</p>",
+    "PostedDate": "2009-06-30T07:45:10.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

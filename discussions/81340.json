@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "279148",
+    "ThreadId": "81340",
+    "Html": "<p>Hi!</p>\r\n<p>I've configured KiGG as mentioned step by step in documentation part 1. Microsoft .Net Framework 3.5 SP1 is installed and also ASP.NET MVC is installed. I've configured it at default port (port 80). When I try to browse it using this url http://localhost/KiGG then it doesn't show any page but it lists all the directories and files in KiGG directory. I couldn't find any default page settings. Can anybody please help me how can I make my KiGG running?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>",
+    "PostedDate": "2010-01-19T12:24:08.483-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

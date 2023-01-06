@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "153540",
+    "ThreadId": "46015",
+    "Html": "<p>I get an error when executing the line: <span style=\"color:#2b91af;font-size:13px\"><span style=\"color:#2b91af;font-size:13px\">\r\n<p>&nbsp;</p>\r\n<p>IAuthenticationRequest</p>\r\n</span>\r\n<p>&nbsp;</p>\r\n</span></p>\r\n<p><span style=\"font-size:13px\"> request = OpenIdRelyingParty.CreateRequest(identifier, realm); (MembershipController.cs Ln109)<br>\r\n<p>&nbsp;</p>\r\n</span></p>\r\n<br>\r\nError:<br>\r\n<br>\r\nreturn_to 'http://localhost:52053/OpenId' not under realm 'http://localhost:52053/Kigg/OpenId'.<br>\r\n<br>\r\nAny thoughts on why this is happening would be appreciated.<br>\r\n<br>\r\nThanks,<br>\r\naztrip7s<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-02T15:54:23.627-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154062",
+    "ThreadId": "46015",
+    "Html": "I think most of the openid provider requires the OpenID redirect url under the realm, this seems a standard and since the provider requires to check back the url which is not possible with a local host url. I think you can get more detail on this in the DotNetOpenID library group which is used for the OpenID support.<br>\r\n",
+    "PostedDate": "2009-02-03T20:03:20.31-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

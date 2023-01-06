@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "Implemented changeset #19533",
+    "ClosedDate": "2009-05-15T09:23:10.813-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Implementation of Entity Framework should cover:\n-Domain Objects\n-Repositories\n-DataLoadOptions for ObjectContext to support eager loading in a similar way LINQ to SQL does\n-Unit Tests\n-Integration Unit Tests",
+    "LastUpdatedDate": "2009-05-15T09:23:10.813-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-05-03T04:10:21.943-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Entity Framework domain model & repository implementation",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 4023
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

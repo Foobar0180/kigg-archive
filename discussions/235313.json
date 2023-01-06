@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "524316",
+    "ThreadId": "235313",
+    "Html": "\r\n<p>There are many dlls in the bin folder that Kigg references.. Where is the code for all the Kigg.*.dlls?</p>\r\n<p>ex.</p>\r\n<p><span style=\"white-space:pre\">Kigg.Core.dll,Kigg.DataServices.dll,Kigg.Infrastructure.EF.dll,Kigg.Infrastructure.EnterpriseLibrary.dll,Kigg.Infrastructure.HtmlAgilityPack.dll,Kigg.Infrastructure.LinqToSql.dll,Kigg.Web.dll,<br>\r\n</span></p>\r\n",
+    "PostedDate": "2010-11-19T05:49:16.513-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "524344",
+    "ThreadId": "235313",
+    "Html": "\r\n<p>Disregard.... It's on in the source code section...</p>\r\n",
+    "PostedDate": "2010-11-19T07:18:16.87-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

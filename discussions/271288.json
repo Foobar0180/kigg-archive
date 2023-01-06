@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "666837",
+    "ThreadId": "271288",
+    "Html": "\r\n<p>Thought to highlight few of the breaking changes</p>\r\n<ul>\r\n<li>Replacing GUIDs with long identity IDs (Planning to maintain GUID column with name RowId). You can imagine the impact of this change :(\r\n</li><li>Using Entity Framework Code First approach. Currently using June 2011 CTP </li><li>No more Domain Object interfaces e.g. ICategory, IStory, IUser etc... All removed and start using the conceret POCO type directly.\r\n</li><li>Lots of API breaking changes. e.g. No more methods will reside on Domain Objects\r\n</li><li>Planning to stop using SQL Server Full Text search and use Lucene.Net as search engine.\r\n</li></ul>\r\n<p>Note: This thread is under edit. I might add more points in future when I remember something or do a breaking change in something</p>\r\n",
+    "PostedDate": "2011-09-02T07:07:28.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "666902",
+    "ThreadId": "271288",
+    "Html": "<p>This is great news!&nbsp;&nbsp;One of the principles I would like you to keep in mid is a maintainability.</p>\r\n<p>I would like to see a clean separation between data, models, services, and presentations with loose coupling.&nbsp;</p>\r\n<p>When we upgrade the data layer, we should not worry about changing the other layers (domain models, services, UI).</p>\r\n<p>For example, if I want to use Massive or PetaPOCO approach instead of EF, I&nbsp;should be able to replace the data layer without impacting the rest of the application.</p>\r\n<p>I also customized the presentation layer and added some additional services I need to Kigg3.&nbsp; I hope that the proposed changes would not affect them.</p>\r\n<p>I think that your effort will help thousands of developers around world.&nbsp; Thanks again.</p>\r\n<p>P.S.) I would like to see&nbsp;each change implemented step by step, releasing each incremental upgrade frequently. So that other developers can follow you along and provide you with&nbsp;timely inputs.</p>",
+    "PostedDate": "2011-09-02T09:26:58.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "690743",
+    "ThreadId": "271288",
+    "Html": "<p>huge work, Moses and you're doing so well</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-10-28T04:27:31.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "690866",
+    "ThreadId": "271288",
+    "Html": "<p>Thank you. I'm actually having a huge changeset on local that I didn't submit yet. Trying to get things organized and sorted out first. And really MvcExtensions project is so cool I'm going to heavly depend on it. Also I'm introducing themes <a href=\"http://kazimanzurrashid.com/posts/asp-dot-net-mvc-theme-supported-razor-view-engine\">http://kazimanzurrashid.com/posts/asp-dot-net-mvc-theme-supported-razor-view-engine</a>&nbsp;and I might blog about it to take opinions and ideas.</p>\r\n<p>If any of you guys got ideas please let me know.</p>\r\n<p>Also I'm moving all static texts to resources for better localization. I'm not going to work on bilingual support, but will definitly will support localization.</p>",
+    "PostedDate": "2011-10-28T08:48:27.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "690869",
+    "ThreadId": "271288",
+    "Html": "<p>Here is on the fly list of features:</p>\n<ul>\n<li>Themes </li>\n<li>Localization </li>\n<li>User Profile management (Display Name, about, website etc..) </li>\n<li>Tag management (merging tags) </li>\n<li>Story management (merging stories) </li>\n<li>REST APIs/OData to provide facility to expose kigg data </li>\n<li>Friends (not important at the moment) </li>\n</ul>\n<p>If you got any ideas lets share! I'll collect them and put them in issue list and vote for them! what do you think</p>",
+    "PostedDate": "2011-10-28T08:52:41.61-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "694452",
+    "ThreadId": "271288",
+    "Html": "<p>Good，<span id=\"result_box\" class=\"short_text\" lang=\"en\"><span class=\"hps\">Want to</span> <span class=\"hps\">see Kigg4</span><span class=\"hps\"> of the</span> <span class=\"hps\">early！</span></span></p>",
+    "PostedDate": "2011-11-06T06:49:08.013-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "Changeset #19090",
+    "ClosedDate": "2009-06-02T16:36:27.063-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Upgrade the Unit Test to latest version of Moq 3.0",
+    "LastUpdatedDate": "2009-06-02T16:36:27.063-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-08T07:09:12.65-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Upgrade to Moq 3.0",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 3772
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

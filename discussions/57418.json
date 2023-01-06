@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "194051",
+    "ThreadId": "57418",
+    "Html": "<p>Anyone as try to run Kigg over the Microsoft Windows Azure plateform?</p>",
+    "PostedDate": "2009-05-25T17:58:36.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "197496",
+    "ThreadId": "57418",
+    "Html": "<p>Once Azure has the proper SQL support we will create a separate DataAccessLayer (If required) for Azure. We found that the current Azure Table Storage has too limited functionality to develop a real world app.</p>",
+    "PostedDate": "2009-06-03T17:00:14.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "198560",
+    "ThreadId": "57418",
+    "Html": "<p>I wonder if it possible to build Entity Framework provider for Azur Table Storage! If it possible and they did so, then moving into cloud wouldn't be hard.</p>",
+    "PostedDate": "2009-06-06T08:47:38.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

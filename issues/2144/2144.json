@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not applicable anymore.",
+    "ClosedDate": "2009-01-13T08:33:57.627-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Please add a .sln file.",
+    "LastUpdatedDate": "2009-01-13T08:33:57.627-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-05-10T11:00:12.703-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "A solution file would be nice.-missing.sln",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 2144
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I concur!",
+      "PostedDate": "2008-08-22T21:50:34.71-07:00",
+      "Id": 15882
+    }
+  ]
+}

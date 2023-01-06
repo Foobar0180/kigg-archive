@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "997465",
+    "ThreadId": "432232",
+    "Html": "Does anyone know the difference in these two database factories? What does Async do?<br />\n<pre><code>          &lt;type type=&quot;IDatabaseFactory&quot; mapTo=&quot;DatabaseFactory&quot;&gt;\n            &lt;lifetime type=&quot;PerWebRequest&quot;/&gt;\n            &lt;typeConfig extensionType=&quot;Microsoft.Practices.Unity.Configuration.TypeInjectionElement, Microsoft.Practices.Unity.Configuration&quot;&gt;\n              &lt;constructor&gt;\n                &lt;param name=&quot;connectionString&quot; parameterType=&quot;ConnectionString&quot;&gt;\n                  &lt;dependency/&gt;\n                &lt;/param&gt;\n              &lt;/constructor&gt;\n            &lt;/typeConfig&gt;\n          &lt;/type&gt;\n          &lt;type name=&quot;Async&quot; type=&quot;IDatabaseFactory&quot; mapTo=&quot;DatabaseFactory&quot;&gt;\n            &lt;lifetime type=&quot;Singleton&quot;/&gt;\n            &lt;typeConfig extensionType=&quot;Microsoft.Practices.Unity.Configuration.TypeInjectionElement, Microsoft.Practices.Unity.Configuration&quot;&gt;\n              &lt;constructor&gt;\n                &lt;param name=&quot;connectionString&quot; parameterType=&quot;ConnectionString&quot;&gt;\n                  &lt;dependency/&gt;\n                &lt;/param&gt;\n              &lt;/constructor&gt;\n            &lt;/typeConfig&gt;\n          &lt;/type&gt;</code></pre>\n\n",
+    "PostedDate": "2013-02-06T11:07:27.863-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1104089",
+    "ThreadId": "432232",
+    "Html": "If the calling class is from a web request it uses a new database connection and disposes it right after. For everything else, it uses a shared singleton database object.<br />\n<br />\nI think.<br />\n",
+    "PostedDate": "2013-10-05T18:33:39.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

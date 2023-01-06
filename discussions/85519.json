@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "291245",
+    "ThreadId": "85519",
+    "Html": "<p>Hi, <br>First, thanks for releasing Kigg as open source, this really help me to learn best practices in MVC stream.</p>\r\n<p>I have been trying to resolve a technical issue with EntityFramework block used in Kigg. I removed all references of Ling2Sql, and copied respected .config files from ConfigurationFiles folder. I also able to compile the complete solution properly but face issue when code EntityFramework (Kigg.Infrastructure.EF) block. Like, when I search for a content in installed Kigg, I get this error:</p>\r\n<p>The specified type member 'ApprovedAt' is not supported in LINQ to Entities. Only initializers, entity members, and entity navigation properties are supported.</p>\r\n<p>Code: EntityFramework\\Repository\\StoryRepository.cs<br>Line: 324</p>\r\n<pre>.Count(s =&gt; (s.ApprovedAt != null) &amp;&amp; (Database.StorySearchResult.Any(r =&gt; r == s.Id) || s.Category.Name.Contains(query) || s.StoryTagsInternal.Any(t =&gt; t.Name.Contains(query))));</pre>\r\n<p><br>I googled this issue and look like this is another limitation with EF. I also search this discussion forum and I didn't find any topic relating to this. So probably I am doing something wrong.</p>\r\n<p>I appreciate if someone help me and give some pointer.</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2010-02-16T07:19:23.78-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "291251",
+    "ThreadId": "85519",
+    "Html": "<p>Please note that Kigg is working perfectly with Linq2Sql block.</p>",
+    "PostedDate": "2010-02-16T07:28:17.107-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "424304",
+    "ThreadId": "85519",
+    "Html": "<p>Sorry I know this is a very late response!</p>\r\n<p>I explored the source code and tested KiGG locally using Entity Framework and I couldn't reproduce your issue! Beside ApprovedAt is defined in EDM, it is not a custom property that we made in code!</p>\r\n<p>Here is a snippet of the EDM generated code!!</p>\r\n<p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>[global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]\r\n[global::System.Runtime.Serialization.DataMemberAttribute()]\r\n<span style=\"color:Blue\">public</span> global::System.Nullable&lt;global::System.DateTime&gt; ApprovedAt\r\n{\r\n     <span style=\"color:Blue\">get</span>\r\n     {\r\n         <span style=\"color:Blue\">return</span> <span style=\"color:Blue\">this</span>._ApprovedAt;\r\n     }\r\n     <span style=\"color:Blue\">set</span>\r\n     {\r\n         <span style=\"color:Blue\">this</span>.OnApprovedAtChanging(value);\r\n         <span style=\"color:Blue\">this</span>.ReportPropertyChanging(<span style=\"color:#A31515\">&quot;ApprovedAt&quot;</span>);\r\n         <span style=\"color:Blue\">this</span>._ApprovedAt = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);\r\n         <span style=\"color:Blue\">this</span>.ReportPropertyChanged(<span style=\"color:#A31515\">&quot;ApprovedAt&quot;</span>);\r\n         <span style=\"color:Blue\">this</span>.OnApprovedAtChanged();\r\n     }\r\n}\r\n<span style=\"color:Blue\">private</span> global::System.Nullable&lt;global::System.DateTime&gt; _ApprovedAt;\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2010-03-26T17:22:41.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

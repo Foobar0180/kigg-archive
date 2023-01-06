@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "211828",
+    "ThreadId": "62409",
+    "Html": "<p>In the core project, there is a subdirectory named http that contains a bunch of classes<br>The main one is httpForm.cs<br>I am struggling trying to understand how these classes are used<br>I'll appreciate any help on this matter</p>\r\n<p>What's the idea behind these classes?<br>What's the need for them?<br><br>Thanks</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-14T12:19:29.867-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

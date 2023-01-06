@@ -1,0 +1,130 @@
+[
+  {
+    "Id": "179596",
+    "ThreadId": "53367",
+    "Html": "Most of shared hosting plans work with medium trust level, which don't let KIGG work at all, can you give us a solution for that, may be a smaller version from KIGG.<br>\r\nThis link from my hosting company http://help.godaddy.com/article/1039<br>\r\n",
+    "PostedDate": "2009-04-15T07:10:42.48-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179655",
+    "ThreadId": "53367",
+    "Html": "It seems the issue is with DotNetOpenID, I will give a try to run it in Medium Trust.<br>\r\n",
+    "PostedDate": "2009-04-15T08:41:08.907-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179701",
+    "ThreadId": "53367",
+    "Html": "It will be great great great news if you solved this, will help a lot of Kigg lovers to run on their hosts.<br>\r\n<br>\r\n",
+    "PostedDate": "2009-04-15T09:46:01.15-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "189043",
+    "ThreadId": "53367",
+    "Html": "<p>There are any good new regard this issue?</p>",
+    "PostedDate": "2009-05-11T13:49:34.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "191252",
+    "ThreadId": "53367",
+    "Html": "<p>It seems that supporting Medium trust will require some work.</p>\r\n<p>I tested it, and I found that first of all DotNetOpenId is the first reason. Then Entity Framework (if you are plan to use it) but this can be resolved in no time as I know the reason and will blog about it soon.</p>\r\n<p>And also I found that HtmlForm or httpsomething class is making a call that require security permission, something for certification and SLL.</p>\r\n<p>the most hard to tweak at the moment is DotNetOpenId.</p>",
+    "PostedDate": "2009-05-17T14:41:50.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "191253",
+    "ThreadId": "53367",
+    "Html": "<p>First thanks for your effort trying to find the reason,</p>\r\n<p>Second i have a question:</p>\r\n<p>Can we create a smaller version from KIGG doesn't contain DotNetOpenId?</p>\r\n<p>I can do that my self, i am just asking if its possible or not? complex or not?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-05-17T14:52:29.293-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "191350",
+    "ThreadId": "53367",
+    "Html": "<p>That was what I thinking of actually but it need to be designed in order not to have 2 codebases for the web project.</p>\r\n<p>The issue is -as I see it- that DotNetOpenId assembly is directly referenced by Kigg.Web assembly. So even if we made another MembershipController that doens't use DotNetOpenId we still reference it and this might still raise the issue.</p>\r\n<p>But here is my suggestion to you! what do you think if you tried the following:</p>\r\n<ul>\r\n<li>Remove reference to DotNetOpenId and remove its support totally from your local Kigg project. This will require that you'll update MembershipController and remove few other classes that depends on DotNetOpenId. You'll need to update Web.config too.</li>\r\n<li>Comment this line on HttpForm class under Kigg.Core.Infrastructure.Http:<br><em>ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) =&gt; <span style=\"color:blue\">true</span>;</em><br>You'll find it on the static constructor of the class</li>\r\n<li>Remove reference to System.UI.DataVistualization assembly on Kigg.Web (this is also another reason of breaking partial trust). Note that if you did this you'll need to update Web.config to remove handlers and modules related to this assembly.</li>\r\n</ul>\r\n<p>Currently this is the list I figured out so far that might need to be tracked and resolved in order to support parital trust. However there might be other parts of the code that causes partial trust to fail. This might also be related to IoC that try to resolve none public types or members of any Kigg types.</p>\r\n<p>Let me know if you are going to apply it so that I can save sometime working on it. and based on your results we can decide where we need to move. If you think you might not be able to work on it, also let me know, I think I can schedule some time later to work on it.</p>\r\n<p>I think anyway we should discuss supporting partial trust on v3.0 it is important.</p>\r\n<p>BTW, kigg currently also not working on High level of trust, it must be Full :o)</p>",
+    "PostedDate": "2009-05-18T00:40:06.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "191853",
+    "ThreadId": "53367",
+    "Html": "<p>Yes, i will try to do it, and will keep you updated if i did any progress, got any problems or failed to do it.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>",
+    "PostedDate": "2009-05-19T04:38:16.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "193650",
+    "ThreadId": "53367",
+    "Html": "<p>I couldn't manage to solve this, and didn't reach a valuable point, seams that i will need to wait till the next version may be this problem solve.</p>",
+    "PostedDate": "2009-05-24T02:56:57.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "207773",
+    "ThreadId": "53367",
+    "Html": "<p>In the coming KIGG 2.5 version, this trust problem is solved? or still need some work around to solve?</p>",
+    "PostedDate": "2009-07-01T18:09:16.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "216823",
+    "ThreadId": "53367",
+    "Html": "<p>Inshallah in KiGG v2.5 partial trust issue will be resolved.</p>\r\n<p>It worth to mention that default medium trust does not allow OpenID to function, since  it disallows outgoing HTTP requests. However, some shared hosters like  GoDaddy have modified WebPermission in Medium trust to allow outbound <span>http</span> and https traffic -<a title=\"GoDaddy: What Is Medium trust level and how does it affect my hosting account?\" href=\"http://help.godaddy.com/article/1039\">Read this</a>-, which  allow OpenID to function.</p>\r\n<p>This will be different from your local development machine. So you'll nee to modify your local machine medium trust level the same way. Or you High Trust instead for testing and development locally.</p>\r\n<p>Development is complete a changeset will be committed tomorrow inshalah</p>",
+    "PostedDate": "2009-07-28T07:55:13.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217132",
+    "ThreadId": "53367",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://kigg.codeplex.com/WorkItem/View.aspx?WorkItemId=4672\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2009-07-29T04:45:53.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "225212",
+    "ThreadId": "53367",
+    "Html": "<p>can you update this thread with instructions no what exactly needs to be done to make this application run in medium trust? I've installed it successfully, but when I change trust from High to Medium, the application fails with the following error:</p>\r\n<p><em>Cannot subset Regex. Only support if both patterns are identical.</em></p>\r\n<p>I'm not exactly sure what that means, but all of the stack trace references are to the DotNetOpenAuth...</p>\r\n<p>where and how do I disable this?</p>\r\n<p>thanks</p>",
+    "PostedDate": "2009-08-18T18:16:41.397-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "225439",
+    "ThreadId": "53367",
+    "Html": "<p>@<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl24_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/SelArom\">SelArom</a> It is first time to see this error too! even before I modify my medium trust on local machine to allow http outbound calls I didn't face this error.</p>\r\n<p>Ok Anyway, if you are working on your local machine, then you need to update your medium trust settings in your local machine</p>\r\n<ol>\r\n<li>go to &quot;C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\CONFIG&quot;</li>\r\n<li>take a backup of web_mediumtrust.config (maybe rename it to web_mediumtrust.original.config)</li>\r\n<li>In side KiGG source code package there is a ConfigurationFiles folder, inside that folder you'll find a ready updated web_mediumtrust.config. Take a copy of it an past it under C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\CONFIG</li>\r\n</ol>\r\n<p>Try again this should work.</p>\r\n<p>Now what exactly this updated web_mediumtrust.config contains? under PermissionSet I modified this:</p>\r\n<p>&lt;IPermission class=&quot;WebPermission&quot; version=&quot;1&quot; Unrestricted=&quot;true&quot;&gt;<br>&nbsp; &lt;ConnectAccess&gt;<br>&nbsp;&nbsp;&nbsp; &lt;URI uri=&quot;$OriginHost$&quot;/&gt;<br>&nbsp; &lt;/ConnectAccess&gt;<br>&lt;/IPermission&gt;</p>\r\n<p>to be this &lt;IPermission class=&quot;WebPermission&quot; version=&quot;1&quot; Unrestricted=&quot;true&quot;/&gt;</p>\r\n<p>Also added &lt;SecurityClass Name=&quot;SocketPermission&quot; Description=&quot;System.Net.SocketPermission, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;/&gt; under SecurityClasses and this<br>&lt;IPermission class=&quot;SocketPermission&quot; version=&quot;1&quot; Unrestricted=&quot;true&quot; /&gt; under PermissionSet (this is required for MySQLClient)</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-08-19T07:42:58.397-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "225673",
+    "ThreadId": "53367",
+    "Html": "<p>unfortunately, this isn't an option for me. My medium trust configuration is set to match that of my host, so unless there is a way to remove or disable the offending code, it doesn't look like I'll be able to use kigg :(</p>\r\n<p>please keep me posted if this changes!</p>",
+    "PostedDate": "2009-08-19T18:37:54.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "225738",
+    "ThreadId": "53367",
+    "Html": "<p>I don't know what is your host name. But godaddy for example support modified medium trust to enable http outbound calls by modifying the WebPermission Security Class.<br>DotNetShoutout hosted on Orcsweb which also support this! Same thing for DiscountASP</p>\r\n<p>Try to contact your web host to check this out with them. but first give it a test locally. just to be sure of what need to be modified</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-08-19T23:46:54.717-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

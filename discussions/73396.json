@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "250819",
+    "ThreadId": "73396",
+    "Html": "<p>I am using Kigg for a term project in information systems. One of the deliverables on an assignment reads as follows</p>\r\n<p>4. Discuss how you will <strong><em>computerize</em></strong> your leaf level processes and data stores for your term project (the prototype). That is, indicate for each process (application and function) implied in the DFD model what software technologies you will use to develop them, and what database you will create. For instance, you might use VBA to codify some of the processes as (Web-based) applications (functions embedded in the home pages). Be as specific as you can (e.g., you would use this open source VBA code for this application in your DFD&hellip;). Similarly, indicate how you plan to use <strong><em>simulated pages</em></strong>, if any. If you plan to use optional Web technology, then discuss your plans, as well.</p>\r\n<p>A discussion of possible software implementation for each component of the DFD model. Please itemize your answer for each process and data store, respectively.</p>\r\n<p>&nbsp;</p>\r\n<p>Can anyone help me in starting to answer this question or point me to a resource that will? I have no idea where to begin.</p>",
+    "PostedDate": "2009-10-28T11:55:56.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

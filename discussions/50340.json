@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "168594",
+    "ThreadId": "50340",
+    "Html": "<p>Wen I acess the site by 1srt time i get error 500.<br>\r\nIn Execption Log I found this information.</p>\r\n<p>How can I solve this problem?</p>\r\n<p>03/16/2009 16:02:41<br>\r\nType : System.TypeLoadException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089<br>\r\nMessage : Could not load type 'System.Web.Mvc.ValidateInputAttribute' from assembly 'System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.<br>\r\nSource : mscorlib<br>\r\nHelp link : <br>\r\nTypeName : System.Web.Mvc.ValidateInputAttribute<br>\r\nData : System.Collections.ListDictionaryInternal<br>\r\nTargetSite : System.RuntimeTypeHandle ResolveType(Int32, System.RuntimeTypeHandle*, Int32, System.RuntimeTypeHandle*, Int32)<br>\r\nStack Trace :    at System.ModuleHandle.ResolveType(Int32 typeToken, RuntimeTypeHandle* typeInstArgs, Int32 typeInstCount, RuntimeTypeHandle* methodInstArgs, Int32 methodInstCount)<br>\r\n   at System.ModuleHandle.ResolveTypeHandle(Int32 typeToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext)<br>\r\n   at System.Reflection.Module.ResolveType(Int32 metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)<br>\r\n   at System.Reflection.CustomAttribute.FilterCustomAttributeRecord(CustomAttributeRecord caRecord, MetadataImport scope, Assembly&amp; lastAptcaOkAssembly, Module decoratedModule, MetadataToken decoratedToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, Object[] attributes, IList derivedAttributes, RuntimeType&amp; attributeType, RuntimeMethodHandle&amp; ctor, Boolean&amp; ctorHasParameters, Boolean&amp; isVarArg)<br>\r\n   at System.Reflection.CustomAttribute.IsCustomAttributeDefined(Module decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable)<br>\r\n   at System.Reflection.CustomAttribute.IsDefined(RuntimeMethodInfo method, RuntimeType caType, Boolean inherit)<br>\r\n   at System.Reflection.RuntimeMethodInfo.IsDefined(Type attributeType, Boolean inherit)<br>\r\n   at Microsoft.Practices.ObjectBuilder2.MethodSelectorPolicyBase`1.&lt;SelectMethods&gt;d__0.MoveNext()<br>\r\n   at Microsoft.Practices.ObjectBuilder2.DynamicMethodCallStrategy.PreBuildUp(IBuilderContext context)<br>\r\n   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2009-03-16T09:17:27.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179630",
+    "ThreadId": "50340",
+    "Html": "This has been resolved in the latest version. Pls check the v2.2.<br>\r\n",
+    "PostedDate": "2009-04-15T08:14:36.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

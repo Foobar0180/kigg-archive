@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "227249",
+    "ThreadId": "66850",
+    "Html": "<p>My hosting company already gave me full trust. I uploaded my Kigg V2.5 to my shared hosting website. Most of functionalities are running great. But everytime when i try to use OpenID page will always give a server 500 error. And I have no idea how to find out the root cause for this. I tired in my localhost OpenID works very good. Only difference is RootUrl setting in web.config. I changed it from localhost to http://mydomainname.com&nbsp; also i changed whitelistHosts to my domain name. Can someone give me some clues?</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-08-24T16:07:25.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

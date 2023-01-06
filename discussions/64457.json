@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "219395",
+    "ThreadId": "64457",
+    "Html": "<p>I have installed Kigg2.2 on a Vista Machine, running IIS7 and VS 2008 .Net 3.5, MS SQL 2005</p>\r\n<p>Everything seems to be working fine, exept publising new stories.</p>\r\n<p>After clicking the submit tag, all text boxes filled in correctly, I get a 404 errorpage. THe address bar has the new story uri (extentionless) in it.</p>\r\n<p>as in : http://localhost/KiGG/Kigg/ASPNET-MVC-2-Preview-1-is-released-Gunnar-Peipmans-ASPNET-blog</p>\r\n<p>This happens whether I am loged in as admin or normal user.</p>\r\n<p>Strange thing is that the story is submitted, waiting for approval.</p>\r\n<p>I can view the story, loged in as admin and go to Unapproved in the control panel.</p>\r\n<p>&nbsp;</p>\r\n<p>THanks</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-08-04T12:30:15.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "219745",
+    "ThreadId": "64457",
+    "Html": "<p>You'll need to edit your web.config.</p>\r\n<p>Find http://localhost/kigg and replace it with http://localhost</p>",
+    "PostedDate": "2009-08-05T07:00:12.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "219852",
+    "ThreadId": "64457",
+    "Html": "<p>Thanks mosessaur, That seemed to do the trick</p>",
+    "PostedDate": "2009-08-05T10:03:49.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

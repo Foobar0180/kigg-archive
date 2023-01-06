@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I have the problem with the application. I need to be able to access site http://www.sitename.com,\r\n\r\nbut it's always redirect to http://sitename.com. I have checked all settings (set root url to www.sitename.com) and couldn't find anything that could effect it.\r\n\r\nany idea where I can change it?",
+    "LastUpdatedDate": "2012-09-02T04:08:16.323-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2012-01-11T15:27:55.94-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Cannot set url to use www",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7147
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi Evgelen,\n\nMay be it is too late. But this is what you need to do. \n\nhttp://www.youtube.com/watch?v=PYxabNrIMQ4\n\nCheers,\nNarendra\nhttp://www.sharepointsidekick.com",
+      "PostedDate": "2012-09-02T04:08:16.323-07:00",
+      "Id": 76180
+    }
+  ]
+}

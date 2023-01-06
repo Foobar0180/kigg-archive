@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "152638",
+    "ThreadId": "45736",
+    "Html": "I  installed the newest MVC RC1 and ever since my Kigg is crashing. Kigg seems to be using its own dlls, so the version of MVC on the machine should not matter, but it seems it does. Anyways, below is the error. Any suggestions would be appreciated<br>\r\n<br>\r\n<h2><i>Value cannot be null.<br>\r\nParameter name: httpContext</i> </h2>\r\n<span style=\"font-family:arial, helvetica, geneva, sunsans-regular, sans-serif\"><b>Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br>\r\n<br>\r\n<b>Exception Details: </b>System.ArgumentNullException: Value cannot be null.<br>\r\nParameter name: httpContext<br>\r\n<br>\r\n<b>Source Error:</b> <br>\r\n<br>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n    <tbody>\r\n        <tr>\r\n            <td><code>\r\n            <pre>Line 8:          public static UrlHelper Url(this ControllerContext controllerContext)\r\nLine 9:          {\r\n<span style=\"color:#ff0000\">Line 10: return new UrlHelper(new RequestContext(controllerContext.HttpContext, controllerContext.RouteData));</span>Line 11:         }\r\nLine 12:     }</pre>\r\n            </code></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<br>\r\n<b><span style=\"font-family:verdana\">Source File: </span></b>C:\\Projects\\KiggV2\\Web\\Extension\\ControllerContextExtension.cs<b><span style=\"font-family:verdana\">    Line: </span></b>10 <br>\r\n<br>\r\n<b><span style=\"font-family:verdana\">Stack Trace:</span></b> <br>\r\n<br>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n    <tbody>\r\n        <tr>\r\n            <td><code>\r\n            <pre>[ArgumentNullException: Value cannot be null.\r\nParameter name: httpContext]\r\n   System.Web.Routing.RequestContext..ctor(HttpContextBase httpContext, RouteData routeData) +40262\r\n   Kigg.Web.ControllerContextExtension.Url(ControllerContext controllerContext) in C:\\Projects\\KiggV2\\Web\\Extension\\ControllerContextExtension.cs:10\r\n   Kigg.Web.AutoRefreshAttribute.BuildUrl(ControllerContext filterContext) in C:\\Projects\\KiggV2\\Web\\Filters\\AutoRefreshAttribute.cs:145\r\n   Kigg.Web.AutoRefreshAttribute.OnResultExecuting(ResultExecutingContext filterContext) in C:\\Projects\\KiggV2\\Web\\Filters\\AutoRefreshAttribute.cs:136\r\n   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) +70\r\n   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation) +517\r\n   System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult) +278\r\n   System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName) +782\r\n   System.Web.Mvc.Controller.ExecuteCore() +154\r\n   System.Web.Mvc.MvcHandler.ProcessRequest(HttpContextBase httpContext) +162\r\n   System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +599\r\n   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +171\r\n</pre>\r\n            </code></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n</span>\r\n",
+    "PostedDate": "2009-01-30T11:13:06.063-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152749",
+    "ThreadId": "45736",
+    "Html": "Ok. it seems there were multiple versions of system.web.mvc. Remove the line in web.config where it is adding system.web.mvc with version number 1.0.0.0 under debug\\assemblies node and it works fine\r\n",
+    "PostedDate": "2009-01-30T18:02:15.877-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152936",
+    "ThreadId": "45736",
+    "Html": "I just installed the MVC RC yesterday and am having the same issues.&nbsp; I also tried removing the assembly line from the web.config but to no avail.&nbsp; I also tried changing the version number to the new version number of the .dll which is 1.0.40128.0 but that didn't work either.<br>\r\n<br>\r\nAny help would be greatly appreciated.<br>\r\n",
+    "PostedDate": "2009-01-31T15:30:03.097-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152950",
+    "ThreadId": "45736",
+    "Html": "<br>\r\nThe issue is that ControllerContext no longer inherits from RequestContext as mentioned in Phil Haack's blog...<br>\r\n<br>\r\n<a href=\"http://haacked.com/archive/2009/01/27/aspnetmvc-release-candidate.aspx\">ASP.NET MVC Release Candidate</a><br>\r\n<br>\r\nThat said, I could use some guidance on how to get around this issue. <br>\r\n<br>\r\n<br>\r\n\r\n",
+    "PostedDate": "2009-01-31T16:23:41.163-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152978",
+    "ThreadId": "45736",
+    "Html": "<br>\r\nThere are different copies of the system.mvc.dll in differenct places. Remove a directory under C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files with the name of your site. This is a cache version and gets created again, once you run the solution. Then under c:\\windows\\assembly\\gac_MSIL, there is a directory named system.web.mvc. delete the contents of that directory.<br>\r\n<br>\r\nCopy the new Mvc RC1 dlls to the bin directory of your project, or you can just load the projects to your solution and make sure your references are pointing to those dlls. Once you compile the code you get about 3 errors related to RequestContext. In every case, just modify the code, since the object that is complaining about has a RequestContext member (just put .RequestContext). Comment the line in web.config related to loading the system.mvc.dll. <br>\r\n<br>\r\nFor me the above steps solved the issue and it is running with MVC RC1. However, now I have anothe issue which is I cannot add any stories and all the wait screens(from jQuery) stay there for ever. It seems the success event does not go back to the page.<br>\r\n<br>\r\nHope it helps.\r\n",
+    "PostedDate": "2009-01-31T18:52:02.197-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "153529",
+    "ThreadId": "45736",
+    "Html": "Thanks for the information.&nbsp; There are more problems related to the MVC RC1.&nbsp; It looks the writers of Kigg need to do some work to update the code a bit.<br>\r\n",
+    "PostedDate": "2009-02-02T15:16:40.64-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154052",
+    "ThreadId": "45736",
+    "Html": "Just inform you, that the codebase is upgraded to RC1.<br>\r\n",
+    "PostedDate": "2009-02-03T19:44:57.89-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154124",
+    "ThreadId": "45736",
+    "Html": "Thanks for the new code. I am still having some issues. When you go to Submit a Story, after you enter the data and click the submit button on the bottom of the page, it shows the &quot;Submitting the story&quot; wait box and it kind of hangs there. If I debug, the request never hits the storycontroller submit function(the one that accepts Http Post). The jQuery script calls the ajaxsubmit, but the function never gets hit. Is it a kigg problem or MVC RC1 problem or is it my Problem?\r\n",
+    "PostedDate": "2009-02-03T23:57:19.143-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154335",
+    "ThreadId": "45736",
+    "Html": "Hi BBok,<br>\r\n<br>\r\nI have reuploaded the code, It was an issue with the latest MVC RC1, where you have to mark the controller method with ValidateInput(true) when the method accepts the html value in the parameter.<br>\r\n",
+    "PostedDate": "2009-02-04T10:06:44.5-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

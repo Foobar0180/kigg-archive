@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Issue fixed in changeset 25271",
+    "ClosedDate": "2009-07-27T16:17:50.93-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "This exception is occured, when KIGG try to send mail. \n\nSystem.InvalidCastException was unhandled by user code\n  Message=\"Unable to cast object of type 'Microsoft.Practices.EnterpriseLibrary.Logging.LogEntry' to type 'Kigg.Infrastructure.EnterpriseLibrary.WeblogEntry'.\"\n  Source=\"Kigg.Infrastructure.EnterpriseLibrary\"\n  StackTrace:\n       at Kigg.Infrastructure.EnterpriseLibrary.WeblogTraceTextFormatter.b__0(LogEntry le) in C:\\_Projects\\KiGG\\EnterpriseLibrary\\Logging\\WeblogTraceTextFormatter.cs:line 29\n       at Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.GenericTextFormatter`1.Format(T instance, StringBuilder output)\n       at Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter.Format(LogEntry log)\n       at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)\n       at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.RollingFlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)\n       at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter)\n       at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriter.ProcessLog(LogEntry log)",
+    "LastUpdatedDate": "2009-07-27T16:17:50.93-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-07-27T16:02:47.697-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Exception: Unable to cast object of type 'Microsoft.Practices.EnterpriseLibrary.Logging.LogEntry' to type 'Kigg.Infrastructure.EnterpriseLibrary.WeblogEntry'",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4661
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

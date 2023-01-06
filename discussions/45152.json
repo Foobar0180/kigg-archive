@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "150595",
+    "ThreadId": "45152",
+    "Html": "I'm getting the error message 'System.NullReferenceException: Object reference not set to an instance of an object.' in SpamPostprocessor.Process line 37.<br>\r\n<br>\r\nIStory approvingStory = _storyRepository.FindById(story.Id);<br>\r\napprovingStory.Approve(SystemTime.Now());<br>\r\n<br>\r\nIn StoryService.Create line 124 _spamPostprocessor.Process(source, isSpam, detailUrl, story) is called but only for non administrative accounts.   I added a check for null in SpamPostprocess.Process before setting the Approve property for now.<br>\r\n  <br>\r\n<br>\r\nUpdate:<br>\r\n<br>\r\nJust wanted to add that this is a very cool project and nicely done.\r\n",
+    "PostedDate": "2009-01-24T15:15:40.1-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154049",
+    "ThreadId": "45152",
+    "Html": "I have just updated it RC 1 do let me know if you are still getting this error.<br>\r\n",
+    "PostedDate": "2009-02-03T19:38:29.37-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155531",
+    "ThreadId": "45152",
+    "Html": "Error still exists. To avoid error I add some check on null:<br>\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (approvingStory != null) <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; approvingStory.Approve(SystemTime.Now());<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-08T07:33:11.013-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155565",
+    "ThreadId": "45152",
+    "Html": "@activekix : You should never reach that far with Admin. Spam is only checked when User is Public and has score below than 25 (This is the default behavior).<br>\r\n<br>\r\n@XaocCPS: Pls do not do this, instead try to figure the issue with latest release there is different connection for doing this background Job, ensure you have the right configuration file.<br>\r\n",
+    "PostedDate": "2009-02-08T11:03:46.583-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156305",
+    "ThreadId": "45152",
+    "Html": "But I already have last release. And this error still exists. :-( After adding this part of code problem has gone.<br>\r\nWhat about configuration file? I have last web.config&nbsp; (minimal) from 2.1 version.<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-10T09:27:26.68-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156306",
+    "ThreadId": "45152",
+    "Html": "Here some info<br>\r\n<br>\r\nType : System.NullReferenceException, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=\r\n<div><wbr>b77a5c561934e089<br>\r\nMessage : Object reference not set to an instance of an object.<br>\r\nSource : Kigg.Core<br>\r\nHelp link :<br>\r\nData : System.Collections.<wbr>ListDictionaryInternal<br>\r\nTargetSite : Void Process(System.String, Boolean, System.String, Kigg.DomainObjects.IStory)<br>\r\nStack Trace : &nbsp; &nbsp;at Kigg.Infrastructure.<wbr>SpamPostprocessor.Process(<wbr>String source, Boolean isSpam, String storyUrl, IStory story) in C:\\CPS\\#Projects\\progg.ru.2.1\\<wbr>Core\\Infrastructure\\Spam\\<wbr>SpamPostprocessor.cs:line 37<br>\r\n&nbsp; at Kigg.Service.StoryService.&lt;&gt;c_<wbr>_DisplayClass6.&lt;Create&gt;b__4(<wbr>String source, Boolean isSpam) in C:\\CPS\\#Projects\\progg.ru.2.1\\<wbr>Core\\Service\\StoryService.cs:<wbr>line 124<br>\r\n&nbsp; at Kigg.Infrastructure.<wbr>DefaultSpamProtection.&lt;&gt;c__<wbr>DisplayClass6.&lt;IsSpam&gt;b__0(<wbr>String response) in C:\\CPS\\#Projects\\progg.ru.2.1\\<wbr>Core\\Infrastructure\\Spam\\<wbr>Default\\DefaultSpamProtection.<wbr>cs:line 99<br>\r\n&nbsp; at Kigg.Infrastructure.<wbr>CachingHttpForm.GetAsync(<wbr>String url, Action`1 onComplete, Action`1 onError) in C:\\CPS\\#Projects\\progg.ru.2.1\\<wbr>Core\\Infrastructure\\Http\\<wbr>Decorated\\CachingHttpForm.cs:<wbr>line 65<br>\r\n&nbsp; at Kigg.Infrastructure.<wbr>DefaultSpamProtection.IsSpam(<wbr>SpamCheckContent spamCheckContent, Action`2 callback) in C:\\CPS\\#Projects\\progg.ru.2.1\\<wbr>Core\\Infrastructure\\Spam\\<wbr>Default\\DefaultSpamProtection.<wbr>cs:line 81<br>\r\n&nbsp; at Kigg.Service.StoryService.<wbr>Create(IUser\r\nbyUser, String url, String title, String category, String description,\r\nString tags, String userIPAddress, String userAgent, String urlReferer,\r\nNameValueCollection serverVariables, Func`2 buildDetailUrl) in\r\nC:\\CPS\\#Projects\\progg.ru.2.1\\<wbr>Core\\Service\\StoryService.cs:<wbr>line 124<br>\r\n&nbsp; at Kigg.Web.StoryController.<wbr>Submit(String url, String title, String category, String description, String tags) in C:\\CPS\\#Projects\\progg.ru.2.1\\<wbr>Web\\Controllers\\<wbr>StoryController.cs:line 456</div>\r\n<br>\r\n",
+    "PostedDate": "2009-02-10T09:29:46.65-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156451",
+    "ThreadId": "45152",
+    "Html": "I'm still getting the same error as well on line 37 of SpamPostprocessor.cs.  As mentioned in the title of the post by 'non-administrative' account I mean an account that is not an administrator account that is new and logged in for the first time.   I'm running on the refresh of RC1 as well.\r\n",
+    "PostedDate": "2009-02-10T15:32:50.027-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156466",
+    "ThreadId": "45152",
+    "Html": "Okay, I will check and get back to you. thanks for pointing that again.\r\n",
+    "PostedDate": "2009-02-10T16:31:13.36-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179196",
+    "ThreadId": "45152",
+    "Html": "Has this been addressed yet in a release? or what is the actual fix?&nbsp; I am have same problem.<br>\r\n",
+    "PostedDate": "2009-04-14T13:13:00.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179251",
+    "ThreadId": "45152",
+    "Html": "As I am using the RTM version with MVC v1 RTM I am not able to reproduce this exception!<br>\r\nI logged in with normal user, Role=User=0 and submitted a story (In Debug mode) and no exception was thrown!<br>\r\nI think this issue is resolved!<br>\r\n",
+    "PostedDate": "2009-04-14T15:21:50.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

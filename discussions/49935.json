@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "167119",
+    "ThreadId": "49935",
+    "Html": "I saw CommunityServer in the extras. Is that so that Kigg be integrated with the CommunityServer platform, using CommunityServer as the membership base? If so, that would be totally awesome. Thank you in advance for letting me know.\r\n",
+    "PostedDate": "2009-03-11T15:55:50.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "167121",
+    "ThreadId": "49935",
+    "Html": "The community server project contains an ICS Module which will automatically appends the Shout It badge in every post.<br>\r\n<br>\r\nIf there are enough request to use the built-in Membership provider or create some kind of adapter then I will certainly give a try.<br>\r\n",
+    "PostedDate": "2009-03-11T16:00:48.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "167136",
+    "ThreadId": "49935",
+    "Html": "Thanks for the speedy reply. Hopefully enough people will request that feature, because I think Kigg and CommunityServer makes a great paring. In the meantime, I saw this tutorial on decoupling the membership database from Kigg so that you can use other providers...<br>\r\n<br>\r\n<a href=\"http://danhounshell.com/blogs/dan/archive/2008/07/14/how-to-decouple-the-asp-net-membership-database-from-kigg.aspx\">http://danhounshell.com/blogs/dan/archive/2008/07/14/how-to-decouple-the-asp-net-membership-database-from-kigg.aspx</a><br>\r\n<br>\r\nThink that might work? The article's a little old, so I wanted to double-check before investing some time trying it. I'm sort of stuck using CommunityServer at work, and I wanted to implement a Kigg-like feature. When I came across this project I got really excited. It's perfect for what I'm looking for as far as features go. Great job!\r\n",
+    "PostedDate": "2009-03-11T16:32:23.543-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

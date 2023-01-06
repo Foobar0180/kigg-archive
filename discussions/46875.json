@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "156794",
+    "ThreadId": "46875",
+    "Html": "The source code looks AWESOME, but when I fired it up in VS2008 and hit F5, I get the following error on ~/Default.aspx:<div><br></div><div>&quot;The incoming request does not match any route.&quot;<br></div><div><br></div><div>I'm using VS2008 SP1 (v9.0.30729.1 SP) with .NET 3.5 SP1, Vista Business SP1, SQL Server 2005 SP2, and RC1 of ASP.NET MVC. I'm successfully running other MVC applications locally.</div><div><br></div><div>Before I spend time making changes to the code, I wanted to post here and see if there was something obvious I am not doing. I literally just opened /v2.x/Kigg.sln, set Kigg.Web to the startup project, and hit F5. </div><div><br></div><div>Thanks in advance.</div>",
+    "PostedDate": "2009-02-11T13:27:51.307-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156820",
+    "ThreadId": "46875",
+    "Html": "Check your connection string and make sure it's properly set for your SQL Server version. <br>\r\n",
+    "PostedDate": "2009-02-11T14:13:18.857-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156836",
+    "ThreadId": "46875",
+    "Html": "Delete the Default.aspx, and run again it solve your issue.<br>\r\n",
+    "PostedDate": "2009-02-11T15:16:01.723-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

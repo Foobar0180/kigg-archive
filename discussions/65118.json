@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "221733",
+    "ThreadId": "65118",
+    "Html": "<p>I have created an automated bot to submit stories which I am using on NewsPeeps.com. I have discovered it is possible to successfully submit a story which can not be viewed.</p>\r\n<p>The bot runs on the client, and thus runs through thr websites normal submit processing.</p>\r\n<p>When one attempts to retrieve a page (such as /Upcomming) that has one of these &quot;problem&quot; stories on it the custom 404 page is returned instead.</p>\r\n<p>I need to do more research to determine the exact conditions that can cause this to happen. I am sharing this at this time since this is a possible security issue in that it could be used to launch a denial of service attack.</p>\r\n<p>Any help would be appreciated.</p>",
+    "PostedDate": "2009-08-10T14:48:29.907-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

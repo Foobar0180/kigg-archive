@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "185806",
+    "ThreadId": "55034",
+    "Html": "Would changing the categories after an install be as simple as dropping the category table and rebuilding it using the category section of the data.sql file?<br>\r\n<br>\r\nthanks<br>\r\n",
+    "PostedDate": "2009-05-01T00:15:23.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "186071",
+    "ThreadId": "55034",
+    "Html": "Yes that will work unless there are no related data in the other tables.<br>\r\n",
+    "PostedDate": "2009-05-01T21:09:32.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

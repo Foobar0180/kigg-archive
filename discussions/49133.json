@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "164173",
+    "ThreadId": "49133",
+    "Html": "So I downloaded the source unzipped, installed and tried to open the project in VS2008SP1 and the web portion wouldn't load.&nbsp; web.csproj cannot be opened, project type not supported by this installation....<br>\r\n<br>\r\nAnyone have a suggestion?<br>\r\n",
+    "PostedDate": "2009-03-03T21:34:27.527-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "164416",
+    "ThreadId": "49133",
+    "Html": "I have the same question and problem.  However I am running VS 2008 Team Suite without SP1.<br>\r\n<br>\r\nI hope that someone has an idea, I would like to try and use this.\r\n",
+    "PostedDate": "2009-03-04T10:01:07.053-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "164471",
+    "ThreadId": "49133",
+    "Html": "The exception usually raised when you do not have the ASP.NET MVC Framework installed. <br>\r\n",
+    "PostedDate": "2009-03-04T11:35:59.893-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "164489",
+    "ThreadId": "49133",
+    "Html": "Thank You, I figured that I was missing something.  I will give that a shot.\r\n",
+    "PostedDate": "2009-03-04T12:12:10.267-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "165442",
+    "ThreadId": "49133",
+    "Html": "Thanks it worked\r\n",
+    "PostedDate": "2009-03-06T10:23:03.873-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

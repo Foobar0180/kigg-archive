@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "239716",
+    "ThreadId": "70380",
+    "Html": "<p>Hey folks,</p>\r\n<p>I am trying to install Kigg on a VPS with mySQL. I followed the deployment guide and configuring EF etc. Now when I try to hit my site (http://www.unity3dnews.com) I get the following error..</p>\r\n<h1>Directory Listing Denied</h1>\r\n<p>This Virtual Directory does not allow contents to be listed.</p>\r\n<p>I have .Net framework 3.5 sp1 installed as well as ASP.NET MVC. I did some searching on this forum and it seems like IIS needs specific settings for ASP.NET MVC, so could anyone tell me how to configure it?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-28T14:45:14.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "239719",
+    "ThreadId": "70380",
+    "Html": "<p>Hmm, I think I need to follow the directions on <a href=\"http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx\">this blog article</a> and get <span style=\"font-family:arial;font-size:x-small\">extension-less URLs configured for IIS 6 using an Isapi module.</span></p>\r\n<p><br><span style=\"font-size:x-small\"><span style=\"font-family:arial\">I`ll try that sometime and report back. Any other suggestions?</span></span></p>\r\n<p>&nbsp;</p>\r\n<p>Update: http://haacked.com/archive/2008/11/26/asp.net-mvc-on-iis-6-walkthrough.aspx . This link helped me setup ASP.NET MVC properly on IIS6. Now I am having a different issue (first an asp.net error saying I have no permissions to access global.asax, and now its just doing nothing in firefox, and showing a 500 internal server error on IE).</p>\r\n<p><br>Atleast asp.net MVC is working....i`ll keep digging into it.</p>",
+    "PostedDate": "2009-09-28T14:57:28.05-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495566",
+    "ThreadId": "70380",
+    "Html": "<p>Hi,</p>\r\n<p>You got a solution for this ? I am getting the same error.</p>\r\n<p>&nbsp;</p>\r\n<p>Regards</p>",
+    "PostedDate": "2010-09-19T03:23:33.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

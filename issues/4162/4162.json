@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "changeset 25215",
+    "ClosedDate": "2009-07-26T15:49:39.02-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "line 287 of Kigg.Infrastructure.HttpForm seems like it should be .Add(webResponse.Headers)...\n\n285       internal static void PopulateHeadersAndCookies(WebResponse webResponse, HttpFormResponse response)\n286        {\n287            response.Headers.Add(response.Headers);",
+    "LastUpdatedDate": "2009-07-26T15:49:39.02-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-06-14T13:50:39.577-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "bug in httpform?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4162
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Sorry for late response, could you please highlight the effect of this issue? and why it is considered a bug?\r\nI didn't review the code yet but will have a look at it today",
+      "PostedDate": "2009-07-26T02:14:57.72-07:00",
+      "Id": 15936
+    },
+    {
+      "Message": "I updated the code, not yet checked in. but will be soon. thank you for reporting this",
+      "PostedDate": "2009-07-26T15:02:45.033-07:00",
+      "Id": 15937
+    }
+  ]
+}

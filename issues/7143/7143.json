@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I downloaded the release package for Kigg and installed it. Runs successfully on 4.0 runtime. However search *does not* work. Searching for any term takes me to the good ol' something unholy happened page. I see others had this issue and the issue was closed. It still is an issue so the issue needs to be reopened. If there is a fix please post it. ",
+    "LastUpdatedDate": "2011-09-16T20:34:43.163-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2011-09-14T19:16:00.933-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Search does not work (Fixed)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7143
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Fixed Search. Rebuilt the DB and Search worked. ",
+      "PostedDate": "2011-09-16T20:34:09.923-07:00",
+      "Id": 44895
+    }
+  ]
+}

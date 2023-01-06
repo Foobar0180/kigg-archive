@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "435561",
+    "ThreadId": "210582",
+    "Html": "<p>I was trying to open Kigg-38916 project on my Visual Studio 2010 RTM.&nbsp; I was not upgrade to ASP.NET 4.&nbsp; Then I press Build (F6), I got the following error:</p>\r\n<p><strong>CS0433: The type 'System.Web.Routing.RouteValueDictionary'&nbsp;exists in both 'c:\\Windows\\assembly\\GAC_MSIL\\System.Web.Routing\\3.5.0.0__31bf3856ad364e35\\System.Web.Routing.dll'&nbsp;and 'c:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\System.Web.dll'.</strong></p>\r\n<p>I've just found that Visual Studio 2010 using .NET 4's aspnet_compiler.exe to build this website.&nbsp; &nbsp;Is it a bug for Visual Studio 2010?&nbsp; Is there any workaround for this problem?</p>\r\n<p>By the way, this problem will only exists in BuildView enabled situation.</p>\r\n<p>Thanks!</p>",
+    "PostedDate": "2010-04-26T09:09:43.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "452011",
+    "ThreadId": "210582",
+    "Html": "<ul>\r\n<li>open Kigg.Web.csproj in notepad</li>\r\n<li>update the &lt;target&gt; element w/ this:</li>\r\n</ul>\r\n<p>&nbsp;&lt;Target Name=&quot;AfterBuild&quot; Condition=&quot;'$(MvcBuildViews)'=='true'&quot;&gt;&nbsp;&nbsp; &nbsp;</p>\r\n<p><span style=\"white-space:pre\"> </span>&lt;AspNetCompiler VirtualPath=&quot;temp&quot; <span style=\"color:#ff0000\"><strong>ToolPath=&quot;C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727&quot;</strong></span> PhysicalPath=&quot;$(ProjectDir)\\..\\Web&quot; /&gt;&nbsp;&nbsp;</p>\r\n<p>&lt;/Target&gt;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-06-05T09:46:39.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

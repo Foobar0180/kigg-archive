@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "151659",
+    "ThreadId": "45453",
+    "Html": "There is a lot of trace files in my log folder on one day (800 mb in 3 hours)! How to stop logging or tracing? And only log exceptions?<br>\r\nHelp me please.<br>\r\n",
+    "PostedDate": "2009-01-28T01:35:21.29-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152760",
+    "ThreadId": "45453",
+    "Html": "Check the web.config... you can turn off the trace from there.\r\n",
+    "PostedDate": "2009-01-30T19:26:37.227-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154059",
+    "ThreadId": "45453",
+    "Html": "I have reordered the DecoratedRepository for minimal logging. Also as antoniochagoury mentioned that it depends upon Enterprise Library logging which you can tweak according to your need.<br>\r\n",
+    "PostedDate": "2009-02-03T19:55:01.137-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

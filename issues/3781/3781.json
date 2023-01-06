@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Implement language detection of HTML Page to allow/deny story submit.",
+    "LastUpdatedDate": "2009-10-31T18:25:47.673-07:00",
+    "PlannedForRelease": "KiGG - 2.2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-08T15:10:55.55-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow / Deny Lanugage Story",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 2,
+    "Id": 3781
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

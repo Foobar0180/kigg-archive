@@ -1,0 +1,106 @@
+[
+  {
+    "Id": "240274",
+    "ThreadId": "70535",
+    "Html": "<p>I need to integrate rating system to the Kigg. I don't know wh.ere to start or how to. I don't know the structure because I am new to Unity Framework and Kigg framework. If someone could help me with this, I would really&nbsp;appreciated.</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you in advanced.</p>",
+    "PostedDate": "2009-09-29T23:59:39.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "240843",
+    "ThreadId": "70535",
+    "Html": "<p>Hi</p>\r\n<p>I may help<br><br>Do you want to add a rate to each pusblished story?</p>\r\n<p>Who will rate this?</p>",
+    "PostedDate": "2009-10-01T03:54:08.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241002",
+    "ThreadId": "70535",
+    "Html": "<p>Yes and each user will rate when they view the story.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-01T11:11:15.123-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241005",
+    "ThreadId": "70535",
+    "Html": "<p>Also the user who is publishing the story.</p>\r\n<p>Each user could rate it only once.</p>",
+    "PostedDate": "2009-10-01T11:15:20.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241242",
+    "ThreadId": "70535",
+    "Html": "<p>I would start by adding</p>\r\n<p>- to the story class :</p>\r\n<ul>\r\n<li>an INT&nbsp;rate parameter <br>This parameter will hold the rate for each story</li>\r\n</ul>\r\n<p>- to the user classs</p>\r\n<ul>\r\n<li>a LIST&lt;Story&gt;&nbsp;ratedStories parameter <br>This parameter will hold the list of stories rated by a given user</li>\r\n<li>A method we can call RateStory( guid storyId)<br>This method will rate a given story according to your logic</li>\r\n</ul>\r\n<p>You'll need also to add a&nbsp;column Rate to the story table and create another table User_Rates with three columns ( UserId, StoryId, Rate)<br>Afterwards, You'll need to create a new&nbsp;repository class to access this table<br>You'lle need also to create an event that when a user rates a story, the whole rate for the story is recalculed</p>\r\n<p><br>I am also very interested by this subject and I don't know how to communicate to go further on it<br>Maybe other people are also interested and we can include it to the project itself</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-02T04:03:01.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241358",
+    "ThreadId": "70535",
+    "Html": "<p>Thank you for the instructions. I will start working on it today. I can give my Skype username so that, everyone could communicate through that and we can join all to participate and ask questions. Let me know what you think.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-02T09:13:45.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241591",
+    "ThreadId": "70535",
+    "Html": "<p>Not problem for me (you can email me you skype ID).<br>A story has a notion of Vote.<br>I am wondering if this is not very close to what you want to achieve.<br>Before going further, I would maybe duplicate this notion of Vote&nbsp;( renaming it to Rate).<br>We will see later how to changer the business rules</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-02T23:13:28.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241728",
+    "ThreadId": "70535",
+    "Html": "<p>Well, to me Vote and rating is two different things. You vote about something if it is good or not but Rate is the level of the Vote. Something is 75% is liked or %1000 or ....</p>\r\n<p>So, Vote is to general, and Rate is more detailed. Both should stay as different measurements. Rate should have it's own class to it.</p>\r\n<p>&nbsp;</p>\r\n<p>Let me know what you think.</p>",
+    "PostedDate": "2009-10-03T14:15:54.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241812",
+    "ThreadId": "70535",
+    "Html": "<p>Do agree. Voting and Rating are two different concepts</p>\r\n<p>I was talking about their&nbsp;code implementation<br>they should be very close.<br>That's why I suggested duplicating Voting code</p>",
+    "PostedDate": "2009-10-03T22:11:20.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "242373",
+    "ThreadId": "70535",
+    "Html": "<p>I see what you are saying. I will take a look at the code on the voting and try to duplicate it.</p>\r\n<p>Did you get my email about my skype ID?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-05T18:55:02.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "242377",
+    "ThreadId": "70535",
+    "Html": "<p>is Kigg.Infrastructure.EF-&gt;DomainObjects-&gt;Generated: Models.cs create&nbsp;automatically?</p>\r\n<p>So, if I create a IRate and Rate, StoreRate class and interfaces, how the Models.cs will generate it. Am I going to implemented in the Models or it is generated by a command line or something? Please advice.</p>",
+    "PostedDate": "2009-10-05T19:08:42.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "242673",
+    "ThreadId": "70535",
+    "Html": "<p>I got your email with the SkypeID and I answered it<br>I am not using EF but Linq2Sql<br>I am quite sure Moses who is very active in this forum can help with any question related to EF<br>He is the author of this part of the code<br>To update the model from the database, I am using Huagati DBML/EDMX Tools from here<br><a href=\"http://www.huagati.com/dbmltools/\">http://www.huagati.com/dbmltools/</a><br>You can download an evaluation version and update your model with it</p>\r\n<p>I am more than happy with this tool</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-06T12:18:54.337-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "243710",
+    "ThreadId": "70535",
+    "Html": "<p>I need to how EF files are beign generated. I see some files under the App_Data folder and I don't see any EDMX file. So, I need to know which tool is used to generate.</p>\r\n<p>I need to add my own table to add the rate functionality.</p>\r\n<p>&nbsp;</p>\r\n<p>Please, help needed. If someone could tell me the process how to add the new table to EF, that would be gread. Thanks to nachid, I know how to do this in Linq to SQL (which I still need to finish it up), I still need this process in EF. That's the database model I am using.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks in advance.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-08T21:22:40.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

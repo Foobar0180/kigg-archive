@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "No body voted for IE6 and it is very low in priority of support.\r\nIts impact is very low",
+    "ClosedDate": "2009-06-08T17:01:20.99-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "In IE6 the categories do not display.  Also the \"top leaders\", \"Top Movers\" and \"Popular Tags\" sections are empty.\n\nIE6 sp3",
+    "LastUpdatedDate": "2009-06-08T17:01:20.99-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-05-19T07:30:35.74-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Site does not render properly in IE6",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4071
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Do you really care of supporting IE6 ?! I am not sure if the team will vote for IE6 support.\r\nMyself I vote for not supporting IE6",
+      "PostedDate": "2009-05-19T14:23:20.913-07:00",
+      "Id": 15906
+    },
+    {
+      "Message": "I forgot to mention that you can build you own views and styles that can support IE6 if you wish.",
+      "PostedDate": "2009-05-19T14:24:02.96-07:00",
+      "Id": 15907
+    },
+    {
+      "Message": "Personally I don't care if it supports IE6.  I don't use it myself, however many people do and I happened to try my site at work where they only have IE6.  I think a robust site should support IE6, or at least have some kind of degradation.  Even if the links just show as a simple list or something.  For the tags not to show at all is not too good.  I guess I can try to create some of my own views and fix it, but I would think it would be a common request.",
+      "PostedDate": "2009-05-20T10:54:27.627-07:00",
+      "Id": 15908
+    },
+    {
+      "Message": "Yes, samething I see many people comment about! But for me it is a point of view! we are on 2009! and on 2010 MS will supporting it.\r\nEnd users must also care about poor people like us -Developer- :o) they must know the pain we had when trying to work on IE6",
+      "PostedDate": "2009-05-21T12:46:50.34-07:00",
+      "Id": 15909
+    }
+  ]
+}

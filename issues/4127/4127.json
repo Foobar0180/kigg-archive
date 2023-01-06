@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Currently when viewing a user profile the link looks something similar to this: http://dotnetshoutout.com/Users/LN0FVPBJYE21SPUVVFYCtw\nI would suggest using Username instead of the hash... such as http://dotnetshoutout.com/Users/MyUsername\n\nYou can continue using the hash for those who use OpenId to authenticate - but give those users an option to define their username so that they can also have a personal user profile URL.\n\nThanks.",
+    "LastUpdatedDate": "2010-02-03T13:25:17.51-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-06-09T19:29:57.22-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Improve User Profile URL",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 6,
+    "Id": 4127
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I do support the idea to give end users the option to modify their profile\r\nSome may use multiple OpenID providers and it would be nice if they can associate all their OpenID account with one local account\r\nThanks",
+      "PostedDate": "2009-06-11T07:49:01.377-07:00",
+      "Id": 15910
+    },
+    {
+      "Message": "I would also like to see this too. I think that the only way to do this though is to change the structure of the User table.\r\n\r\ni think we have a few options:\r\n\r\n1. We add a new text field with a unique constraint called Nickname, and that is then used around the site, rather than the Username. In the case of normal users, this is set to the same as their Username. In the case of OpenId users, they would be forced to select a Nickname after their first login. The MembershipController would need a new Action to deal with this. However, this gets painful when we want to display the Members name around the site as you can't use User.Identity.\r\n2. We would add a new field to the User table to store the OpenId identity. On receipt of the OpenId Response from the Relying Party in ActionResult OpenId(string identifier, bool? rememberMe), we would need to display a new view that allows the user to select a unique username.\r\n3. Add a new table called UserOpenId, that stores a relationship between User and OpenId identifier. This would allow the storage of multiple OpenIds against a single login. If the user is already logged in, signing in to another OpenId provider would add that identity to their existing list of identities. This would also allow normal Membership registered users to add an OpenId to their existing profile.\r\n\r\nMy two cents worth.",
+      "PostedDate": "2010-02-03T13:25:00.933-08:00",
+      "Id": 15911
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "167793",
+    "ThreadId": "50125",
+    "Html": "There is an error on IIS6 while attempt login through openId account. I can't get any information about errors or exceptions because I don't have an access on server. But I must to resolve this problem.&nbsp; <br>\r\nI change one string to it <br>\r\nHttpContext.Response.AddHeader(&quot;X-XRDS-Location&quot;, url);<br>\r\nbut it doesn't help.<br>\r\n<br>\r\nDo anybody have any ideas? <br>\r\n<br>\r\nPS: there is 500 error I only have from server<br>\r\n<br>\r\n",
+    "PostedDate": "2009-03-13T08:37:20.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179627",
+    "ThreadId": "50125",
+    "Html": "Can you turn off the error handler in web.config and check the actual exception.<br>\r\n",
+    "PostedDate": "2009-04-15T08:12:32.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179650",
+    "ThreadId": "50125",
+    "Html": "I got this too and just posted in the other thread.&nbsp; When I turned the custom error off to see, I got a blank page. But the email sent:<br>\r\n<div>&nbsp;Message: This operation requires IIS integrated pipeline mode.<br>\r\n&nbsp;Category: FullException<br>\r\n&nbsp;Priority: 1<br>\r\n&nbsp;EventId: 0<br>\r\n&nbsp;Severity: Critical<br>\r\n&nbsp;Title:<br>\r\n&nbsp;Machine: VPS633<br>\r\n</div>\r\n&nbsp;Application Domain: /LM/W3SVC/18177/Root-1-\r\n<div id=\":1z5\"><wbr>128842786271948750<br>\r\n&nbsp;Process Id: 57672<br>\r\n<div>&nbsp;Process Name: c:\\windows\\system32\\inetsrv\\<wbr>w3wp.exe<br>\r\n</div>\r\n&nbsp;Win32 Thread Id: 52268<br>\r\n&nbsp;Thread Name:<br>\r\n&nbsp;Extended Properties</div>\r\n<br>\r\nand in the logs that was the exception.<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-04-15T08:34:56.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227253",
+    "ThreadId": "50125",
+    "Html": "<p>How did you guys reloved the problem? I have the same error. Please help me out.</p>",
+    "PostedDate": "2009-08-24T16:18:51.09-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "281486",
+    "ThreadId": "50125",
+    "Html": "<p>Ditto. I'm running Cassini and I'm seeing the same problem. Windows XP Pro. Visual Studio 2008.</p>\r\n<p>Edit:</p>\r\n<p>I had some success. Try changing the line that throws an error from this:</p>\r\n<p>HttpContext.Response.Headers.Add(&quot;X-XRDS-Location&quot;, url);</p>\r\n<p>\r\n<p>to this:</p>\r\n<p>HttpContext.Response.AddHeader(&quot;X-XRDS-Location&quot;, url);</p>\r\n</p>\r\n<p>That worked for me.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-01-25T09:42:11.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

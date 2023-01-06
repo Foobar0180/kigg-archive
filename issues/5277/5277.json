@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "EF Repository",
+      "DisplayName": "EF Repository"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "As posted in another section, I cannot delete stories and i am getting an 'unexpected error' message. I am now updating this to report that the same message appears if I try to 'approve a story as spam' (text as used by Kigg): An unexpected error has occurred while confirming story as spam.\nThis gets a bit messy: I cannot delete stories, however i cannot mark them as spam either because of the above so if I want to publish stories , I am also forced to publish 'unwanted' stories. A solution to this would be most appreciated\n\nthanks\n\nMarco",
+    "LastUpdatedDate": "2009-10-19T14:29:51.063-07:00",
+    "PlannedForRelease": "KiGG - 2.5",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-10-17T14:21:35.117-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unexpected error when marking story as spam",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 5277
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Fixed in changeset 29462 but release isn't updated yet",
+      "PostedDate": "2009-10-17T21:54:55.94-07:00",
+      "Id": 15941
+    },
+    {
+      "Message": "Thank you , but how can I get it sorted, in the meantime? Also, is this changeset fixing both the delete and mark as spam issue?",
+      "PostedDate": "2009-10-19T08:25:05.693-07:00",
+      "Id": 15942
+    },
+    {
+      "Message": "yes, the changeset fix both.\r\nYou have 2 options. Download the changeset, Recompile the Core Project and replace the dll only or change the configuration to use linq to SQL\r\n",
+      "PostedDate": "2009-10-19T14:29:51.063-07:00",
+      "Id": 15943
+    }
+  ]
+}

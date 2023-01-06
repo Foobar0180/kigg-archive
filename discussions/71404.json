@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "243527",
+    "ThreadId": "71404",
+    "Html": "<p>Okay&nbsp;I am a bit confused as to the design of this project, what does it use Linq to SQL or Entity Framework?</p>\r\n<p>Why is there both in the project? What purpose does using both serve?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-08T09:49:58.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "243592",
+    "ThreadId": "71404",
+    "Html": "<p>It uses one or the other<br>it is up to you to choose which one you prefer</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-08T13:05:04.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244338",
+    "ThreadId": "71404",
+    "Html": "<p>as nachid said, you just need to use one of them and not both.</p>\r\n<p>Why we did this? here is my answer:</p>\r\n<ol>\r\n<li>LINQ to SQL was made before the release of EF last year. The project started with LINQ to SQL so that is exists</li>\r\n<li>We thought to provide another implementation of the repositories using Entity Framework that will enable us to support multiple database by just building the Database schema and change connection string and use proper .net data provider.</li>\r\n<li>Providing LINQ to SQL &amp; Entity Framework shows the concept of plug &amp; play and decoupling of system components. Using Dependency Injection we almost able to use any implementation of repositories. Who knows, maybe someone would like to implement his/her repositories using NHibernate or any other ORM. Or maybe us classical ADO.NET data access way (Connection, Commands &amp; Readers)</li>\r\n</ol>\r\n<p>I hope that our answers fulfill your needs</p>",
+    "PostedDate": "2009-10-11T04:34:27.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

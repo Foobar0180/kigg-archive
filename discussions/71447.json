@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "243694",
+    "ThreadId": "71447",
+    "Html": "<p>Hi all,</p>\r\n<p>I am trying to have Kigg 2.5 running properly on my development machine. (XP,&nbsp;VS 2008 and SQL 2005, using&nbsp;VS embeded web server&nbsp;)</p>\r\n<p>I am able to create new stories.&nbsp; :-)</p>\r\n<p>&nbsp;</p>\r\n<p>Problem is that I am absolutely unable to edit them.&nbsp; Unable to delete them.&nbsp; Even unable to logout !&nbsp; (I am logged in as admin)</p>\r\n<p>I always receive the same error:&nbsp; Microsoft JScript runtime error: Invalid procedure call or argument&nbsp;.&nbsp; The debugger breaks at line 3, col 42009 of file asset.axd?name=js2&amp;v=2.5.0.0&nbsp;&nbsp;&nbsp;<span style=\"color:#008000\"> <span style=\"color:#008000;font-size:x-small\">xhr.open(type,s.url,s.async)</span></span></p>\r\n<p><span style=\"color:#008000;font-size:x-small\"><span style=\"color:#000000\">Any idea ?</span></span></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"color:#008000;font-size:x-small\">&nbsp;</span></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-08T20:16:28.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244110",
+    "ThreadId": "71447",
+    "Html": "<p>Why do'nt you try to debug step by step<br>Apparently you have a javascript error<br>I have some times this kind of error (Microsoft JScript runtime error)<br>I usually solve by just rerun the application</p>",
+    "PostedDate": "2009-10-09T22:54:25.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244340",
+    "ThreadId": "71447",
+    "Html": "<p>This error related to XHR that is used with OpenID. This will happen with embedded web server yes, but not with IIS. because Embedded web server doesn't have headers.</p>\r\n<p>This is my evaluation to the problem as I got this before and with debugging I reached to the source of the problem which is the above.</p>\r\n<p>Try to configure your IIS 5.5 on XP and use KiGG on it to overcome this issue</p>",
+    "PostedDate": "2009-10-11T04:38:40.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

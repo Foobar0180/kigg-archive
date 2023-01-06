@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "209677",
+    "ThreadId": "61778",
+    "Html": "<p>It's a minor thing, but why aren't the Check and Argument classes static? They have an internal constructor that is only used by the test fixture (without assignment, pointless). All of the methods are static. It seems bizarre to me that the classes themselves are&nbsp;not static.</p>",
+    "PostedDate": "2009-07-07T14:55:06.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209699",
+    "ThreadId": "61778",
+    "Html": "<p>Good point<br>It looks like a code coming from the before C# 2.0 days where static classes did exist but only static methods<br>Check and Arhgument are heavly used in this project but they are&nbsp;never instantied so I would make&nbsp;them static<br>Once again we are missing Kazi here</p>\r\n<p>By the way, I am wondering what would be the benefit of this change</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-07T15:46:26.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210475",
+    "ThreadId": "61778",
+    "Html": "<p>Sorry guys, i am but busy with my other works. <br><br>The reason it is not static that with static you cannot write extension methods. Let say with this it is possible to write:<br>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><span style=\"color:Blue\">public</span> <span style=\"color:Blue\">static</span> <span style=\"color:Blue\">void</span> IsNotInvalidFiil(<span style=\"color:Blue\">this</span> Argument argument,<span style=\"color:Blue\"> string</span> argument, <span style=\"color:Blue\">string</span> argumentName)\r\n{\r\n<span style=\"color:Green\">//..</span>\r\n}\r\n</pre>\r\n</div>\r\n</p>\r\n<p>Hope this clarifies the issue.</p>",
+    "PostedDate": "2009-07-09T08:38:30.313-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210567",
+    "ThreadId": "61778",
+    "Html": "<p>Thanks Kazi<br>Good to know you are around</p>",
+    "PostedDate": "2009-07-09T12:36:22.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210611",
+    "ThreadId": "61778",
+    "Html": "<p>There are no instances in the code with which to use an extension method. Adding an extension method to Argument would change the semantics of that class.</p>\r\n<p>Also, avoid uninstantiated internal classes: <a href=\"http://msdn.microsoft.com/en-us/library/ms182265(VS.80).aspx\">http://msdn.microsoft.com/en-us/library/ms182265(VS.80).aspx</a></p>",
+    "PostedDate": "2009-07-09T15:18:54.363-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211022",
+    "ThreadId": "61778",
+    "Html": "<p>You making a point here @<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl08_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/KodefuGuru\">KodefuGuru</a>. But maybe @<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl04_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/kazimanzurrashid\">kazimanzurrashid</a> has something in mind for futrue during the design.</p>\r\n<p>Myself if later we found that Check and Argument classes are not supposed to be instantiated, then we should convert them to statics</p>\r\n<p>Thank you guys for going deep in the code, I would love if someone goes deep in EF code too :o)</p>",
+    "PostedDate": "2009-07-10T19:41:16.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211065",
+    "ThreadId": "61778",
+    "Html": "<p>Mosses<br>I&nbsp;did not really spent much time on EF because, for me, there are so many things to tame in this project<br>On the other side, I am reading your blog and I thought that EF 4.0 is coming soon&nbsp;you are certainly working on the update</p>\r\n<p>At one stage, for my personal learning cursus, I thought writing a layer using VistaDB.<br>I gave up when I saw that VistaDB are working on EF and Linq2Sql providers<br>My idea is is to use VistaDb in my project so I will spend more time on EF it when I move to VistaDb</p>\r\n<p>I do believe that your work is not only a great adding to this project but a fondamental one</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-11T01:50:39.577-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211172",
+    "ThreadId": "61778",
+    "Html": "<p>Regarding VistaDB, I am waiting for the release of their v 4.x Beta in order to give it a test on EF.<br>Sadly they will only support EF in commercial edition and not in express edition.</p>\r\n<p>EF 4.0, yes I really want to free sometime for the whole VS.NET 2010 for KiGG. I need to discuss this with Kazi, maybe we will need to branch code or make <br>another related project.</p>\r\n<p>Thank you guys again.</p>",
+    "PostedDate": "2009-07-12T02:54:14.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211397",
+    "ThreadId": "61778",
+    "Html": "<p>I've only been looking at the release version of KiGG lately since it's what I use. I've been working on some automation for myself, but if you'd like me to go deep in the EF I'll take a look.</p>",
+    "PostedDate": "2009-07-13T10:35:02.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211495",
+    "ThreadId": "61778",
+    "Html": "<p>@<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl16_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/kodefuguru\">kodefuguru</a> yes sure, I would like someone to go deep in to EF for KiGG! I need feedback and suggestions. I am worried about performance for example. So comments and suggestions will be valuable.</p>\r\n<p>Before I add support to MySQL, I used to generate views automatically as part of pre-build events. Now I take off, but I should add few performance hints on project wiki such as recommendation to generate views before deploy EF for KiGG.</p>\r\n<p>Suggestions and hints or anything will be helpful.</p>\r\n<p>Cheers guys</p>",
+    "PostedDate": "2009-07-13T14:25:41.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211629",
+    "ThreadId": "61778",
+    "Html": "<p>How big the database you used for testing performances?<br>I really thought that performance is not an issue here<br>That's why I was thinking about VistaDB<br>Regarding this last one, I do believe&nbsp;if you talk to VistaDB&nbsp; team about Kigg project, they will give you a full licence</p>\r\n<p>This is a very good window for their product<br>VistaDb&nbsp;owner is also a guy very involved in .Net technology and I am quite sure he is aware of this project</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-14T01:13:10.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211647",
+    "ThreadId": "61778",
+    "Html": "<p>I contacted VistaDB and they said they will make the a public beta for testing. <br>Not sure if they can provide us with non Redistributable license for testing EF on VistaDB through KiGG. But will ask them for that.<br>Devart provided us with professional license to support Entity Framework on MySQL and SQLite. I liked their provider so much very good one.<br>That is why made support for both our modified version of Connector/net (free) and Devart dotconnect for MySQL (commercial)</p>\r\n<p>Regarding performance, I am worried about EF performance itself. But it is supposed to be fine with this scale of applications.</p>",
+    "PostedDate": "2009-07-14T02:39:45.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

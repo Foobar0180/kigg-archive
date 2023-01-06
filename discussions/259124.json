@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "618819",
+    "ThreadId": "259124",
+    "Html": "\r\n<p>I got the following compiling error when I uprgade to VS2010. Any idea?</p>\r\n<p>c:\\Dev\\Kigg3.0\\Source\\Web\\Views\\Membership\\Detail.aspx(21): error CS0433: The type 'System.Web.Routing.RouteValueDictionary' exists in both 'c:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.0\\System.Web.dll' and 'c:\\Windows\\assembly\\GAC_MSIL\\System.Web.Routing\\3.5.0.0__31bf3856ad364e35\\System.Web.Routing.dll'</p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-family:Consolas; font-size:xx-small\"><span style=\"font-family:Consolas; font-size:xx-small\"></p>\r\n<p>&nbsp;</p>\r\n</span></span>\r\n<p></p>\r\n",
+    "PostedDate": "2011-05-26T09:48:52.117-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "618849",
+    "ThreadId": "259124",
+    "Html": "<p>Found the answer myself. Need to add</p>\r\n<p>The following line to the kigg.web project.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;&nbsp; &lt;AspNetCompiler VirtualPath=\"temp\" PhysicalPath=\"$(ProjectDir)\\..\\Web\" ToolPath=\"C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\" /&gt;</p>",
+    "PostedDate": "2011-05-26T10:31:25.003-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Should be resolved when UI component is availble for creating categories",
+    "ClosedDate": "2009-06-02T16:41:38.297-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "If you create a category with a space in it (i.e. News & Entertainment) clicking on the category produces an error. The URL does not support spaces and other illegal characters.",
+    "LastUpdatedDate": "2009-06-02T16:41:38.297-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-01-27T17:45:04.59-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Category with spaces",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3693
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Currently, there are no way to manage category from UI, you have to populate it in database. Category/Tag has two properties Name and Unique Name. Name is for display and Unique name is used in the Url. You can put News & Entertainment in Name and News-Entertainment in the UniqueName to resolve this.",
+      "PostedDate": "2009-02-03T19:02:52.82-08:00",
+      "Id": 15889
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "176645",
+    "ThreadId": "52568",
+    "Html": "I followed the install instructions.<br>\r\nI'm running it on Win Server 2003, IIS6 with 2005 SQL Back end.<br>\r\nWhen I go to the url Root/default.aspx I expect to see the default page, but what I see is the custom 404 page for whatever the url is.  So does anyone know what I am missing?<br>\r\nI changed the root in the web.config.<br>\r\n<br>\r\nAny help, or point me to some more indepth install instructions?<br>\r\n<br>\r\nThanks\r\n",
+    "PostedDate": "2009-04-07T08:16:46.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176662",
+    "ThreadId": "52568",
+    "Html": "Switch customErrors off (in web.config) and see what the actual exception is. Maybe you did not switch to ASP.NET 2.0 Integrated Pipeline in IIS?<br>\r\n",
+    "PostedDate": "2009-04-07T09:01:59.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176936",
+    "ThreadId": "52568",
+    "Html": "Ok, at first I got 500 server error, but was not logging anything in the Web log or event log.<br>\r\nNow I am getting&nbsp; &quot;XML Parsing Error: no element found&quot;<br>\r\n<br>\r\nI am missing something, I'm sure.&nbsp; this is my first deployment of an MVC app.&nbsp; What do you mean by switching to ASP.NET 2.0 Integrated Pipeline in IIS?<br>\r\n<br>\r\nThanks for your help<br>\r\n",
+    "PostedDate": "2009-04-07T20:11:56.397-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "176967",
+    "ThreadId": "52568",
+    "Html": "Hi jsaski,<br>\r\n<br>\r\nIs there more info about what XML element is missing? At first I didn't notice that you are using IIS 6. There's no Integrated Mode there. Try this: <a href=\"http://haacked.com/archive/2008/11/26/asp.net-mvc-on-iis-6-walkthrough.aspx\">http://haacked.com/archive/2008/11/26/asp.net-mvc-on-iis-6-walkthrough.aspx</a><br>\r\n<br>\r\nKind regards,<br>\r\nPawel Lukasik<br>\r\n",
+    "PostedDate": "2009-04-07T21:43:07.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "178098",
+    "ThreadId": "52568",
+    "Html": "Pawel.<br>\r\n<br>\r\nTHANK YOU!&nbsp; That is exactly what it was, without the wild card mapping the extension less URLs will not work.&nbsp; I knew as a MVC newbie that I was missing something basic.<br>\r\n<br>\r\nThanks again, (and to Haack Too)<br>\r\n<br>\r\nJoe Saski \r\n",
+    "PostedDate": "2009-04-10T19:29:13.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

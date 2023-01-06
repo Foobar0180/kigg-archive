@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "210127",
+    "ThreadId": "61897",
+    "Html": "<p>When I, as admin, want to edit a story the editting window pops up. But the complete window seems 'greyed out' and I can't edit the story nor any fields.</p>\r\n<p>Can someone tell me what is wrong?</p>\r\n<p>Thanks,</p>\r\n<p>Jos.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-08T12:30:30.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210130",
+    "ThreadId": "61897",
+    "Html": "<p>I think what you encounter is this <a href=\"http://kigg.codeplex.com/WorkItem/View.aspx?WorkItemId=3777\">known issue</a> with IE. I'm not sure if it is already fixed - I'm still on v2.1. Try editing story with FF.</p>\r\n<p><br>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-07-08T12:40:31.027-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210487",
+    "ThreadId": "61897",
+    "Html": "<p>Thanks Pawel. But why do the login and the registration pages work? It seems to me that these work in the same way and windows popup, just when I edit a story. Or is this done in a different way?</p>\r\n<p>Regards,<br>Jos</p>",
+    "PostedDate": "2009-07-09T09:14:50.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210497",
+    "ThreadId": "61897",
+    "Html": "<p>Maybe it's done in a different way. I haven't got much time to investigate the issue. I just always edit story under FF :)</p>",
+    "PostedDate": "2009-07-09T09:45:28.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210613",
+    "ThreadId": "61897",
+    "Html": "<p>Same problem... I run IE8. I'm rather tied to browser, but at least their's a workaround.</p>",
+    "PostedDate": "2009-07-09T15:20:30.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "152758",
+    "ThreadId": "45767",
+    "Html": "Hi,<br>\r\n<br>\r\nDue to KiGG use lots of framework/tools and the whole project is looks pretty streamlined.  I love it a lot.  Does anyone could share the KiGG development process?<br>\r\n<br>\r\nHere are some questions of mine:<br>\r\n<br>\r\n1. What tool do you use when building project architecture? Or by hand? Or just kick-start by coding?<br>\r\n2. How many people do the architecture job? only 1? <br>\r\n3. How long you developing this project? I mean the initial release.<br>\r\n4. How many people involve in this project?  I mean the core developer.<br>\r\n5. How do you divide the project with different people?  I mean how you share loads to every core developer.<br>\r\n6. How many developer roles in this project? A archtecter + tester + .... ?<br>\r\n7. Do you do prototyping for this Kigg application?<br>\r\n8. Do you plan the Web Application Interface first then design the Database schema?<br>\r\n<br>\r\nI'll so appreciated if anyone could talk about how to build a KiGG application from the ground up.  Thanks!\r\n",
+    "PostedDate": "2009-01-30T19:17:57.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

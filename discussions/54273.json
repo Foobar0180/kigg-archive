@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "182840",
+    "ThreadId": "54273",
+    "Html": "Hi guys. Wonderful work you have done with this. I have a question.<div><br></div><div>I see you are doing some work on EF integration (and others). My question is around where we stand with that at the moment - specifically EF integration.</div><div><br></div><div>Do you have a roadmap (or a few words) to indicate where things stand (I have the latest source but doesn't really tell the whole story) and what else needs to be done to reach an EF integration milestone. Just so i know at what point I can look at that code and consider it a good example of EF MVC pattern.</div><div><br></div><div>many thanks,</div><div>steven</div><div>http://livz.org</div>",
+    "PostedDate": "2009-04-23T08:36:36.403-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "182897",
+    "ThreadId": "54273",
+    "Html": "Speaking about the road map I'll leave that to Kazi, but I can say there is a roadmap in mind and we started to work on it, and from my side I started with EF. <br>\r\nRegarding EF, we started the implementation of EF Models and Repositories. We didn't go too far yet as I just started that few days ago. Not sure when we will be able to have a beta of EF implementation.<br>\r\nSo far as you might notice no committes that include EF skeletons are submitted, but I might do that when I complete or reach some milestone like at least complete ObjectContext implementation with tests.<br>\r\nFor EF as well, and as Linq to Entities has many things not supported I might introduce integration test projects to validate design against real life transactions, and this might cost time.<br>\r\nThank you for your concern<br>\r\n<br>\r\n",
+    "PostedDate": "2009-04-23T10:27:28.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "182906",
+    "ThreadId": "54273",
+    "Html": "Thanks for replying so quickly.<div><br></div><div>I suspect there is quite a bit of work due to the differences as you say. I wrote an implementation of software using the Kigg pattern (for completely unrelated software) but using EF and there are a significant number of differences.</div><div><br></div><div>Keep up the great work!</div>",
+    "PostedDate": "2009-04-23T10:54:10.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

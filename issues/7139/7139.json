@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-11-18T06:31:25.253-08:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Hi here,\r\nJust downloaded the project as it seems to be a really good project to get my head around with MVC.\r\nHere's the situation :\r\n- I have VS2008 running + framework 3.5\r\n- Installed MVC 2\r\n- Downloaded the Kigg project. \r\n- Trying to open V2.X with VS2008\r\n- Every other projects in the directory loads alright but Kigg.Web.[ Error message is : Kigg.Web.csproj cannot be opened. This project type is not supported by this installation. ]\r\n\r\nQuestion is:\r\n- Is it due to MVC 2 ? Cause one of my mate could successfully open it using MVC + VS2008.\r\n- How do I resolve it ? (other than uninstalling MVC2 and installing MVC)\r\n\r\nThanks for your help.",
+    "LastUpdatedDate": "2010-11-18T06:31:25.253-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2010-09-23T20:22:36.14-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Failed opening KiGG.Web with VS2008 MVC2",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7139
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Try again with the current source code.",
+      "PostedDate": "2010-10-27T10:32:43.337-07:00",
+      "Id": 17873
+    },
+    {
+      "Message": "Have tried it with the recent release! Because recent build was made with MVC 2.0 on VS2008. You issue was resolved long time ago actually, I wonder if you had the recent source code at that time.\nAnyway recent build and release works fine with VS2008 having MVC 2.0 installed.",
+      "PostedDate": "2010-11-05T07:06:29.197-07:00",
+      "Id": 18144
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "234251",
+    "ThreadId": "68844",
+    "Html": "<p>Moses,</p>\r\n<p>Let's start here talking about this very important matter and see what other members have to say</p>\r\n<p>As said in another thread, the hard part of localization is JS scripts<br>I did not really worked on it<br>I just evaluated the problem and googled a lit bit<br>As all Kigg JS scripts are rendered in one compressed file, I found that the best solution is to write an httphandler that analyzes this file and translates its content on the fly<br>I took this idea from here : <a href=\"http://madskristensen.net/post/Localize-text-in-JavaScript-files-in-ASPNET.aspx\">http://madskristensen.net/post/Localize-text-in-JavaScript-files-in-ASPNET.aspx</a></p>",
+    "PostedDate": "2009-09-14T04:05:11.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237139",
+    "ThreadId": "68844",
+    "Html": "<p>The idea of translating files on the fly is great. Personally I think it would be enough just to have all those js string in one separate file so I don't have to go through all of the files in order to find all of them. It's difficult to merge with new version when I have to compare also changes in strings.</p>\r\n<p>Regards,<br>Pawel</p>",
+    "PostedDate": "2009-09-21T22:41:29.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237146",
+    "ThreadId": "68844",
+    "Html": "<p>I guess it should be single javascript file with different localization e.g. messages.js.en-US, messages.js.ar-EG etc....</p>\r\n<p>As I remember this is how it is implemented in Mad's post</p>",
+    "PostedDate": "2009-09-21T23:07:25.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "238627",
+    "ThreadId": "68844",
+    "Html": "<p>No, for me the idea is&nbsp;to put translated messages into classical .NET resources files<br>In js files,&nbsp;we replace a hard coded text&nbsp;by something like <br><strong>GetGlobalResourceObject</strong>(&quot;KIGG&quot; &quot;MSG_INFO&quot;) <br>And whenever the httphandler encounters this text, it will go and bring it back from the resource file<br>At least that's the way I understood the link I gave in my first thread</p>\r\n<p>This is a very easy solution.</p>\r\n<p>On the other hand, there is no need to gather all js files in one big file<br>The KIGG scriptManager does this automaticallement for us<br><br>I am also wondering if&nbsp;we cannot just add a private method to&nbsp;the AssetHandler class that does the translation before the compression.<br>An option in the web.config will enable or disable this possibility</p>",
+    "PostedDate": "2009-09-24T22:04:53.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "239239",
+    "ThreadId": "68844",
+    "Html": "<p><strong>Very good news</strong></p>\r\n<p>This morning, I easly added a&nbsp;<strong>TranslateScript</strong> method to AssetHandler class<br>I took the code mentionned here : <a href=\"http://madskristensen.net/post/Localize-text-in-JavaScript-files-in-ASPNET.aspx\">http://madskristensen.net/post/Localize-text-in-JavaScript-files-in-ASPNET.aspx</a><br>I added the call to this method inside the ProcessRequest method.<br>Just&nbsp;here</p>\r\n<p>&nbsp;<em>// Write<br>using (StreamWriter sw = new StreamWriter(response.OutputStream))<br>{<br>&nbsp;&nbsp;&nbsp; //sw.Write(asset.Content);<br><br>&nbsp;&nbsp;&nbsp; string translated = TranslateScript(asset.Content);<br>&nbsp;&nbsp;&nbsp; sw.Write(translated);<br>}</em></p>\r\n<p>I created a global resource file and started translating messages in Membership.js</p>\r\n<p>I realized then&nbsp;those hard coded messages are not really used by the application<br>The application always uses its internal message and ignores js messages<br>So It looks like there is no need to translate any js message</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-27T01:58:57.893-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "239264",
+    "ThreadId": "68844",
+    "Html": "<p>Actually some hard coded&nbsp;messages are still used<br>Membership.js uses mainly the JQuery Validation Plugin.<br>This plugin uses JSON to communicate with the application</p>\r\n<p>Anyway, on the other side my, on the fly,&nbsp;translation is working perfectly</p>",
+    "PostedDate": "2009-09-27T07:50:50.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "543013",
+    "ThreadId": "68844",
+    "Html": "\r\n<p>Are there any plans to continue with localization of other parts of the website?</p>\r\n",
+    "PostedDate": "2011-01-02T19:33:39.017-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

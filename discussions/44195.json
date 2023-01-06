@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "147063",
+    "ThreadId": "44195",
+    "Html": " I just installed the latest build (17948) in VS2008, set the web project to startup, and ran the app.<br>\r\n<br>\r\nI got a &quot;Story does not exist&quot; exception with the following stack:<br>\r\n&nbsp;&nbsp; at <span>Kigg</span>.Web.BaseController.\r\n<div><wbr>ThrowNotFound(String message) in C:\\Documents and Settings\\Sean.Campbell\\My Documents\\<span>Kigg</span>-17897\\v2.x\\Web\\<wbr>Controllers\\BaseController.cs:<wbr>line 149<br>\r\n&nbsp;&nbsp; at <span>Kigg</span>.Web.StoryController.<wbr>Detail(String name) in C:\\Documents and Settings\\Sean.Campbell\\My Documents\\<span>Kigg</span>-17897\\v2.x\\Web\\<wbr>Controllers\\StoryController.<wbr>cs:line 248<br>\r\n&nbsp;&nbsp; at lambda_method(ExecutionScope , ControllerBase , Object[] )<br>\r\n&nbsp;&nbsp; at System.Web.Mvc.<wbr>ActionMethodDispatcher.<wbr>Execute(ControllerBase controller, Object[] parameters)<br>\r\n&nbsp;&nbsp; at System.Web.Mvc.<wbr>ControllerActionInvoker.<wbr>InvokeActionMethod(MethodInfo methodInfo, IDictionary`2 parameters)<br>\r\n&nbsp;&nbsp; at System.Web.Mvc.<wbr>ControllerActionInvoker.&lt;&gt;c__<wbr>DisplayClassc.&lt;<wbr>InvokeActionMethodWithFilters&gt;<wbr>b__9()<br>\r\n&nbsp;&nbsp; at System.Web.Mvc.<wbr>ControllerActionInvoker.<wbr>InvokeActionMethodFilter(<wbr>IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)<br>\r\n<strong><br>\r\nIt look like a string of &quot;default.aspx&quot; is being passed in to StoryController.Detail() as the 'name' variable.</strong><br>\r\n<br>\r\nAm I doing something wrong? </div>\r\n",
+    "PostedDate": "2009-01-14T08:14:26.293-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "147746",
+    "ThreadId": "44195",
+    "Html": "Hi, <a href=\"../../site/users/view/seano288\" id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl00_UserNameLink\">seano288</a>!<br>\r\n<br>\r\nYou must enter solution under right-configured IIS (if you install IIS after .net 3.5 you must run aspnet_iis -i command to configure IIS) to resolve your problem.<br>\r\nSet new site, bind it to 127.0.0.1 and run, enjoy your Kigg :)<br>\r\n<br>\r\nI hope, it help. Have a nice day and sorry for my English.<br>\r\n",
+    "PostedDate": "2009-01-16T09:07:12.017-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "148391",
+    "ThreadId": "44195",
+    "Html": "Thanks <a href=\"../../site/users/view/XaocCPS\" id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl02_UserNameLink\">XaocCPS</a> but I don't have IIS installed at all.&nbsp; I was hoping to work on this fully within VS2008.&nbsp; Is this not possible? What prevents VS2008 from running this?<br>\r\n<br>\r\nThanks.<br>\r\n",
+    "PostedDate": "2009-01-19T08:40:13.73-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "148399",
+    "ThreadId": "44195",
+    "Html": "Hi, <a href=\"../../site/users/view/seano288\" id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl04_UserNameLink\">seano288</a>!<br>\r\nThere is no another solution for me. IIS exists in any windows, is it problem to enable IIS in your windows?<br>\r\n<br>\r\n",
+    "PostedDate": "2009-01-19T09:13:44.413-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "148463",
+    "ThreadId": "44195",
+    "Html": "IIS is not required to run it locally, you can use the Visual Studio Web Server. Just change the RootUrl of web.config.<br>\r\n<br>\r\n&lt;type type=&quot;IConfigurationSettings&quot; mapTo=&quot;ConfigurationSettings&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;lifetime type=&quot;Singleton&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;typeConfig extensionType=&quot;Microsoft.Practices.Unity.Configuration.TypeInjectionElement, Microsoft.Practices.Unity.Configuration&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;property name=&quot;RootUrl&quot; propertyType=&quot;System.String&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.String&quot; value=&quot;http://localhost/Kigg&quot;/&gt; &lt;!--YOUR LOCAL URL --&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;/property&gt;<br>\r\n",
+    "PostedDate": "2009-01-19T11:46:11.207-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "151865",
+    "ThreadId": "44195",
+    "Html": "<p>I tried changing the RootUrl in my webconfig to<br>\r\n&lt;value type=&quot;System.String&quot; value=<a href=\"http://localhost:1080\">http://localhost:1080</a>/&gt; <br>\r\nThat's what VS2008 set it to.  But I still get the 'Story does not exist' error.</p>\r\n<p>I've set up permissions on the SQL db and everything on that end is fine, but can't get past this error.  Any suggestions?<br>\r\nHere is the full error:<br>\r\n<br>\r\n   at Kigg.Web.BaseController.ThrowNotFound(String message) in C:\\Projects\\General\\Kigg\\Kigg-18042\\v2.x\\Web\\Controllers\\BaseController.cs:line 149<br>\r\n   at Kigg.Web.StoryController.Detail(String name) in C:\\Projects\\General\\Kigg\\Kigg-18042\\v2.x\\Web\\Controllers\\StoryController.cs:line 327<br>\r\n   at lambda_method(ExecutionScope , ControllerBase , Object[] )<br>\r\n   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)<br>\r\n   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(MethodInfo methodInfo, IDictionary`2 parameters)<br>\r\n   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClassc.&lt;InvokeActionMethodWithFilters&gt;b__9()<br>\r\n   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2009-01-28T09:59:27.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177741",
+    "ThreadId": "44195",
+    "Html": "I'm having the same error.&nbsp; 'Story does not exist.'&nbsp; And the story that is trying to load is default.aspx.<br>\r\n",
+    "PostedDate": "2009-04-09T12:14:56.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177764",
+    "ThreadId": "44195",
+    "Html": "Just delete the Default.aspx and run again.<br>\r\n",
+    "PostedDate": "2009-04-09T13:19:32.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179057",
+    "ThreadId": "44195",
+    "Html": "I'm still having trouble accessing the root default.aspx page either by\r\nstarting with this page or by typing it in or by accessing it via the\r\n'All' menu item.&nbsp; I am using release 2.2.&nbsp; I have deleted the\r\ndefault.aspx page (suggested above) and it did not help.&nbsp; I can access\r\nthe faq, about, submit, login page as well as the other category pages\r\nbut not the home page.&nbsp; I have followed the 10 steps in the readme.txt\r\nexcept I am running locally using the visual studio web server.&nbsp; The\r\nerror I get is 'Story does not exist' related to default.aspx.&nbsp; If I\r\nturn on the custom errors I get a 404 error.&nbsp; I do not get the&quot;No published story exists.&quot; message on the home page per step 10 of the readme.txt.&nbsp; Any suggestions?&nbsp; Thanks for your help.<br>\r\n",
+    "PostedDate": "2009-04-14T08:01:39.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "189288",
+    "ThreadId": "44195",
+    "Html": "<p>When I delete the Default.aspx and run again,the IE show Cannot find the page</p>\r\n<p>but when I donot Default.aspx there are a error 'Story does not exist.' And the story that is trying to load is default.aspx.</p>\r\n<p>Who Can help me!</p>\r\n<p>I have</p>\r\n<p>SQL 2005</p>\r\n<p>VS2008</p>\r\n<p>iis 6.0</p>",
+    "PostedDate": "2009-05-12T06:57:49.297-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "205121",
+    "ThreadId": "44195",
+    "Html": "<p>even i have the same problem. i changed my rooturl to&nbsp; &lt;value type=&quot;System.String&quot; value=&quot;http://localhost:49731/&quot;/&gt; but still, it says story does not exist.</p>\r\n<p>&nbsp;</p>\r\n<p>anybody help please</p>",
+    "PostedDate": "2009-06-24T12:37:49.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

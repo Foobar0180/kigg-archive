@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "238862",
+    "ThreadId": "70121",
+    "Html": "<p>1. Is oAuth used at all?</p>\r\n<p>2. Can you shrink the number of OpenId providers? If I create my own, is it easy to modify to only go to my provider without offering external providers?</p>",
+    "PostedDate": "2009-09-25T09:12:36.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "239041",
+    "ThreadId": "70121",
+    "Html": "<p>oAuth is not in use for Members login.</p>\r\n<p>About your 2nd point! As I understand from your request you just want to support certain providers! Well that is possible! you just need to override id selector script to remove those providers you don't want, and also to disable the text box if you wish.</p>",
+    "PostedDate": "2009-09-25T19:41:20.577-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

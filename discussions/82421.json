@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "283153",
+    "ThreadId": "82421",
+    "Html": "<p>It's been almost 8 months after the last release! I know that some of the issues have been resolved and other great additions like submission and publishing automation are in place.</p>\r\n<p>Just curious!</p>",
+    "PostedDate": "2010-01-28T22:21:09.823-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "284205",
+    "ThreadId": "82421",
+    "Html": "<p>This project is definitily the best ASP.MVC school</p>\r\n<p>It is really pity that <strong>Kazi</strong>, the father of this project, totally gave up on it</p>\r\n<p><strong>Moses</strong>, who was very active and the father of the EF part, &nbsp;too has not been giving any sign of life here for a while<br><br></p>\r\n<p>Kazi, Moses,</p>\r\n<p>Please, we need you&nbsp; back to this wonderful project</p>",
+    "PostedDate": "2010-02-01T04:13:59.97-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "284238",
+    "ThreadId": "82421",
+    "Html": "<p>I think we should create a separate thread for this and hear the people voice.</p>\r\n<p>Technical:<br>-------------<br>1. Upgrade to .NET 4.0.<br>2. Upgrade to MVC 2.0.<br>3. Move to EF 4.0 and drop the other Data Access (e.g. L2S, EF3.5). Though there might be breaking changes with the existing.<br>4. Rearchitect the Domain Model since we can utilize pure POCO in EF.<br><br>Features:<br>----------------<br>1. Automation with Live writer.<br>2. Story can be submitted without a link,&nbsp;I think Reddit has this feature.</p>",
+    "PostedDate": "2010-02-01T05:48:31.357-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "285460",
+    "ThreadId": "82421",
+    "Html": "<p>Hi Kazi<br>nice to see you're still watching this project<br>One important feature I'll add to your list is <strong>Localization</strong></p>",
+    "PostedDate": "2010-02-03T12:43:28.153-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "203856",
+    "ThreadId": "60210",
+    "Html": "<p>I've deployed KiGG to my server, then tried to hook it up to Google Analytics. I took the tracking code, and replaced the one in Analytics.js and Analytics.min.js. Now, Google Analytics still says the status is &quot;Tracking Not Installed,&quot; even after I force it to check status. I opened the site up and verified that it loaded the new tracking code. I also verified that it's pulling down ga.js.</p>\r\n<p>Does anyone have any idea why my site isn't being tracked? Website is mtgbattlefield.com.</p>",
+    "PostedDate": "2009-06-21T11:16:33.46-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "204071",
+    "ThreadId": "60210",
+    "Html": "<p>My site is now being tracked. It appears that google cannot detect custom script as it is used in KiGG. If you have updated your tracking code and have the same problem, you will need to wait for up to 24 hours for&nbsp;your traffic&nbsp;to show up in Google Analytics... but it does work.</p>",
+    "PostedDate": "2009-06-22T07:32:13.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "281530",
+    "ThreadId": "60210",
+    "Html": "<p>I&nbsp;believe&nbsp;that it the case for all new sites in Google Analytics.</p>",
+    "PostedDate": "2010-01-25T11:27:18.07-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

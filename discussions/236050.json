@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "527008",
+    "ThreadId": "236050",
+    "Html": "\r\n<p>Hello Kiggenites!&nbsp;</p>\r\n<p>a total newbie question, but I've been trying to <strong>add a new category</strong> to my website.. by browsing to the&nbsp;database folder in my control panel's left pane, then expanding\r\n<strong>Website Name &gt;&gt; &nbsp;tables &gt;&gt; Category &gt;&gt; Data &gt;&gt; Add new record</strong>, but I'm not sure where to get that long ID number from.. is this a GUID? All I know is it's some&nbsp;unique number/character combination identifying\r\n you to the server you connect to..&nbsp;</p>\r\n<p>But <strong>where should I get the GUID from</strong>?</p>\r\n<p>Any help is quite appreciated folks, and a big hello to Nachid :)</p>\r\n<p>Cheers!&nbsp;</p>\r\n",
+    "PostedDate": "2010-11-25T08:21:02.053-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "527057",
+    "ThreadId": "236050",
+    "Html": "\r\n<p>For the record, I've also tried some of those online GUID generators, but none of them seems to be working..&nbsp;</p>\r\n<p>Thanks for your help&nbsp;</p>\r\n",
+    "PostedDate": "2010-11-25T10:45:24.727-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "527449",
+    "ThreadId": "236050",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I'm not sure about the latest version of Kigg, but in previous version categories were cached. If you add a new one you need to make the cache invalid. It should be enough to change and save web.config.&nbsp;</p>\r\n<p>Regards,<br>\r\nPaweł</p>\r\n",
+    "PostedDate": "2010-11-26T09:47:11.77-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

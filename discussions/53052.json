@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "178406",
+    "ThreadId": "53052",
+    "Html": "Today, free SQL schema analysis tool was released named SqlTac Lite.  Running this onto a default KiGG database instance (itself running on SQL Server 2008) yielded many errors that should be reviewed, such as:<div><br></div><div>* StoryView and UserScore tables do not contain a Natural Key.</div><div>* KnownSource table PK has one or more segments which are not marked as identity/unique identifier.</div><div>* CommentSubscribtion and StoryMarkAsSpam tables contain a multiple segmented primary key.</div><div>* Id and UniqueName columns occur many times with one or more inconsistent definitions.</div><div>...and more</div><div><br></div><div>Would someone please take a look at this handy tool and consider using it for the next iteration?  Since this project is trying to go best practices, using all tools available will yield quantifiable results to the end result.</div><div><br></div><div>Thank you for this wonderful project!</div><div><br></div><div>mycall</div>",
+    "PostedDate": "2009-04-12T16:08:05.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179594",
+    "ThreadId": "53052",
+    "Html": "Sure anything for improving it, but would pls provide us the link.<br>\r\n",
+    "PostedDate": "2009-04-15T07:09:50.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "198707",
+    "ThreadId": "53052",
+    "Html": "<p><a href=\"http://www.SqlTac.com\">www.SqlTac.com</a></p>",
+    "PostedDate": "2009-06-07T03:27:09.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

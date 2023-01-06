@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "205161",
+    "ThreadId": "60566",
+    "Html": "<p>I installed KiGG and runs as expected. Great!&nbsp;But I do have&nbsp;(a newbie) question. Is there some kind of&nbsp;admin page/module in KiGG where I can for example manage users that are registered?</p>\r\n<p>thanks.</p>",
+    "PostedDate": "2009-06-24T14:32:15.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "205266",
+    "ThreadId": "60566",
+    "Html": "<p>When you connect as Admin, you have access to a small panel for managing stories<br>You can easly customize this one.</p>",
+    "PostedDate": "2009-06-24T23:48:33.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "205621",
+    "ThreadId": "60566",
+    "Html": "<p>Thanks nachid, I have seen the admin panel but this is very limited. Did anyone make extensions to this panel?</p>",
+    "PostedDate": "2009-06-25T12:53:29.38-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

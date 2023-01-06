@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "154686",
+    "ThreadId": "46315",
+    "Html": "Hello,<br>\r\n<br>\r\nI have ASP.Net 2.0, SQL Server 2000 &amp; Visual Studio 2005. Can I run KiGG?<br>\r\n<br>\r\nI tried going through the installation steps and got stuck on <strong>#5 - Now Open the Kigg.sln in Visual Studio</strong>. The .sln file was made in VS 2008 and doesn't open up in VS 2005. If I can run KiGG with this setup, could you repack .sln for me so its compatible with VS 2005?<br>\r\n<br>\r\nAppreciate your help!<br>\r\nN.\r\n",
+    "PostedDate": "2009-02-05T07:50:50.88-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154706",
+    "ThreadId": "46315",
+    "Html": "Hi NKumer,<br>\r\n<br>\r\nI am afraid it does not work in VS2005, same as ASP.NET MVC and LinqToSQL.<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-05T08:16:51.483-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154710",
+    "ThreadId": "46315",
+    "Html": "Thanks for replying promptly. If you think of a way in future or have an alternative please do let me know. Thanks!\r\n",
+    "PostedDate": "2009-02-05T08:19:40.15-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154711",
+    "ThreadId": "46315",
+    "Html": "Thanks for replying promptly. If you think of a way in future or have an alternative please do let me know. Thanks!\r\n",
+    "PostedDate": "2009-02-05T08:19:42.47-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

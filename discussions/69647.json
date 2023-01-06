@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "237066",
+    "ThreadId": "69647",
+    "Html": "<p>When I try to submit a new story, I am getting this error message. I don't know what is wrong. Could anyone help me with this.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>I am using version 2.1. I did and followed the steps for the configuration. I submit only one story and that is it. In fact, on the first story, the site crashed and than when I refreshed the page, it worked. I did see the story submit but after that, I could never submit any other story again.</p>\r\n<p>&nbsp;</p>\r\n<p>This is driving me crazy because I re-installed many times and same problem happens over and over.</p>\r\n<p>&nbsp;</p>\r\n<p>Thank you in advance.</p>",
+    "PostedDate": "2009-09-21T15:32:36.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237093",
+    "ThreadId": "69647",
+    "Html": "<p>I guess you are running a old version 2.1! Why don't you upgrade to 2.2 or 2.5 then try again! Lots of bug fixes added!</p>\r\n<p>I would suggest to do so! especially I have no idea what is going on or be able to reproduce the issue on my local working version.</p>\r\n<p>Personally I am running v2.5</p>",
+    "PostedDate": "2009-09-21T17:47:55.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237095",
+    "ThreadId": "69647",
+    "Html": "<p>I tried the other versions but this time I am getting other errors. I wish there was a screen cast shows me the process on the install of the newer versions. The instruction text file isn't helping at all. I am following everything but I am still getting errors on the install. I can't even see the home page with the v2.5. That is even worse.</p>\r\n<p>I will try the v2.5 but that doesn't even have default.aspx on the code download. Does it go to another page on default?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks in advance!</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-21T18:05:18.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237097",
+    "ThreadId": "69647",
+    "Html": "<p>I also just installed Kigg 2.5, I don't know how to install (Indeed, the installation is real difficult to me:), the web hosting support team help me install the Kigg, my website is &quot;<a href=\"http://www.servefault.com\">http://www.servefault.com</a>&quot; hosted by <a style=\"text-decoration:none\" title=\"Kigg Hosting\" href=\"http://www.servefault.com/webhost4life.htm\">webhost4life</a></p>\r\n<p>Regards,</p>\r\n<p>Helen</p>",
+    "PostedDate": "2009-09-21T18:25:17.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237145",
+    "ThreadId": "69647",
+    "Html": "<p>I really wonder if you read the <a href=\"http://kigg.codeplex.com/Wiki/View.aspx?title=Documentation\">deployment guide </a>that was just recently posted!</p>\r\n<p>It is not yet fully complete! but at least the part that will let you run the application and start posting!</p>\r\n<p>Yes there is no default.aspx! but don't worry everything should move fine. Just try the documentation for deployment.</p>\r\n<p>In the provided <a href=\"http://kigg.codeplex.com/Wiki/View.aspx?title=Documentation\">documentation</a> (online) I applied it to my local version, step by step and successfully was able to initially run the application!</p>\r\n<p>Please let me know if the documentation isn't helping or need modifications.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-21T23:03:05.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237158",
+    "ThreadId": "69647",
+    "Html": "<p>I have read it and gone through it maybe three times.</p>\r\n<p>Still it isn't working. This is&nbsp;ridiculous. This should not be this difficult to lunch. If two different databases want to be supported, than two different download there should be. One for MySQL and one for MS SQL and last one for both if anybody (must be stupid) to support MySQL and MS SQL at the same time.</p>\r\n<p>Here is the final errors I am getting and can't get rid of it:</p>\r\n<p>PS: I have done the commands manually as well.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">Error<span style=\"white-space:pre\"> </span>102<span style=\"white-space:pre\"> </span>Metadata file 'C:\\Projects\\KiggTest\\EntityFramework\\bin\\Debug\\Kigg.Infrastructure.EF.dll' could not be found<span style=\"white-space:pre\"> </span>Kigg.Web</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">Error<span style=\"white-space:pre\"> </span>103<span style=\"white-space:pre\"> </span>Metadata file 'C:\\Projects\\KiggTest\\Web\\bin\\Kigg.Web.dll' could not be found<span style=\"white-space:pre\"> </span>Kigg.Web.Test</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">Error<span style=\"white-space:pre\"> </span>104<span style=\"white-space:pre\"> </span>An error occurred creating the configuration section handler for system.data: Column 'InvariantName' is constrained to be unique. &nbsp;Value 'MySql.Data.MySqlClient' is already present. (C:\\Projects\\KiggTest\\References\\MySqlClient\\EdmGen.exe.Config line 6)<span style=\"white-space:pre\"> </span>C:\\Projects\\KiggTest\\EntityFramework\\EXEC<span style=\"white-space:pre\"> </span>Kigg.Infrastructure.EF</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">Error<span style=\"white-space:pre\"> </span>105<span style=\"white-space:pre\"> </span>The command &quot;&quot;%windir%\\Microsoft.NET\\Framework\\v3.5\\edmgen.exe&quot; /mode:EntityClassGeneration /incsdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.csdl&quot; /outobjectlayer:&quot;C:\\Projects\\KiggTest\\EntityFramework\\DomainObjects\\Generated\\Models.cs&quot; /language:CSharp</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">&quot;%windir%\\Microsoft.NET\\Framework\\v3.5\\edmgen.exe&quot; /mode:ViewGeneration /incsdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.csdl&quot; /inssdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.SqlServer.ssdl&quot; /inmsl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.msl&quot; /outviews:&quot;C:\\Projects\\KiggTest\\EntityFramework\\DomainObjects\\Generated\\SqlServerViews.cs&quot; /language:CSharp</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">&quot;C:\\Projects\\KiggTest\\References\\MySqlClient\\edmgen.exe&quot; /mode:ViewGeneration /incsdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.csdl&quot; /inssdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.MySql.ssdl&quot; /inmsl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.msl&quot; /outviews:&quot;C:\\Projects\\KiggTest\\EntityFramework\\DomainObjects\\Generated\\MySqlViews.cs&quot; /language:CSharp&quot; exited with code 1.<span style=\"white-space:pre\"> </span>Kigg.Infrastructure.EF</div>\r\n<p>\r\n<p>Error<span style=\"white-space:pre\"> </span>102<span style=\"white-space:pre\"> </span>Metadata file 'C:\\Projects\\KiggTest\\EntityFramework\\bin\\Debug\\Kigg.Infrastructure.EF.dll' could not be found<span style=\"white-space:pre\"> </span>Kigg.Web</p>\r\n<p>Error<span style=\"white-space:pre\"> </span>103<span style=\"white-space:pre\"> </span>Metadata file 'C:\\Projects\\KiggTest\\Web\\bin\\Kigg.Web.dll' could not be found<span style=\"white-space:pre\"> </span>Kigg.Web.Test</p>\r\n<p>Error<span style=\"white-space:pre\"> </span>104<span style=\"white-space:pre\"> </span>An error occurred creating the configuration section handler for system.data: Column 'InvariantName' is constrained to be unique. &nbsp;Value 'MySql.Data.MySqlClient' is already present. (C:\\Projects\\KiggTest\\References\\MySqlClient\\EdmGen.exe.Config line 6)<span style=\"white-space:pre\"> </span>C:\\Projects\\KiggTest\\EntityFramework\\EXEC<span style=\"white-space:pre\"> </span>Kigg.Infrastructure.EF</p>\r\n<p>Error<span style=\"white-space:pre\"> </span>105<span style=\"white-space:pre\"> </span>The command &quot;&quot;%windir%\\Microsoft.NET\\Framework\\v3.5\\edmgen.exe&quot; /mode:EntityClassGeneration /incsdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.csdl&quot; /outobjectlayer:&quot;C:\\Projects\\KiggTest\\EntityFramework\\DomainObjects\\Generated\\Models.cs&quot; /language:CSharp</p>\r\n<p>&nbsp;</p>\r\n<p>&quot;%windir%\\Microsoft.NET\\Framework\\v3.5\\edmgen.exe&quot; /mode:ViewGeneration /incsdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.csdl&quot; /inssdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.SqlServer.ssdl&quot; /inmsl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.msl&quot; /outviews:&quot;C:\\Projects\\KiggTest\\EntityFramework\\DomainObjects\\Generated\\SqlServerViews.cs&quot; /language:CSharp</p>\r\n<p>&nbsp;</p>\r\n<p>&quot;C:\\Projects\\KiggTest\\References\\MySqlClient\\edmgen.exe&quot; /mode:ViewGeneration /incsdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.csdl&quot; /inssdl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.MySql.ssdl&quot; /inmsl:&quot;C:\\Projects\\KiggTest\\SharedFiles\\DomainObjects.msl&quot; /outviews:&quot;C:\\Projects\\KiggTest\\EntityFramework\\DomainObjects\\Generated\\MySqlViews.cs&quot; /language:CSharp&quot; exited with code 1.<span style=\"white-space:pre\"> </span>Kigg.Infrastructure.EF</p>\r\n<div>This point I can't pass.</div>\r\n<div></div>\r\n<div>I tried everything. I don't know what to do. This should be simple. If I want to use Entitiy Framework (which I do), my configuration should be for that. Simple as that.</div>\r\n<div></div>\r\n</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-21T23:51:41.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237196",
+    "ThreadId": "69647",
+    "Html": "<p>First of all there shouldn't be 2 separate packages for different database support because it is all a matter of configuration that is already documented.</p>\r\n<p>I just downloaded the code on separate machine. I recompiled the code, and none of the above issues appeared! Even the commands run successfully! Which made me doubt the version you have or your machine system requirements!</p>\r\n<p>I did the following:</p>\r\n<p>1) downloaded the source code of the latest changeset or the one provided on download section<br>2) Opened KiGGEF.sln<br>3) rebuild the solution with debug option, release option and publishingrelease option and all went fine.</p>\r\n<p>And it was just as easy as the above, totally independent machine with no prior KiGG deployment or development.</p>\r\n<p>Now to deployment. The above is not related to deployment, The above is about source code an rebuild the solution.</p>\r\n<p>To deploy you need to follow the steps provided in the documentation which again I followed up step by step and successfully deployed KiGG on another 3rd machine with windows vista SP2 on IIS 7.0!</p>\r\n<p>Now do your machine have .NET 3.5 SP1 &amp; ASP.NET MVC 1.0 RTM installed!</p>\r\n<p>What edition of Visual Studio you are Using?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-22T01:15:53.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237336",
+    "ThreadId": "69647",
+    "Html": "<p>I have the Visual Studio 2008 Team System. I have installed all the updates and .Net 3.5 SP1 &amp; Asp.Net MVC 1.0 RTM as well. I am having the same problem over and over. Also, I have the IIS 7.0 on Vista.</p>\r\n<p>I don't know if I am missing anything else. I have just rebuild my machine an a new hard drive. I have followed the instructions on the documentation about the installation.</p>\r\n<p>Look I have MS SharedView. If you don't mind, could you take a look at it?</p>",
+    "PostedDate": "2009-09-22T07:51:40.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237642",
+    "ThreadId": "69647",
+    "Html": "<p>Yes, I would like to have a look! because this is all weird! I want to know what is going wrong.</p>\r\n<p>How can I access it? and when you'll be available?!</p>",
+    "PostedDate": "2009-09-22T22:23:15.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237650",
+    "ThreadId": "69647",
+    "Html": "<p>Thank you in advance.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>I am avaliable right now and will be till 12:30 am.</p>\r\n<p>&nbsp;</p>\r\n<p>You can call me as well.</p>\r\n<p>My Skype user name is : ZeroInfinity</p>\r\n<p>I will give you my phone number if you want and if you are in the Bay Area.</p>\r\n<p>&nbsp;</p>\r\n<p>Let me know</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-09-22T22:45:15.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237724",
+    "ThreadId": "69647",
+    "Html": "<p>Look, currently I am at work, won't be able to do it now.</p>\r\n<p>However I'll be available at 7 PM my local time. my time zone is GMT +2. What is yours?</p>\r\n<p>I'll add you to skype once I got access to my laptop when I get back to home. btw, I am in Cairo.</p>",
+    "PostedDate": "2009-09-23T02:25:38.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "237950",
+    "ThreadId": "69647",
+    "Html": "<p>Hi,</p>\r\n<p>&nbsp;</p>\r\n<p>I am at GTM Pacific time. I live in San Francisco Bay Are.</p>\r\n<p>Let me know.</p>",
+    "PostedDate": "2009-09-23T11:07:38.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "267424",
+    "ThreadId": "69647",
+    "Html": "<p>Hi mosessaur, I meet the same error with ZeroInfinity, could you tell me how to fix it please?</p>",
+    "PostedDate": "2009-12-14T21:37:19.75-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "286596",
+    "ThreadId": "69647",
+    "Html": "<p>And I have the same problem as ZeroInfinity. How can I fix it?</p>",
+    "PostedDate": "2010-02-06T08:23:11.07-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "788958",
+    "ThreadId": "69647",
+    "Html": "<p>I had the same error, to fix it, I opened the&nbsp;Kigg.Infrastructure.EF properties, then at the build events section, i have removed the last command for mysql as i don't have mysql and will use sql server</p>\r\n<p>after that the project was building sucessfully</p>",
+    "PostedDate": "2012-02-21T03:02:21.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Computers using OpenDNS (nearly 100million of them) cannot submit article because some of the javascripts don't load as openDNS blocks them. Please allow a simpler article submission form which does not have external dependencies and delivers all css, js, images right from the same dotnetshoutout server.",
+    "LastUpdatedDate": "2010-08-09T01:32:18.263-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2010-08-09T01:32:18.263-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Cannot submit article while using openDNS",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 7091
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

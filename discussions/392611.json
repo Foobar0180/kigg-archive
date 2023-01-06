@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "902529",
+    "ThreadId": "392611",
+    "Html": "\r\n<p>Download this project and try to compiled, it compiles good, but on runtime it is throwing following error.</p>\r\n<p><span></p>\r\n<h1>Server Error in '/' Application.\r\n<hr size=\"1\">\r\n</h1>\r\n<h2><em>Configuration Error</em></h2>\r\n</span><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><strong>Description:&nbsp;</strong>An error occurred during the processing of a configuration file required to service this request. Please review the specific error details\r\n below and modify your configuration file appropriately.&nbsp;<br>\r\n<br>\r\n<strong>Parser Error Message:&nbsp;</strong>The value of the property 'type' cannot be parsed. The error is: Could not load file or assembly 'Microsoft.Practices.Unity' or one of its dependencies. The system cannot find the file specified.<br>\r\n<br>\r\n<strong>Source Error:</strong>&nbsp;<br>\r\n<br>\r\n</span>\r\n<p></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre>Line 83: \t&lt;unity&gt;\r\nLine 84: \t\t&lt;typeAliases&gt;\r\n<span style=\"color:red\">Line 85: \t\t\t&lt;typeAlias alias=&quot;Singleton&quot; type=&quot;Microsoft.Practices.Unity.ContainerControlledLifetimeManager, Microsoft.Practices.Unity&quot;/&gt;\r\n</span>Line 86: \t\t\t&lt;typeAlias alias=&quot;Transient&quot; type=&quot;Microsoft.Practices.Unity.TransientLifetimeManager, Microsoft.Practices.Unity&quot;/&gt;\r\nLine 87: \t\t\t&lt;typeAlias alias=&quot;PerWebRequest&quot; type=&quot;Kigg.Infrastructure.EnterpriseLibrary.UnityPerWebRequestLifetimeManager, Kigg.Infrastructure.EnterpriseLibrary&quot;/&gt;</pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"><br>\r\n<strong>Source File:&nbsp;</strong>C:\\Projects\\KIGG\\Web\\web.config<strong>&nbsp;&nbsp;&nbsp; Line:&nbsp;</strong>85&nbsp;<br>\r\n<br>\r\n<br>\r\n</p>\r\n<div>Show Additional Configuration Errors:</div>\r\n<div id=\"additionalConfigurationErrors\"></div>\r\n</span>\r\n<p></p>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n<tbody>\r\n<tr>\r\n<td><code>\r\n<pre>The value of the property 'type' cannot be parsed. The error is: Could not load file or assembly 'Microsoft.Practices.Unity' or one of its dependencies. The system cannot find the file specified. (C:\\Projects\\KIGG\\Web\\web.config line 86)<br>\r\n                      </pre>\r\n</code></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><span style=\"font-family:Arial,Helvetica,Geneva,SunSans-Regular,sans-serif\"></p>\r\n<div id=\"additionalConfigurationErrors\"></div>\r\n<hr size=\"1\">\r\n<strong>Version Information:</strong>&nbsp;Microsoft .NET Framework Version:2.0.50727.5456; ASP.NET Version:2.0.50727.5459</span>\r\n<p></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Please Note:</strong></p>\r\n<p>1) I am having all the things as mentioned in system requirement.</p>\r\n<p>2) I have performed all configuration steps. (Including DB Scripts)</p>\r\n<p>3) I am using default configuration (LINQ2SQL)</p>\r\n<p>4) While searching for solution on internet i have found this link, may be someone can please help me with this.</p>\r\n<p><a href=\"http://stackoverflow.com/questions/4469929/could-not-load-file-or-assembly-or-one-of-its-dependencies\">http://stackoverflow.com/questions/4469929/could-not-load-file-or-assembly-or-one-of-its-dependencies</a></p>\r\n<p>&nbsp;</p>\r\n<p>Please help me, I am struggling with error since yesterday.</p>\r\n<p>Thank you.</p>\r\n",
+    "PostedDate": "2012-08-22T06:55:44.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "907442",
+    "ThreadId": "392611",
+    "Html": "<p>Hi There,</p>\r\n<p>I am sorry for the late reply. Let me know if you are still having problems with the installation.</p>\r\n<p>Try to clean Debug and Release folders in your solution. Ant then remove and add unity again.</p>\r\n<p>Pass your skypeid so that I can see where you are getting the error.</p>\r\n<p>Click on my username and contact me so that I can help you in assisting the installation.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>\r\n<p><a title=\"Sharepoint community site\" href=\"http://www.sharepointsidekick.com\" target=\"_blank\">Visit my kigg based Sharepoint community site</a></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-09-02T04:18:21.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "907791",
+    "ThreadId": "392611",
+    "Html": "<p>Thank you Narendra for replying... &nbsp;</p>\r\n<p>Is it possible to resolve this problem other than talking on skypee? &nbsp;From my work place we are not allowed to install skypee or any third party chat client.</p>\r\n<p>&nbsp;</p>\r\n<p>Let me&nbsp;briefly&nbsp;explain what i am doing?</p>\r\n<p>I did a fresh installation of Win 7 OS, then installed VS.Net 2008, download vs.net 2008 sp1, then installed sql server 2008 express.</p>\r\n<p>I then Downloaded Kigg project and open Kigg.sln project file and follow step by step to configure things.</p>\r\n<p>I have&nbsp;reference&nbsp;all correct .dll files as available in Reference folder, did clean/rebuild as u mentioned above, but still i am facing the same issue.</p>\r\n<p>I would appreciate if you can please let me know what Microsoft.Practices.Unity .dll's we need to reference for Kigg and Url to download it. &nbsp;Thank you.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<pre>Could not load file or assembly 'Microsoft.Practices.Unity.Interception.Configuration' or one of its dependencies. This assembly is built by a runtime newer than the currently loaded runtime and cannot be loaded. C:\\Projects\\KIGG\\Web\\ASPNETCOMPILER Kigg.Web\r\n\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Please Note:</strong></p>\r\n<p>1) I am having all the things as mentioned in system requirement.</p>\r\n<p>2) I have performed all configuration steps. (Including DB Scripts)</p>\r\n<p>3) I am using default configuration (LINQ2SQL)</p>\r\n<p>4) While searching for solution on internet i have found this link, may be someone can please help me with this.</p>",
+    "PostedDate": "2012-09-03T06:53:32.29-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "923022",
+    "ThreadId": "392611",
+    "Html": "<p>Hi There,</p>\r\n<p>Hope you are doing alright there.</p>\r\n<p>Which version of the source code you are dealing with?&nbsp;</p>\r\n<p>It is pretty difficult to debug without looking at the problem. Please make sure that you are compiling the web app with target framework of \".NET Framework 3.5\" and see how it goes. In order to do this, right click on the kigg.web project and click on the properties. In the \"Application\" tab, there is a Target framework dropdown where you select .NET Framework 3.5 and save the project. Now rebuild your web app and it should work. If necessary do this for all the projects in the solution and rebuild the whole project.</p>\r\n<p>Again it is very difficult to debug without looking at the problem. The above solution might work or might not work for you.</p>\r\n<p>It depends on the which version of the source code you downloaded. Let me know how it goes and I will give you a stable version that I have just found in my old lappy which is working just fine in my lappy with VS 2010. Again it depends on your system build.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>\r\n<p><a title=\"sharepoint community site\" href=\"http://www.sharepointsidekick.com\" target=\"_blank\">sharepoint&nbsp;community site</a></p>",
+    "PostedDate": "2012-10-07T04:29:01.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1088239",
+    "ThreadId": "392611",
+    "Html": "Hi, Have you find the solution on this finally?\r<br />\nI am facing same issue????<br />\n",
+    "PostedDate": "2013-09-04T07:03:25.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

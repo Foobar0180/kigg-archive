@@ -1,0 +1,314 @@
+[
+  {
+    "Id": 893,
+    "Title": "Url Validation in the client side"
+  },
+  {
+    "Id": 1581,
+    "Title": "Add MailTemplates to version control"
+  },
+  {
+    "Id": 1937,
+    "Title": "Upgrade to latest MVC version"
+  },
+  {
+    "Id": 2144,
+    "Title": "A solution file would be nice.-missing.sln"
+  },
+  {
+    "Id": 2675,
+    "Title": "Redundant LINQ to SQL clauses"
+  },
+  {
+    "Id": 2676,
+    "Title": "CompressFilter Attribute incorrectly handles Accept Encodings for determining encoding"
+  },
+  {
+    "Id": 3170,
+    "Title": "missing the kigg.dll in Web/bin/kigg.dll"
+  },
+  {
+    "Id": 3338,
+    "Title": "'RenderView() does not exist in the current context"
+  },
+  {
+    "Id": 3632,
+    "Title": "Comment Repository FindById doesn't use commentID Parameter but Matches Against Itself"
+  },
+  {
+    "Id": 3672,
+    "Title": "Cloud.ascx Error - Value was either too larger or too small for an Int32"
+  },
+  {
+    "Id": 3673,
+    "Title": "Search team should be highlighted in search results"
+  },
+  {
+    "Id": 3674,
+    "Title": "Search items should be indexed."
+  },
+  {
+    "Id": 3693,
+    "Title": "Category with spaces"
+  },
+  {
+    "Id": 3731,
+    "Title": "Published Dates Recalculate on ALL Entries, instead of just NEW entries."
+  },
+  {
+    "Id": 3770,
+    "Title": "Implement Domain Restriction"
+  },
+  {
+    "Id": 3771,
+    "Title": "Upgrade to jQuery 1.3"
+  },
+  {
+    "Id": 3772,
+    "Title": "Upgrade to Moq 3.0"
+  },
+  {
+    "Id": 3773,
+    "Title": "ModelBinder in Common places"
+  },
+  {
+    "Id": 3774,
+    "Title": "Use ModelState"
+  },
+  {
+    "Id": 3775,
+    "Title": "Broadcast in Twitter"
+  },
+  {
+    "Id": 3776,
+    "Title": "Add User Score History"
+  },
+  {
+    "Id": 3777,
+    "Title": "Story Edit Box"
+  },
+  {
+    "Id": 3779,
+    "Title": "Implement Localization"
+  },
+  {
+    "Id": 3780,
+    "Title": "Implement Personalization"
+  },
+  {
+    "Id": 3781,
+    "Title": "Allow / Deny Lanugage Story"
+  },
+  {
+    "Id": 3782,
+    "Title": "Bring some goodness from FubuMVC"
+  },
+  {
+    "Id": 3815,
+    "Title": "Fix Safari/Chrome MarkItUp Textbox Issue"
+  },
+  {
+    "Id": 3842,
+    "Title": "Use CommonServiceLocator"
+  },
+  {
+    "Id": 3849,
+    "Title": "Not remembering logins"
+  },
+  {
+    "Id": 3860,
+    "Title": "Add PostRank Strategy when Publishing Story"
+  },
+  {
+    "Id": 3887,
+    "Title": "not allowed to submit your feedburner url"
+  },
+  {
+    "Id": 3922,
+    "Title": "Could not load type 'System.Web.Mvc.ValidateInputAttribute' from assembly 'System.Web.Mvc,"
+  },
+  {
+    "Id": 3927,
+    "Title": "Story with two (or more) same tags"
+  },
+  {
+    "Id": 3954,
+    "Title": "RSS and ATOM error"
+  },
+  {
+    "Id": 3957,
+    "Title": "blank page"
+  },
+  {
+    "Id": 3967,
+    "Title": "Specified Url does not exist"
+  },
+  {
+    "Id": 3982,
+    "Title": "HTML stripping"
+  },
+  {
+    "Id": 4023,
+    "Title": "Entity Framework domain model & repository implementation"
+  },
+  {
+    "Id": 4050,
+    "Title": "Strange search behaviour at dotnetshout"
+  },
+  {
+    "Id": 4057,
+    "Title": "Submitted Story never shows up??"
+  },
+  {
+    "Id": 4071,
+    "Title": "Site does not render properly in IE6"
+  },
+  {
+    "Id": 4114,
+    "Title": "Support MySQL database through Entity Framework"
+  },
+  {
+    "Id": 4118,
+    "Title": "Description control in Submitting story dosen't look properly in Chrome"
+  },
+  {
+    "Id": 4127,
+    "Title": "Improve User Profile URL"
+  },
+  {
+    "Id": 4162,
+    "Title": "bug in httpform?"
+  },
+  {
+    "Id": 4454,
+    "Title": "Upgrade open ID provider to include Facebook, Google etc."
+  },
+  {
+    "Id": 4593,
+    "Title": "Publish does not update counters in control panel"
+  },
+  {
+    "Id": 4617,
+    "Title": "HtmlToStoryContentConverter Improvements"
+  },
+  {
+    "Id": 4655,
+    "Title": "Provide sample configuration that show how to split configuration into multiple files"
+  },
+  {
+    "Id": 4656,
+    "Title": "Prepare release package for KiGG 2.5"
+  },
+  {
+    "Id": 4661,
+    "Title": "Exception: Unable to cast object of type 'Microsoft.Practices.EnterpriseLibrary.Logging.LogEntry' to type 'Kigg.Infrastructure.EnterpriseLibrary.WeblogEntry'"
+  },
+  {
+    "Id": 4662,
+    "Title": "Skipping First Tag On Twitter Post"
+  },
+  {
+    "Id": 4672,
+    "Title": "Medium trust level Problem"
+  },
+  {
+    "Id": 4726,
+    "Title": "Pre Build for Kigg.Infrastructure.EF doesn't work"
+  },
+  {
+    "Id": 4852,
+    "Title": "Can not display Chinese characters when get a source from some chinese website"
+  },
+  {
+    "Id": 5195,
+    "Title": "An unexpected error has occurred while deleting story."
+  },
+  {
+    "Id": 5206,
+    "Title": "Invite Friends To: <KiGG Site>"
+  },
+  {
+    "Id": 5207,
+    "Title": "Add Additional Filtering/Sorting Capabilities"
+  },
+  {
+    "Id": 5276,
+    "Title": "Publishable stories always showing"
+  },
+  {
+    "Id": 5277,
+    "Title": "Unexpected error when marking story as spam"
+  },
+  {
+    "Id": 5472,
+    "Title": "charset windows-1251"
+  },
+  {
+    "Id": 5858,
+    "Title": "It would be great to create a plugin for use in Windows Live Writer."
+  },
+  {
+    "Id": 6315,
+    "Title": "Domain bug"
+  },
+  {
+    "Id": 6790,
+    "Title": "< and > in the description of link / article will break the description"
+  },
+  {
+    "Id": 6924,
+    "Title": "Kigg Changeset 38916 build error under Visual Studio 2008"
+  },
+  {
+    "Id": 6949,
+    "Title": "DotNetShoutOut: Login With Google Open ID, Name becomes Login URL & Cannot change"
+  },
+  {
+    "Id": 7091,
+    "Title": "Cannot submit article while using openDNS"
+  },
+  {
+    "Id": 7137,
+    "Title": "Submitted items are not showing under my profile"
+  },
+  {
+    "Id": 7138,
+    "Title": "Submitted items are not showing under my profile"
+  },
+  {
+    "Id": 7139,
+    "Title": "Failed opening KiGG.Web with VS2008 MVC2"
+  },
+  {
+    "Id": 7140,
+    "Title": "Login does not remember me"
+  },
+  {
+    "Id": 7141,
+    "Title": "View posts on page according to shout rank"
+  },
+  {
+    "Id": 7142,
+    "Title": "View posts on page according to number of views(or clicks)"
+  },
+  {
+    "Id": 7143,
+    "Title": "Search does not work (Fixed)"
+  },
+  {
+    "Id": 7144,
+    "Title": "Publishable story count nevers goes below 20"
+  },
+  {
+    "Id": 7145,
+    "Title": "remove spam comments"
+  },
+  {
+    "Id": 7146,
+    "Title": "please disregard"
+  },
+  {
+    "Id": 7147,
+    "Title": "Cannot set url to use www"
+  }
+]

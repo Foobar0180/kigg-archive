@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "208985",
+    "ThreadId": "61603",
+    "Html": "<p>I had several critical errors come to my inbox on Saturday. Does anyone know what could be going on?</p>\r\n<p>&quot;The current type, Kigg.Web.ISocialServiceRedirector, is an interface and cannot be constructed. Are you missing a type mapping?&quot;</p>",
+    "PostedDate": "2009-07-06T08:44:45.803-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209160",
+    "ThreadId": "61603",
+    "Html": "<p>What do you mean?<br>Does this happen suddenly on Saturday?</p>\r\n<p>I will check first my web.config file</p>",
+    "PostedDate": "2009-07-06T14:53:45.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "209498",
+    "ThreadId": "61603",
+    "Html": "<p>It happened on Saturday with about 10 emails with the same message. That is the only time it occurred.</p>",
+    "PostedDate": "2009-07-07T07:45:32.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

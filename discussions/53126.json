@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "178644",
+    "ThreadId": "53126",
+    "Html": "Does Kigg support right to left languages such as arabic? can the whole website be in arabic?<br>\r\n",
+    "PostedDate": "2009-04-13T12:36:41.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179592",
+    "ThreadId": "53126",
+    "Html": "We do have plan to support localization in v3.0. May be you can try localize in the mean time and post your issues and I will try to help as much as I can.<br>\r\n",
+    "PostedDate": "2009-04-15T07:05:15.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

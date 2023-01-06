@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "193715",
+    "ThreadId": "57328",
+    "Html": "<p>I have Kigg running successfully on a Windows Server 2008/IIS7 with SQL 2008 Enterprise trial version running yet I have this issue where when you visit the website for the 1st time it takes forever to load but after that it's quick to browse around the categories. When I close the browser and come back it's slow again. Same thing happens in the latest version of Firefox and so it's not an IE8 issue. This happens on different computers at different locations in different countries so it's not a problem with my local fiber Internet connnection.</p>\r\n<p>Anyone have any ideas as to what's going on in IIS7 or in the code? I don't have debug set to true either in the web.config file. The basic Kigg code has not been change except for some extra assets and the CSS and some usercontrols' html&nbsp;in the View folder being modified.</p>\r\n<p>I don't know what else needs to be optimized to make the code load fast the 1st time. Thanks for any ideas.</p>",
+    "PostedDate": "2009-05-24T12:41:14.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "194055",
+    "ThreadId": "57328",
+    "Html": "<p>Nevermind... did some research and in the advanced settings for the domain in the &quot;application pools&quot;&nbsp;area of&nbsp;IIS7 I changed the &quot;idle time-out (minutes)&quot; value from the default of 5 to 0 under the &quot;Process Model&quot; section and now the page loads quickly each time on my server. I also don't get any IIS7 process terminated due to be idle errors like I was getting before.</p>",
+    "PostedDate": "2009-05-25T18:35:06.023-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

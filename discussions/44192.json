@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "147052",
+    "ThreadId": "44192",
+    "Html": "first of all it looks nice and cool project keep up the good work and thanks. on the other hand really important part of the project did not opened by my vs.net 2008. in solution explorer Kigg.Web(unavailable)<br>\r\n<p>---------------------------<br>\r\nMicrosoft Visual Studio<br>\r\n---------------------------<br>\r\nThe project file 'C:\\Documents and Settings\\opakdil\\My Documents\\Downloads\\Kigg-v2.x\\Web\\Kigg.Web.csproj' cannot be opened.</p>\r\n<p>The project type is not supported by this installation.<br>\r\n---------------------------<br>\r\nOK   Cancel   Help   <br>\r\n---------------------------</p>\r\n<br>\r\nhow can I solve it ? \r\n",
+    "PostedDate": "2009-01-14T07:48:08.78-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "147733",
+    "ThreadId": "44192",
+    "Html": "I had the same issue until I installed the MVC framework for VS2008:<br>\r\n<br>\r\nhttp://www.microsoft.com/downloads/details.aspx?FamilyId=A24D1E00-CD35-4F66-BAA0-2362BDDE0766&amp;displaylang=en<br>\r\n",
+    "PostedDate": "2009-01-16T08:23:35.86-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

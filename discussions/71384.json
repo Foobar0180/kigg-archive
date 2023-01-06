@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "243457",
+    "ThreadId": "71384",
+    "Html": "<p>Hello</p>\r\n<p>&nbsp;</p>\r\n<p>I just found out about Kigg and it looks great.</p>\r\n<p>I have a few questions</p>\r\n<p>1) are there any templates available?</p>\r\n<p>2) can you recommend an hosting company that would be familiar with it and also take adult content'</p>\r\n<p>&nbsp;</p>\r\n<p>regard</p>\r\n<p>&nbsp;</p>\r\n<p>marco</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-08T07:49:24.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "244108",
+    "ThreadId": "71384",
+    "Html": "<p>All stylesheet files are&nbsp;under&nbsp;one directory: <strong>Web\\Asset\\Stylesheets</strong>&nbsp;:</p>\r\n<p>The main one is <strong>site.css</strong></p>",
+    "PostedDate": "2009-10-09T22:49:57.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

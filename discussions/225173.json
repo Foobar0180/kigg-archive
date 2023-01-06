@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "486000",
+    "ThreadId": "225173",
+    "Html": "<p>Hi,</p>\r\n<p>I have followed all the steps in the doc and installed on domain</p>\r\n<p>http://ikick.in/</p>\r\n<p>Which is showing me error.</p>\r\n<p>SERVER is shared hosting with windows 2008 server with IIS 7&nbsp; and has mvc installed.</p>\r\n<p>Please advice what could be the problem as when I am trying to test using wrong urls for example - http://ikick.in/TEST.ASPX, the page is working. Something is wrong with the domain default page, not sure how to do that in kigg.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-28T10:06:53.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "486287",
+    "ThreadId": "225173",
+    "Html": "<p>Can anybody help me out ?</p>",
+    "PostedDate": "2010-08-29T23:02:14.113-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "490485",
+    "ThreadId": "225173",
+    "Html": "<p>No one ? Seems like project is dead...</p>",
+    "PostedDate": "2010-09-07T22:25:59.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495479",
+    "ThreadId": "225173",
+    "Html": "<p>Hi Vijayvishwakarma,</p>\r\n<p>I can help you doing this.</p>\r\n<p>Did you install on your local machine? Did it run fine on your local machine.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-09-18T12:58:27.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495534",
+    "ThreadId": "225173",
+    "Html": "Hi,<br><br>I on builded the script on localhost, tried installing directly on server.<br><br>Please advice.<br><br><div>On Sun, Sep 19, 2010 at 1:28 AM, scriptstar <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0pt 0pt 0pt 0.8ex;padding-left:1ex\">   <div> <p>From: scriptstar</p> <div><p>Hi Vijayvishwakarma,</p>\r\n<p>I can help you doing this.</p>\r\n<p>Did you install on your local machine? Did it run fine on your local machine.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>\r\n<p> </p></div> <div> <p>Read the <a href=\"http://kigg.codeplex.com/Thread/View.aspx?ThreadId=225173&ANCHOR#Post495479\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:Kigg@discussions.codeplex.com?subject=[Kigg:225173]\">Kigg@discussions.codeplex.com</a>)</p>\r\n <p>To start a new discussion for this project, email <a href=\"mailto:Kigg@discussions.codeplex.com\">Kigg@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/thread/unsubscribe/225173\">unsubscribe</a> on CodePlex.com.</p>\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com</p> </div> </div> </blockquote></div><br><br clear=all><br>-- <br>Thanks & Regards<br>\r\nVijay Kumar,<br>Yash Softech,<br>Bhilai<br><br><a href=\"http://www.yashsoftech.com\">http://www.yashsoftech.com</a><br><a href=\"http://www.meansearch.com\">http://www.meansearch.com</a><br><a href=\"http://www.faqssite.com\">http://www.faqssite.com</a><br>\r\n<br><br>yahoo:  yashsoftech<br>msn:     <a href=\"mailto:yashsoftech@hotmail.com\">yashsoftech@hotmail.com</a><br>skype:  yashsoftech<br>Mobile: +91 - 9826569901/9329123488<br>Office:  +91 - 7884086073/7884035398<br>",
+    "PostedDate": "2010-09-18T21:53:00.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495547",
+    "ThreadId": "225173",
+    "Html": "<p>Hi,</p>\r\n<p>I send a request through skype. Accept the request and we can start chatting and I am sure I can solve your installation issues. I installed several times kigg on both shared and dedicated hosting environments.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p>",
+    "PostedDate": "2010-09-19T00:26:25.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495548",
+    "ThreadId": "225173",
+    "Html": "I am installing skype on my pc, not using my lappy.<div><br></div><div>Give me a few minutes.</div><div><br><div>On Sun, Sep 19, 2010 at 12:56 PM, scriptstar <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\">   <div> <p>From: scriptstar</p> <div><p>Hi,</p>\r\n<p>I send a request through skype. Accept the request and we can start chatting and I am sure I can solve your installation issues. I installed several times kigg on both shared and dedicated hosting environments.</p>\r\n<p>Cheers,</p>\r\n<p>Narendra</p></div><div> <div> <p>Read the <a href=\"http://kigg.codeplex.com/Thread/View.aspx?ThreadId=225173&ANCHOR#Post495547\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:Kigg@discussions.codeplex.com?subject=[Kigg:225173]\">Kigg@discussions.codeplex.com</a>)</p>\r\n <p>To start a new discussion for this project, email <a href=\"mailto:Kigg@discussions.codeplex.com\">Kigg@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/thread/unsubscribe/225173\">unsubscribe</a> on CodePlex.com.</p>\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at CodePlex.com</p> </div> </div></div> </blockquote></div><br><br clear=all><br>-- <br>Thanks & Regards<br>\r\nVijay Kumar,<br>Yash Softech,<br>Bhilai<br><br><a href=\"http://www.yashsoftech.com\">http://www.yashsoftech.com</a><br><a href=\"http://www.meansearch.com\">http://www.meansearch.com</a><br><a href=\"http://www.faqssite.com\">http://www.faqssite.com</a><br>\r\n<br><br>yahoo:  yashsoftech<br>msn:     <a href=\"mailto:yashsoftech@hotmail.com\">yashsoftech@hotmail.com</a><br>skype:  yashsoftech<br>Mobile: +91 - 9826569901/9329123488<br>Office:  +91 - 7884086073/7884035398<br>\r\n</div>",
+    "PostedDate": "2010-09-19T00:30:20.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495558",
+    "ThreadId": "225173",
+    "Html": "<p>Thanks a lot Narendra for your help, I got this working for me.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-09-19T02:45:54.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "525422",
+    "ThreadId": "225173",
+    "Html": "\r\n<p>Can you post the solution for the rest of us?</p>\r\n",
+    "PostedDate": "2010-11-22T10:39:01.083-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "526224",
+    "ThreadId": "225173",
+    "Html": "\r\n<p>@pharaohbender,</p>\r\n<p>Narendra(scriptstar) helped me to fix that error, I think it would be better if he posts that solution here.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-11-23T20:43:07.393-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

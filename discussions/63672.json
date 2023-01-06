@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "216511",
+    "ThreadId": "63672",
+    "Html": "<p>I read <a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl12_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/kodefuguru\">kodefuguru</a>&nbsp;post -&nbsp;<a href=\"http://www.kodefuguru.com/post/2009/07/14/Automating-KiGG-Publishing.aspx\">http://www.kodefuguru.com/post/2009/07/14/Automating-KiGG-Publishing.aspx</a>&nbsp;on how to automat the publishing process using a Windows client. Thank you, this was a great post! I wrote a WPF client based on this code and it works perfectly!</p>\r\n<p>What I would like to do now is write a WPF client that could automate the submission of stories. This is not for DotNetShoutout but rather for a site I run. The idea is to consume RSS feeds for the blogs I trust and automatically submit the blog entries.</p>\r\n<p>Has anyone else considered doing this?</p>\r\n<p>Also any suggestions on the best way to proceed?</p>\r\n<p>Thanks.</p>\r\n<p>John Tarbox</p>",
+    "PostedDate": "2009-07-27T12:07:27.363-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "216874",
+    "ThreadId": "63672",
+    "Html": "<p>I've considered it but haven't gotten around to writing it yet. I'm trying to figure out the best way to detect Category and tags.</p>",
+    "PostedDate": "2009-07-28T10:07:43.527-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217200",
+    "ThreadId": "63672",
+    "Html": "<p>I just worked up a test WPF app to submit a story and got it to work. It is based upon <a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl12_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/kodefuguru\">kodefuguru</a>&nbsp;code referenced in the above blog post. (Life really gets easy one one can stand on the sholders of giants, a big thank you for that post.</p>\r\n<p>If anyone wants to see my code I will be happy to share it, but is not elegant ;-)</p>\r\n<p>Basically I did a POST to /Submit passing the foillowing parameters:<br>&nbsp; url<br>&nbsp; title<br>&nbsp; category<br>&nbsp; description<br>&nbsp; tags</p>\r\n<p>I UrlEncode() all of them before the submit.</p>\r\n<p>The only &quot;gotya&quot; I found is that KiGG expects a UserAgent as part of the request and will reject the POST if it is not set (a proper error message is returned). I simply set request.UserAgent and everything worked fine.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-29T08:08:32.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217682",
+    "ThreadId": "63672",
+    "Html": "<p>Cool, I'm glad you got it working? How are you handling category and tags? I'm writing a submission bot to handle videos from YouTube, but I haven't really figured out how to correspond blog entries to categories... maybe detect keywords and if one is not found have a default?</p>",
+    "PostedDate": "2009-07-30T10:30:51.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217695",
+    "ThreadId": "63672",
+    "Html": "<p>How are you handling category and tags?</p>\r\n<p>We I don't know of any good way to handle these :-( On our site (<a title=NewsPeeps.com href=\"http://NewsPeeps.com\">NewsPeeps.com</a>) we don't use categories, just tags. The problem I have with categories is that they are too transitory. For example Silverlight is a category on DotNetShoutout, but didn't even exist untill a couple of years ago and who knows if it will be used in 5 years? (Speaking here of the name, not the technology).</p>\r\n<p>For tags, I like how StackOverflow handles tags, any item (story, or in their case question) can have up to 5 tags and anyone with sufficent privilages (reputation) can edit the tags after the item is posted.</p>\r\n<p>It would be great if there were a super easy way to changes the tags for a story after it is added to the site. Drag the tag onto the story and drop it perhaps?? Unfortunately I believe this is the only realistic way to get good tags since it is extremely difficult for a proigram to analyse the content of a web page and decide on the appropriate tags.</p>\r\n<p>Anyway that's my 2 cents worth ;-)</p>",
+    "PostedDate": "2009-07-30T11:07:03.353-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217795",
+    "ThreadId": "63672",
+    "Html": "<p>Yea, user tags would be a cool feature.</p>\r\n<p>I wrote up an article about automating submission. You've already figured it out for yourself, but you may be interested in what I did.</p>\r\n<p><a href=\"http://www.kodefuguru.com/post/2009/07/30/Automating-KiGG-Submission.aspx\">http://www.kodefuguru.com/post/2009/07/30/Automating-KiGG-Submission.aspx</a></p>",
+    "PostedDate": "2009-07-30T15:46:08.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "227732",
+    "ThreadId": "63672",
+    "Html": "<p>Hi Jonny:</p>\r\n<p>Can send me your auto submission code? I just have a empty Kigg based website i am so eager to filling it up :). I am running a Chinese version, don't know if your bot app can grap chinese blog?</p>",
+    "PostedDate": "2009-08-25T19:08:30.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "228363",
+    "ThreadId": "63672",
+    "Html": "<p>Nice post kodefuguru! It would definitely be cool to get a PiGG project going ;-)</p>\r\n<p>Meanwhile, I'd like to second codeyun's request... jonny, would you share your code?</p>\r\n<p>Thanks.</p>",
+    "PostedDate": "2009-08-27T05:43:55.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "528451",
+    "ThreadId": "63672",
+    "Html": "\r\n<p>Can you share your code please?</p>\r\n<p>Thanks!</p>\r\n",
+    "PostedDate": "2010-11-29T12:19:46.893-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

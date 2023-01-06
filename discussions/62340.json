@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "211631",
+    "ThreadId": "62340",
+    "Html": "<p><br>Some tables like storyVote have a column named Timestamp</p>\r\n<p>Timestamp is keyword in SQL Server and should not not used as column name</p>",
+    "PostedDate": "2009-07-14T01:16:54.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211646",
+    "ThreadId": "62340",
+    "Html": "<p>Yes it is. In KiGG the column is used as Datetime column. There is no harm to use some database keywords as column names as long as you write your queries properly.</p>\r\n<p>This column is working as time stamp for modification of a record. But I guess Rashid wanted to use it as real datetime column and not as SQL SERVER timestamp column which I think is translated to binary in .Net</p>",
+    "PostedDate": "2009-07-14T02:34:08.907-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

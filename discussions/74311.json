@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "254221",
+    "ThreadId": "74311",
+    "Html": "<p><img alt=\"\"></p>\r\n<p>&nbsp;</p>\r\n<p>i have iis 5.1 newly installed vesion . i am getting the follwing issues</p>\r\n<h1>Unable to start debugging on the Web server&quot; error message when you run an ASP.NET Web application</h1>\r\n<p>is any adttional settings is needed?</p>\r\n<p>iam using integrated windows authentication but it will not resolve this issue. and also i have set debug option set to false still iam getting issue</p>",
+    "PostedDate": "2009-11-06T05:14:59.927-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

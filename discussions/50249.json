@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "168242",
+    "ThreadId": "50249",
+    "Html": "So, is it possible to install KiGG without Visual Studio on a remote Windows Server 2008/MSSQL 2008?<div><br></div><div>Thanks.</div>",
+    "PostedDate": "2009-03-15T03:43:52.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "168252",
+    "ThreadId": "50249",
+    "Html": "I'm publishing to a remote windows server 2008 and then:<div><br></div><div><span style=\"font-family:verdana;font-size:11px\"><h2 style=\"font-family:verdana;font-weight:normal;font-size:14pt;color:maroon\"><em>Runtime Error</em></h2><span style=\"font-family:arial, helvetica, geneva, sunsans-regular, sans-serif\"><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Description: </strong>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine. <br><br><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Details:</strong> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br><table width=\"100%\" bgcolor=\"#ffffcc\">    <tbody>        <tr>            <td><code>            <pre style=\"font-family:'lucida console';font-size:0.9em\">&lt;!-- Web.Config Configuration File --&gt;&lt;configuration&gt;    &lt;system.web&gt;        &lt;customErrors mode=&quot;Off&quot;/&gt;    &lt;/system.web&gt;&lt;/configuration&gt;</pre>            </code></td>        </tr>    </tbody></table><br><strong style=\"font-family:verdana;font-weight:bold;color:black;margin-top:-5px\">Notes:</strong> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application's &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br><table width=\"100%\" bgcolor=\"#ffffcc\">    <tbody>        <tr>            <td><code>            <pre style=\"font-family:'lucida console';font-size:0.9em\">&lt;!-- Web.Config Configuration File --&gt;&lt;configuration&gt;    &lt;system.web&gt;        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;    &lt;/system.web&gt;&lt;/configuration&gt;</pre>            </code></td>        </tr>    </tbody></table></span></span></div>",
+    "PostedDate": "2009-03-15T04:53:13.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179632",
+    "ThreadId": "50249",
+    "Html": "Can you pls turnoff the error handing in web.config and check the actual exception.<br>\r\n",
+    "PostedDate": "2009-04-15T08:16:56.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

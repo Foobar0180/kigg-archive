@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "Implemented.",
+    "ClosedDate": "2009-04-07T02:47:40.373-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "Broadcast new submitted story in Twitter.",
+    "LastUpdatedDate": "2009-04-07T02:47:40.373-07:00",
+    "PlannedForRelease": "KiGG - 2.2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-08T07:20:43.983-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Broadcast in Twitter",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 3775
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

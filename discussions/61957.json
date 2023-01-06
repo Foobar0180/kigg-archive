@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "210326",
+    "ThreadId": "61957",
+    "Html": "<p>There are a bunch of classes and they are used nowhere</p>\r\n<p>under KIGG\\Core\\Repository\\Decorated :</p>\r\n<ul>\r\n<li>DecoratedCategoryRepository</li>\r\n<li>DecoratedStoryRepository</li>\r\n<li>DecoratedUserRepository</li>\r\n<li>DecoratedTagRepository</li>\r\n</ul>\r\n<p>under KIGG\\Core\\Repository\\Decorated\\Logging :</p>\r\n<ul>\r\n<li>LoggingCategoryRepository</li>\r\n<li>LoggingStoryRepository</li>\r\n<li>LoggingUserRepository</li>\r\n<li>LoggingTagRepository</li>\r\n</ul>\r\n<p>under KIGG\\Core\\Repository\\Decorated\\Caching :</p>\r\n<ul>\r\n<li>CachingategoryRepository</li>\r\n<li>CachingStoryRepository</li>\r\n<li>CachingUserRepository</li>\r\n<li>CachingTagRepository</li>\r\n</ul>\r\n<p>Can someone shed some light on this?</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-07-09T01:56:49.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210376",
+    "ThreadId": "61957",
+    "Html": "<p>These classes are used. In Web.config you'll find that they are configured to be used as default by IoC container.</p>",
+    "PostedDate": "2009-07-09T05:48:09.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210565",
+    "ThreadId": "61957",
+    "Html": "<p>Thanks Mosses<br>That's true that they are referenced in the Unity section of Web.config<br>That's means that they are instantied by IoC but still I cannot see any place where they are really used</p>\r\n<p>Sorry but it is still not clear for me<br>Can you clarify?</p>",
+    "PostedDate": "2009-07-09T12:33:40.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211021",
+    "ThreadId": "61957",
+    "Html": "<p>Caching in KiGG is applied through Decorator Pattern, same thing for logging. Those repositories Prefixed with Caching or Logging apply decorator pattern. You can exmin the classes code and read about decorator pattern to know more about how it works.</p>\r\n<p>Now KiGG by default delegates all instantiation to IoC. Now for those classes such as CachingCategoryRepository they are used as default mapping for IXxxRepository interfaces. Default mapping has no name attribute. Caching repositories as it applies Decorator pattern, it has dependency on another ICategoryRepository, for example CachingCategoryRepository constructor accepts ICategoryRepository as parameter. This dependency is defined in the mapping and it targets LoggingCategoryRepository, You can review it on configuration.</p>\r\n<p>Same thing applies for LoggingCategoryRepository, in mapping configuration its dependecy is mapped to CategoryRepository.</p>\r\n<p>So now, when a controller needs a repository such as ICategoryRepository, IoC is responsible for instantiating new or returning exising instance of ICategoryRepository. And by default it will return CachingCategoryRepository (as mentioned above it is default mapping). And because CachingCategoryRepository is configured to accept LoggingCategoryRepository as parameter, IoC also when constructing the CachingCategoryRepository it will pass a LogginCategoryRepository to it. An so on.</p>\r\n<p>I hope this idea is cleared to you now! let me know if you have anything not clear. I might try to explain it better.</p>\r\n<div id=\"_mcePaste\" style=\"overflow:hidden;left:-10000px;top:0px;width:1px;height:1px\">&lt;type type=&quot;ICategoryRepository&quot; mapTo=&quot;CachingCategoryRepository&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;lifetime type=&quot;PerWebRequest&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;typeConfig extensionType=&quot;Microsoft.Practices.Unity.Configuration.TypeInjectionElement, Microsoft.Practices.Unity.Configuration&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;constructor&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;innerRepository&quot; parameterType=&quot;ICategoryRepository&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;dependency name=&quot;Logging&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;cacheDurationInMinutes&quot; parameterType=&quot;System.Single&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!---Cache for 7 Days --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.Single&quot; value=&quot;10080&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/constructor&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/typeConfig&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/type&gt;</div>\r\n<div id=\"_mcePaste\" style=\"overflow:hidden;left:-10000px;top:0px;width:1px;height:1px\">&lt;type type=&quot;ICategoryRepository&quot; mapTo=&quot;CachingCategoryRepository&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;lifetime type=&quot;PerWebRequest&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;typeConfig extensionType=&quot;Microsoft.Practices.Unity.Configuration.TypeInjectionElement, Microsoft.Practices.Unity.Configuration&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;constructor&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;innerRepository&quot; parameterType=&quot;ICategoryRepository&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;dependency name=&quot;Logging&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;param name=&quot;cacheDurationInMinutes&quot; parameterType=&quot;System.Single&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!---Cache for 7 Days --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value type=&quot;System.Single&quot; value=&quot;10080&quot;/&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/param&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/constructor&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/typeConfig&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/type&gt;</div>",
+    "PostedDate": "2009-07-10T19:32:40.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211058",
+    "ThreadId": "61957",
+    "Html": "<p>Oh Mosses thank you so much<br>I just realized that IXXXRepository is mapped to CachingXXXRepository<br>This last one has a dependency with LoggingXXXReository which, at its turn, has a depency with XXXRepository<br>Everything is vey clear to me now and thank you so much again</p>\r\n<p>I am from on old school and all this is very new to me<br>I learned and I am still learning&nbsp;a lot from this project</p>\r\n<p>I really do appreciate your great work here</p>",
+    "PostedDate": "2009-07-11T01:25:31.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211171",
+    "ThreadId": "61957",
+    "Html": "<p>@<a id=\"ctl00_ctl00_MasterContent_Content_PostRepeater_ctl08_UserNameLink\" href=\"http://www.codeplex.com/site/users/view/nachid\">nachid</a> Don't worry, at the beginning I had same confusion until I explored the whole code step by step to cover all missing points for me in order to get evolved in it.</p>\r\n<p>Great the the point is clear now. This discussion it great because we clarified the usage of those classes and the usage of decorator pattern.</p>",
+    "PostedDate": "2009-07-12T02:50:30.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211196",
+    "ThreadId": "61957",
+    "Html": "<p>I would just like to add a big Thank You as discussions like this are invaluable to me in learning not only KiGG but MVC in general.</p>\r\n<p>John Tarbox</p>",
+    "PostedDate": "2009-07-12T08:36:12.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

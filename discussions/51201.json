@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "171609",
+    "ThreadId": "51201",
+    "Html": "This is an excelent project, I am learning so much from the work you've done, thanks for all the work.&nbsp; Managed to start it up, works perfectly with one exception - when trying to edit the story, line 31 of WeblogTraceTextFormatter:<br>\r\n&nbsp;extraHandlers[&quot;namaspace&quot;] = GenericTextFormatter&lt;LogEntry&gt;.CreateSimpleTokenHandler(le =&gt; ((WeblogEntry)le).NamespaceName);<br>\r\n<br>\r\nThrows an exception - Unable to cast object of type 'Microsoft.Practices.EnterpriseLibrary.Logging.LogEntry' to type 'Kigg.Infrastructure.EnterpriseLibrary.WeblogEntry'.&nbsp; Any ideas would be greatly appreciated.<br>\r\n<br>\r\nPaul<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-03-24T16:22:19.06-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179612",
+    "ThreadId": "51201",
+    "Html": "Are you trying to edit the story as admin/moderator?<br>\r\n",
+    "PostedDate": "2009-04-15T07:46:43.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "179696",
+    "ThreadId": "51201",
+    "Html": "I faced this too while creating new user and while submitting spam story.<br>\r\nThe exception didn't break the application I cought it while in debug mode stepping through methods.<br>\r\nI e-mailed you this exception Kazi.\r\n",
+    "PostedDate": "2009-04-15T09:37:47.943-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "218194",
+    "ThreadId": "51201",
+    "Html": "<p>This issue is now resolved, it was a configuration problem.</p>",
+    "PostedDate": "2009-07-31T16:10:15.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

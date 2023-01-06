@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "210634",
+    "ThreadId": "62051",
+    "Html": "<p>I see in the sample web.config that ther is a user ID &quot;Bee&quot; that looks like it might be used by a bot. What is it's intended use in KiGG?</p>",
+    "PostedDate": "2009-07-09T16:32:56.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210650",
+    "ThreadId": "62051",
+    "Html": "<p>Bee is just an example to demonstrate a user&nbsp;that holds three roles</p>\r\n<ul>\r\n<li>user</li>\r\n<li>bot</li>\r\n<li>moderator</li>\r\n</ul>\r\n<p>If moderator and user are quite evident, I must admit that I still do not see what's the purpose of bot role</p>\r\n<p>I understood that bot role is for everyone who is not public but what's the utilitity of such role</p>",
+    "PostedDate": "2009-07-09T17:36:23.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210840",
+    "ThreadId": "62051",
+    "Html": "<p>I'm writing a bot for my sites that will post content periodically (if anyone knows of an open source one that already exists, please let me know). It will post under an account with the bot role, so it is useful to have.</p>",
+    "PostedDate": "2009-07-10T07:19:39.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210882",
+    "ThreadId": "62051",
+    "Html": "<p>I too would like to have a bot that automatically posts content to my website (NewsPeeps.com).</p>\r\n<p>I have not yet started to code anything and am curious how you plan to impliment your bot?</p>",
+    "PostedDate": "2009-07-10T09:19:48.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210952",
+    "ThreadId": "62051",
+    "Html": "<p>I've written code to automatically publish content and it can be run from anywhere. It's basically making web requests to login, publish, then logout. It's simple, but I'm thinking of releasing it since it is useful. If I do, it will be called PiGG =). I may just write&nbsp;a blog article on how to do it.</p>\r\n<p>I'm trying to decide whether a content bot should run on the server or if I should add extensions to the controllers so it can retrieve categories and tags. I need this so the bot can match tags and a category based on the content. Summarizing is another issue as I've found many articles need to have their summaries edited before posting.</p>",
+    "PostedDate": "2009-07-10T13:11:58.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Core",
+      "DisplayName": "Core"
+    },
+    "ClosedComment": "fixed in changeset 25406",
+    "ClosedDate": "2009-07-31T16:19:51.537-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "The Markitup textbox is messed up in Chrome/Safari for Story Submit Page. Should be a CSS issue.",
+    "LastUpdatedDate": "2009-07-31T16:19:51.537-07:00",
+    "PlannedForRelease": "KiGG - 2.2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-02-14T15:48:52.07-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Fix Safari/Chrome MarkItUp Textbox Issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3815
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

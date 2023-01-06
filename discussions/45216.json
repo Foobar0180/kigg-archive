@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "150795",
+    "ThreadId": "45216",
+    "Html": "Hi all, <br>\r\n<br>\r\nthanks for sharing such a great piece of code. There are many lessons to be learned by looking at it. :-)<br>\r\n<br>\r\nAfter some rough start I managed to get the project up and running.<br>\r\n<br>\r\nI have still some minor issues. The most disturbing being that I am unable to edit a story once it is created. <br>\r\nIf I click on edit on a story, I do get the editor window on the screen, but the window is sort of grayed out, like an inactive window. <br>\r\nI cannot click anything, not even the close icon on the dialog. The only chance to continue is to click the browser back-button. <br>\r\n<br>\r\nAny help is very welcome. <br>\r\n<br>\r\nThanks<br>\r\n   Andreas Kroll\r\n",
+    "PostedDate": "2009-01-25T18:35:08.85-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150798",
+    "ThreadId": "45216",
+    "Html": "I just started playing with the code this weekend and noted the same thing.  To edit I use FireFox.<br>\r\n<br>\r\nBrad\r\n",
+    "PostedDate": "2009-01-25T18:57:02.723-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "154056",
+    "ThreadId": "45216",
+    "Html": "Yes I also found it, It only happens in IE. I will add it in the Issue Tracker.<br>\r\nThanks.<br>\r\n",
+    "PostedDate": "2009-02-03T19:50:35.613-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155303",
+    "ThreadId": "45216",
+    "Html": "I'm testing with the RC1 release and change set 18277 and I can't get the edit dialog to work in either Firefox or IE.  I have a the beta build working with Firefox but not IE as stated above.<br>\r\n<br>\r\nThanks,<br>\r\nBrad\r\n",
+    "PostedDate": "2009-02-07T05:45:55.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155544",
+    "ThreadId": "45216",
+    "Html": "It looks like it is related to the RoutUrl changes made with RC1.  Is there a newer build like what is running on dotnetshoutout.com that isn't checked into CodePlex?<br>\r\n<br>\r\nThanks,<br>\r\nBrad\r\n",
+    "PostedDate": "2009-02-08T08:56:01.157-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155573",
+    "ThreadId": "45216",
+    "Html": "Hi,<br>\r\n<br>\r\nDotNetShoutout is running with latest check-in and as mentioned we are only facing this issue in IE. I recommend to clear your cache and cookie in your browser and retry. \r\n",
+    "PostedDate": "2009-02-08T11:57:31.143-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155655",
+    "ThreadId": "45216",
+    "Html": "The function editStory: function(B) in Moderation.min.js does not return a value for Moderation._getStoryUrl.  If I change RouteUrl to Action for the line 'scriptManager.RegisterOnReady(&quot;Moderation.set_getStoryUrl('{0}');&quot;.FormatWith(Url.RouteUrl(&quot;GetStory&quot;)));' in SiteTemplate.Master the div appears and the value for Moderation._getStoryUrl is GetStory.  Also,  the footer links in SiteTemplate.Master don't work for About or Contact unless the links are changed to use Action instead of RouteUrl.   I'm running the built in web server with Visual studio for testing so maybe it is related to that.<br>\r\n<br>\r\nIn the comments of this blog post some people mention issues with RouteUrl <a href=\"http://haacked.com/archive/2009/01/27/aspnetmvc-release-candidate.aspx\">http://haacked.com/archive/2009/01/27/aspnetmvc-release-candidate.aspx</a>.\r\n",
+    "PostedDate": "2009-02-08T19:56:23.21-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "155668",
+    "ThreadId": "45216",
+    "Html": "@activekix : Are you running ASP.NET RC1 _Refresh_?<br>\r\n",
+    "PostedDate": "2009-02-08T21:01:09.573-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156440",
+    "ThreadId": "45216",
+    "Html": "Sorry about that - my fault on not installing the refresh.  The dialog opens for Firefox but not IE and I wasn't able to save if there was html in the description due to the form post validation which was throwing the following error.<br>\r\n<br>\r\nA potentially dangerous Request.Form value was detected from the client <br>\r\n<br>\r\nAdding ValidateInput(false) to the Update ActionResult seems to take care of that error.<br>\r\n<br>\r\nThanks,<br>\r\nBrad\r\n",
+    "PostedDate": "2009-02-10T15:02:56.463-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "156464",
+    "ThreadId": "45216",
+    "Html": "Sure no problem, I think the Comment Controller Submit should also have this attribute though I am not sure whether I have checked in with/without that attribute.<br>\r\n",
+    "PostedDate": "2009-02-10T16:13:40.437-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

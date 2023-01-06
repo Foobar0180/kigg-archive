@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "207013",
+    "ThreadId": "61058",
+    "Html": "<p>There is something weird in the code of the following method (<strong>BaseController.cs</strong>)</p>\r\n<p>&nbsp;public bool&nbsp; IsCurrentUserAuthenticated<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (HttpContext.User.Identity.IsAuthenticated &amp;&amp; (CurrentUser != null))<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (!CurrentUser.IsLockedOut)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.Warning(&quot;Logging out User: {0}&quot;, CurrentUserName);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Logout the user if the account is locked out<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FormsAuthentication.SignOut();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log.Info(&quot;User Logged out.&quot;);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false;<br>}</p>\r\n<p><br>unless it is misnommed it should be as simple as</p>\r\n<p><br>public bool IsUserAuthenticated<br>{<br>&nbsp;&nbsp;&nbsp; get<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return&nbsp; HttpContext.User.Identity.IsAuthenticated;<br>&nbsp;&nbsp;&nbsp; }<br>}</p>",
+    "PostedDate": "2009-06-30T04:18:18.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "207070",
+    "ThreadId": "61058",
+    "Html": "<p>It appears to be a refactoring to prevent that code from being duplicated wherever IsAuthenticated and !IsLockedOut checks need to occur. Perhaps it should be renamed to something like IsCurrentUserValid?</p>",
+    "PostedDate": "2009-06-30T07:40:40.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "207657",
+    "ThreadId": "61058",
+    "Html": "<p>To be a valid user you do no have to be connected and authenticated<br>No, I am more surprised by he fact the user is logout in this code<br>&nbsp;IMHO, this subroutine should be limited to</p>\r\n<p>return&nbsp;(HttpContext.User.Identity.IsAuthenticated &amp;&amp; (CurrentUser != null) );</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-01T11:25:41.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "207736",
+    "ThreadId": "61058",
+    "Html": "<p>Where would you recommend checking if the user is locked out? It would seem to me that you should check if they've been locked out anytime you check if they're authenticated. If the user is locked out while logged in, the person is no longer a valid user and should be logged off.</p>",
+    "PostedDate": "2009-07-01T14:38:20.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "207749",
+    "ThreadId": "61058",
+    "Html": "<p>In the case where a user is lockout while he is still connected and authenticated, I would let the action that locked him out to log him out too.</p>\r\n<p>I am quite sure there is a good reason behind this code because this project is very clean and very well thought out</p>\r\n<p><br>I am always wondering how long did them to produce it</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-01T15:11:59.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

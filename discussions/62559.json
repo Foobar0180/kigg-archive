@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "212351",
+    "ThreadId": "62559",
+    "Html": "<p>KiGG supports the return of stories with a specific tag (example <a href=\"http://dotnetshoutout.com/Tags/Silverlight\">http://dotnetshoutout.com/Tags/Silverlight</a>) provided the tag is valid. If the tag is invalid, a 404 custom error is returned. This is as expected.</p>\r\n<p>If one sends the request&nbsp; <a href=\"http://dotnetshoutout.com/Tags/Silverlight\">http://dotnetshoutout.com/Tags</a>&nbsp;one gets the same 404 error.</p>\r\n<p>Looking at the code in StoryController.cs (line 247 in version 2.2), one finds:</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>        <span style=\"color:Blue\">public</span> ActionResult Tags(<span style=\"color:Blue\">string</span> name, <span style=\"color:Blue\">int</span>? page)\r\n        {\r\n            name = name.NullSafe();\r\n\r\n            <span style=\"color:Blue\">if</span> (<span style=\"color:Blue\">string</span>.IsNullOrEmpty(name))\r\n            {\r\n                <span style=\"color:Blue\">return</span> RedirectToRoute(<span style=\"color:#A31515\">&quot;Published&quot;</span>);\r\n            }\r\n<hr>\r\n\r\nThis would seem to indicate that all published stories should be returned rather than a 404. Is this a bug??</pre>\r\n<pre>In any case, what I would like to have happen is to simply return a list of all Tags. I would also like to do the same thing for Categories (as an aside, if one looks at line 90 in StoryController.cs,</pre>\r\n<pre> the same possible bug appears for categrories as tags).</pre>\r\n<pre>What is the best way to go about this? Should I add a new route in RegisterRoutes.cs and create new controllers and views to return these lists or is it better to just use the Default route and modify StoryController.cs?</pre>\r\n</div>",
+    "PostedDate": "2009-07-15T15:18:34.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "212458",
+    "ThreadId": "62559",
+    "Html": "<p>No, it is not a bug but it is MVC and the way url routes are managed.<br>In KIGG, routes are defined in RegisterRoutes class.<br>When you enter <a href=\"http://dotnetshoutout.com/Tags\">http://dotnetshoutout.com/Tags</a>, there is a route named &quot;Detail&quot; that matches it.<br>This route redirects to the action Detail in the controller Story and it searches for a story with the unique name &quot;Tags&quot;<br>It does not have anything to do with Tags.<br>If you enter <a href=\"http://dotnetshoutout.com/Foo\">http://dotnetshoutout.com/Foo</a>, it will be the same looking for a story named &quot; foo&quot;<br>When you enter <a href=\"http://dotnetshoutout.com/Tags/Silverlight\">http://dotnetshoutout.com/Tags/Silverlight</a>, he route &quot;StoryList&quot; (&quot;{action}/{name}/{page}&quot;) is chosen<br>This one redirects you to the action you mentionned<br>To obtain the behavior you mentionned, I guess you should add specific routes<br>Do not forget to add them, in RegisterRoutes class, before the ones I mentionned<br>In MVC, first route encountered, first taken</p>",
+    "PostedDate": "2009-07-16T00:40:52.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-06-08T17:06:05.363-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Why do I always get this error for my Url http://www.codingcontext.com/?p=300? It event gives it to me for the root site http://www.codingcontext.com/",
+    "LastUpdatedDate": "2009-06-08T17:06:05.363-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-04-02T08:52:18.25-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Specified Url does not exist",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3967
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "When I attempt to post an article I keep getting this message.  I have even tried different URL's that point to the same page and no luck... Please Fix.",
+      "PostedDate": "2009-04-28T05:32:36.113-07:00",
+      "Id": 15897
+    }
+  ]
+}

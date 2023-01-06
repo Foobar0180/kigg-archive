@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "fixed in changeset 25942",
+    "ClosedDate": "2009-08-17T01:14:28.333-07:00",
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "The pre build task doesn't work for two main reasons :\n - in the command line, the variable $(ProjectDir) (and $(SolutionDir)) contains the last '\\' caracters, so retape it in the command line generate an error ;\n - if the solution directory contains space caracters, the directory was not found.\n\nThe correct command line looks like that :\n\n\"%windir%\\Microsoft.NET\\Framework\\v3.5\\edmgen.exe\" /mode:EntityClassGeneration /incsdl:\"$(SolutionDir)SharedFiles\\DomainObjects.csdl\" /outobjectlayer:\"$(ProjectDir)DomainObjects\\Generated\\Models.cs\" /language:CSharp\n\n\"%windir%\\Microsoft.NET\\Framework\\v3.5\\edmgen.exe\" /mode:ViewGeneration  /incsdl:\"$(SolutionDir)SharedFiles\\DomainObjects.csdl\" /inssdl:\"$(SolutionDir)SharedFiles\\DomainObjects.SqlServer.ssdl\" /inmsl:\"$(SolutionDir)SharedFiles\\DomainObjects.msl\" /outviews:\"$(ProjectDir)DomainObjects\\Generated\\SqlServerViews.cs\" /language:CSharp\n\n\n\"$(SolutionDir)References\\MySqlClient\\edmgen.exe\" /mode:ViewGeneration  /incsdl:\"$(SolutionDir)SharedFiles\\DomainObjects.csdl\" /inssdl:\"$(SolutionDir)SharedFiles\\DomainObjects.MySql.ssdl\" /inmsl:\"$(SolutionDir)SharedFiles\\DomainObjects.msl\" /outviews:\"$(ProjectDir)DomainObjects\\Generated\\MySqlViews.cs\" /language:CSharp\n\nHope this helps,\nMatthias",
+    "LastUpdatedDate": "2009-08-17T01:14:28.333-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2009-08-05T06:00:42.247-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Pre Build for Kigg.Infrastructure.EF doesn't work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4726
+  },
+  "FileAttachments": [
+    {
+      "FileId": 149447,
+      "FileName": "error_kigg.JPG",
+      "DownloadUrl": ".\\149447"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "thank you I will update the project build events. I might take them off too and provide guidelines for them. I used them to regenerate the model and views. \r\nBut it is really weird because it is working fine with me I face no issue in build?! did you tried the latest changeset?",
+      "PostedDate": "2009-08-05T06:54:05.713-07:00",
+      "Id": 15927
+    },
+    {
+      "Message": "Hello,\r\nI've tried with the latest changeset and the problem is still here.\r\nI put the solution in the folder \"d:\\Travail\\Projets Codeplex\".\r\nI join a capture of the error.\r\n\r\nHope this helps,\r\nMatthias",
+      "PostedDate": "2009-08-05T09:00:27.883-07:00",
+      "Id": 15928
+    },
+    {
+      "Message": "I got your point, will update the project events with this solution. Sorry for this mistake. And thanks for the update",
+      "PostedDate": "2009-08-08T04:31:53.197-07:00",
+      "Id": 15929
+    }
+  ]
+}

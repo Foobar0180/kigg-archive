@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "271940",
+    "ThreadId": "79432",
+    "Html": "<p>Happy new year:)</p>\r\n<p>I have a problem with KIGG compilation. All required components are installed, but it seems that some classes are missing. All projects except <strong>Web </strong>compiles normally, but <strong>Web </strong>uses some classes or interfaces that are not exists: <strong>IDataContext</strong>, <strong>CompressFilter</strong>, <strong>CacheFilter</strong>, <strong>BaseStoryListData</strong>, <strong>StoryListByCategoryData </strong>etc...</p>\r\n<p>Where can I find this classes? Maybe I have to add some references? Thanks, sorry for bad English))</p>",
+    "PostedDate": "2009-12-31T03:02:58.993-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "271946",
+    "ThreadId": "79432",
+    "Html": "<p>I've found solution. Some classes were not included in <strong>Web </strong>project, but exists on disk. But I have no idea where I can find <strong>FilterExecutingContext </strong>class...</p>",
+    "PostedDate": "2009-12-31T03:32:15.653-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not applicable anymore.",
+    "ClosedDate": "2009-01-13T08:34:57.14-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "I created kigg project when i compiled i got the error RenderView() does not exist in the current context, the project didn't find the definition of the RenderView() method. How can i fix it?",
+    "LastUpdatedDate": "2009-09-10T20:09:09.323-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "Kigg",
+    "ReportedDate": "2008-10-28T13:16:54.69-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "'RenderView() does not exist in the current context",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 3338
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I get it too.",
+      "PostedDate": "2009-09-10T20:09:09.323-07:00",
+      "Id": 15885
+    }
+  ]
+}
